@@ -3,24 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="İngilizce yemek tariflerini Türkçe açıklamalarla öğrenin." />
-    <title>İngilizce Tarifler</title>
+    <meta name="description" content="İngilizce yemek tariflerini Türkçe açıklamalarla öğrenin. Konuşarak Öğren İngilizce Blog." />
+    <title>İngilizce Tarifler | Konuşarak Öğren</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <a class="skip-link" href="#content">İçeriğe geç</a>
-    <header class="site-header">
-      <a class="brand" href="#/" aria-label="Konuşarak Öğren ana sayfa"><b aria-hidden="true">ko</b><span class="brand-copy">Konuşarak Öğren <small>Mutfakta İngilizce</small></span></a>
-      <nav aria-label="Temsilci sayfalar">
-        <a href="#/makarna">Makarna</a>
-        <a href="#/baklava">Baklava</a>
-        <a href="#/smoothie">Smoothie</a>
+    
+    <!-- KONUŞARAK ÖĞREN BLOG HEADER (Tam Blog Standartları) -->
+    <header class="site-header" id="masthead">
+      <div class="header-top">
+        <div class="header-inner">
+          <div class="site-branding">
+            <a href="https://www.konusarakogren.com/" title="Online İngilizce Konuşma Kursu" id="logo">
+              <img src="https://www.konusarakogren.com/wp-content/uploads/2024/04/logo2024-1024x252.png" alt="Konuşarak Öğren Logo" width="220" height="54" />
+            </a>
+          </div>
+          <div class="header-search">
+            <form role="search" method="get" class="search-form" action="https://www.konusarakogren.com/blog/">
+              <input type="search" id="search-field" class="search-field" placeholder="Search &hellip;" name="s" />
+              <button type="submit" class="search-submit" aria-label="Search">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <nav id="site-navigation" class="main-navigation" aria-label="Ana Menü">
+        <div class="nav-wrap">
+          <ul id="primary-menu" class="menu">
+            <li class="menu-item"><a href="https://www.konusarakogren.com/">Online İngilizce Konuşma Kursu</a></li>
+            <li class="menu-item current-menu-item"><a href="https://www.konusarakogren.com/blog/">İngilizce Öğrenme Blogu</a></li>
+            <li class="menu-item has-dropdown">
+              <a href="https://www.konusarakogren.com/blog/kategori/ingilizce-kaynaklar/">İngilizce Kaynaklar <span class="arrow">▾</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.konusarakogren.com/blog/kategori/ingilizce-kaynaklar/ingilizce-testler/">İngilizce Testler</a></li>
+                <li><a href="https://www.konusarakogren.com/blog/kategori/ingilizce-dersleri/">İngilizce Dersleri</a></li>
+                <li><a href="https://www.konusarakogren.com/blog/kategori/ingilizce-nasil-yazilir/">İngilizce Nasıl Yazılır?</a></li>
+                <li><a href="https://www.konusarakogren.com/blog/kategori/ingilizce-kaynaklar/ingilizce-okuma/">İngilizce Okuma</a></li>
+                <li><a href="https://www.konusarakogren.com/blog/kategori/ingilizce-kaynaklar/ingilizce-dinleme-ve-ingilizce-videolar/">İngilizce Dinleme</a></li>
+                <li><a href="https://www.konusarakogren.com/blog/kategori/sarki-sozleri-ceviri/">İngilizce Şarkı Sözleri</a></li>
+                <li><a href="https://www.konusarakogren.com/blog/kategori/filmlerle-ingilizce/">Filmlerle İngilizce</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="https://ingilizcekurslari.konusarakogren.com/">İngilizce Kursları</a></li>
+            <li class="menu-item"><a href="https://ne-demek.konusarakogren.com/">İngilizce – Türkçe Sözlük</a></li>
+          </ul>
+        </div>
       </nav>
+
+      <!-- SUBHEADER - Tarif Alt Menüsü -->
+      <div class="sub-header">
+        <div class="sub-header-inner">
+          <nav class="sub-header-nav" aria-label="Tarif Seçimi">
+            <a href="#/" class="sub-nav-link" data-slug="">Tüm Tarifler</a>
+            <a href="#/makarna" class="sub-nav-link" data-slug="makarna">Makarna</a>
+            <a href="#/baklava" class="sub-nav-link" data-slug="baklava">Baklava</a>
+            <a href="#/smoothie" class="sub-nav-link" data-slug="smoothie">Smoothie</a>
+          </nav>
+        </div>
+      </div>
     </header>
+
     <main id="content"></main>
-    <footer><p>İngilizceyi mutfakta, adım adım öğrenin.</p></footer>
+
+    <!-- KONUŞARAK ÖĞREN BLOG FOOTER -->
+    <footer id="colophon" class="site-footer">
+      <div class="footer-inner">
+        <h3>KONUŞARAK ÖĞREN</h3>
+        <strong class="footer-tagline">Online İngilizce Kursu | İngilizce Konuşma | İngilizce Öğrenme</strong>
+        <div class="footer-links">
+          <a href="https://www.konusarakogren.com/" title="Online İngilizce Konuşma Kursu">Online İngilizce Konuşma Kursu</a>
+          <span class="sep">|</span>
+          <a href="https://www.konusarakogren.com/ingilizce-ogrenme/" title="İngilizce Öğrenme">İngilizce Öğrenme</a>
+          <span class="sep">|</span>
+          <a href="https://www.konusarakogren.com/ingilizce-konusma/" title="İngilizce Konuşma">İngilizce Konuşma</a>
+          <span class="sep">|</span>
+          <a href="https://www.konusarakogren.com/cocuklar-icin-ingilizce/" title="Çocuklar için İngilizce">Çocuklar için İngilizce</a>
+          <span class="sep">|</span>
+          <a href="https://www.konusarakogren.com/kurumsal-ingilizce-egitimi/" title="Kurumsal İngilizce Eğitimi">Kurumsal İngilizce Eğitimi</a>
+        </div>
+        <div class="site-info">
+          © 2026 Copyright Konuşarak Öğren İngilizce Öğrenme Blogu
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="/src/app.js"></script>
   </body>
 </html>
