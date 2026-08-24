@@ -1,3 +1,13 @@
 node_modules/
 dist/
 .DS_Store
+
+# Yerel Özel Klasörler (GitHub'a YÜKLENMEZ)
+docs/
+tools/
+temp/
+blog-image-generator/
+
+# Yerel Dosya Türleri
+*_dump.txt
+*.docx
