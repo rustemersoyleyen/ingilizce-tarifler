@@ -1,0 +1,1413 @@
+{
+  "page": {
+    "slug": "pizza",
+    "route": "/blog/ingilizce-tarifler/pizza",
+    "h1": "İngilizce Pizza Tarifi (Pizza Yapılışı İngilizce)",
+    "title": "İngilizce Pizza Tarifi (Pizza Yapılışı İngilizce) | Konuşarak Öğren",
+    "metaDescription": "İngilizce pizza tarifi ve yapılışı: Ev yapımı pizza hamuru, margarita, karışık ve tavada pizza tarifleri, çift dilli malzeme listeleri, pişirme adımları ve mutfak fiilleri.",
+    "introEnglish": "Pizza is an Italian dish made of a flattened round dough base topped with tomato sauce, mozzarella cheese, and baked in a hot oven.",
+    "introTurkish": "Pizza; mayalı yuvarlak hamur tabanı üzerine domates sosu ve mozzarella peyniri eklenip yüksek sıcaklıkta fırınlanarak yapılan İtalyan kökenli bir yemektir.",
+    "label": "Akşam Yemeği",
+    "author": "Konuşarak Öğren Editör Ekibi",
+    "publishDate": "6 Eylül 2026",
+    "englishLevel": "A1–A2",
+    "prepTime": "20 dakika",
+    "cookTime": "15 dakika",
+    "totalTime": "35 dakika",
+    "servings": "4 kişilik",
+    "calories": "285 kcal",
+    "heroImage": "/blog/ingilizce-tarifler/images/pizza-hero.webp",
+    "overviewVariationsTable": {
+      "caption": "İngilizce ve Türkçe Pizza Çeşitleri Karşılaştırması",
+      "intro": "Aşağıdaki tabloda 4 temel pizza çeşidinin İngilizce isimlerini, ana malzemelerini ve temel pişirme adımlarını karşılaştırmalı olarak inceleyebilirsiniz. / Explore the four main pizza variations with their English names, key ingredients, and cooking steps in the comparison table below.",
+      "headers": [
+        "English Recipe Name",
+        "Türkçe Adı",
+        "Main Ingredients / Ana Malzemeler",
+        "Main Steps / Temel Adımlar"
+      ],
+      "rows": [
+        [
+          "Homemade Pizza Dough",
+          "Ev Yapımı Pizza Hamuru",
+          "Flour, yeast, warm water, olive oil, salt / Un, maya, ılık su, zeytinyağı, tuz",
+          "Mix, knead, rest, roll out and shape / Karıştırın, yoğurun, dinlendirin, açın ve şekil verin"
+        ],
+        [
+          "Margherita Pizza",
+          "Margarita Pizza",
+          "Pizza dough, tomato sauce, mozzarella, fresh basil / Pizza hamuru, domates sosu, mozzarella, taze fesleğen",
+          "Roll out dough, spread sauce, add cheese, bake and garnish / Hamuru açın, sosu sürün, peynir ekleyin, pişirin ve süsleyin"
+        ],
+        [
+          "Supreme Pizza",
+          "Karışık Pizza",
+          "Dough, tomato sauce, mozzarella, sujuk, mushrooms, olives / Hamur, domates sosu, mozzarella, sucuk, mantar, zeytin",
+          "Roll dough, spread sauce, layer toppings, bake until golden / Hamuru açın, sosu sürün, malzemeleri dizin, altın sarısı olana kadar pişirin"
+        ],
+        [
+          "Pan Pizza",
+          "Tavada Pizza",
+          "Dough, olive oil, tomato sauce, cheese, toppings / Hamur, zeytinyağı, domates sosu, peynir, malzemeler",
+          "Oil skillet, press dough, add toppings, cook on stovetop with lid / Tavayı yağlayın, hamuru yayın, malzemeleri ekleyin, kapaklı pişirin"
+        ]
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "id": "pizza-terimleri-sozlugu",
+      "heading": "Pizza Tarifinin İngilizce Terim Sözlüğü: Temel Kavramlar",
+      "headingLevel": "H2",
+      "keyword": "ingilizce pizza tarifi",
+      "methodology": "Kavramları isimlendir: recipe, ingredient, step, serving + Pizza özel 2 terim; her kavramı 1 cümleyle tanımla ve ilgili tarif başlığına bağla.",
+      "componentType": "vocabulary-table",
+      "introEnglish": "Understanding these six foundational kitchen and pizza terms helps you read and follow English pizza recipes with ease.",
+      "introTurkish": "Bu altı temel mutfak ve pizza terimini bilmek, İngilizce pizza tariflerini rahatça okumanızı ve uygulamanızı sağlar.",
+      "table": {
+        "headers": [
+          "English Term",
+          "Türkçe Karşılığı",
+          "Tanım ve Tarif Bağlantısı"
+        ],
+        "rows": [
+          [
+            "Recipe",
+            "Tarif",
+            "A recipe provides instructions for making homemade pizza."
+          ],
+          [
+            "Ingredient",
+            "Malzeme",
+            "Each ingredient adds flavor to the dough and toppings."
+          ],
+          [
+            "Step",
+            "Adım / Aşama",
+            "Each numbered step explains a single pizza baking action."
+          ],
+          [
+            "Serving",
+            "Porsiyon",
+            "A standard homemade 30 cm pizza provides 4 servings."
+          ],
+          [
+            "Crust",
+            "Pizza Kenarı / Tabanı",
+            "The crust becomes crispy, airy, and golden brown when baked."
+          ],
+          [
+            "Topping",
+            "Üst Malzeme",
+            "Toppings like mozzarella, olives, and mushrooms enrich the pizza."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "dough-topping-crust-pizza-terimleri",
+      "heading": "Dough, Topping, Crust: Pizza Terimleri İngilizce Ne Demek?",
+      "headingLevel": "H3",
+      "keyword": "pizza ingilizce",
+      "methodology": "İlk cümlede pizza kelimesinin İngilizcede aynı yazıldığını 1 cümlede geç ve asıl değeri terimlere ver: dough, topping, crust, slice terimlerini tabloda tanımla.",
+      "componentType": "vocabulary-table",
+      "introEnglish": "The word 'pizza' is spelled and used identically in English and Turkish, while key terms like dough, topping, crust, and slice describe its essential components.",
+      "introTurkish": "Pizza kelimesi İngilizce ve Türkçede aynı şekilde yazılır; hamur (dough), üst malzeme (topping), kenar/kabuk (crust) ve dilim (slice) terimleri ise pizzanın temel bileşenlerini ifade eder.",
+      "table": {
+        "headers": [
+          "Term (Terim)",
+          "Türkçe Karşılığı",
+          "Açıklama"
+        ],
+        "rows": [
+          [
+            "Dough",
+            "Hamur",
+            "The fermented mixture of flour, water, yeast, and olive oil."
+          ],
+          [
+            "Topping",
+            "Üst Malzeme",
+            "Any ingredient placed over the tomato sauce, such as cheese or vegetables."
+          ],
+          [
+            "Crust",
+            "Kenar / Kabuk",
+            "The outer edge and baked base of the pizza."
+          ],
+          [
+            "Slice",
+            "Dilim",
+            "One cut triangular piece of pizza ready for serving."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pizza-pisirme-fiilleri",
+      "heading": "İngilizce Tarif Yazımında Kullanılan Fiiller: Knead, Roll, Spread, Bake",
+      "headingLevel": "H3",
+      "keyword": "pizza tarifi ingilizce",
+      "methodology": "Başlıktaki 4 fiili (Knead, Roll, Spread, Bake) İngilizce-Türkçe tabloda tanımla (Verb, Türkçe Karşılığı, Example Sentence). Her fiil için Pizza tarifinden 1 emir kipi örneği yaz, önce İngilizce sonra Türkçe.",
+      "componentType": "vocabulary-table",
+      "introEnglish": "Four core action verbs guide every stage of English pizza making, from kneading the dough to baking the crust in a hot oven.",
+      "introTurkish": "Dört temel eylem fiili; hamurun yoğrulmasından fırında pişirilmesine kadar İngilizce pizza yapımının her aşamasını yönlendirir.",
+      "table": {
+        "headers": [
+          "Verb (Fiil)",
+          "Türkçe Karşılığı",
+          "Example Sentence (İngilizce / Türkçe)"
+        ],
+        "rows": [
+          [
+            "Knead",
+            "Yoğurmak",
+            "Knead the dough for 10 minutes until smooth. / Hamuru pürüzsüz olana kadar 10 dakika yoğurun."
+          ],
+          [
+            "Roll",
+            "Açmak (Merdaneyle)",
+            "Roll out the dough into a 30 cm circle. / Hamuru 30 cm çapında bir daire şeklinde açın."
+          ],
+          [
+            "Spread",
+            "Sürmek / Yaymak",
+            "Spread 3 tablespoons of tomato sauce evenly over the base. / 3 yemek kaşığı domates sosunu tabana eşit şekilde sürün."
+          ],
+          [
+            "Bake",
+            "Fırında Pişirmek",
+            "Bake the pizza at 220 degrees for 15 minutes. / Pizzayı 220 derecede 15 dakika fırında pişirin."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ingilizce-ev-yapimi-pizza-hamuru-tarifi",
+      "heading": "İngilizce Ev Yapımı Pizza Hamuru Tarifi (Homemade Pizza Dough Recipe)",
+      "headingLevel": "H2",
+      "keyword": "ingilizce pizza hamuru tarifi",
+      "methodology": "İngilizce-Türkçe tanımı ver. Malzemeleri ve adımları aynı şekilde içer. Bir örnek fotoğraf içer.",
+      "componentType": "recipe-chapter",
+      "prepTime": "15 dakika",
+      "cookTime": "15 dakika",
+      "servings": "4 kişilik",
+      "ingredientCount": "5 malzeme",
+      "image": "/blog/ingilizce-tarifler/images/pizza-dough.webp",
+      "imageAlt": "Floured wooden table with freshly kneaded homemade pizza dough, olive oil, and dry yeast",
+      "introEnglish": "Homemade pizza dough is made by combining flour, active dry yeast, warm water, olive oil, and salt, then allowing it to ferment.",
+      "introTurkish": "Ev yapımı pizza hamuru; un, kuru maya, ılık su, zeytinyağı ve tuzun yoğrulup mayalandırılmasıyla hazırlanan çıtır ve kabarık bir hamurdur."
+    },
+    {
+      "id": "ev-yapimi-pizza-hamuru-malzemeleri",
+      "heading": "Ev Yapımı Pizza Hamuru Tarifinin İngilizce Malzemeleri Nelerdir?",
+      "headingLevel": "H3",
+      "keyword": "pizza hamuru malzemeleri ingilizce",
+      "methodology": "List definition + listing with headwords > Türkçe ve İngilizce karşı karşıya ver. Malzemeleri İngilizce-Türkçe tabloda ver (English Ingredient, Türkçe Karşılığı, Quantity). Her malzeme adını başlık kelime (headword) olarak kullan ve 1 cümleyle tanımla.",
+      "componentType": "ingredients-with-cards",
+      "introEnglish": "Five essential pantry staples create the foundation of an authentic, crispy homemade pizza crust.",
+      "introTurkish": "Beş temel kiler malzemesi, otantik ve çıtır ev yapımı pizza hamurunun temelini oluşturur.",
+      "table": {
+        "headers": [
+          "English Ingredient",
+          "Türkçe Karşılığı",
+          "Quantity"
+        ],
+        "rows": [
+          [
+            "All-Purpose Flour",
+            "Çok Amaçlı Un",
+            "3 cups (360 g)"
+          ],
+          [
+            "Active Dry Yeast",
+            "Kuru Maya",
+            "1 packet (7 g)"
+          ],
+          [
+            "Warm Water",
+            "Ilık Su",
+            "1 cup (240 ml)"
+          ],
+          [
+            "Olive Oil",
+            "Zeytinyağı",
+            "2 tablespoons (30 ml)"
+          ],
+          [
+            "Salt",
+            "Tuz",
+            "1 teaspoon (5 g)"
+          ]
+        ]
+      },
+      "cards": [
+        {
+          "icon": "🌾",
+          "name": "All-Purpose Flour",
+          "trName": "Çok Amaçlı Un",
+          "quantity": "3 cups (360 g)",
+          "enDesc": "Flour forms the gluten network that gives the crust its structure and chewiness.",
+          "trDesc": "Un, hamurun yapısını ve elastik çıtırlığını sağlayan glüten ağını kurar."
+        },
+        {
+          "icon": "🧫",
+          "name": "Active Dry Yeast",
+          "trName": "Kuru Maya",
+          "quantity": "1 packet (7 g)",
+          "enDesc": "Yeast ferments sugars to release air bubbles that make the pizza crust rise.",
+          "trDesc": "Maya, şekeri fermente ederek hamurun kabarmasını sağlayan hava kabarcıkları üretir."
+        },
+        {
+          "icon": "💧",
+          "name": "Warm Water",
+          "trName": "Ilık Su",
+          "quantity": "1 cup (240 ml)",
+          "enDesc": "Warm water (around 40°C) activates the yeast without killing the culture.",
+          "trDesc": "Ilık su (yaklaşık 40°C), mayayı canlı tutarak hızlıca aktive eder."
+        },
+        {
+          "icon": "🫒",
+          "name": "Olive Oil",
+          "trName": "Zeytinyağı",
+          "quantity": "2 tablespoons",
+          "enDesc": "Olive oil tenderizes the dough and helps the crust develop a golden blistered color.",
+          "trDesc": "Zeytinyağı hamuru yumuşatır ve pişerken altın rengi çıtır kabuk oluşturur."
+        },
+        {
+          "icon": "🧂",
+          "name": "Salt",
+          "trName": "Tuz",
+          "quantity": "1 teaspoon",
+          "enDesc": "Salt tightens gluten structure and enhances the flavor of the baked dough.",
+          "trDesc": "Tuz, glüten yapısını sıkılaştırır ve pişen hamurun lezzetini belirginleştirir."
+        }
+      ]
+    },
+    {
+      "id": "ev-yapimi-pizza-hamuru-adimlari",
+      "heading": "Ev Yapımı Pizza Hamuru Pişirme Adımları İngilizce Nasıl Yazılır?",
+      "headingLevel": "H3",
+      "keyword": "pizza hamuru yapılışı ingilizce",
+      "methodology": "Türkçe ve İngilizce karşılıklı olarak pişirme adımlarını yaz. Adımları numaralı listede İngilizce emir kipiyle yaz, her adımın altına Türkçe açıklamasını ekle. Adımları first, then, after that ve finally zarflarıyla bağla; süre ve ölçüleri rakamla ver.",
+      "componentType": "compact-steps-block",
+      "introEnglish": "Follow these five straightforward steps using sequence adverbs to make professional pizza dough at home.",
+      "introTurkish": "Evde profesyonel pizza hamuru hazırlamak için sıra zarfları içeren bu 5 kolay adımı takip edin.",
+      "steps": [
+        {
+          "num": "1. adım",
+          "enText": "First, dissolve 1 packet of dry yeast in 1 cup of warm water and rest for 5 minutes.",
+          "trText": "Önce 1 paket kuru mayayı 1 su bardağı ılık suda eritin ve 5 dakika dinlendirin."
+        },
+        {
+          "num": "2. adım",
+          "enText": "Then, combine 3 cups of flour, 1 teaspoon of salt, 2 tablespoons of olive oil, and the yeast mixture in a bowl.",
+          "trText": "Ardından bir kapta 3 su bardağı un, 1 çay kaşığı tuz, 2 yemek kaşığı zeytinyağı ve maya karışımını birleştirin."
+        },
+        {
+          "num": "3. adım",
+          "enText": "Next, knead the dough on a lightly floured surface for 10 minutes until elastic and smooth.",
+          "trText": "Sonra hamuru hafif unlanmış tezgahta elastik ve pürüzsüz olana kadar 10 dakika yoğurun."
+        },
+        {
+          "num": "4. adım",
+          "enText": "After that, cover the bowl with a clean towel and let the dough rise in a warm spot for 1 hour.",
+          "trText": "Ondan sonra kabın üzerini temiz bir bezle örtün ve hamuru ılık bir yerde 1 saat mayalanmaya bırakın."
+        },
+        {
+          "num": "5. adım",
+          "enText": "Finally, punch down the dough and roll it out into a 30 cm round pizza base.",
+          "trText": "Son olarak hamurun havasını indirin ve 30 cm çapında yuvarlak bir pizza tabanı olarak açın."
+        }
+      ]
+    },
+    {
+      "id": "ingilizce-margarita-pizza-tarifi",
+      "heading": "İngilizce Margarita Pizza Tarifi (Margherita Pizza Recipe)",
+      "headingLevel": "H2",
+      "keyword": "ingilizce margarita pizza tarifi",
+      "methodology": "İlk cümlede başlıktaki tarifin tanımını İngilizce ve Türkçe olarak birlikte ver. Malzemeleri ve adımları İngilizce-Türkçe karşılıklı olarak içer; malzemelerde Quantity sütunu kullan. 1 örnek fotoğraf ekle ve alt metnini (alt text) İngilizce yaz.",
+      "componentType": "recipe-chapter",
+      "prepTime": "10 dakika",
+      "cookTime": "12 dakika",
+      "servings": "2-3 kişilik",
+      "ingredientCount": "4 malzeme",
+      "image": "/blog/ingilizce-tarifler/images/pizza-margherita.webp",
+      "imageAlt": "Wood-fired traditional Italian Margherita pizza with melted buffalo mozzarella medallions and fresh green basil",
+      "introEnglish": "Margherita pizza is the classic Neapolitan pizza topped with simple crushed tomato sauce, fresh mozzarella cheese, and aromatic green basil leaves.",
+      "introTurkish": "Margarita pizza; ezilmiş sade domates sosu, taze mozzarella peyniri ve aromatik fesleğen yapraklarıyla hazırlanan klasik bir Napoli pizzasıdır."
+    },
+    {
+      "id": "margarita-pizza-malzemeleri",
+      "heading": "Margarita Pizza Tarifinin İngilizce Malzemeleri Nelerdir?",
+      "headingLevel": "H3",
+      "keyword": "margarita pizza malzemeleri ingilizce",
+      "methodology": "List definition + listing with headwords > Türkçe ve İngilizce karşı karşıya ver. Malzemeleri İngilizce-Türkçe tabloda ver (English Ingredient, Türkçe Karşılığı, Quantity). Her malzeme adını başlık kelime (headword) olarak kullan ve 1 cümleyle tanımla.",
+      "componentType": "ingredients-with-cards",
+      "introEnglish": "Fresh and high-quality ingredients represent the colors of the Italian flag on a traditional Margherita pizza.",
+      "introTurkish": "Taze ve yüksek kaliteli malzemeler, geleneksel bir Margarita pizza üzerinde İtalyan bayrağının renklerini temsil eder.",
+      "table": {
+        "headers": [
+          "English Ingredient",
+          "Türkçe Karşılığı",
+          "Quantity"
+        ],
+        "rows": [
+          [
+            "Pizza Dough",
+            "Pizza Hamuru",
+            "1 ball (300 g)"
+          ],
+          [
+            "Tomato Sauce",
+            "Domates Sosu",
+            "1/2 cup (120 ml)"
+          ],
+          [
+            "Fresh Mozzarella",
+            "Taze Mozzarella Peyniri",
+            "200 g (sliced)"
+          ],
+          [
+            "Fresh Basil Leaves",
+            "Taze Fesleğen Yaprakları",
+            "6-8 whole leaves"
+          ]
+        ]
+      },
+      "cards": [
+        {
+          "icon": "🫓",
+          "name": "Pizza Dough",
+          "trName": "Pizza Hamuru",
+          "quantity": "1 ball (300 g)",
+          "enDesc": "Freshly fermented dough rolled into a thin Neapolitan-style round base.",
+          "trDesc": "İnce Napoli usulü yuvarlak taban şeklinde açılmış taze mayalı hamur."
+        },
+        {
+          "icon": "🍅",
+          "name": "Tomato Sauce",
+          "trName": "Domates Sosu",
+          "quantity": "1/2 cup (120 ml)",
+          "enDesc": "Crushed San Marzano tomatoes seasoned with a pinch of salt and olive oil.",
+          "trDesc": "Bir tutam tuz ve zeytinyağı ile tatlandırılmış ezilmiş domates sosu."
+        },
+        {
+          "icon": "🧀",
+          "name": "Fresh Mozzarella",
+          "trName": "Taze Mozzarella",
+          "quantity": "200 g",
+          "enDesc": "Creamy mozzarella sliced into medallions that melt into savory white pools.",
+          "trDesc": "Fırında eriyerek lezzetli beyaz adacıklar oluşturan dilimlenmiş mozzarella."
+        },
+        {
+          "icon": "🌿",
+          "name": "Fresh Basil Leaves",
+          "trName": "Taze Fesleğen",
+          "quantity": "6-8 leaves",
+          "enDesc": "Aromatic green leaves placed on top right before or after baking for peak aroma.",
+          "trDesc": "En taze koku ve lezzet için fırınlama öncesi veya sonrası eklenen fesleğen."
+        }
+      ]
+    },
+    {
+      "id": "margarita-pizza-adimlari",
+      "heading": "Margarita Pizza Pişirme Adımları İngilizce Nasıl Yazılır?",
+      "headingLevel": "H3",
+      "keyword": "margarita pizza yapılışı ingilizce",
+      "methodology": "Türkçe ve İngilizce karşılıklı olarak pişirme adımlarını yaz. Adımları numaralı listede İngilizce emir kipiyle yaz, her adımın altına Türkçe açıklamasını ekle. Adımları first, then, after that ve finally zarflarıyla bağla; süre ve ölçüleri rakamla ver.",
+      "componentType": "compact-steps-block",
+      "introEnglish": "Baking an authentic Margherita pizza takes just four easy steps when cooked at high heat.",
+      "introTurkish": "Otantik bir Margarita pizza pişirmek, yüksek ısıda uygulanan 4 kolay adımda tamamlanır.",
+      "steps": [
+        {
+          "num": "1. adım",
+          "enText": "First, preheat your oven to 240 degrees for at least 20 minutes.",
+          "trText": "Önce fırınınızı en az 20 dakika boyunca 240 dereceye ısıtın."
+        },
+        {
+          "num": "2. adım",
+          "enText": "Then, spread 1/2 cup of tomato sauce evenly over the stretched dough circle.",
+          "trText": "Ardından açılmış yuvarlak hamurun üzerine 1/2 su bardağı domates sosunu eşitçe yayın."
+        },
+        {
+          "num": "3. adım",
+          "enText": "Next, arrange 200 g of sliced fresh mozzarella across the sauce.",
+          "trText": "Sonra sosun üzerine 200 g dilimlenmiş taze mozzarellayı yerleştirin."
+        },
+        {
+          "num": "4. adım",
+          "enText": "Finally, bake for 12 minutes, garnish with fresh basil leaves, and serve hot.",
+          "trText": "Son olarak 12 dakika pişirin, taze fesleğen yapraklarıyla süsleyin ve sıcak servis edin."
+        }
+      ]
+    },
+    {
+      "id": "ingilizce-karisik-pizza-tarifi",
+      "heading": "İngilizce Karışık Pizza Tarifi (Supreme Pizza Recipe)",
+      "headingLevel": "H2",
+      "keyword": "ingilizce karışık pizza tarifi",
+      "methodology": "İlk cümlede başlıktaki tarifin tanımını İngilizce ve Türkçe olarak birlikte ver. Malzemeleri ve adımları İngilizce-Türkçe karşılıklı olarak içer; malzemelerde Quantity sütunu kullan. 1 örnek fotoğraf ekle ve alt metnini (alt text) İngilizce yaz.",
+      "componentType": "recipe-chapter",
+      "prepTime": "15 dakika",
+      "cookTime": "15 dakika",
+      "servings": "4 kişilik",
+      "ingredientCount": "6 malzeme",
+      "image": "/blog/ingilizce-tarifler/images/pizza-supreme.webp",
+      "imageAlt": "Supreme pizza topped with spicy Turkish sujuk, mushrooms, green peppers, black olives, and melted mozzarella",
+      "introEnglish": "Supreme pizza is a loaded pizza variation topped with tomato sauce, mozzarella, spicy Turkish sujuk, sliced button mushrooms, green peppers, and black olives.",
+      "introTurkish": "Karışık pizza; domates sosu ve mozzarella üzerine dilimlenmiş sucuk, mantar, yeşil biber ve siyah zeytin eklenerek hazırlanan doyurucu bir pizza çeşididir."
+    },
+    {
+      "id": "karisik-pizza-malzemeleri",
+      "heading": "Karışık Pizza Tarifinin İngilizce Malzemeleri Nelerdir?",
+      "headingLevel": "H3",
+      "keyword": "karışık pizza malzemeleri ingilizce",
+      "methodology": "List definition + listing with headwords > Türkçe ve İngilizce karşı karşıya ver. Malzemeleri İngilizce-Türkçe tabloda ver (English Ingredient, Türkçe Karşılığı, Quantity). Her malzeme adını başlık kelime (headword) olarak kullan ve 1 cümleyle tanımla.",
+      "componentType": "ingredients-with-cards",
+      "introEnglish": "A balance of savory meats and fresh vegetables creates the signature rich taste of supreme pizza.",
+      "introTurkish": "Et ve sebzelerin dengeli uyumu, karışık pizzanın kendine has zengin lezzetini oluşturur.",
+      "table": {
+        "headers": [
+          "English Ingredient",
+          "Türkçe Karşılığı",
+          "Quantity"
+        ],
+        "rows": [
+          [
+            "Pizza Dough",
+            "Pizza Hamuru",
+            "1 large ball (350 g)"
+          ],
+          [
+            "Tomato Sauce",
+            "Domates Sosu",
+            "1/2 cup (120 ml)"
+          ],
+          [
+            "Shredded Mozzarella",
+            "Rendelenmiş Mozzarella",
+            "2 cups (200 g)"
+          ],
+          [
+            "Sliced Turkish Sujuk",
+            "Dilimlenmiş Sucuk",
+            "100 g"
+          ],
+          [
+            "Button Mushrooms",
+            "Kültür Mantarı",
+            "1 cup (sliced)"
+          ],
+          [
+            "Black Olives & Peppers",
+            "Siyah Zeytin ve Biber",
+            "1/2 cup (sliced)"
+          ]
+        ]
+      },
+      "cards": [
+        {
+          "icon": "🫓",
+          "name": "Pizza Dough",
+          "trName": "Pizza Hamuru",
+          "quantity": "350 g",
+          "enDesc": "Sturdy dough base capable of holding generous layers of savory toppings.",
+          "trDesc": "Bol malzemeyi taşıyabilecek kıvamda açılmış dayanıklı pizza hamuru tabanı."
+        },
+        {
+          "icon": "🧀",
+          "name": "Shredded Mozzarella",
+          "trName": "Rendelenmiş Mozzarella",
+          "quantity": "2 cups (200 g)",
+          "enDesc": "Grated cheese that melts evenly and binds the vegetable and meat toppings.",
+          "trDesc": "Eşit şekilde eriyerek sebze ve sucuk dilimlerini hamura bağlayan rendelenmiş peynir."
+        },
+        {
+          "icon": "🥩",
+          "name": "Sliced Turkish Sujuk",
+          "trName": "Dilimlenmiş Sucuk",
+          "quantity": "100 g",
+          "enDesc": "Spicy cured beef sausage that crisps at the edges and releases flavorful oil.",
+          "trDesc": "Piştikçe kenarları kıvrılan ve nefis baharatlı yağını bırakan Türk sucuğu."
+        },
+        {
+          "icon": "🍄",
+          "name": "Button Mushrooms",
+          "trName": "Kültür Mantarı",
+          "quantity": "1 cup",
+          "enDesc": "Freshly sliced mushrooms that absorb the savory juices and pizza sauce.",
+          "trDesc": "Sosun ve peynirin lezzetini içine çeken taze dilimlenmiş mantarlar."
+        }
+      ]
+    },
+    {
+      "id": "karisik-pizza-adimlari",
+      "heading": "Karışık Pizza Pişirme Adımları İngilizce Nasıl Yazılır?",
+      "headingLevel": "H3",
+      "keyword": "karışık pizza yapılışı ingilizce",
+      "methodology": "Türkçe ve İngilizce karşılıklı olarak pişirme adımlarını yaz. Adımları numaralı listede İngilizce emir kipiyle yaz, her adımın altına Türkçe açıklamasını ekle. Adımları first, then, after that ve finally zarflarıyla bağla; süre ve ölçüleri rakamla ver.",
+      "componentType": "compact-steps-block",
+      "introEnglish": "Follow these steps to layer toppings without making the dough soggy during baking.",
+      "introTurkish": "Hamurun yumuşayıp sönmesini önlemek ve malzemeleri dengeli pişirmek için şu adımları izleyin.",
+      "steps": [
+        {
+          "num": "1. adım",
+          "enText": "First, roll out the dough onto a round pizza baking pan.",
+          "trText": "Önce hamuru yuvarlak bir pizza tepsisine yerleştirilecek şekilde açın."
+        },
+        {
+          "num": "2. adım",
+          "enText": "Then, spread 1/2 cup of tomato sauce and sprinkle 1 cup of shredded mozzarella.",
+          "trText": "Ardından 1/2 su bardağı domates sosunu yayın ve 1 su bardağı rendelenmiş mozzarella serpin."
+        },
+        {
+          "num": "3. adım",
+          "enText": "Next, distribute sliced sujuk, mushrooms, peppers, and olives evenly over the cheese.",
+          "trText": "Sonra dilimlenmiş sucuk, mantar, biber ve zeytinleri peynirin üzerine eşitçe dağıtın."
+        },
+        {
+          "num": "4. adım",
+          "enText": "After that, top with the remaining 1 cup of mozzarella to lock the toppings in place.",
+          "trText": "Ondan sonra malzemeleri sabitlemek için kalan 1 su bardağı mozzarellayı en üste serpin."
+        },
+        {
+          "num": "5. adım",
+          "enText": "Finally, bake at 220 degrees for 15 minutes until cheese is golden and bubbly.",
+          "trText": "Son olarak peynir altın sarısı kabarcıklar oluşturana kadar 220 derecede 15 dakika pişirin."
+        }
+      ]
+    },
+    {
+      "id": "ingilizce-tavada-pizza-tarifi",
+      "heading": "İngilizce Tavada Pizza Tarifi (Pan Pizza Recipe)",
+      "headingLevel": "H2",
+      "keyword": "tavada pizza ingilizce",
+      "methodology": "İlk cümlede başlıktaki tarifin tanımını İngilizce ve Türkçe olarak birlikte ver. Malzemeleri ve adımları İngilizce-Türkçe karşılıklı olarak içer; malzemelerde Quantity sütunu kullan. 1 örnek fotoğraf ekle ve alt metnini (alt text) İngilizce yaz.",
+      "componentType": "recipe-chapter",
+      "prepTime": "10 dakika",
+      "cookTime": "12 dakika",
+      "servings": "2 kişilik",
+      "ingredientCount": "5 malzeme",
+      "image": "/blog/ingilizce-tarifler/images/pizza-pan.webp",
+      "imageAlt": "Crispy pan pizza cooked on a stovetop cast iron skillet with melted cheese and olives",
+      "introEnglish": "Pan pizza is a quick skillet pizza cooked directly on a stovetop without an oven, producing an ultra-crispy bottom crust.",
+      "introTurkish": "Tavada pizza; fırın gerektirmeden doğrudan ocak üzerinde döküm veya yapışmaz tavada pişirilen, altı ekstra çıtır pratik bir pizza yöntemidir."
+    },
+    {
+      "id": "tavada-pizza-malzemeleri",
+      "heading": "Tavada Pizza Tarifinin İngilizce Malzemeleri Nelerdir?",
+      "headingLevel": "H3",
+      "keyword": "tavada pizza malzemeleri ingilizce",
+      "methodology": "List definition + listing with headwords > Türkçe ve İngilizce karşı karşıya ver. Malzemeleri İngilizce-Türkçe tabloda ver (English Ingredient, Türkçe Karşılığı, Quantity). Her malzeme adını başlık kelime (headword) olarak kullan ve 1 cümleyle tanımla.",
+      "componentType": "ingredients-with-cards",
+      "introEnglish": "Pan pizza requires simple ingredients that cook and melt quickly under a closed skillet lid.",
+      "introTurkish": "Tavada pizza, kapalı tava kapağı altında hızla pişip eriyen pratik malzemeler gerektirir.",
+      "table": {
+        "headers": [
+          "English Ingredient",
+          "Türkçe Karşılığı",
+          "Quantity"
+        ],
+        "rows": [
+          [
+            "Pizza Dough",
+            "Pizza Hamuru",
+            "1 small ball (200 g)"
+          ],
+          [
+            "Olive Oil",
+            "Zeytinyağı",
+            "1 tablespoon (15 ml)"
+          ],
+          [
+            "Tomato Sauce",
+            "Domates Sosu",
+            "3 tablespoons (45 ml)"
+          ],
+          [
+            "Shredded Mozzarella",
+            "Rendelenmiş Kaşar / Mozzarella",
+            "1 cup (100 g)"
+          ],
+          [
+            "Sliced Olives & Sausage",
+            "Zeytin ve Sosis Dilimleri",
+            "1/3 cup"
+          ]
+        ]
+      },
+      "cards": [
+        {
+          "icon": "🍳",
+          "name": "Olive Oil (Pan Coating)",
+          "trName": "Zeytinyağı (Tava Yağlama)",
+          "quantity": "1 tablespoon",
+          "enDesc": "Olive oil coats the pan base to fry the bottom crust into golden crisp perfection.",
+          "trDesc": "Tavanın tabanını kaplayarak pizza altının altın sarısı çıtır kızarmasını sağlar."
+        },
+        {
+          "icon": "🫓",
+          "name": "Pizza Dough",
+          "trName": "Pizza Hamuru",
+          "quantity": "200 g",
+          "enDesc": "Thinned dough that cooks evenly through steam and bottom heat in 10-12 minutes.",
+          "trDesc": "Buhar ve taban ısısıyla 10-12 dakikada içi çiğ kalmadan pişen ince açılmış hamur."
+        },
+        {
+          "icon": "🍅",
+          "name": "Tomato Sauce",
+          "trName": "Domates Sosu",
+          "quantity": "3 tablespoons",
+          "enDesc": "Concentrated tomato sauce seasoned with dried oregano and garlic powder.",
+          "trDesc": "Kekik ve sarımsak tozuyla lezzetlendirilmiş kıvamlı pizza sosu."
+        },
+        {
+          "icon": "🧀",
+          "name": "Shredded Mozzarella",
+          "trName": "Rendelenmiş Mozzarella",
+          "quantity": "1 cup",
+          "enDesc": "Easily meltable cheese that turns gooey beneath a tight skillet lid.",
+          "trDesc": "Kapak kapatıldığında biriken buharla hızlıca eriyen rendelenmiş peynir."
+        }
+      ]
+    },
+    {
+      "id": "tavada-pizza-adimlari",
+      "heading": "Tavada Pizza Pişirme Adımları İngilizce Nasıl Yazılır?",
+      "headingLevel": "H3",
+      "keyword": "tavada pizza yapılışı ingilizce",
+      "methodology": "Türkçe ve İngilizce karşılıklı olarak pişirme adımlarını yaz. Adımları numaralı listede İngilizce emir kipiyle yaz, her adımın altına Türkçe açıklamasını ekle. Adımları first, then, after that ve finally zarflarıyla bağla; süre ve ölçüleri rakamla ver.",
+      "componentType": "compact-steps-block",
+      "introEnglish": "Making crispy stovetop pizza takes just four easy steps with a heavy non-stick skillet.",
+      "introTurkish": "Kalın tabanlı yapışmaz bir tava ile çıtır tavada pizza yapmak yalnızca 4 basit adım sürer.",
+      "steps": [
+        {
+          "num": "1. adım",
+          "enText": "First, heat 1 tablespoon of olive oil in a non-stick skillet over medium-low heat.",
+          "trText": "Önce yapışmaz bir tavada 1 yemek kaşığı zeytinyağını orta-kısık ateşte ısıtın."
+        },
+        {
+          "num": "2. adım",
+          "enText": "Then, press the dough firmly into the pan and cook for 3 minutes until the bottom begins to brown.",
+          "trText": "Ardından hamuru tavaya bastırarak yayın ve altı hafifçe kızarana kadar 3 dakika pişirin."
+        },
+        {
+          "num": "3. adım",
+          "enText": "Next, flip the dough, spread 3 tablespoons of sauce, and add cheese and toppings.",
+          "trText": "Sonra hamuru ters çevirin, 3 yemek kaşığı sosu sürün, peynir ve malzemeleri ekleyin."
+        },
+        {
+          "num": "4. adım",
+          "enText": "Finally, cover with a tight lid and cook on low heat for 8 minutes until cheese melts completely.",
+          "trText": "Son olarak kapağı sıkıca kapatın ve peynir tamamen eriyene kadar kısık ateşte 8 dakika pişirin."
+        }
+      ]
+    },
+    {
+      "id": "homemade-pizza-adim-adim-nasil-yapilir",
+      "heading": "Homemade Pizza İngilizce Adım Adım Nasıl Yapılır? (How Do You Make Homemade Pizza Step by Step?)",
+      "headingLevel": "H2",
+      "keyword": "homemade pizza recipe",
+      "methodology": "Instructional heading list. Aşağıdaki 7 numaralı adım başlığını sırasıyla ve emir kipiyle kullan. Her adımda 1 İngilizce talimat cümlesi ve 1 Türkçe karşılığı ver.",
+      "componentType": "step-by-step-guide",
+      "introEnglish": "Mastering the complete homemade pizza process requires seven numbered steps, each using base-form imperative verbs.",
+      "introTurkish": "Evde mükemmel pizza yapımını kavramak, fiilin yalın halini kullanan 7 numaralı talimat adımından geçer.",
+      "steps": [
+        {
+          "id": "step-1",
+          "title": "1. Dissolve the Yeast in Warm Water (Mayayı Ilık Suda Eritin)",
+          "enText": "Dissolve 1 packet of active dry yeast and 1 teaspoon of sugar in 1 cup of warm water.",
+          "trText": "1 paket kuru mayayı ve 1 çay kaşığı şekeri 1 su bardağı ılık suda karıştırarak eritin."
+        },
+        {
+          "id": "step-2",
+          "title": "2. Knead the Pizza Dough for 10 Minutes (Pizza Hamurunu 10 Dakika Yoğurun)",
+          "enText": "Knead the flour, salt, olive oil, and yeast mixture vigorously on a clean counter for 10 minutes.",
+          "trText": "Un, tuz, zeytinyağı ve maya karışımını temiz bir tezgahta 10 dakika boyunca kuvvetlice yoğurun."
+        },
+        {
+          "id": "step-3",
+          "title": "3. Let the Dough Rise for 1 Hour (Hamuru 1 Saat Mayalandırın)",
+          "enText": "Place the dough ball into an oiled bowl, cover with a towel, and let it rise for 1 hour until doubled.",
+          "trText": "Hamur bezesini yağlanmış bir kaba koyun, üzerini bezle örtün ve iki katına çıkana kadar 1 saat mayalandırın."
+        },
+        {
+          "id": "step-4",
+          "title": "4. Roll Out the Dough into a Circle (Hamuru Daire Şeklinde Açın)",
+          "enText": "Roll out the risen dough on a lightly floured surface into a 30 cm round base.",
+          "trText": "Mayalanmış hamuru hafif unlu tezgahta 30 cm genişliğinde yuvarlak bir taban şeklinde açın."
+        },
+        {
+          "id": "step-5",
+          "title": "5. Spread the Tomato Sauce on the Base (Domates Sosunu Tabana Sürün)",
+          "enText": "Spread 3 tablespoons of seasoned tomato sauce evenly across the dough, leaving 1 cm around the edges.",
+          "trText": "Kenarlarda 1 cm boşluk bırakarak 3 yemek kaşığı baharatlı domates sosunu tabana eşitçe sürün."
+        },
+        {
+          "id": "step-6",
+          "title": "6. Add the Cheese and Toppings (Peyniri ve Malzemeleri Ekleyin)",
+          "enText": "Add 200 grams of shredded mozzarella and arrange your favorite meat or vegetable toppings on top.",
+          "trText": "200 gram rendelenmiş mozzarella ekleyin ve sevdiğiniz et ya da sebze malzemelerini üzerine dizin."
+        },
+        {
+          "id": "step-7",
+          "title": "7. Bake the Pizza at 220 Degrees for 15 Minutes (Pizzayı 220 Derecede 15 Dakika Pişirin)",
+          "enText": "Bake the pizza in a preheated oven at 220 degrees for 15 minutes until the crust turns golden brown.",
+          "trText": "Pizzayı önceden ısıtılmış fırında tabanı altın sarısı olana kadar 220 derecede 15 dakika pişirin."
+        }
+      ]
+    },
+    {
+      "id": "pizza-malzemeleri-ve-ekipman",
+      "heading": "What Ingredients Do You Need for Homemade Pizza? (Ev Yapımı Pizza İçin Hangi Malzemeler Gerekir?)",
+      "headingLevel": "H2",
+      "keyword": "ev yapımı pizza malzemeleri ingilizce",
+      "methodology": "Malzemeleri İngilizce-Türkçe bir tabloda ver (English Ingredient, Türkçe Karşılığı, Quantity). Her malzemenin İngilizce telaffuzuna yakın okunuşunu tabloya ekleme, sadece yazılışını ver. Tanımı İngilizce ve Türkçe olarak birlikte yaz.",
+      "componentType": "ingredients-table",
+      "introEnglish": "A classic homemade pizza relies on five pantry staples for the crust and three fresh components for toppings.",
+      "introTurkish": "Klasik bir ev yapımı pizza, hamur için 5 kiler malzemesine ve üst kaplama için 3 taze bileşene dayanır.",
+      "table": {
+        "headers": [
+          "English Ingredient",
+          "Türkçe Karşılığı",
+          "Quantity"
+        ],
+        "rows": [
+          [
+            "All-Purpose Flour",
+            "Çok Amaçlı Un",
+            "3 cups (360 g)"
+          ],
+          [
+            "Active Dry Yeast",
+            "Kuru Maya",
+            "1 packet (7 g)"
+          ],
+          [
+            "Warm Water",
+            "Ilık Su",
+            "1 cup (240 ml)"
+          ],
+          [
+            "Olive Oil",
+            "Zeytinyağı",
+            "2 tbsp (30 ml)"
+          ],
+          [
+            "Salt",
+            "Tuz",
+            "1 tsp (5 g)"
+          ],
+          [
+            "Tomato Sauce",
+            "Domates Sosu",
+            "1/2 cup (120 ml)"
+          ],
+          [
+            "Mozzarella Cheese",
+            "Mozzarella Peyniri",
+            "200 g"
+          ],
+          [
+            "Fresh Basil Leaves",
+            "Taze Fesleğen Yaprakları",
+            "6-8 leaves"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pizza-pisirme-ekipmanlari",
+      "heading": "Which Equipment Is Used to Bake Pizza at Home? (Evde Pizza Pişirmek İçin Hangi Ekipmanlar Kullanılır?)",
+      "headingLevel": "H3",
+      "keyword": "pizza ekipmanları ingilizce",
+      "methodology": "Ekipmanları İngilizce-Türkçe bir tabloda ver (English Equipment, Türkçe Karşılığı, Used In Step). Her ekipmanın hangi numaralı adımda kullanıldığını belirt.",
+      "componentType": "equipment-table",
+      "introEnglish": "Using the right kitchen tools makes kneading, rolling, and baking pizza seamless and safe.",
+      "introTurkish": "Doğru mutfak ekipmanlarını kullanmak; hamur yoğurmayı, açmayı ve fırınlamayı çok daha pratik ve güvenli hale getirir.",
+      "table": {
+        "headers": [
+          "English Equipment",
+          "Türkçe Karşılığı",
+          "Used In Step (Kullanıldığı Adım)"
+        ],
+        "rows": [
+          [
+            "Mixing Bowl",
+            "Karıştırma Kabı",
+            "Adım 1, 2, 3 (Maya ve Hamur Hazırlığı)"
+          ],
+          [
+            "Rolling Pin",
+            "Merdane",
+            "Adım 4 (Hamur Açma)"
+          ],
+          [
+            "Pizza Pan / Baking Sheet",
+            "Pizza Tepsisi / Fırın Tepsisi",
+            "Adım 4, 5, 6, 7 (Şekillendirme ve Pişirme)"
+          ],
+          [
+            "Ladle / Spoon",
+            "Kepçe / Kaşık",
+            "Adım 5 (Sos Sürme)"
+          ],
+          [
+            "Pizza Cutter",
+            "Pizza Kesici / Rulet",
+            "Adım 7 (Servis ve Dilimleme)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pizza-kalori-bilgisi",
+      "heading": "How Many Calories Are in a Slice of Pizza? (Bir Dilim Pizza Kaç Kalori?)",
+      "headingLevel": "H2",
+      "keyword": "pizza kaç kalori ingilizce",
+      "methodology": "Kalori bilgisini ilk cümlede İngilizce ve Türkçe olarak birlikte ver. 100 g ve 1 porsiyon için kalori değerlerini İngilizce-Türkçe tabloda göster (Serving, Calories (kcal), Açıklama).",
+      "componentType": "calories-block",
+      "introEnglish": "One regular slice (about 100 g) of homemade cheese pizza contains approximately 265 kcal, while a full 2-slice serving contains around 530 kcal.",
+      "introTurkish": "Ev yapımı peynirli pizzanın 1 standart dilimi (yaklaşık 100 g) yaklaşık 265 kcal, 2 dilimlik bir porsiyonu ise ortalama 530 kcal enerji içerir.",
+      "table": {
+        "headers": [
+          "Serving (Porsiyon)",
+          "Calories (kcal)",
+          "Açıklama / Explanation"
+        ],
+        "rows": [
+          [
+            "100 g (1 Slice)",
+            "265 kcal",
+            "Standard single slice of thin crust cheese pizza / Standart tek dilim ince hamurlu peynirli pizza."
+          ],
+          [
+            "1 Serving (2 Slices - 200 g)",
+            "530 kcal",
+            "Typical single meal portion for an adult / Bir yetişkin için tipik ana öğün porsiyonu."
+          ],
+          [
+            "Whole 30 cm Pizza (8 Slices)",
+            "2120 kcal",
+            "Full family pizza with cheese and tomato sauce / 8 dilimlik peynirli tam boy aile pizzası."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pizza-besin-degerleri",
+      "heading": "What Are the Nutrition Facts of Homemade Pizza? (Ev Yapımı Pizzanın Besin Değerleri Nelerdir?)",
+      "headingLevel": "H3",
+      "keyword": "pizza besin değerleri ingilizce",
+      "methodology": "Protein, carbohydrate, fat, fiber değerlerini İngilizce terimleri ve Türkçe karşılıklarıyla tek tabloda ver (Nutrient, Besin Ögesi, Amount per 100 g).",
+      "componentType": "nutrition-table",
+      "introEnglish": "Here are the essential macronutrients in a 100 g serving of homemade Margherita pizza.",
+      "introTurkish": "İşte 100 gramlık ev yapımı Margarita pizza porsiyonundaki temel makro besin ögeleri.",
+      "table": {
+        "headers": [
+          "Nutrient (İngilizce)",
+          "Besin Ögesi (Türkçe)",
+          "Amount per 100 g"
+        ],
+        "rows": [
+          [
+            "Protein",
+            "Protein",
+            "11 g"
+          ],
+          [
+            "Carbohydrates",
+            "Karbonhidrat",
+            "32 g"
+          ],
+          [
+            "Total Fat",
+            "Toplam Yağ",
+            "10 g"
+          ],
+          [
+            "Dietary Fiber",
+            "Diyet Lifi",
+            "2.5 g"
+          ],
+          [
+            "Calcium",
+            "Kalsiyum",
+            "180 mg"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "thin-crust-vs-deep-dish",
+      "heading": "Thin Crust ile Deep Dish Farkı İngilizce Nasıl Anlatılır?",
+      "headingLevel": "H3",
+      "keyword": "thin crust pizza ne demek",
+      "methodology": "2 hamur stilini kalınlık ve pişirme süresi üzerinden tabloda ayır; süreleri rakamla ver.",
+      "componentType": "comparison-block",
+      "introEnglish": "Thin crust and deep-dish pizza differ primarily in crust thickness, pan type, and baking duration.",
+      "introTurkish": "İnce hamur (thin crust) ve derin tava (deep dish) pizza; hamur kalınlığı, pişirme tavası ve pişme süresi açısından belirgin farklar gösterir.",
+      "table": {
+        "headers": [
+          "Feature (Özellik)",
+          "Thin Crust (İnce Hamur)",
+          "Deep Dish (Kalın / Derin Tava)"
+        ],
+        "rows": [
+          [
+            "Crust Thickness",
+            "3–5 mm (Crispy and thin)",
+            "25–35 mm (Thick, pie-like edges)"
+          ],
+          [
+            "Baking Pan",
+            "Flat pizza stone or perforated tray",
+            "Deep high-walled round iron pan"
+          ],
+          [
+            "Baking Time",
+            "10–12 minutes at 240°C",
+            "25–30 minutes at 200°C"
+          ],
+          [
+            "Origin",
+            "Naples, Italy",
+            "Chicago, United States"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "margherita-pizza-ismi-nereden-gelir",
+      "heading": "Margherita Pizza İsmi Nereden Gelir?",
+      "headingLevel": "H3",
+      "keyword": "margarita pizza hikayesi ingilizce",
+      "methodology": "İsmin kökenini 1 cümlede ver; domates, mozzarella ve fesleğen malzemelerini İngilizce-Türkçe tabloda listele.",
+      "componentType": "story-block",
+      "introEnglish": "Margherita pizza was named in 1889 in honor of Queen Margherita of Savoy, with toppings intentionally representing the red, white, and green of the Italian flag.",
+      "introTurkish": "Margarita pizza, 1889 yılında Savoy Kraliçesi Margherita onuruna adlandırılmış olup üzerindeki malzemeler İtalyan bayrağının kırmızı, beyaz ve yeşil renklerini temsil eder.",
+      "table": {
+        "headers": [
+          "Ingredient (Malzeme)",
+          "Color (Renk)",
+          "Symbolic Meaning (Sembolik Anlam)"
+        ],
+        "rows": [
+          [
+            "Ripe Tomatoes (Sauce)",
+            "Red (Kırmızı)",
+            "Red stripe of the Italian flag"
+          ],
+          [
+            "Fresh Mozzarella Cheese",
+            "White (Beyaz)",
+            "White stripe of the Italian flag"
+          ],
+          [
+            "Fresh Basil Leaves",
+            "Green (Yeşil)",
+            "Green stripe of the Italian flag"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pizza-olcu-birimleri",
+      "heading": "İngilizce Pizza Tariflerinde Kullanılan Ölçü Birimleri Nelerdir?",
+      "headingLevel": "H2",
+      "keyword": "pizza ölçü birimleri ingilizce",
+      "methodology": "İlk cümlede İngilizce Pizza tariflerinde kullanılan ölçü birimlerini say: cup, tablespoon, teaspoon, gram, milliliter. Birimleri İngilizce-Türkçe-Metrik tabloda ver (English Unit, Türkçe Karşılığı, Metric Equivalent). Her birimin Pizza tarifindeki kullanımı için 1 örnek cümle ekle.",
+      "componentType": "units-block",
+      "introEnglish": "English pizza recipes routinely rely on cup, tablespoon, teaspoon, gram, and milliliter to achieve exact dough hydration and sauce consistency.",
+      "introTurkish": "İngilizce pizza tarifleri, hamur nem dengesini ve sos kıvamını kusursuz ayarlamak için düzenli olarak cup, tablespoon, teaspoon, gram ve milliliter birimlerini kullanır.",
+      "table": {
+        "headers": [
+          "English Unit",
+          "Türkçe Karşılığı",
+          "Metric Equivalent",
+          "Example Sentence from Recipe"
+        ],
+        "rows": [
+          [
+            "Cup",
+            "Su Bardağı",
+            "240 ml",
+            "Add 3 cups of flour to the mixing bowl. / Karıştırma kabına 3 su bardağı un ekleyin."
+          ],
+          [
+            "Tablespoon (tbsp)",
+            "Yemek Kaşığı",
+            "15 ml",
+            "Pour 2 tablespoons of olive oil into the dough. / Hamura 2 yemek kaşığı zeytinyağı dökün."
+          ],
+          [
+            "Teaspoon (tsp)",
+            "Çay Kaşığı",
+            "5 ml",
+            "Mix 1 teaspoon of salt with the dry flour. / Kuru una 1 çay kaşığı tuz karıştırın."
+          ],
+          [
+            "Gram (g)",
+            "Gram",
+            "1 g",
+            "Weigh 200 g of mozzarella cheese for the topping. / Üst malzeme için 200 g mozzarella tartın."
+          ],
+          [
+            "Milliliter (ml)",
+            "Mililitre",
+            "1 ml",
+            "Warm 240 ml of water to activate the yeast. / Mayayı aktive etmek için 240 ml suyu ısıtın."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pizza-mutfak-kelimeleri",
+      "heading": "Pizza Tarif Metninde Geçen Temel İngilizce Mutfak Kelimeleri Nelerdir?",
+      "headingLevel": "H3",
+      "keyword": "pizza mutfak kelimeleri ingilizce",
+      "methodology": "List definition + listing with headwords. En az 10 mutfak kelimesini İngilizce-Türkçe tabloda ver (English Term, Türkçe Karşılığı, Example Sentence). Her terimi Pizza tarifindeki kullanım bağlamıyla örneklendir.",
+      "componentType": "vocabulary-table",
+      "introEnglish": "Mastering these 10 kitchen vocabulary words enables you to navigate English baking and pizza guides with confidence.",
+      "introTurkish": "Bu 10 mutfak kelimesini ve kapsamlı İngilizce Mutfak Sözcükleri listesini öğrenmek, İngilizce tüm fırın ve pizza rehberlerini rahatça anlamanızı sağlar.",
+      "table": {
+        "headers": [
+          "English Term",
+          "Türkçe Karşılığı",
+          "Example Sentence (İngilizce / Türkçe)"
+        ],
+        "rows": [
+          [
+            "Preheat",
+            "Önceden ısıtmak",
+            "Preheat the oven to 220°C. / Fırını önceden 220 dereceye ısıtın."
+          ],
+          [
+            "Knead",
+            "Yoğurmak",
+            "Knead the dough vigorously for 10 minutes. / Hamuru 10 dakika boyunca kuvvetlice yoğurun."
+          ],
+          [
+            "Spread",
+            "Sürmek / Yaymak",
+            "Spread the tomato sauce over the pizza base. / Domates sosunu pizza tabanına sürün."
+          ],
+          [
+            "Sprinkle",
+            "Serpiştirmek",
+            "Sprinkle dried oregano over the cheese. / Peynirin üzerine kuru kekik serpiştirin."
+          ],
+          [
+            "Slice",
+            "Dilimlemek",
+            "Slice the baked pizza into 8 even triangles. / Pişen pizzayı 8 eşit üçgene dilimleyin."
+          ],
+          [
+            "Grate",
+            "Rendelemek",
+            "Grate fresh parmesan over the hot pizza. / Sıcak pizzanın üzerine taze parmesan rendeleyin."
+          ],
+          [
+            "Garnish",
+            "Süslemek",
+            "Garnish with fresh basil leaves before serving. / Servis yapmadan önce taze fesleğenle süsleyin."
+          ],
+          [
+            "Dissolve",
+            "Eritmek",
+            "Dissolve the yeast in warm water. / Mayayı ılık suda eritin."
+          ],
+          [
+            "Ferment",
+            "Mayalanmak",
+            "Let the dough ferment in a warm room. / Hamurun ılık bir odada mayalanmasını sağlayın."
+          ],
+          [
+            "Bake",
+            "Fırında pişirmek",
+            "Bake the pizza until crust turns golden brown. / Pizzayı kenarları altın sarısı olana kadar fırınlayın."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "tablespoon-teaspoon-cup-karsiliklari",
+      "heading": "Tablespoon, Teaspoon, Cup: İngilizce Ölçü Birimlerinin Türkçe Karşılıkları",
+      "headingLevel": "H3",
+      "keyword": "tablespoon teaspoon cup ne demek",
+      "methodology": "İlk cümlede tablespoon, teaspoon ve cup birimlerini tanımla ve Türkçe karşılıklarını (yemek kaşığı, çay kaşığı, su bardağı) ver. 3 birimi İngilizce-Türkçe-Metrik tabloda göster (English Unit, Türkçe Karşılığı, Metric Equivalent): 1 tablespoon = 15 ml, 1 teaspoon = 5 ml, 1 cup = 240 ml. Her birim için Pizza tarifinden 1 örnek cümle yaz, önce İngilizce sonra Türkçe.",
+      "componentType": "units-block",
+      "introEnglish": "Tablespoon (yemek kaşığı), teaspoon (çay kaşığı), and cup (su bardağı) are the three standard volume units used in English baking recipes.",
+      "introTurkish": "Tablespoon (yemek kaşığı), teaspoon (çay kaşığı) ve cup (su bardağı); İngilizce fırın tariflerinde kullanılan 3 standart hacim ölçü birimidir. Detaylı dönüşümler için İngilizce Ölçü Birimleri rehberimizden de faydalanabilirsiniz.",
+      "table": {
+        "headers": [
+          "English Unit",
+          "Türkçe Karşılığı",
+          "Metric Equivalent",
+          "Example Sentence (İngilizce / Türkçe)"
+        ],
+        "rows": [
+          [
+            "1 Tablespoon (tbsp)",
+            "1 Yemek Kaşığı",
+            "15 ml",
+            "Use 2 tablespoons of olive oil for the dough. / Hamur için 2 yemek kaşığı zeytinyağı kullanın."
+          ],
+          [
+            "1 Teaspoon (tsp)",
+            "1 Çay Kaşığı",
+            "5 ml",
+            "Add 1 teaspoon of fine salt to the flour. / Una 1 çay kaşığı ince tuz ekleyin."
+          ],
+          [
+            "1 Cup",
+            "1 Su Bardağı",
+            "240 ml",
+            "Measure 3 cups of all-purpose flour. / 3 su bardağı çok amaçlı un ölçün."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "gram-ve-litre-kullanimi",
+      "heading": "Gram ve Litre İngilizce Tariflerde Nasıl Kullanılır?",
+      "headingLevel": "H3",
+      "keyword": "gram ve litre ingilizce",
+      "methodology": "İlk cümlede gram ve litre birimlerinin İngilizce tariflerde nasıl kısaltıldığını tanımla (g, ml, l). Metrik ve emperyal karşılıkları tek tabloda ver (Metric Unit, Imperial Equivalent, Türkçe Açıklama): 100 g = 3.5 oz, 1 l = 4.2 cups. Pizza tarifinden gram ve litre içeren 2 örnek cümleyi İngilizce-Türkçe karşılıklı yaz.",
+      "componentType": "units-block",
+      "introEnglish": "Metric units are universally abbreviated as g (gram), ml (milliliter), and l (liter) in English recipe texts.",
+      "introTurkish": "Metrik ölçü birimleri İngilizce tarif metinlerinde evrensel olarak g (gram), ml (mililitre) ve l (litre) şeklinde kısaltılır.",
+      "table": {
+        "headers": [
+          "Metric Unit",
+          "Imperial Equivalent",
+          "Türkçe Açıklama"
+        ],
+        "rows": [
+          [
+            "100 g",
+            "3.5 oz (ounces)",
+            "100 gram yaklaşık 3.5 ons ağırlığa karşılık gelir."
+          ],
+          [
+            "1 l (1000 ml)",
+            "4.2 cups / 33.8 fl oz",
+            "1 litre sıvı yaklaşık 4.2 standart su bardağına eşittir."
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "Weigh exactly 200 g of mozzarella cheese for even melting across the pizza.",
+          "tr": "Pizzanın üzerinde eşit erimesi için tam 200 gram mozzarella peyniri tartın."
+        },
+        {
+          "en": "Mix 0.24 l (240 ml) of warm water with the yeast to form the dough.",
+          "tr": "Hamuru oluşturmak için 0.24 litre (240 ml) ılık suyu mayayla karıştırın."
+        }
+      ]
+    },
+    {
+      "id": "ingilizce-pizza-tarifi-dil-kurallari",
+      "heading": "İngilizce Pizza Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları",
+      "headingLevel": "H2",
+      "keyword": "ingilizce yemek tarifi dil kuralları",
+      "methodology": "İlk cümlede İngilizce tarif yazımının 4 temel dil kuralını say: emir kipi, sıra zarfları, sayılabilir-sayılamayan isimler, ölçü ifadeleri. Her kuralı 1 cümleyle tanımla ve Pizza tarifinden 1 örnekle destekle. Bölümü İngilizce-Türkçe örnek tablosuyla kapat (Rule, English Example, Türkçe Karşılığı).",
+      "componentType": "grammar-overview",
+      "introEnglish": "English recipe writing relies on four core grammatical conventions: the imperative mood, sequence adverbs, countable and uncountable nouns, and precise measurement expressions.",
+      "introTurkish": "İngilizce tarif yazımı dört temel dil kuralına dayanır: emir kipi, sıra zarfları, sayılabilir ve sayılamayan isimler ile ölçü ifadeleri.",
+      "table": {
+        "headers": [
+          "Rule (Kural)",
+          "English Example",
+          "Türkçe Karşılığı"
+        ],
+        "rows": [
+          [
+            "Imperative Mood (Emir Kipi)",
+            "Knead the dough for 10 minutes.",
+            "Hamuru 10 dakika yoğurun."
+          ],
+          [
+            "Sequence Adverbs (Sıra Zarfları)",
+            "First, activate the yeast in warm water.",
+            "İlk olarak mayayı ılık suda aktive edin."
+          ],
+          [
+            "Countable / Uncountable (İsimler)",
+            "Add 2 mushrooms (countable) and some flour (uncountable).",
+            "2 mantar (sayılabilir) ve biraz un (sayılamayan) ekleyin."
+          ],
+          [
+            "Measurement Expressions (Ölçü)",
+            "Pour 2 tablespoons of olive oil over the base.",
+            "Tabana 2 yemek kaşığı zeytinyağı dökün."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pizza-emir-kipi",
+      "heading": "İngilizce Pizza Tarif Metinlerinde Emir Kipi (Imperative) Nasıl Kullanılır?",
+      "headingLevel": "H3",
+      "keyword": "imperative mood yemek tarifleri",
+      "methodology": "İlk cümlede emir kipini (imperative mood) tanımla: fiilin yalın haliyle başlayan ve özne içermeyen talimat cümlesi. Pizza tarifinden 5 emir kipi cümlesini İngilizce-Türkçe tabloda ver (English Imperative, Türkçe Karşılığı, Verb). Olumsuz emir kipi için 'Do not overcook' gibi 1 örnek ekle ve Türkçesini yaz.",
+      "componentType": "grammar-imperative",
+      "introEnglish": "The imperative mood uses the base form of the verb without a grammatical subject to give clear, direct cooking instructions.",
+      "introTurkish": "Emir kipi (imperative mood); özne kullanmadan fiilin yalın haliyle başlayan ve doğrudan mutfak talimatı veren cümle yapısıdır.",
+      "table": {
+        "headers": [
+          "English Imperative",
+          "Türkçe Karşılığı",
+          "Verb (Fiil)"
+        ],
+        "rows": [
+          [
+            "Knead the dough until smooth.",
+            "Hamuru pürüzsüz olana kadar yoğurun.",
+            "Knead (Yoğurmak)"
+          ],
+          [
+            "Roll out the crust to 30 cm.",
+            "Kenar tabanını 30 cm boyutunda açın.",
+            "Roll out (Açmak)"
+          ],
+          [
+            "Spread the tomato sauce evenly.",
+            "Domates sosunu eşit şekilde sürün.",
+            "Spread (Sürmek)"
+          ],
+          [
+            "Sprinkle the mozzarella on top.",
+            "Mozzarellayı en üste serpiştirin.",
+            "Sprinkle (Serpmek)"
+          ],
+          [
+            "Bake at 220 degrees for 15 minutes.",
+            "220 derecede 15 dakika pişirin.",
+            "Bake (Fırınlamak)"
+          ]
+        ]
+      },
+      "negativeImperative": {
+        "en": "Do not overload the pizza with wet toppings, or the crust will become soggy.",
+        "tr": "Pizzayı aşırı ıslak malzemeyle doldurmayın, aksi takdirde hamur tabanı yumuşayıp söner."
+      }
+    },
+    {
+      "id": "baglaclar-ve-sira-zarflari",
+      "heading": "Bağlaçlar ve Sıra Zarfları: First, Then, After That, Finally",
+      "headingLevel": "H3",
+      "keyword": "first then after that finally",
+      "methodology": "İlk cümlede first, then, after that, next ve finally zarflarının tarif adımlarını sıralamak için kullanıldığını tanımla. 5 sıra zarfını İngilizce-Türkçe tabloda ver (Sequence Adverb, Türkçe Karşılığı, Example Sentence). Pizza tarifini bu zarflarla bağlanmış 5 cümlelik kısa bir paragraf olarak yaz ve altına Türkçe çevirisini ekle.",
+      "componentType": "grammar-sequence",
+      "introEnglish": "Sequence adverbs—first, then, next, after that, and finally—order recipe steps chronologically so home bakers can easily follow the workflow.",
+      "introTurkish": "First, Then, After gibi sıra zarfları; tarif adımlarını kronolojik sıraya koyarak evde pizza yapanların süreci kolayca takip etmesini sağlar.",
+      "table": {
+        "headers": [
+          "Sequence Adverb",
+          "Türkçe Karşılığı",
+          "Example Sentence (İngilizce / Türkçe)"
+        ],
+        "rows": [
+          [
+            "First",
+            "İlk olarak / Önce",
+            "First, activate the yeast in warm water. / Önce mayayı ılık suda aktive edin."
+          ],
+          [
+            "Then",
+            "Ardından / Sonra",
+            "Then, knead the dough for 10 minutes. / Ardından hamuru 10 dakika yoğurun."
+          ],
+          [
+            "Next",
+            "Sonrasında",
+            "Next, let the dough rise for 1 hour. / Sonrasında hamuru 1 saat mayalanmaya bırakın."
+          ],
+          [
+            "After that",
+            "Ondan sonra",
+            "After that, spread the tomato sauce and cheese. / Ondan sonra domates sosunu ve peyniri sürün."
+          ],
+          [
+            "Finally",
+            "Son olarak",
+            "Finally, bake the pizza at 220°C for 15 minutes. / Son olarak pizzayı 220 derecede 15 dakika pişirin."
+          ]
+        ]
+      },
+      "sequenceParagraph": {
+        "en": "First, activate 1 packet of yeast in warm water. Then, combine with flour and knead the dough for 10 minutes. Next, allow the dough ball to rise for 1 hour until doubled in size. After that, roll out the crust and spread your favorite sauce and cheese toppings. Finally, bake the pizza at 220°C for 15 minutes until crispy and bubbly.",
+        "tr": "İlk olarak 1 paket mayayı ılık suda aktive edin. Ardından unla birleştirip hamuru 10 dakika yoğurun. Sonrasında hamur bezesini 1 saat boyunca iki katına çıkana kadar mayalandırın. Ondan sonra tabanı açıp sevdiğiniz sos ve peynir malzemelerini yayın. Son olarak pizzayı çıtır ve kabarcıklı olana kadar 220 derecede 15 dakika fırınlayın."
+      }
+    },
+    {
+      "id": "8-sinif-ingilizce-pizza-tarifi",
+      "heading": "8. Sınıf İngilizce Pizza Tarifi",
+      "headingLevel": "H2",
+      "keyword": "8. sınıf ingilizce pizza tarifi",
+      "methodology": "İngilizce konular bağlamındaki içeriğe göre ilgili tarifi aktar. 4 soruluk alıştırma ekle: 2 çoktan seçmeli + 2 boşluk doldurma; soruları bu sekmenin 4 fiilinden türet ve cevap anahtarını bölüm sonunda ver.",
+      "componentType": "exercise-block",
+      "introEnglish": "Test your cooking vocabulary and recipe comprehension with these four exam-style practice questions aligned with 8th grade English cooking curriculum.",
+      "introTurkish": "MEB müfredatına uygun 8. Sınıf İngilizce Konuları ('Cooking' ünitesi) bağlamında hazırlanan bu 4 soruluk alıştırma ile İngilizce pizza fiillerini ve talimatlarını anlama seviyenizi test edin.",
+      "exercises": [
+        {
+          "num": 1,
+          "type": "multiple-choice",
+          "question": "Which verb means to press and stretch the pizza dough with your hands?",
+          "questionTr": "Hangi fiil pizza hamurunu ellerinizle bastırıp esneterek yoğurmak anlamına gelir?",
+          "options": [
+            "A) Knead",
+            "B) Boil",
+            "C) Chop",
+            "D) Peel"
+          ],
+          "answer": "A) Knead",
+          "explanation": "'Knead' yoğurmak demektir. 'Boil' kaynatmak, 'Chop' doğramak, 'Peel' soymak anlamına gelir."
+        },
+        {
+          "num": 2,
+          "type": "multiple-choice",
+          "question": "Which verb describes cooking the pizza in a high-temperature oven?",
+          "questionTr": "Pizzayı yüksek sıcaklıktaki fırında pişirmeyi hangi fiil ifade eder?",
+          "options": [
+            "A) Fry",
+            "B) Bake",
+            "C) Steam",
+            "D) Whisk"
+          ],
+          "answer": "B) Bake",
+          "explanation": "'Bake' fırında pişirmek anlamına gelir. 'Fry' kızartmak, 'Steam' buharda pişirmek, 'Whisk' çırpmaktır."
+        },
+        {
+          "num": 3,
+          "type": "fill-in-the-blank",
+          "question": "“_____ 3 tablespoons of tomato sauce evenly across the rolled pizza base.”",
+          "questionTr": "“Açılmış pizza tabanının üzerine 3 yemek kaşığı domates sosunu eşitçe _____.”",
+          "options": [
+            "Spread",
+            "Pour",
+            "Chop"
+          ],
+          "answer": "Spread",
+          "explanation": "'Spread' sürmek / yaymak anlamına gelir; sosu tabana yayarken bu fiil kullanılır."
+        },
+        {
+          "num": 4,
+          "type": "fill-in-the-blank",
+          "question": "“_____ out the dough with a rolling pin into a 30 cm circle.”",
+          "questionTr": "“Merdaneyle hamuru 30 cm çapında bir daire şeklinde _____.”",
+          "options": [
+            "Roll",
+            "Bake",
+            "Knead"
+          ],
+          "answer": "Roll",
+          "explanation": "'Roll out' hamur açmak demektir; merdane veya oklava ile açma eylemini ifade eder."
+        }
+      ]
+    }
+  ]
+}

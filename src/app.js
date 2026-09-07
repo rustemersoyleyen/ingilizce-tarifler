@@ -1,4 +1,6 @@
 import "./styles.css";
+import menemenData from "./data/menemen.json";
+import pizzaData from "./data/pizza.json";
 
 const sharedVocab = [
   ["boil", "kaynatmak", "Boil the water before adding the ingredients."],
@@ -138,10 +140,30 @@ const recipes = {
     equipment: [["Non-stick pan", "Tava", "Adım 3, 4, 5"], ["Mixing bowl", "Kase", "Adım 1, 2"], ["Whisk / Fork", "Çırpıcı veya çatal", "Adım 2"], ["Spatula", "Spatula", "Adım 5"]],
     vocab: [["crack", "kırmak", "Crack 2 eggs into a bowl."], ["beat", "çırpmak", "Beat the eggs for 30 seconds."], ["heat", "ısıtmak", "Heat 1 tbsp of butter."], ["pour", "dökmek", "Pour the mixture into the pan."], ["fold", "katlamak", "Fold the omelette in half."], ["whisk", "telle çırpmak", "Whisk to add air for a fluffy texture."], ["fluffy", "kabarık / yumuşak", "Whisk the eggs for a fluffy omelette."]],
   },
+  menemen: {
+    label: "Kahvaltı",
+    title: "İngilizce Menemen Tarifi",
+    englishTitle: "Classic Menemen Recipe",
+    image: "/blog/ingilizce-tarifler/images/menemen-hero.webp",
+    introEn: menemenData.page.introEnglish,
+    introTr: menemenData.page.introTurkish,
+    time: "20 dakika", serves: "2 kişilik", level: "A1–A2", calories: "220 kcal",
+    ingredients: [["Eggs", "Yumurta", "2 large"], ["Tomatoes", "Domates", "2 ripe"], ["Green Peppers", "Yeşil Biber", "2 fresh"], ["Olive Oil", "Zeytinyağı", "2 tbsp"]],
+    steps: [
+      ["1. Chop the Green Peppers and Tomatoes", "Chop 2 green peppers into thin rings and dice 2 ripe tomatoes into small cubes.", "2 yeşil biberi ince halkalar halinde doğrayın ve 2 olgun domatesi küçük küpler halinde kesin."],
+      ["2. Saute the Peppers in Olive Oil", "Heat 2 tablespoons of olive oil in a skillet and saute the chopped peppers for 3 minutes.", "Bir tavada 2 yemek kaşığı zeytinyağını ısıtın ve doğranmış biberleri yumuşayana kadar 3 dakika soteleyin."],
+      ["3. Add the Tomatoes and Cook for 10 Minutes", "Add the diced tomatoes to the pan and cook over medium heat for 10 minutes.", "Doğranmış domatesleri tavaya ekleyin ve koyu bir sos kıvamına gelene kadar orta ateşte 10 dakika pişirin."],
+      ["4. Crack the Eggs into the Pan", "Crack 2 fresh eggs directly into the simmering tomato and pepper sauce.", "2 taze yumurtayı doğrudan kaynamakta olan domates ve biber sosunun içine kırın."],
+      ["5. Stir the Eggs Gently on Low Heat", "Stir the egg whites gently on low heat for 2 minutes while leaving the yolks slightly soft.", "Yumurta aklarını kısık ateşte 2 dakika nazikçe karıştırırken sarılarını hafif yumuşak bırakın."],
+      ["6. Season the Menemen and Serve with Bread", "Season with 1 pinch of salt and pepper, remove from heat, and serve immediately with fresh crusty bread.", "1 tutam tuz ve karabiberle baharatlayın, ocaktan alın ve taze çıtır ekmekle hemen servis edin."]
+    ],
+    equipment: [["Copper Pan / Sahan", "Bakır Tava / Sahan", "Adım 2, 3, 4, 5, 6"], ["Chef Knife", "Mutfak Bıçağı", "Adım 1"], ["Cutting Board", "Kesme Tahtası", "Adım 1"], ["Wooden Spoon", "Tahta Kaşık", "Adım 2, 3, 5"]],
+    vocab: [["chop", "doğramak", "Chop the peppers into small rings."], ["dice", "küp küp doğramak", "Dice 2 ripe tomatoes into small cubes."], ["saute", "sotelemek", "Saute the peppers in hot oil."], ["simmer", "kısık ateşte pişirmek", "Simmer the tomatoes for 10 minutes."], ["crack", "kırmak", "Crack 2 eggs into the skillet."], ["stir", "karıştırmak", "Stir gently on low heat."]]
+  },
 };
 
 const root = document.querySelector("#content");
-const table = (headers, rows) => `<table><thead><tr>${headers.map(h => `<th>${h}</th>`).join("")}</tr></thead><tbody>${rows.map(row => `<tr>${row.map(cell => `<td>${cell}</td>`).join("")}</tr>`).join("")}</tr></tbody></table>`;
+const table = (headers, rows, caption = "") => `<div class="table-container"><table>${caption ? `<caption class="table-caption">${caption}</caption>` : ""}<thead><tr>${headers.map(h => `<th scope="col">${h}</th>`).join("")}</tr></thead><tbody>${rows.map(row => `<tr>${row.map(cell => `<td>${cell}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
 
 function setStructuredData(data = null) {
   document.querySelector("#recipe-structured-data")?.remove();
@@ -901,6 +923,699 @@ function renderOmletPage() {
   </article>`;
 }
 
+window.switchGrammarTab = function(panelId, btn) {
+  const container = btn.closest(".grammar-tabs");
+  if (!container) return;
+  container.querySelectorAll(".tab-list button").forEach(b => {
+    b.setAttribute("aria-selected", "false");
+  });
+  btn.setAttribute("aria-selected", "true");
+  container.querySelectorAll(".tab-panel").forEach(p => {
+    p.hidden = true;
+  });
+  const target = document.getElementById(panelId);
+  if (target) target.hidden = false;
+};
+
+
+function renderPizzaPage() {
+  document.title = "İngilizce Pizza Tarifi (Pizza Yapılışı İngilizce) | Konuşarak Öğren";
+  setStructuredData({
+    "@context": "https://schema.org", "@type": "Recipe",
+    name: "İngilizce Pizza Tarifi (Pizza Yapılışı İngilizce)",
+    image: ["/blog/ingilizce-tarifler/images/pizza-hero.webp"],
+    author: { "@type": "Organization", name: "Konuşarak Öğren" },
+    datePublished: "2026-09-06",
+    description: "İngilizce Pizza tarifi; ev yapımı pizza hamuru, margarita, karışık ve tavada pizza çeşitleri, malzemeleri ve 7 pişirme adımı.",
+    prepTime: "PT20M", cookTime: "PT15M", totalTime: "PT35M", recipeYield: "4 porsiyon",
+    recipeCategory: "Akşam Yemeği", recipeCuisine: "İtalyan Mutfağı",
+    nutrition: { "@type": "NutritionInformation", calories: "285 calories" },
+    recipeIngredient: ["3 cups all-purpose flour", "1 packet active dry yeast", "1 cup warm water", "2 tbsp olive oil", "1 tsp salt", "1/2 cup tomato sauce", "200 g mozzarella cheese", "Fresh basil leaves"],
+    recipeInstructions: [
+      { "@type": "HowToStep", position: 1, name: "1. Dissolve the Yeast in Warm Water", text: "Dissolve 1 packet of active dry yeast and 1 teaspoon of sugar in 1 cup of warm water." },
+      { "@type": "HowToStep", position: 2, name: "2. Knead the Pizza Dough for 10 Minutes", text: "Knead the flour, salt, olive oil, and yeast mixture vigorously on a clean counter for 10 minutes." },
+      { "@type": "HowToStep", position: 3, name: "3. Let the Dough Rise for 1 Hour", text: "Place the dough ball into an oiled bowl, cover with a towel, and let it rise for 1 hour until doubled." },
+      { "@type": "HowToStep", position: 4, name: "4. Roll Out the Dough into a Circle", text: "Roll out the risen dough on a lightly floured surface into a 30 cm round base." },
+      { "@type": "HowToStep", position: 5, name: "5. Spread the Tomato Sauce on the Base", text: "Spread 3 tablespoons of seasoned tomato sauce evenly across the dough, leaving 1 cm around the edges." },
+      { "@type": "HowToStep", position: 6, name: "6. Add the Cheese and Toppings", text: "Add 200 grams of shredded mozzarella and arrange your favorite meat or vegetable toppings on top." },
+      { "@type": "HowToStep", position: 7, name: "7. Bake the Pizza at 220 Degrees for 15 Minutes", text: "Bake the pizza in a preheated oven at 220 degrees for 15 minutes until the crust turns golden brown." }
+    ]
+  });
+
+  const pizzaChapters = [
+    {
+      block: pizzaData.contentBlocks.find(b => b.id === "ingilizce-ev-yapimi-pizza-hamuru-tarifi"),
+      ingBlock: pizzaData.contentBlocks.find(b => b.id === "ev-yapimi-pizza-hamuru-malzemeleri"),
+      stepBlock: pizzaData.contentBlocks.find(b => b.id === "ev-yapimi-pizza-hamuru-adimlari"),
+      img: "/blog/ingilizce-tarifler/images/pizza-dough.webp",
+      titleEn: "Homemade Pizza Dough Recipe",
+      titleTr: "Ev Yapımı Pizza Hamuru Tarifi",
+      metaTime: "30 dakika",
+      metaServings: "4 kişilik",
+      metaCount: "5 malzeme"
+    },
+    {
+      block: pizzaData.contentBlocks.find(b => b.id === "ingilizce-margarita-pizza-tarifi"),
+      ingBlock: pizzaData.contentBlocks.find(b => b.id === "margarita-pizza-malzemeleri"),
+      stepBlock: pizzaData.contentBlocks.find(b => b.id === "margarita-pizza-adimlari"),
+      img: "/blog/ingilizce-tarifler/images/pizza-margherita.webp",
+      titleEn: "Margherita Pizza Recipe",
+      titleTr: "Margarita Pizza Tarifi",
+      metaTime: "22 dakika",
+      metaServings: "2-3 kişilik",
+      metaCount: "4 malzeme"
+    },
+    {
+      block: pizzaData.contentBlocks.find(b => b.id === "ingilizce-karisik-pizza-tarifi"),
+      ingBlock: pizzaData.contentBlocks.find(b => b.id === "karisik-pizza-malzemeleri"),
+      stepBlock: pizzaData.contentBlocks.find(b => b.id === "karisik-pizza-adimlari"),
+      img: "/blog/ingilizce-tarifler/images/pizza-supreme.webp",
+      titleEn: "Supreme Pizza Recipe",
+      titleTr: "Karışık Pizza Tarifi",
+      metaTime: "30 dakika",
+      metaServings: "4 kişilik",
+      metaCount: "6 malzeme"
+    },
+    {
+      block: pizzaData.contentBlocks.find(b => b.id === "ingilizce-tavada-pizza-tarifi"),
+      ingBlock: pizzaData.contentBlocks.find(b => b.id === "tavada-pizza-malzemeleri"),
+      stepBlock: pizzaData.contentBlocks.find(b => b.id === "tavada-pizza-adimlari"),
+      img: "/blog/ingilizce-tarifler/images/pizza-pan.webp",
+      titleEn: "Pan Pizza Recipe",
+      titleTr: "Tavada Pizza Tarifi",
+      metaTime: "22 dakika",
+      metaServings: "2 kişilik",
+      metaCount: "5 malzeme"
+    }
+  ];
+
+  const fixedStepBlock = pizzaData.contentBlocks.find(b => b.id === "homemade-pizza-adim-adim-nasil-yapilir");
+  const grammarBlock = pizzaData.contentBlocks.find(b => b.id === "ingilizce-pizza-tarifi-dil-kurallari");
+  const imperativeBlock = pizzaData.contentBlocks.find(b => b.id === "pizza-emir-kipi");
+  const seqBlock = pizzaData.contentBlocks.find(b => b.id === "baglaclar-ve-sira-zarflari");
+  const overviewTbl = pizzaData.page.overviewVariationsTable;
+
+  root.innerHTML = `<article class="pasta-guide">
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">İngilizce yemek tarifleri</p>
+        <h1>İngilizce Pizza Tarifi (Pizza Yapılışı İngilizce)</h1>
+        <aside class="course-banner" aria-label="İngilizce kursu">
+          <div class="course-banner-text">
+            <small class="cta-eyebrow">KONUŞARAK ÖĞREN İNGİLİZCE KURSU</small>
+            <strong class="cta-heading">İngilizceyi tarif ezberleyerek değil, konuşarak öğrenin.</strong>
+          </div>
+          <button class="cta-btn cta-btn-orange" onclick="window.location.href='https://student.konusarakogren.com/auth/register'">Ücretsiz tanışma dersi <span class="arrow">→</span></button>
+        </aside>
+        <p class="lede"><strong>${pizzaData.page.introEnglish}</strong> / ${pizzaData.page.introTurkish}</p>
+        <address class="article-meta" rel="author"><span class="author-mark" aria-hidden="true">KO</span><span><strong>Konuşarak Öğren Editör Ekibi</strong><small>İngilizce seviyesi: A1–A2 · Yayınlanma: <time datetime="2026-09-06">6 Eylül 2026</time></small></span></address>
+      </div>
+      <figure class="hero-visual">
+        <img src="/blog/ingilizce-tarifler/images/pizza-hero.webp" alt="Taze fırınlanmış ev yapımı İtalyan pizzası" loading="eager" fetchpriority="high">
+        <figcaption><strong>Homemade Italian Pizza Recipe</strong><span>Fırından yeni çıkmış çıtır kenarlı otantik ev yapımı pizza.</span></figcaption>
+      </figure>
+      <aside class="hero-card pasta-facts" aria-label="Tarif özeti">
+        <table class="recipe-facts">
+          <caption>Pizza tarifi özeti</caption>
+          <thead><tr><th scope="col">Hazırlık</th><th scope="col">Pişirme</th><th scope="col">Porsiyon</th><th scope="col">Seviye</th></tr></thead>
+          <tbody><tr><td><span class="fact-value" tabindex="0">20 dakika</span></td><td><span class="fact-value" tabindex="0">15 dakika</span></td><td><span class="fact-value" tabindex="0">4 kişilik</span></td><td><span class="fact-value" tabindex="0">A1–A2</span></td></tr></tbody>
+        </table>
+      </aside>
+      <div class="hero-overview-table" id="definition-variations">
+        <p class="eyebrow">Tanım ve Çeşitler Karşılaştırması · Definition &amp; Variations</p>
+        <h2 class="definition-heading">İngilizce Pizza Tarifi Çeşitleri, Malzemeleri ve Adımları</h2>
+        <p class="section-intro"><strong>İngilizce ve Türkçe Pizza Çeşitleri Karşılaştırması</strong>: ${overviewTbl?.intro || ""}</p>
+        ${overviewTbl ? table(overviewTbl.headers, overviewTbl.rows, overviewTbl.caption) : ""}
+      </div>
+    </header>
+
+    <div class="page-grid">
+      <nav class="toc" aria-label="İçindekiler">
+        <a href="/blog/ingilizce-tarifler/pizza#kavramlar" data-scroll-target="kavramlar">Kavramlar</a>
+        <a href="/blog/ingilizce-tarifler/pizza#tarifler" data-scroll-target="tarifler">Tarifler</a>
+        <a href="/blog/ingilizce-tarifler/pizza#sade-pizza" data-scroll-target="sade-pizza">7 Adım</a>
+        <a href="/blog/ingilizce-tarifler/pizza#malzemeler-ve-ekipman" data-scroll-target="malzemeler-ve-ekipman">Malzemeler</a>
+        <a href="/blog/ingilizce-tarifler/pizza#besin-degerleri" data-scroll-target="besin-degerleri">Besin değerleri</a>
+        <a href="/blog/ingilizce-tarifler/pizza#farklar" data-scroll-target="farklar">Farklar &amp; Köken</a>
+        <a href="/blog/ingilizce-tarifler/pizza#olculer" data-scroll-target="olculer">Ölçüler</a>
+        <a href="/blog/ingilizce-tarifler/pizza#dil-kurallari" data-scroll-target="dil-kurallari">Dil kuralları</a>
+        <a href="/blog/ingilizce-tarifler/pizza#alistirma" data-scroll-target="alistirma">Alıştırma</a>
+      </nav>
+
+      <div class="content">
+        <section id="kavramlar">
+          <p class="eyebrow">Temel kavramlar ve adlandırmalar</p>
+          <h2>${pizzaData.contentBlocks[0].heading}</h2>
+          <aside class="app-banner"><div class="app-icon" aria-hidden="true"><img src="ko-logo-papagan.png" alt="Konuşarak Öğren Logo" /></div><div class="app-banner-text"><small class="cta-eyebrow">KONUŞARAK ÖĞREN UYGULAMASI</small><strong class="cta-heading">Her gün 10 dakika konuşma pratiğini cebinize alın.</strong></div><div class="app-actions"><a href="https://apps.apple.com/tr/app/konu%C5%9Farak-%C3%B6%C4%9Fren-i-ngilizce/id1099431274" target="_blank" rel="noopener" class="cta-btn cta-btn-outline">App Store</a><a href="https://play.google.com/store/apps/details?id=com.konusarakogren.m.konusarakogrenmobil&hl=tr" target="_blank" rel="noopener" class="cta-btn cta-btn-blue">Google Play</a></div></aside>
+          
+          <h3 style="margin-top:2rem;">${pizzaData.contentBlocks[1].heading}</h3>
+          <p class="section-intro">${pizzaData.contentBlocks[1].introEnglish} / ${pizzaData.contentBlocks[1].introTurkish}</p>
+          ${table(pizzaData.contentBlocks[1].table.headers, pizzaData.contentBlocks[1].table.rows)}
+
+          <h3 style="margin-top:2.5rem;">${pizzaData.contentBlocks[2].heading}</h3>
+          <p class="section-intro">${pizzaData.contentBlocks[2].introEnglish} / ${pizzaData.contentBlocks[2].introTurkish}</p>
+          ${table(pizzaData.contentBlocks[2].table.headers, pizzaData.contentBlocks[2].table.rows)}
+        </section>
+
+        <div id="tarifler" class="recipe-chapters">
+          <div class="chapter-intro">
+            <p class="eyebrow">4 pizza çeşidi</p>
+            <p class="section-intro">Ev yapımı pizza hamuru, klasik margarita, karışık ve tavada pizza tarifleri İngilizce malzemeleri, görsel kartları ve adım adım pişirme yönergeleriyle aşağıda verilmiştir. Başlıklara tıklayarak detayları açabilirsiniz.</p>
+          </div>
+          ${pizzaChapters.map((c, i) => `
+            <section class="recipe-chapter">
+              <div class="chapter-head">
+                <span class="variant-number">${String(i + 1).padStart(2, "0")}</span>
+                <div>
+                  <h2>${c.block.heading}</h2>
+                  <p><strong>${c.block.introEnglish}</strong> / ${c.block.introTurkish}</p>
+                  <div class="chapter-meta">
+                    <span>${c.metaTime}</span>
+                    <span>${c.metaServings}</span>
+                    <span>${c.metaCount}</span>
+                  </div>
+                </div>
+              </div>
+              <figure><img src="${c.img}" alt="${c.titleEn}" loading="lazy"><figcaption><strong>${c.titleEn}</strong><span>${c.titleTr}</span></figcaption></figure>
+              <div class="chapter-panels">
+                <details class="learning-panel" ${i === 0 ? "open" : ""}><summary><h3>${c.ingBlock.heading}</h3><span>Malzeme kartları &amp; tablosu</span></summary>
+                  <div class="panel-body">
+                    <p class="section-intro">${c.ingBlock.introEnglish} / ${c.ingBlock.introTurkish}</p>
+                    ${table(c.ingBlock.table.headers, c.ingBlock.table.rows)}
+                    <h4 style="margin: 24px 0 12px 0; font-size: 16px; color: var(--ko-dark);">Malzeme Kartları (Ingredient Cards):</h4>
+                    <div class="ingredient-grid">
+                      ${(c.ingBlock.cards || []).map(card => `
+                        <article class="ingredient-card">
+                          <div class="ingredient-card-header">
+                            <div class="ingredient-thumb"><span class="ingredient-icon">${card.icon || "🍕"}</span></div>
+                            <span class="quantity-badge">${card.quantity || ""}</span>
+                          </div>
+                          <h4>${card.name} <small>(${card.trName})</small></h4>
+                          <p class="card-en">${card.enDesc}</p>
+                          <p class="card-tr">${card.trDesc}</p>
+                        </article>
+                      `).join("")}
+                    </div>
+                  </div>
+                </details>
+                <details class="learning-panel"><summary><h3>${c.stepBlock.heading}</h3><span>Adım adım yapılışı göster</span></summary>
+                  <div class="panel-body">
+                    <p class="section-intro">${c.stepBlock.introEnglish} / ${c.stepBlock.introTurkish}</p>
+                    <ol class="compact-steps">
+                      ${c.stepBlock.steps.map(s => `
+                        <li>
+                          <span class="step-num-badge">${s.num}</span>
+                          <div class="step-body">
+                            <p class="en-text"><strong>${s.enText}</strong></p>
+                            <p class="tr-text">${s.trText}</p>
+                          </div>
+                        </li>
+                      `).join("")}
+                    </ol>
+                  </div>
+                </details>
+              </div>
+            </section>
+          `).join("")}
+        </div>
+
+        <section id="sade-pizza">
+          <p class="eyebrow">7 adımda ev yapımı pizza</p>
+          <h2>${fixedStepBlock.heading}</h2>
+          <p class="section-intro">${fixedStepBlock.introEnglish} / ${fixedStepBlock.introTurkish}</p>
+          <div class="step-guide-grid">
+            ${fixedStepBlock.steps.map(s => `
+              <div class="step-guide-card">
+                <h3>${s.title}</h3>
+                <p class="step-guide-en"><strong>${s.enText}</strong></p>
+                <p class="step-guide-tr">${s.trText}</p>
+              </div>
+            `).join("")}
+          </div>
+        </section>
+
+        <section id="malzemeler-ve-ekipman">
+          <p class="eyebrow">Malzeme ve ekipman listesi</p>
+          <h2>${pizzaData.contentBlocks[16].heading}</h2>
+          <p class="section-intro">${pizzaData.contentBlocks[16].introEnglish} / ${pizzaData.contentBlocks[16].introTurkish}</p>
+          ${table(pizzaData.contentBlocks[16].table.headers, pizzaData.contentBlocks[16].table.rows)}
+
+          <h3 style="margin-top:2.5rem;">${pizzaData.contentBlocks[17].heading}</h3>
+          <p class="section-intro">${pizzaData.contentBlocks[17].introEnglish} / ${pizzaData.contentBlocks[17].introTurkish}</p>
+          ${table(pizzaData.contentBlocks[17].table.headers, pizzaData.contentBlocks[17].table.rows)}
+        </section>
+
+        <section id="besin-degerleri">
+          <p class="eyebrow">Kalori ve besin analizi</p>
+          <h2>${pizzaData.contentBlocks[18].heading}</h2>
+          <p class="section-intro">${pizzaData.contentBlocks[18].introEnglish} / ${pizzaData.contentBlocks[18].introTurkish}</p>
+          ${table(pizzaData.contentBlocks[18].table.headers, pizzaData.contentBlocks[18].table.rows)}
+
+          <h3 style="margin-top:2.5rem;">${pizzaData.contentBlocks[19].heading}</h3>
+          <p class="section-intro">${pizzaData.contentBlocks[19].introEnglish} / ${pizzaData.contentBlocks[19].introTurkish}</p>
+          ${table(pizzaData.contentBlocks[19].table.headers, pizzaData.contentBlocks[19].table.rows)}
+        </section>
+
+        <section id="farklar">
+          <p class="eyebrow">Hamur stilleri ve pizza tarihi</p>
+          <h2>${pizzaData.contentBlocks[20].heading}</h2>
+          <p class="section-intro">${pizzaData.contentBlocks[20].introEnglish} / ${pizzaData.contentBlocks[20].introTurkish}</p>
+          ${table(pizzaData.contentBlocks[20].table.headers, pizzaData.contentBlocks[20].table.rows)}
+
+          <h3 style="margin-top:2.5rem;">${pizzaData.contentBlocks[21].heading}</h3>
+          <p class="section-intro">${pizzaData.contentBlocks[21].introEnglish} / ${pizzaData.contentBlocks[21].introTurkish}</p>
+          ${table(pizzaData.contentBlocks[21].table.headers, pizzaData.contentBlocks[21].table.rows)}
+        </section>
+
+        <section id="olculer">
+          <p class="eyebrow">Ölçü birimleri ve kelimeler</p>
+          <h2>${pizzaData.contentBlocks[22].heading}</h2>
+          <p class="section-intro">${pizzaData.contentBlocks[22].introEnglish} / ${pizzaData.contentBlocks[22].introTurkish}</p>
+          ${table(pizzaData.contentBlocks[22].table.headers, pizzaData.contentBlocks[22].table.rows)}
+
+          <h3 style="margin-top:2.5rem;">${pizzaData.contentBlocks[23].heading}</h3>
+          <p class="section-intro">${pizzaData.contentBlocks[23].introEnglish} / ${pizzaData.contentBlocks[23].introTurkish}</p>
+          ${table(pizzaData.contentBlocks[23].table.headers, pizzaData.contentBlocks[23].table.rows)}
+
+          <h3 style="margin-top:2.5rem;">${pizzaData.contentBlocks[24].heading}</h3>
+          <p class="section-intro">${pizzaData.contentBlocks[24].introEnglish} / ${pizzaData.contentBlocks[24].introTurkish}</p>
+          ${table(pizzaData.contentBlocks[24].table.headers, pizzaData.contentBlocks[24].table.rows)}
+
+          <h3 style="margin-top:2.5rem;">${pizzaData.contentBlocks[25].heading}</h3>
+          <p class="section-intro">${pizzaData.contentBlocks[25].introEnglish} / ${pizzaData.contentBlocks[25].introTurkish}</p>
+          ${table(pizzaData.contentBlocks[25].table.headers, pizzaData.contentBlocks[25].table.rows)}
+        </section>
+
+        <section id="dil-kurallari">
+          <p class="eyebrow">İngilizce dil kuralları</p>
+          <h2>${pizzaData.contentBlocks[26].heading}</h2>
+          <p class="section-intro">${pizzaData.contentBlocks[26].introEnglish} / ${pizzaData.contentBlocks[26].introTurkish}</p>
+
+          <div class="grammar-tabs">
+            <div class="tab-list" role="tablist">
+              <button role="tab" id="pizza-tab-overview" aria-selected="true" onclick="window.switchGrammarTab('pizza-panel-overview', this)">
+                <span>01</span> Genel kurallar
+              </button>
+              <button role="tab" id="pizza-tab-imperative" aria-selected="false" onclick="window.switchGrammarTab('pizza-panel-imperative', this)">
+                <span>02</span> Emir kipi
+              </button>
+              <button role="tab" id="pizza-tab-sequence" aria-selected="false" onclick="window.switchGrammarTab('pizza-panel-sequence', this)">
+                <span>03</span> Sıra zarfları
+              </button>
+            </div>
+            <div class="tab-panels">
+              <div class="tab-panel" id="pizza-panel-overview">
+                <p class="section-intro">English recipe writing relies on four core grammatical conventions: / İngilizce tarif yazımı dört temel dil kuralına dayanır:</p>
+                ${table(grammarBlock.table.headers, grammarBlock.table.rows)}
+              </div>
+              <div class="tab-panel" id="pizza-panel-imperative" hidden>
+                <h3 style="margin-top:0.5rem;">${imperativeBlock.heading}</h3>
+                <p class="section-intro">${imperativeBlock.introEnglish} / ${imperativeBlock.introTurkish}</p>
+                ${table(imperativeBlock.table.headers, imperativeBlock.table.rows)}
+                ${imperativeBlock.negativeImperative ? `<aside class="negative-imperative-box"><p>${imperativeBlock.negativeImperative.en}</p><p style="margin-top:6px; color:#c2410c;">${imperativeBlock.negativeImperative.tr}</p></aside>` : ""}
+              </div>
+              <div class="tab-panel" id="pizza-panel-sequence" hidden>
+                <h3 style="margin-top:0.5rem;">${seqBlock.heading}</h3>
+                <p class="section-intro">${seqBlock.introEnglish} / ${seqBlock.introTurkish}</p>
+                ${table(seqBlock.table.headers, seqBlock.table.rows)}
+                ${seqBlock.sequenceParagraph ? `<div class="bilingual-sequence-card"><div class="sequence-en">${seqBlock.sequenceParagraph.en}</div><div class="sequence-tr">${seqBlock.sequenceParagraph.tr}</div></div>` : ""}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="alistirma">
+          <div class="exercise">
+            <p class="eyebrow">8. sınıf İngilizce</p>
+            <h2>${pizzaData.contentBlocks[29].heading}</h2>
+            <p class="section-intro">${pizzaData.contentBlocks[29].introEnglish} / ${pizzaData.contentBlocks[29].introTurkish}</p>
+            <ol style="margin-top:20px; padding-left:20px;">
+              ${pizzaData.contentBlocks[29].exercises.map(ex => `
+                <li style="margin-bottom:24px;">
+                  <p style="font-size:16px; font-weight:700; color:var(--ko-dark); margin:0 0 8px 0;">${ex.num}. ${ex.question}</p>
+                  <p style="color:#64748b; font-size:13px; margin:0 0 8px 0;">${ex.questionTr}</p>
+                  <ul class="quiz-options">
+                    ${ex.options.map(opt => `
+                      <li class="quiz-option ${opt.startsWith(ex.answer.slice(0, 2)) || opt === ex.answer ? 'correct' : ''}" onclick="this.classList.toggle('correct')">
+                        ${opt} ${opt.startsWith(ex.answer.slice(0, 2)) || opt === ex.answer ? '✓' : ''}
+                      </li>
+                    `).join("")}
+                  </ul>
+                </li>
+              `).join("")}
+            </ol>
+            <details class="answer-key">
+              <summary>Cevap Anahtarını Göster</summary>
+              <div class="key-content">
+                <ol style="margin:0; padding-left:20px;">
+                  ${pizzaData.contentBlocks[29].exercises.map(ex => `
+                    <li><strong>${ex.num}. Soru: ${ex.answer}</strong> — ${ex.explanation}</li>
+                  `).join("")}
+                </ol>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        ${getMidPageCTAHTML()}
+        ${getRelatedRecipesHTML("pizza")}
+      </div>
+    </div>
+  </article>`;
+}
+
+function renderMenemenPage() {
+  document.title = "İngilizce Menemen Tarifi (Menemen Yapılışı İngilizce) | Konuşarak Öğren";
+  setStructuredData({
+    "@context": "https://schema.org", "@type": "Recipe",
+    name: "İngilizce Menemen Tarifi (Menemen Yapılışı İngilizce)",
+    image: ["/blog/ingilizce-tarifler/images/menemen-hero.webp"],
+    author: { "@type": "Organization", name: "Konuşarak Öğren" },
+    datePublished: "2026-09-03",
+    description: "İngilizce Menemen tarifi; klasik, soğanlı, peynirli ve sucuklu menemen çeşitleri, malzemeleri ve 6 pişirme adımı.",
+    prepTime: "PT5M", cookTime: "PT15M", totalTime: "PT20M", recipeYield: "2 porsiyon",
+    recipeCategory: "Kahvaltı", recipeCuisine: "Türk Mutfağı",
+    nutrition: { "@type": "NutritionInformation", calories: "220 calories" },
+    recipeIngredient: ["2 eggs", "2 ripe tomatoes", "2 green peppers", "2 tbsp olive oil", "1 pinch salt and pepper"],
+    recipeInstructions: [
+      { "@type": "HowToStep", position: 1, name: "1. Chop the Green Peppers and Tomatoes", text: "Chop 2 green peppers into thin rings and dice 2 ripe tomatoes into small cubes." },
+      { "@type": "HowToStep", position: 2, name: "2. Saute the Peppers in Olive Oil", text: "Heat 2 tablespoons of olive oil in a skillet and saute the chopped peppers for 3 minutes." },
+      { "@type": "HowToStep", position: 3, name: "3. Add the Tomatoes and Cook for 10 Minutes", text: "Add the diced tomatoes to the pan and cook over medium heat for 10 minutes." },
+      { "@type": "HowToStep", position: 4, name: "4. Crack the Eggs into the Pan", text: "Crack 2 fresh eggs directly into the simmering tomato and pepper sauce." },
+      { "@type": "HowToStep", position: 5, name: "5. Stir the Eggs Gently on Low Heat", text: "Stir the egg whites gently on low heat for 2 minutes while leaving the yolks slightly soft." },
+      { "@type": "HowToStep", position: 6, name: "6. Season the Menemen and Serve with Bread", text: "Season with 1 pinch of salt and pepper, remove from heat, and serve immediately with fresh crusty bread." }
+    ]
+  });
+
+  const menemenChapters = menemenData.contentBlocks.filter(b => b.componentType === "recipe-chapter");
+  const fixedStepBlock = menemenData.contentBlocks.find(b => b.id === "classic-menemen-adim-adim-nasil-yapilir");
+  const vocab10Block = menemenData.contentBlocks.find(b => b.id === "menemen-mutfak-kelimeleri");
+  const shakshukaBlock = menemenData.contentBlocks.find(b => b.id === "menemen-vs-shakshuka");
+  const grammarBlock = menemenData.contentBlocks.find(b => b.id === "ingilizce-menemen-tarifi-dil-kurallari");
+  const imperativeBlock = menemenData.contentBlocks.find(b => b.id === "menemen-emir-kipi");
+  const seqBlock = menemenData.contentBlocks.find(b => b.id === "baglaclar-ve-sira-zarflari");
+  const overviewTbl = menemenData.page.overviewVariationsTable;
+
+  root.innerHTML = `<article class="pasta-guide">
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">İngilizce yemek tarifleri</p>
+        <h1>İngilizce Menemen Tarifi (Menemen Yapılışı İngilizce)</h1>
+        <aside class="course-banner" aria-label="İngilizce kursu">
+          <div class="course-banner-text">
+            <small class="cta-eyebrow">KONUŞARAK ÖĞREN İNGİLİZCE KURSU</small>
+            <strong class="cta-heading">İngilizceyi tarif ezberleyerek değil, konuşarak öğrenin.</strong>
+          </div>
+          <button class="cta-btn cta-btn-orange" onclick="window.location.href='https://student.konusarakogren.com/auth/register'">Ücretsiz tanışma dersi <span class="arrow">→</span></button>
+        </aside>
+        <p class="lede"><strong>Menemen is a Turkish egg dish made by cooking tomatoes and green peppers in olive oil, then gently stirring in eggs.</strong> / Menemen; domates ve yeşil biberin zeytinyağında pişirilip yumurtayla nazikçe karıştırılmasıyla hazırlanan bir Türk yumurta yemeğidir.</p>
+        <address class="article-meta" rel="author"><span class="author-mark" aria-hidden="true">KO</span><span><strong>Konuşarak Öğren Editör Ekibi</strong><small>İngilizce seviyesi: A1–A2 · Yayınlanma: <time datetime="2026-09-03">3 Eylül 2026</time></small></span></address>
+      </div>
+      <figure class="hero-visual">
+        <img src="/blog/ingilizce-tarifler/images/menemen-hero.webp" alt="Servis tabağında sıcak klasik Menemen" loading="eager" fetchpriority="high">
+        <figcaption><strong>Classic Menemen Recipe</strong><span>Taze ekmekle tavada sıcak servis edilen Türk Menemeni.</span></figcaption>
+      </figure>
+      <aside class="hero-card pasta-facts" aria-label="Tarif özeti">
+        <table class="recipe-facts">
+          <caption>Menemen tarifi özeti</caption>
+          <thead><tr><th scope="col">Hazırlık</th><th scope="col">Pişirme</th><th scope="col">Porsiyon</th><th scope="col">Seviye</th></tr></thead>
+          <tbody><tr><td><span class="fact-value" tabindex="0">5 dakika</span></td><td><span class="fact-value" tabindex="0">15 dakika</span></td><td><span class="fact-value" tabindex="0">2 kişilik</span></td><td><span class="fact-value" tabindex="0">A1–A2</span></td></tr></tbody>
+        </table>
+      </aside>
+      <div class="hero-overview-table" id="definition-variations">
+        <p class="eyebrow">Tanım ve Çeşitler Karşılaştırması · Definition &amp; Variations</p>
+        <h2 class="definition-heading">İngilizce Menemen Tarifi Çeşitleri, Malzemeleri ve Adımları</h2>
+        <p class="section-intro"><strong>İngilizce ve Türkçe Menemen Çeşitleri Karşılaştırması</strong>: ${overviewTbl?.intro || "Aşağıdaki tabloda 4 temel menemen çeşidinin İngilizce isimlerini, ana malzemelerini ve temel pişirme adımlarını karşılaştırmalı olarak inceleyebilirsiniz."}</p>
+        ${overviewTbl ? table(overviewTbl.headers, overviewTbl.rows, overviewTbl.caption) : ""}
+      </div>
+    </header>
+
+    <div class="page-grid">
+      <nav class="toc" aria-label="İçindekiler">
+        <a href="/blog/ingilizce-tarifler/menemen#kavramlar" data-scroll-target="kavramlar">Kavramlar</a>
+        <a href="/blog/ingilizce-tarifler/menemen#tarifler" data-scroll-target="tarifler">Tarifler</a>
+        <a href="/blog/ingilizce-tarifler/menemen#sade-menemen" data-scroll-target="sade-menemen">Adımlar</a>
+        <a href="/blog/ingilizce-tarifler/menemen#malzemeler-ve-ekipman" data-scroll-target="malzemeler-ve-ekipman">Malzemeler</a>
+        <a href="/blog/ingilizce-tarifler/menemen#besin-degerleri" data-scroll-target="besin-degerleri">Besin değerleri</a>
+        <a href="/blog/ingilizce-tarifler/menemen#karsilastirma" data-scroll-target="karsilastirma">Karşılaştırma</a>
+        <a href="/blog/ingilizce-tarifler/menemen#olculer" data-scroll-target="olculer">Ölçüler</a>
+        <a href="/blog/ingilizce-tarifler/menemen#dil-kurallari" data-scroll-target="dil-kurallari">Dil kuralları</a>
+        <a href="/blog/ingilizce-tarifler/menemen#alistirma" data-scroll-target="alistirma">Alıştırma</a>
+      </nav>
+
+      <div class="content">
+        <section id="kavramlar">
+          <p class="eyebrow">Temel kavramlar ve adlandırmalar</p>
+          <h2>İngilizce Menemen Tarifinde Kullanılan Temel Kavramlar ve Adlandırmalar</h2>
+          <aside class="app-banner"><div class="app-icon" aria-hidden="true"><img src="ko-logo-papagan.png" alt="Konuşarak Öğren Logo" /></div><div class="app-banner-text"><small class="cta-eyebrow">KONUŞARAK ÖĞREN UYGULAMASI</small><strong class="cta-heading">Her gün 10 dakika konuşma pratiğini cebinize alın.</strong></div><div class="app-actions"><a href="https://apps.apple.com/tr/app/konu%C5%9Farak-%C3%B6%C4%9Fren-i-ngilizce/id1099431274" target="_blank" rel="noopener" class="cta-btn cta-btn-outline">App Store</a><a href="https://play.google.com/store/apps/details?id=com.konusarakogren.m.konusarakogrenmobil&hl=tr" target="_blank" rel="noopener" class="cta-btn cta-btn-blue">Google Play</a></div></aside>
+          
+          <h3 style="margin-top:2rem;">Menemen Terimleri ve Anlamları</h3>
+          <p class="section-intro">Six basic terms help readers understand the recipe structure and the cooking technique used for menemen. / Altı temel terim, menemen tarifinin yapısını ve pişirme tekniğini anlamayı kolaylaştırır.</p>
+          ${table(["English Term", "Türkçe Karşılığı", "Tanım ve Tarif Bağlantısı"], menemenData.contentBlocks[1].table.rows)}
+
+          <h3 style="margin-top:2.5rem;">Menemen İngilizce Nasıl Tanıtılır? Turkish-Style Scrambled Eggs Kullanımı</h3>
+          <p class="section-intro">Menemen has no exact one-word English equivalent, so English-language sources usually keep the name menemen and explain it as Turkish-style scrambled eggs with tomatoes and peppers. / Menemenin İngilizcede birebir tek kelimelik bir karşılığı yoktur; bu nedenle İngilizce kaynaklar genellikle menemen adını korur ve yemeği domatesli ve biberli Türk usulü çırpılmış yumurta olarak açıklar.</p>
+          ${table(["Adlandırma (English Term)", "Kaynak Türü", "Açıklama"], menemenData.contentBlocks[2].table.rows)}
+
+          <h3 style="margin-top:2.5rem;">İngilizce Tarif Yazımında Kullanılan Fiiller: Chop, Saute, Stir, Crack</h3>
+          <p class="section-intro">Core action verbs describe how to prepare, cook, and combine the ingredients in an English recipe. / Temel eylem fiilleri, bir İngilizce tarifte malzemelerin nasıl hazırlanacağını, pişirileceğini ve birleştirileceğini açıklar.</p>
+          ${table(["Verb (Fiil)", "Türkçe Karşılığı", "Example Sentence"], menemenData.contentBlocks[3].table.rows)}
+        </section>
+
+        <div id="tarifler" class="recipe-chapters">
+          <div class="chapter-intro">
+            <p class="eyebrow">4 menemen çeşidi</p>
+            <p class="section-intro">Klasik, soğanlı, peynirli ve sucuklu menemen tarifleri İngilizce malzemeleri, görsel kartları ve adım adım pişirme yönergeleriyle aşağıda verilmiştir. Başlıklara tıklayarak panelleri açabilirsiniz.</p>
+          </div>
+          ${menemenChapters.map((v, i) => `<section class="recipe-chapter">
+            <div class="chapter-head">
+              <span class="variant-number">${String(i + 1).padStart(2, "0")}</span>
+              <div>
+                <h2>${v.heading}</h2>
+                <p><strong>${v.definitionEnglish || ""}</strong> / ${v.definitionTurkish || ""}</p>
+                <div class="chapter-meta">
+                  <span>${i === 0 ? "25 dakika" : "28 dakika"}</span>
+                  <span>2 kişilik</span>
+                  <span>${i === 0 ? "7 malzeme" : "8 malzeme"}</span>
+                </div>
+              </div>
+            </div>
+            <figure><img src="${v.image.src}" alt="${v.image.alt}" loading="lazy"><figcaption><strong>${v.englishTitle}</strong><span>${v.turkishTitle}</span></figcaption></figure>
+            <div class="chapter-panels">
+              <details class="learning-panel" ${i === 0 ? "open" : ""}><summary><h3>${v.ingredients.heading}</h3><span>Malzeme kartları & tablosu</span></summary>
+                <div class="panel-body">
+                  <p class="section-intro">This recipe uses ${i === 0 ? 7 : 8} ingredients, and eggs are the main ingredient. / Bu tarifte ${i === 0 ? 7 : 8} malzeme kullanılır ve ana malzeme yumurtadır.</p>
+                  ${table(v.ingredients.headers, v.ingredients.rows)}
+                  <h4 style="margin: 24px 0 12px 0; font-size: 16px; color: var(--ko-dark);">Malzeme Kartları (Ingredient Cards):</h4>
+                  <div class="ingredient-grid">
+                    ${(v.ingredientCards || []).map(c => `
+                      <article class="ingredient-card">
+                        <div class="ingredient-card-header">
+                          <div class="ingredient-thumb"><span class="ingredient-icon">${c.icon || "🍳"}</span></div>
+                          <span class="quantity-badge">${c.quantity || ""}</span>
+                        </div>
+                        <h4>${c.en} <small>(${c.tr})</small></h4>
+                        <p class="card-en">${c.sentenceEn}</p>
+                        <p class="card-tr">${c.sentenceTr}</p>
+                      </article>
+                    `).join("")}
+                  </div>
+                </div>
+              </details>
+              <details class="learning-panel"><summary><h3>${v.instructions.heading}</h3><span>6 adımı göster</span></summary>
+                <div class="panel-body">
+                  <p class="section-intro">This recipe has 6 steps and takes ${i === 0 ? "25 dakika" : "28 dakika"}. / Bu tarif 6 adımdan oluşur ve ${i === 0 ? "25 dakika" : "28 dakika"} sürer.</p>
+                  <ol class="compact-steps">
+                    ${(v.compactSteps || []).map(s => `
+                      <li>
+                        <span class="step-num-badge">${s.number}. adım</span>
+                        <div class="step-body">
+                          <p class="en-text"><strong>${s.en}</strong></p>
+                          <p class="tr-text">${s.tr}</p>
+                        </div>
+                      </li>
+                    `).join("")}
+                  </ol>
+                </div>
+              </details>
+            </div>
+          </section>`).join("")}
+        </div>
+
+        <section id="sade-menemen">
+          <div class="steps-heading">
+            <p class="eyebrow">Sabit 6 adım</p>
+            <h2>Classic Menemen İngilizce Adım Adım Nasıl Yapılır? (How Do You Make Classic Menemen Step by Step?)</h2>
+            <p class="section-intro">Classic menemen is prepared in exactly 6 steps, with the English instruction followed immediately by its Turkish explanation. / Klasik menemen tam olarak 6 adımda hazırlanır; İngilizce talimatın hemen ardından Türkçe açıklama verilir.</p>
+            <div class="steps-meta"><span>6 adım</span><span>15 dakika</span><span>A1–A2 seviye</span></div>
+          </div>
+          <ol class="steps">
+            ${fixedStepBlock.list.items.map(s => `<li><div class="step-copy"><h3>${s.heading}</h3><div class="step-language"><span class="lang-label">English</span><p><strong>${s.english}</strong></p></div><div class="step-language turkish"><span class="lang-label">Türkçe</span><p>${s.turkish}</p></div></div></li>`).join("")}
+          </ol>
+          <p class="section-intro" style="margin-top:20px;">Here is the complete bilingual summary table of all 6 steps for reference. / İşte başvuru için 6 adımın tamamının iki dilli özet tablosu:</p>
+          ${table(["Step", "English Instruction", "Türkçe Açıklama"], fixedStepBlock.list.summaryTable.rows)}
+        </section>
+
+        <section id="malzemeler-ve-ekipman">
+          <p class="eyebrow">Malzemeler ve ekipman</p>
+          <h2>Which Ingredients Make a Traditional Menemen? (Geleneksel Menemeni Hangi Malzemeler Oluşturur?)</h2>
+          <p class="section-intro">Traditional menemen combines eggs with tomatoes and green peppers cooked in olive oil. / Geleneksel menemen, yumurtayı zeytinyağında pişirilmiş domates ve yeşil biberle birleştirir.</p>
+          ${table(["English Ingredient", "Türkçe Karşılığı", "Quantity (Miktar)"], menemenData.contentBlocks[23].table.rows)}
+          
+          <h3 style="margin-top:2.5rem;">What Kind of Pan Is Used for Menemen? (Menemen İçin Nasıl Bir Tava Kullanılır?)</h3>
+          <p class="section-intro">A wide, shallow skillet helps the vegetables cook evenly and makes the eggs easier to stir. / Geniş ve sığ bir tava, sebzelerin eşit pişmesini ve yumurtaların kolayca karıştırılmasını sağlar.</p>
+          ${table(["English Equipment", "Türkçe Karşılığı", "Used In Step"], menemenData.contentBlocks[24].table.rows)}
+        </section>
+
+        <section id="besin-degerleri">
+          <p class="eyebrow">Kalori ve besin değerleri</p>
+          <h2>How Many Calories Is 1 Serving of Menemen? (1 Porsiyon Menemen Kaç Kalori?)</h2>
+          <p class="section-intro">One serving of this classic menemen contains approximately 240 kcal; bu klasik menemenin 1 porsiyonu yaklaşık 240 kcal içerir. Değerler kullanılan yağ miktarına, yumurta boyutuna ve pişmiş verime göre değişebilir.</p>
+          ${table(["Serving", "Calories (kcal)", "Açıklama"], menemenData.contentBlocks[25].table.rows)}
+          
+          <h3 style="margin-top:2.5rem;">What Are the Nutrition Facts of Menemen? (Menemenin Besin Değerleri Nelerdir?)</h3>
+          <p class="section-intro">Key nutrients include high-quality protein from eggs and vitamins from fresh tomatoes and peppers. / Temel besin ögeleri, yumurtadan gelen kaliteli proteini ve taze sebzelerden gelen vitaminleri içerir.</p>
+          ${table(["Nutrient", "Besin Ögesi", "Amount per 100 g"], menemenData.contentBlocks[26].table.rows)}
+        </section>
+
+        <section id="karsilastirma">
+          <p class="eyebrow">Yemek karşılaştırmaları</p>
+          <h2>Menemen vs Shakshuka: İngilizce Farkları Nasıl Açıklanır?</h2>
+          <p class="section-intro">The best-known difference is that menemen usually contains gently stirred eggs, whereas shakshuka usually contains whole eggs poached in tomato sauce. / En bilinen fark, menemende yumurtaların genellikle karıştırılması; shakshukada ise bütün yumurtaların domates sosunda poşe edilmesidir.</p>
+          ${table(["Feature", "Menemen", "Shakshuka"], shakshukaBlock.table.rows)}
+          
+          <h3 style="margin-top:2.5rem;">Menemen Soğanlı mı Soğansız mı? İngilizce Tartışması Nasıl Verilir?</h3>
+          <p class="section-intro">Whether menemen should include onion is a well-known culinary debate in Turkey. / Menemenin soğanlı mı soğansız mı yapılacağı Türkiye'de bilinen bir mutfak tartışmasıdır.</p>
+          <div class="bilingual">
+            <div class="language-card">
+              <small>ENGLISH / TÜRKÇE</small>
+              <p><strong>I prefer menemen with onion for lunch, because onion gives the sauce a richer flavor.</strong></p>
+              <p style="color:#64748b; font-size:14px; margin-top:6px;">Öğle yemeğinde soğanlı menemeni tercih ederim, çünkü soğan sosa daha zengin bir lezzet katar.</p>
+            </div>
+            <div class="language-card">
+              <small>ENGLISH / TÜRKÇE</small>
+              <p><strong>Classic breakfast menemen is traditionally made without onion, focusing on sweet tomatoes and fresh peppers.</strong></p>
+              <p style="color:#64748b; font-size:14px; margin-top:6px;">Klasik kahvaltı menemeni geleneksel olarak soğansız yapılır; tatlı domates ve taze biber lezzetine odaklanır.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="olculer">
+          <p class="eyebrow">Ölçü birimleri ve kelimeler</p>
+          <h2>İngilizce Menemen Tariflerinde Kullanılan Ölçü Birimleri Nelerdir?</h2>
+          <p class="section-intro">English menemen recipes use the units cup, tablespoon, teaspoon, gram and milliliter. / İngilizce menemen tariflerinde cup, tablespoon, teaspoon, gram ve milliliter ölçü birimleri kullanılır.</p>
+          ${table(["English Unit", "Türkçe Karşılığı", "Metric Equivalent"], menemenData.contentBlocks[29].table.rows)}
+          
+          <h3 style="margin-top:2.5rem;">Menemen Tarif Metninde Geçen Temel İngilizce Mutfak Kelimeleri Nelerdir?</h3>
+          <p class="section-intro">These 10 kitchen vocabulary terms appear frequently in Turkish and international egg recipes. / Bu 10 mutfak kelimesi, Türk ve dünya yumurta tariflerinde sıklıkla karşınıza çıkar.</p>
+          ${table(["English Term", "Türkçe Karşılığı", "Example Sentence"], vocab10Block.table.rows)}
+          
+          <h3 style="margin-top:2.5rem;">Tablespoon, Teaspoon, Cup: İngilizce Ölçü Birimlerinin Türkçe Karşılıkları</h3>
+          <p class="section-intro">A tablespoon means yemek kaşığı, a teaspoon means çay kaşığı, and a cup means su bardağı in Turkish recipe terminology. / Tarif terminolojisinde tablespoon yemek kaşığı, teaspoon çay kaşığı ve cup su bardağı anlamına gelir.</p>
+          ${table(["English Unit", "Türkçe Karşılığı", "Metric Equivalent"], menemenData.contentBlocks[31].table.rows)}
+          
+          <h3 style="margin-top:2.5rem;">Gram ve Litre İngilizce Tariflerde Nasıl Kullanılır?</h3>
+          <p class="section-intro">Gram is abbreviated as g, milliliter as ml, and liter as l in English recipes. / İngilizce tariflerde gram g, mililitre ml ve litre l şeklinde kısaltılır.</p>
+          ${table(["Metric Unit", "Imperial Equivalent", "Türkçe Açıklama"], menemenData.contentBlocks[32].table.rows)}
+        </section>
+
+        <section id="dil-kurallari">
+          <p class="eyebrow">İngilizce dil kuralları</p>
+          <h2>İngilizce Menemen Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları</h2>
+          <p class="section-intro">The 4 core language rules of English recipe writing are the imperative mood, sequence adverbs, countable and uncountable nouns, and measurement expressions. / İngilizce tarif yazımının 4 temel dil kuralı emir kipi, sıra zarfları, sayılabilir ve sayılamayan isimler ile ölçü ifadeleridir.</p>
+          
+          <div class="grammar-tabs">
+            <div class="tab-list" role="tablist">
+              <button role="tab" id="menemen-tab-overview" aria-selected="true" onclick="window.switchGrammarTab('menemen-panel-overview', this)">
+                <span>01</span> Genel kurallar
+              </button>
+              <button role="tab" id="menemen-tab-imperative" aria-selected="false" onclick="window.switchGrammarTab('menemen-panel-imperative', this)">
+                <span>02</span> Emir kipi
+              </button>
+              <button role="tab" id="menemen-tab-sequence" aria-selected="false" onclick="window.switchGrammarTab('menemen-panel-sequence', this)">
+                <span>03</span> Sıra zarfları
+              </button>
+            </div>
+            <div class="tab-panels">
+              <div class="tab-panel" id="menemen-panel-overview">
+                <p class="section-intro">Here are the 4 essential rules for writing clear, professional English recipes: / Açık ve profesyonel İngilizce tarifler yazmak için 4 temel kural:</p>
+                ${grammarBlock && grammarBlock.rulesList ? `<ul style="margin: 16px 0 24px 0; padding-left: 24px; line-height: 1.8; color: #334155;">${grammarBlock.rulesList.map(r => `<li>${r}</li>`).join("")}</ul>` : ""}
+                ${table(["Rule", "English Example", "Türkçe Karşılığı"], menemenData.contentBlocks[33].table.rows)}
+              </div>
+              <div class="tab-panel" id="menemen-panel-imperative" hidden>
+                <h3 style="margin-top:0.5rem;">İngilizce Menemen Tarif Metinlerinde Emir Kipi (Imperative) Nasıl Kullanılır?</h3>
+                <p class="section-intro">The imperative mood is an instruction form that begins with the base verb and contains no subject. / Emir kipi, fiilin yalın hâliyle başlayan ve özne içermeyen talimat biçimidir.</p>
+                ${table(["English Imperative", "Türkçe Karşılığı", "Verb"], menemenData.contentBlocks[34].table.rows)}
+                ${imperativeBlock && imperativeBlock.negativeImperative ? `<aside class="negative-imperative-box"><p>${imperativeBlock.negativeImperative.en}</p><p style="margin-top: 6px; color: #7f1d1d;">${imperativeBlock.negativeImperative.tr}</p></aside>` : ""}
+              </div>
+              <div class="tab-panel" id="menemen-panel-sequence" hidden>
+                <h3 style="margin-top:0.5rem;">Bağlaçlar ve Sıra Zarfları: First, Then, After That, Finally</h3>
+                <p class="section-intro">First, then, after that, next and finally are sequence adverbs used to order recipe steps. / First, then, after that, next ve finally tarif adımlarını sıralamak için kullanılan sıra zarflarıdır.</p>
+                ${table(["Sequence Adverb", "Türkçe Karşılığı", "Example Sentence"], menemenData.contentBlocks[35].table.rows)}
+                ${seqBlock && seqBlock.sequenceParagraph ? `<div class="bilingual-sequence-card"><div class="sequence-en">${seqBlock.sequenceParagraph.en}</div><div class="sequence-tr">${seqBlock.sequenceParagraph.tr}</div></div>` : ""}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="alistirma">
+          <div class="exercise">
+            <p class="eyebrow">8. sınıf İngilizce</p>
+            <h2>8. Sınıf İngilizce Menemen Tarifi Alıştırması</h2>
+            <p>Aşağıdaki soruları yanıtlayarak mutfak fiillerini (chop, saute, stir, crack) pekiştirin:</p>
+            
+            <ol style="margin-top: 20px; padding-left: 20px;">
+              <li style="margin-bottom: 24px;">
+                <p style="font-size: 16px; font-weight: 700; color: var(--ko-dark); margin: 0 0 8px 0;">1. Which verb means 'to cut into small pieces' when preparing peppers and tomatoes?</p>
+                <ul class="quiz-options">
+                  <li class="quiz-option" onclick="this.classList.toggle('correct')"><strong>A)</strong> Boil (Kaynatmak)</li>
+                  <li class="quiz-option correct" onclick="this.classList.toggle('correct')"><strong>B)</strong> Chop (Doğramak) ✓</li>
+                  <li class="quiz-option" onclick="this.classList.toggle('correct')"><strong>C)</strong> Bake (Fırında pişirmek)</li>
+                  <li class="quiz-option" onclick="this.classList.toggle('correct')"><strong>D)</strong> Peel (Soymak)</li>
+                </ul>
+              </li>
+              <li style="margin-bottom: 24px;">
+                <p style="font-size: 16px; font-weight: 700; color: var(--ko-dark); margin: 0 0 8px 0;">2. What should you do to the eggs after cracking them into the simmering tomato sauce?</p>
+                <ul class="quiz-options">
+                  <li class="quiz-option correct" onclick="this.classList.toggle('correct')"><strong>A)</strong> Stir gently on low heat ✓</li>
+                  <li class="quiz-option" onclick="this.classList.toggle('correct')"><strong>B)</strong> Freeze immediately</li>
+                  <li class="quiz-option" onclick="this.classList.toggle('correct')"><strong>C)</strong> Drain with water</li>
+                  <li class="quiz-option" onclick="this.classList.toggle('correct')"><strong>D)</strong> Blend in a food processor</li>
+                </ul>
+              </li>
+              <li style="margin-bottom: 20px;">
+                <p style="font-size: 16px; font-weight: 700; color: var(--ko-dark); margin: 0 0 4px 0;">3. “_____ 4 fresh eggs directly into the simmering pan.”</p>
+                <p style="color: #64748b; font-size: 13px; margin: 0;">(Cümleye uygun mutfak fiilini yerleştiriniz)</p>
+              </li>
+              <li style="margin-bottom: 20px;">
+                <p style="font-size: 16px; font-weight: 700; color: var(--ko-dark); margin: 0 0 4px 0;">4. “_____ the sliced green peppers in olive oil for 3 minutes.”</p>
+                <p style="color: #64748b; font-size: 13px; margin: 0;">(Cümleye uygun mutfak fiilini yerleştiriniz)</p>
+              </li>
+            </ol>
+
+            <details class="answer-key">
+              <summary>Cevap Anahtarını Göster</summary>
+              <div class="key-content">
+                <ol style="margin: 0; padding-left: 20px;">
+                  <li><strong>1. Soru: (B) Chop</strong> — 'cut into small pieces' küçük parçalar hâlinde doğramak anlamına gelir.</li>
+                  <li><strong>2. Soru: (A) Stir gently on low heat</strong> — Yumurtalar eklendikten sonra kısık ateşte nazikçe karıştırılır.</li>
+                  <li><strong>3. Soru: Crack</strong> — Yumurtaları tavaya kırmak için 'Crack' fiili kullanılır.</li>
+                  <li><strong>4. Soru: Saute</strong> — Biberleri az yağda hafifçe kavurmak için 'Saute' fiili kullanılır.</li>
+                </ol>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        ${getMidPageCTAHTML()}
+        ${getRelatedRecipesHTML("menemen")}
+      </div>
+    </div>
+  </article>`;
+}
+
 function route() {
   const slug = getSlugFromURL();
   updateSubHeaderActive(slug);
@@ -917,6 +1632,10 @@ function route() {
     renderKekPage();
   } else if (slug === "omlet") {
     renderOmletPage();
+  } else if (slug === "menemen") {
+    renderMenemenPage();
+  } else if (slug === "pizza") {
+    renderPizzaPage();
   } else if (recipes[slug]) {
     renderRecipe(recipes[slug], slug);
   } else {

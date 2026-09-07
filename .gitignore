@@ -11,3 +11,6 @@ blog-image-generator/
 # Yerel Dosya Türleri
 *_dump.txt
 *.docx
+scratch/
+__pycache__/
+*.pyc
