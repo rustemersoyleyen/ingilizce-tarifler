@@ -19,37 +19,37 @@
     "heroImage": "/blog/ingilizce-tarifler/images/pizza-hero.webp",
     "overviewVariationsTable": {
       "caption": "İngilizce ve Türkçe Pizza Çeşitleri Karşılaştırması",
-      "intro": "Aşağıdaki tabloda 4 temel pizza çeşidinin İngilizce isimlerini, ana malzemelerini ve temel pişirme adımlarını karşılaştırmalı olarak inceleyebilirsiniz. / Explore the four main pizza variations with their English names, key ingredients, and cooking steps in the comparison table below.",
+      "intro": "Aşağıdaki tabloda 4 temel pizza çeşidinin İngilizce isimlerini, ana malzemelerini ve temel pişirme adımlarını karşılaştırmalı olarak inceleyebilirsiniz. (Explore the four main pizza variations with their English names, key ingredients, and cooking steps in the comparison table below.)",
       "headers": [
         "English Recipe Name",
         "Türkçe Adı",
-        "Main Ingredients / Ana Malzemeler",
-        "Main Steps / Temel Adımlar"
+        "Main Ingredients (Ana Malzemeler)",
+        "Main Steps (Temel Adımlar)"
       ],
       "rows": [
         [
           "Homemade Pizza Dough",
           "Ev Yapımı Pizza Hamuru",
-          "Flour, yeast, warm water, olive oil, salt / Un, maya, ılık su, zeytinyağı, tuz",
-          "Mix, knead, rest, roll out and shape / Karıştırın, yoğurun, dinlendirin, açın ve şekil verin"
+          "Flour, yeast, warm water, olive oil, salt (Un, maya, ılık su, zeytinyağı, tuz)",
+          "Mix, knead, rest, roll out and shape (Karıştırın, yoğurun, dinlendirin, açın ve şekil verin)"
         ],
         [
           "Margherita Pizza",
           "Margarita Pizza",
-          "Pizza dough, tomato sauce, mozzarella, fresh basil / Pizza hamuru, domates sosu, mozzarella, taze fesleğen",
-          "Roll out dough, spread sauce, add cheese, bake and garnish / Hamuru açın, sosu sürün, peynir ekleyin, pişirin ve süsleyin"
+          "Pizza dough, tomato sauce, mozzarella, fresh basil (Pizza hamuru, domates sosu, mozzarella, taze fesleğen)",
+          "Roll out dough, spread sauce, add cheese, bake and garnish (Hamuru açın, sosu sürün, peynir ekleyin, pişirin ve süsleyin)"
         ],
         [
           "Supreme Pizza",
           "Karışık Pizza",
-          "Dough, tomato sauce, mozzarella, sujuk, mushrooms, olives / Hamur, domates sosu, mozzarella, sucuk, mantar, zeytin",
-          "Roll dough, spread sauce, layer toppings, bake until golden / Hamuru açın, sosu sürün, malzemeleri dizin, altın sarısı olana kadar pişirin"
+          "Dough, tomato sauce, mozzarella, sujuk, mushrooms, olives (Hamur, domates sosu, mozzarella, sucuk, mantar, zeytin)",
+          "Roll dough, spread sauce, layer toppings, bake until golden (Hamuru açın, sosu sürün, malzemeleri dizin, altın sarısı olana kadar pişirin)"
         ],
         [
           "Pan Pizza",
           "Tavada Pizza",
-          "Dough, olive oil, tomato sauce, cheese, toppings / Hamur, zeytinyağı, domates sosu, peynir, malzemeler",
-          "Oil skillet, press dough, add toppings, cook on stovetop with lid / Tavayı yağlayın, hamuru yayın, malzemeleri ekleyin, kapaklı pişirin"
+          "Dough, olive oil, tomato sauce, cheese, toppings (Hamur, zeytinyağı, domates sosu, peynir, malzemeler)",
+          "Oil skillet, press dough, add toppings, cook on stovetop with lid (Tavayı yağlayın, hamuru yayın, malzemeleri ekleyin, kapaklı pişirin)"
         ]
       ]
     }
@@ -83,7 +83,7 @@
           ],
           [
             "Step",
-            "Adım / Aşama",
+            "Adım veya aşama",
             "Each numbered step explains a single pizza baking action."
           ],
           [
@@ -93,7 +93,7 @@
           ],
           [
             "Crust",
-            "Pizza Kenarı / Tabanı",
+            "Pizza kenarı veya tabanı",
             "The crust becomes crispy, airy, and golden brown when baked."
           ],
           [
@@ -112,7 +112,7 @@
       "methodology": "İlk cümlede pizza kelimesinin İngilizcede aynı yazıldığını 1 cümlede geç ve asıl değeri terimlere ver: dough, topping, crust, slice terimlerini tabloda tanımla.",
       "componentType": "vocabulary-table",
       "introEnglish": "The word 'pizza' is spelled and used identically in English and Turkish, while key terms like dough, topping, crust, and slice describe its essential components.",
-      "introTurkish": "Pizza kelimesi İngilizce ve Türkçede aynı şekilde yazılır; hamur (dough), üst malzeme (topping), kenar/kabuk (crust) ve dilim (slice) terimleri ise pizzanın temel bileşenlerini ifade eder.",
+      "introTurkish": "Pizza kelimesi İngilizce ve Türkçede aynı şekilde yazılır; hamur (dough), üst malzeme (topping), kenar veya kabuk (crust) ve dilim (slice) terimleri ise pizzanın temel bileşenlerini ifade eder.",
       "table": {
         "headers": [
           "Term (Terim)",
@@ -132,7 +132,7 @@
           ],
           [
             "Crust",
-            "Kenar / Kabuk",
+            "Kenar veya kabuk",
             "The outer edge and baked base of the pizza."
           ],
           [
@@ -156,28 +156,28 @@
         "headers": [
           "Verb (Fiil)",
           "Türkçe Karşılığı",
-          "Example Sentence (İngilizce / Türkçe)"
+          "Example Sentence (İngilizce - Türkçe)"
         ],
         "rows": [
           [
             "Knead",
             "Yoğurmak",
-            "Knead the dough for 10 minutes until smooth. / Hamuru pürüzsüz olana kadar 10 dakika yoğurun."
+            "Knead the dough for 10 minutes until smooth. (Hamuru pürüzsüz olana kadar 10 dakika yoğurun.)"
           ],
           [
             "Roll",
             "Açmak (Merdaneyle)",
-            "Roll out the dough into a 30 cm circle. / Hamuru 30 cm çapında bir daire şeklinde açın."
+            "Roll out the dough into a 30 cm circle. (Hamuru 30 cm çapında bir daire şeklinde açın.)"
           ],
           [
             "Spread",
-            "Sürmek / Yaymak",
-            "Spread 3 tablespoons of tomato sauce evenly over the base. / 3 yemek kaşığı domates sosunu tabana eşit şekilde sürün."
+            "Sürmek veya yaymak",
+            "Spread 3 tablespoons of tomato sauce evenly over the base. (3 yemek kaşığı domates sosunu tabana eşit şekilde sürün.)"
           ],
           [
             "Bake",
             "Fırında Pişirmek",
-            "Bake the pizza at 220 degrees for 15 minutes. / Pizzayı 220 derecede 15 dakika fırında pişirin."
+            "Bake the pizza at 220 degrees for 15 minutes. (Pizzayı 220 derecede 15 dakika fırında pişirin.)"
           ]
         ]
       }
@@ -627,7 +627,7 @@
           ],
           [
             "Shredded Mozzarella",
-            "Rendelenmiş Kaşar / Mozzarella",
+            "Rendelenmiş kaşar veya mozzarella",
             "1 cup (100 g)"
           ],
           [
@@ -844,18 +844,18 @@
             "Adım 4 (Hamur Açma)"
           ],
           [
-            "Pizza Pan / Baking Sheet",
-            "Pizza Tepsisi / Fırın Tepsisi",
+            "Pizza Pan (Baking Sheet)",
+            "Pizza tepsisi veya fırın tepsisi",
             "Adım 4, 5, 6, 7 (Şekillendirme ve Pişirme)"
           ],
           [
-            "Ladle / Spoon",
-            "Kepçe / Kaşık",
+            "Ladle (Spoon)",
+            "Kepçe veya kaşık",
             "Adım 5 (Sos Sürme)"
           ],
           [
             "Pizza Cutter",
-            "Pizza Kesici / Rulet",
+            "Pizza kesici veya rulet",
             "Adım 7 (Servis ve Dilimleme)"
           ]
         ]
@@ -874,23 +874,23 @@
         "headers": [
           "Serving (Porsiyon)",
           "Calories (kcal)",
-          "Açıklama / Explanation"
+          "Açıklama (Explanation)"
         ],
         "rows": [
           [
             "100 g (1 Slice)",
             "265 kcal",
-            "Standard single slice of thin crust cheese pizza / Standart tek dilim ince hamurlu peynirli pizza."
+            "Standard single slice of thin crust cheese pizza (Standart tek dilim ince hamurlu peynirli pizza.)"
           ],
           [
             "1 Serving (2 Slices - 200 g)",
             "530 kcal",
-            "Typical single meal portion for an adult / Bir yetişkin için tipik ana öğün porsiyonu."
+            "Typical single meal portion for an adult (Bir yetişkin için tipik ana öğün porsiyonu.)"
           ],
           [
             "Whole 30 cm Pizza (8 Slices)",
             "2120 kcal",
-            "Full family pizza with cheese and tomato sauce / 8 dilimlik peynirli tam boy aile pizzası."
+            "Full family pizza with cheese and tomato sauce (8 dilimlik peynirli tam boy aile pizzası.)"
           ]
         ]
       }
@@ -952,7 +952,7 @@
         "headers": [
           "Feature (Özellik)",
           "Thin Crust (İnce Hamur)",
-          "Deep Dish (Kalın / Derin Tava)"
+          "Deep Dish (Kalın veya Derin Tava)"
         ],
         "rows": [
           [
@@ -1033,31 +1033,31 @@
             "Cup",
             "Su Bardağı",
             "240 ml",
-            "Add 3 cups of flour to the mixing bowl. / Karıştırma kabına 3 su bardağı un ekleyin."
+            "Add 3 cups of flour to the mixing bowl. (Karıştırma kabına 3 su bardağı un ekleyin.)"
           ],
           [
             "Tablespoon (tbsp)",
             "Yemek Kaşığı",
             "15 ml",
-            "Pour 2 tablespoons of olive oil into the dough. / Hamura 2 yemek kaşığı zeytinyağı dökün."
+            "Pour 2 tablespoons of olive oil into the dough. (Hamura 2 yemek kaşığı zeytinyağı dökün.)"
           ],
           [
             "Teaspoon (tsp)",
             "Çay Kaşığı",
             "5 ml",
-            "Mix 1 teaspoon of salt with the dry flour. / Kuru una 1 çay kaşığı tuz karıştırın."
+            "Mix 1 teaspoon of salt with the dry flour. (Kuru una 1 çay kaşığı tuz karıştırın.)"
           ],
           [
             "Gram (g)",
             "Gram",
             "1 g",
-            "Weigh 200 g of mozzarella cheese for the topping. / Üst malzeme için 200 g mozzarella tartın."
+            "Weigh 200 g of mozzarella cheese for the topping. (Üst malzeme için 200 g mozzarella tartın.)"
           ],
           [
             "Milliliter (ml)",
             "Mililitre",
             "1 ml",
-            "Warm 240 ml of water to activate the yeast. / Mayayı aktive etmek için 240 ml suyu ısıtın."
+            "Warm 240 ml of water to activate the yeast. (Mayayı aktive etmek için 240 ml suyu ısıtın.)"
           ]
         ]
       }
@@ -1075,58 +1075,58 @@
         "headers": [
           "English Term",
           "Türkçe Karşılığı",
-          "Example Sentence (İngilizce / Türkçe)"
+          "Example Sentence (İngilizce - Türkçe)"
         ],
         "rows": [
           [
             "Preheat",
             "Önceden ısıtmak",
-            "Preheat the oven to 220°C. / Fırını önceden 220 dereceye ısıtın."
+            "Preheat the oven to 220°C. (Fırını önceden 220 dereceye ısıtın.)"
           ],
           [
             "Knead",
             "Yoğurmak",
-            "Knead the dough vigorously for 10 minutes. / Hamuru 10 dakika boyunca kuvvetlice yoğurun."
+            "Knead the dough vigorously for 10 minutes. (Hamuru 10 dakika boyunca kuvvetlice yoğurun.)"
           ],
           [
             "Spread",
-            "Sürmek / Yaymak",
-            "Spread the tomato sauce over the pizza base. / Domates sosunu pizza tabanına sürün."
+            "Sürmek veya yaymak",
+            "Spread the tomato sauce over the pizza base. (Domates sosunu pizza tabanına sürün.)"
           ],
           [
             "Sprinkle",
             "Serpiştirmek",
-            "Sprinkle dried oregano over the cheese. / Peynirin üzerine kuru kekik serpiştirin."
+            "Sprinkle dried oregano over the cheese. (Peynirin üzerine kuru kekik serpiştirin.)"
           ],
           [
             "Slice",
             "Dilimlemek",
-            "Slice the baked pizza into 8 even triangles. / Pişen pizzayı 8 eşit üçgene dilimleyin."
+            "Slice the baked pizza into 8 even triangles. (Pişen pizzayı 8 eşit üçgene dilimleyin.)"
           ],
           [
             "Grate",
             "Rendelemek",
-            "Grate fresh parmesan over the hot pizza. / Sıcak pizzanın üzerine taze parmesan rendeleyin."
+            "Grate fresh parmesan over the hot pizza. (Sıcak pizzanın üzerine taze parmesan rendeleyin.)"
           ],
           [
             "Garnish",
             "Süslemek",
-            "Garnish with fresh basil leaves before serving. / Servis yapmadan önce taze fesleğenle süsleyin."
+            "Garnish with fresh basil leaves before serving. (Servis yapmadan önce taze fesleğenle süsleyin.)"
           ],
           [
             "Dissolve",
             "Eritmek",
-            "Dissolve the yeast in warm water. / Mayayı ılık suda eritin."
+            "Dissolve the yeast in warm water. (Mayayı ılık suda eritin.)"
           ],
           [
             "Ferment",
             "Mayalanmak",
-            "Let the dough ferment in a warm room. / Hamurun ılık bir odada mayalanmasını sağlayın."
+            "Let the dough ferment in a warm room. (Hamurun ılık bir odada mayalanmasını sağlayın.)"
           ],
           [
             "Bake",
             "Fırında pişirmek",
-            "Bake the pizza until crust turns golden brown. / Pizzayı kenarları altın sarısı olana kadar fırınlayın."
+            "Bake the pizza until crust turns golden brown. (Pizzayı kenarları altın sarısı olana kadar fırınlayın.)"
           ]
         ]
       }
@@ -1145,26 +1145,26 @@
           "English Unit",
           "Türkçe Karşılığı",
           "Metric Equivalent",
-          "Example Sentence (İngilizce / Türkçe)"
+          "Example Sentence (İngilizce - Türkçe)"
         ],
         "rows": [
           [
             "1 Tablespoon (tbsp)",
             "1 Yemek Kaşığı",
             "15 ml",
-            "Use 2 tablespoons of olive oil for the dough. / Hamur için 2 yemek kaşığı zeytinyağı kullanın."
+            "Use 2 tablespoons of olive oil for the dough. (Hamur için 2 yemek kaşığı zeytinyağı kullanın.)"
           ],
           [
             "1 Teaspoon (tsp)",
             "1 Çay Kaşığı",
             "5 ml",
-            "Add 1 teaspoon of fine salt to the flour. / Una 1 çay kaşığı ince tuz ekleyin."
+            "Add 1 teaspoon of fine salt to the flour. (Una 1 çay kaşığı ince tuz ekleyin.)"
           ],
           [
             "1 Cup",
             "1 Su Bardağı",
             "240 ml",
-            "Measure 3 cups of all-purpose flour. / 3 su bardağı çok amaçlı un ölçün."
+            "Measure 3 cups of all-purpose flour. (3 su bardağı çok amaçlı un ölçün.)"
           ]
         ]
       }
@@ -1192,7 +1192,7 @@
           ],
           [
             "1 l (1000 ml)",
-            "4.2 cups / 33.8 fl oz",
+            "4.2 cups (33.8 fl oz)",
             "1 litre sıvı yaklaşık 4.2 standart su bardağına eşittir."
           ]
         ]
@@ -1235,7 +1235,7 @@
             "İlk olarak mayayı ılık suda aktive edin."
           ],
           [
-            "Countable / Uncountable (İsimler)",
+            "Countable veya Uncountable (İsimler)",
             "Add 2 mushrooms (countable) and some flour (uncountable).",
             "2 mantar (sayılabilir) ve biraz un (sayılamayan) ekleyin."
           ],
@@ -1308,33 +1308,33 @@
         "headers": [
           "Sequence Adverb",
           "Türkçe Karşılığı",
-          "Example Sentence (İngilizce / Türkçe)"
+          "Example Sentence (İngilizce - Türkçe)"
         ],
         "rows": [
           [
             "First",
-            "İlk olarak / Önce",
-            "First, activate the yeast in warm water. / Önce mayayı ılık suda aktive edin."
+            "İlk olarak veya önce",
+            "First, activate the yeast in warm water. (Önce mayayı ılık suda aktive edin.)"
           ],
           [
             "Then",
-            "Ardından / Sonra",
-            "Then, knead the dough for 10 minutes. / Ardından hamuru 10 dakika yoğurun."
+            "Ardından veya sonra",
+            "Then, knead the dough for 10 minutes. (Ardından hamuru 10 dakika yoğurun.)"
           ],
           [
             "Next",
             "Sonrasında",
-            "Next, let the dough rise for 1 hour. / Sonrasında hamuru 1 saat mayalanmaya bırakın."
+            "Next, let the dough rise for 1 hour. (Sonrasında hamuru 1 saat mayalanmaya bırakın.)"
           ],
           [
             "After that",
             "Ondan sonra",
-            "After that, spread the tomato sauce and cheese. / Ondan sonra domates sosunu ve peyniri sürün."
+            "After that, spread the tomato sauce and cheese. (Ondan sonra domates sosunu ve peyniri sürün.)"
           ],
           [
             "Finally",
             "Son olarak",
-            "Finally, bake the pizza at 220°C for 15 minutes. / Son olarak pizzayı 220 derecede 15 dakika pişirin."
+            "Finally, bake the pizza at 220°C for 15 minutes. (Son olarak pizzayı 220 derecede 15 dakika pişirin.)"
           ]
         ]
       },
@@ -1392,7 +1392,7 @@
             "Chop"
           ],
           "answer": "Spread",
-          "explanation": "'Spread' sürmek / yaymak anlamına gelir; sosu tabana yayarken bu fiil kullanılır."
+          "explanation": "'Spread' sürmek veya yaymak anlamına gelir; sosu tabana yayarken bu fiil kullanılır."
         },
         {
           "num": 4,

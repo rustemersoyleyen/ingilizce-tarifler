@@ -23,13 +23,21 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+  max-width: 100vw;
+  width: 100%;
+}
 body {
   margin: 0;
   font-family: var(--font-quicksand);
   color: var(--ko-dark);
   background-color: var(--ko-bg);
   line-height: 1.6;
+  overflow-x: clip;
+  max-width: 100vw;
+  width: 100%;
 }
 a { color: inherit; text-decoration: none; }
 
@@ -200,6 +208,15 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px solid #e2e8f0;
   padding: 12px 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.sub-header::-webkit-scrollbar {
+  display: none;
 }
 
 .is-recipe-page .sub-header {
@@ -219,16 +236,25 @@ a { color: inherit; text-decoration: none; }
 .sub-header-inner {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.sub-header-inner::-webkit-scrollbar {
+  display: none;
 }
 
 .sub-header-nav {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 28px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .sub-nav-link {
@@ -259,19 +285,57 @@ a { color: inherit; text-decoration: none; }
   top: 16px;
   z-index: 450;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  cursor: grab;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(48, 157, 255, 0.3) transparent;
   gap: 8px 10px;
   margin: 0 auto 36px;
-  padding: 12px 24px;
+  padding: 10px 18px;
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.96);
   border: 1px solid var(--ko-border);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  transition: top 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, top 0.3s ease;
+  width: calc(100% - 32px);
+  max-width: 860px;
+  box-sizing: border-box;
+}
+
+.toc:active, .toc.is-dragging {
+  cursor: grabbing;
+}
+
+.toc.is-hidden {
+  transform: translateY(-120%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.toc::-webkit-scrollbar {
+  height: 4px;
+}
+
+.toc::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.toc::-webkit-scrollbar-thumb {
+  background: rgba(48, 157, 255, 0.3);
+  border-radius: 4px;
+}
+
+.content section,
+.recipe-chapters,
+.step-accordion {
+  scroll-margin-top: 80px;
 }
 
 .toc-title {
@@ -295,6 +359,8 @@ a { color: inherit; text-decoration: none; }
   transition: all 0.2s ease;
   cursor: pointer;
   text-decoration: none;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .toc a:hover {
@@ -543,7 +609,27 @@ h3 { font-size: 1.35rem; color: var(--ko-dark); }
 .section-intro { max-width: 760px; margin: 0 auto 1.8rem; line-height: 1.75; color: var(--ko-gray-muted); font-size: 1.05rem; }
 
 /* Tables */
-table { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--ko-white); margin-top: 1.5rem; border-radius: 16px; overflow: hidden; border: 1px solid var(--ko-border); box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
+.table-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.5rem 0;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--ko-white);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--ko-border);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
 th, td { padding: 1rem 1.2rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--ko-border); font-size: 15px; }
 th { background: #f0f7ff; color: #1e3a8a; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; border-bottom: 2px solid #309dff; }
 tbody tr:hover td { background-color: #f8fafc; }
@@ -571,14 +657,24 @@ tr:last-child td { border-bottom: 0; }
 .vocab p { margin: 0.4rem 0 0; color: var(--ko-gray-muted); font-size: 14px; }
 .vocab-wide { grid-template-columns: repeat(5, 1fr); }
 
-.recipe-chapter { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(250px, .85fr); gap: 1.8rem; padding: 3.5rem 0; text-align: left !important; }
-.recipe-chapter:nth-of-type(even) figure { order: -1; }
-.chapter-head { grid-column: 1 / -1; display: grid; grid-template-columns: 3rem 1fr; gap: 1rem; align-items: start; }
+.recipe-chapter {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.8rem;
+  padding: 3rem 0;
+  text-align: left !important;
+  max-width: 860px;
+  margin: 0 auto;
+  width: 100%;
+}
+.recipe-chapter:nth-of-type(even) figure { order: 0 !important; }
+.chapter-head { display: grid; grid-template-columns: 3rem 1fr; gap: 1rem; align-items: start; width: 100%; }
 .chapter-head h2 { max-width: 800px; margin-bottom: .8rem; font-size: clamp(1.6rem, 3.2vw, 2.4rem); }
 .chapter-head p { max-width: 760px; margin: 0; color: var(--ko-gray-muted); line-height: 1.7; }
-.recipe-chapter figure { margin: 0; display: flex; flex-direction: column; }
-.recipe-chapter img { width: 100%; height: 320px; border-radius: 16px; object-fit: cover; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+.recipe-chapter figure { margin: 0 0 1.2rem 0 !important; display: flex; flex-direction: column; width: 100% !important; }
+.recipe-chapter img { width: 100% !important; height: auto !important; max-height: 520px; border-radius: 20px !important; object-fit: contain !important; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
 .recipe-chapter figcaption { display: grid; gap: .2rem; padding-top: .8rem; color: var(--ko-gray-muted); font-size: .8rem; text-align: center; }
+.recipe-chapter .chapter-panels { width: 100% !important; }
 
 .learning-panel { overflow: hidden; border: 1px solid var(--ko-border); border-radius: 16px; background: var(--white); margin-bottom: 10px; }
 .learning-panel summary { position: relative; display: grid; gap: .45rem; padding: 1.15rem 3.25rem 1.15rem 1.15rem; cursor: pointer; list-style: none; }
@@ -599,20 +695,24 @@ tr:last-child td { border-bottom: 0; }
 
 /* Related Recipes Section (3 Cards) */
 .related-recipes {
-  margin-top: 4rem;
-  padding: clamp(2rem, 4vw, 3.5rem);
+  margin: 4.5rem auto 3.5rem auto !important;
+  max-width: 860px !important;
+  width: 100% !important;
+  padding: clamp(2.2rem, 4vw, 3.5rem) !important;
   border: 2px solid var(--ko-border);
   border-radius: 24px;
   background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
   text-align: center;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box !important;
 }
 
 .related-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.4rem;
-  margin-top: 1.8rem;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
 }
 
 .related-card {
@@ -915,22 +1015,33 @@ tr:last-child td { border-bottom: 0; }
 }
 
 /* RESPONSIVE DESIGN */
+/* RESPONSIVE DESIGN */
 @media (max-width: 900px) {
-  .course-banner, .app-banner {
-    flex-direction: column;
-    text-align: center;
-    padding: 24px 20px;
+  .course-banner, .app-banner, .recipe-guide .app-banner, .recipe-guide .hero .course-banner {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 24px 18px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    gap: 18px !important;
   }
-  .app-banner-text, .course-banner-text {
-    align-items: center;
+  .app-banner-text, .course-banner-text, .recipe-guide .app-banner .app-banner-text {
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
   }
   .app-actions {
-    width: 100%;
-    justify-content: center;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
-  .cta-btn {
-    width: 100%;
-    max-width: 320px;
+  .app-actions .cta-btn, .cta-btn {
+    width: 100% !important;
+    max-width: 280px !important;
   }
   .vocab { grid-template-columns: repeat(2, 1fr); }
   .page-cards { grid-template-columns: 1fr; }
@@ -938,14 +1049,150 @@ tr:last-child td { border-bottom: 0; }
 }
 
 @media (max-width: 768px) {
-  .header-inner { flex-direction: column; gap: 12px; }
-  .main-navigation ul.menu { font-size: 13px; gap: 4px; }
+  html, body {
+    overflow-x: clip !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+  .header-inner { flex-direction: column; gap: 12px; padding: 10px 16px; }
+  .main-navigation {
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+  .main-navigation::-webkit-scrollbar {
+    display: none !important;
+  }
+  .main-navigation ul.menu {
+    font-size: 13px;
+    gap: 8px;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+    padding: 0 16px !important;
+    justify-content: flex-start !important;
+  }
   .main-navigation .menu-item a { padding: 10px 12px; font-size: 13px; }
+  
+  .sub-header {
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  .sub-header-inner {
+    padding: 0 16px !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  .sub-header-nav {
+    gap: 18px !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+  }
+  .sub-nav-link {
+    font-size: 15px !important;
+  }
+
+  .toc {
+    top: 12px !important;
+    width: calc(100% - 24px) !important;
+    max-width: calc(100vw - 24px) !important;
+    margin: 0 12px 24px 12px !important;
+    padding: 8px 12px !important;
+    border-radius: 25px !important;
+    box-sizing: border-box !important;
+  }
+
+  .page-grid {
+    width: 100% !important;
+    max-width: 100vw !important;
+    padding: 0 16px 4rem 16px !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .recipe-guide .hero {
+    width: 100% !important;
+    max-width: 100vw !important;
+    padding: 1.8rem 16px 1.5rem 16px !important;
+    box-sizing: border-box !important;
+  }
+  .recipe-guide .hero-copy h1 {
+    font-size: clamp(1.6rem, 5vw, 2.2rem) !important;
+    line-height: 1.25 !important;
+    word-break: break-word !important;
+  }
+  .recipe-guide .hero .lede {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+  }
+  .recipe-guide .hero-card.pasta-facts {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 1rem 0.4rem !important;
+    box-sizing: border-box !important;
+  }
+  .recipe-guide .recipe-facts {
+    table-layout: fixed !important;
+  }
+  .recipe-guide .recipe-facts th,
+  .recipe-guide .recipe-facts td {
+    padding: 0.4rem 0.2rem !important;
+  }
+  .recipe-guide .fact-th-en { font-size: 9.5px !important; }
+  .recipe-guide .fact-th-tr { font-size: 8.5px !important; }
+  .recipe-guide .fact-value { font-size: 12px !important; padding: 0.2rem 0.2rem !important; }
+
+  .hero-overview-table {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .hero-overview-table .table-container,
+  .table-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    display: block !important;
+    box-sizing: border-box !important;
+  }
+  .hero-overview-table table,
+  .table-container table {
+    min-width: 440px !important;
+    width: 100% !important;
+  }
+
+  .recipe-guide .content section {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 2.2rem 0 !important;
+    box-sizing: border-box !important;
+  }
+  .recipe-guide .content section > h2 {
+    font-size: 1.35rem !important;
+    line-height: 1.3 !important;
+    word-break: break-word !important;
+    padding: 0 4px !important;
+  }
+  .recipe-guide .content section > h3 {
+    font-size: 1.2rem !important;
+    line-height: 1.3 !important;
+    word-break: break-word !important;
+  }
+  .recipe-guide .section-intro {
+    font-size: 0.95rem !important;
+    line-height: 1.65 !important;
+  }
+
   #plain-pasta .steps { grid-template-columns: 1fr; }
   .recipe-chapter { grid-template-columns: 1fr; }
   .recipe-chapter:nth-of-type(even) figure { order: initial; }
   .bilingual, .related-grid { grid-template-columns: 1fr; }
-  .toc { top: 70px; padding: 10px 16px; border-radius: 25px; }
 }
 
 /* ==========================================================================
@@ -1310,8 +1557,8 @@ tr:last-child td { border-bottom: 0; }
 }
 
 .tab-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   background: #f8fafc;
   border-bottom: 1px solid #e2e8f0;
 }
@@ -1319,6 +1566,7 @@ tr:last-child td { border-bottom: 0; }
 .tab-list button {
   position: relative;
   display: flex;
+  flex: 1 1 180px;
   align-items: center;
   justify-content: center;
   gap: 0.55rem;
@@ -1405,4 +1653,1170 @@ tr:last-child td { border-bottom: 0; }
   margin-bottom: 8px;
 }
 
+/* ==========================================================================
+   İNGİLİZCE PİZZA SAYFASI ÖZEL REVİZYONLARI (10 MADDE + FRONTEND LEAD DÜZENİ)
+   ========================================================================== */
 
+/* 1 & 2. Başlıklar & CTA Central (Ortalı), Metinler Align-Left (Sola Dayalı) */
+.recipe-guide {
+  text-align: left;
+}
+
+/* HERO ALANI: Tam Simetrik ve Dengeli Tasarım */
+.recipe-guide .hero {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  max-width: 980px !important;
+  margin: 0 auto !important;
+  padding: clamp(2rem, 4vw, 3.5rem) 1rem 2rem !important;
+}
+
+.recipe-guide .hero-copy {
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.recipe-guide .hero-copy .eyebrow {
+  text-align: center !important;
+  margin: 0 auto 0.5rem auto !important;
+  display: inline-block;
+  color: var(--ko-blue);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.recipe-guide .hero-copy h1 {
+  text-align: center !important;
+  margin: 0.4rem auto 1.4rem auto !important;
+  max-width: 920px !important;
+  font-size: clamp(2.2rem, 4.2vw, 3.2rem) !important;
+  line-height: 1.25 !important;
+  color: var(--ko-dark);
+}
+
+/* CTA Banner: Sayfa Ortasında Zarif ve Odak Noktası */
+.recipe-guide .hero .course-banner {
+  margin: 1.4rem auto !important;
+  max-width: 720px !important;
+  text-align: left !important;
+}
+
+/* Lede Metni: Sola Dayalı (Okunabilirlik İçin), Ama Blok Sayfa Ortasında */
+.recipe-guide .hero .lede {
+  text-align: left !important;
+  max-width: 840px !important;
+  margin: 1.6rem auto 1.2rem auto !important;
+  line-height: 1.75 !important;
+  font-size: 1.15rem !important;
+  color: #334155;
+}
+
+.recipe-guide .hero .article-meta {
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0.8rem auto 0 auto !important;
+  text-align: center !important;
+}
+
+/* Hero Görseli: Ortalanmış, Kırpılmayan, Temiz */
+.recipe-guide .hero-visual {
+  width: 100% !important;
+  max-width: 900px !important;
+  margin: 2rem auto 0 auto !important;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.recipe-guide .hero-visual img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  display: block;
+}
+
+.recipe-guide .hero-visual figcaption {
+  text-align: center !important;
+  padding: 12px 16px !important;
+  font-size: 0.85rem !important;
+  color: #64748b !important;
+  background: #f8fafc;
+}
+
+.recipe-guide .hero-visual figcaption strong {
+  color: var(--ko-dark);
+  margin-right: 6px;
+}
+
+/* 2. Özet Bilgi Kartı: Tam Ortalanmış, Ferah ve Düzgün */
+.recipe-guide .hero-card.pasta-facts {
+  width: 100% !important;
+  max-width: 780px !important;
+  overflow: visible !important;
+  margin: 2.2rem auto 0 auto !important;
+  padding: 1.4rem 1.6rem !important;
+  text-align: center !important;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.recipe-guide .recipe-facts {
+  table-layout: fixed !important;
+  width: 100% !important;
+  overflow: visible !important;
+  margin: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.recipe-guide .recipe-facts td,
+.recipe-guide .recipe-facts th {
+  overflow: visible !important;
+  position: relative;
+  text-align: center !important;
+  vertical-align: middle !important;
+  border-bottom: none !important;
+}
+
+.recipe-guide .recipe-facts th {
+  padding: 0.6rem 0.4rem 0.3rem !important;
+}
+
+.recipe-guide .fact-th-en {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  color: #1e3a8a;
+  letter-spacing: 0.06em;
+}
+
+.recipe-guide .fact-th-tr {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  color: #64748b;
+  margin-top: 1px;
+}
+
+.recipe-guide .fact-tooltip-wrap {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.recipe-guide .fact-tooltip-wrap .fact-value {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ko-dark);
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.recipe-guide .fact-tooltip-wrap:hover .fact-value,
+.recipe-guide .fact-tooltip-wrap:focus-within .fact-value {
+  background: #e0f2fe;
+  color: #0284c7;
+  border-color: #bae6fd;
+}
+
+/* Tanım ve Çeşitler Tablosu Kutusu: Ortalanmış Kart, Sol Metin */
+.recipe-guide .hero-overview-table {
+  text-align: left;
+  max-width: 900px !important;
+  margin: 2.8rem auto 0 auto !important;
+}
+
+.recipe-guide .hero-overview-table .eyebrow {
+  text-align: center !important;
+  display: block;
+  margin-bottom: 0.5rem !important;
+}
+
+.recipe-guide .hero-overview-table .definition-heading {
+  text-align: center !important;
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem) !important;
+  margin-bottom: 0.9rem !important;
+}
+
+.recipe-guide .hero-overview-table .section-intro {
+  margin: 0 0 1.5rem 0 !important;
+  text-align: left !important;
+  max-width: 100% !important;
+  line-height: 1.7;
+}
+
+/* SAYFA İÇİ SECTION HİYERARŞİSİ: Başlıklar Central, Metinler Left */
+.recipe-guide .content section {
+  padding: 3.5rem 0;
+}
+
+.recipe-guide .content section > .eyebrow {
+  text-align: center !important;
+  display: block;
+  margin: 0 auto 0.4rem auto !important;
+}
+
+.recipe-guide .content section > h2 {
+  text-align: center !important;
+  margin: 0 auto 1.2rem auto !important;
+  max-width: 860px !important;
+  font-size: clamp(1.7rem, 3.2vw, 2.2rem) !important;
+  line-height: 1.35 !important;
+}
+
+.recipe-guide .content section > h3 {
+  text-align: left !important;
+  max-width: 860px;
+  margin: 2.5rem auto 0.6rem auto !important;
+  font-size: clamp(1.25rem, 2.2vw, 1.5rem) !important;
+}
+
+.recipe-guide .section-intro {
+  text-align: left !important;
+  max-width: 860px !important;
+  margin: 0 auto 1.8rem auto !important;
+  line-height: 1.75;
+  color: #475569;
+}
+
+.recipe-guide .content section > .table-container,
+.recipe-guide .content section > table,
+.recipe-guide .content section > .step-accordion,
+.recipe-guide .content section > .bilingual,
+.recipe-guide .content section > .grammar-tabs,
+.recipe-guide .content section > .exercise {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 3. App Banner (Göz Yormayan, Ferah ve Şık CTA) */
+.recipe-guide .app-banner {
+  max-width: 860px !important;
+  margin: 2.2rem auto 2.8rem auto !important;
+  border-radius: 20px;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-guide .app-banner .cta-eyebrow {
+  color: #38bdf8 !important;
+}
+
+.recipe-guide .app-banner .cta-heading {
+  color: #ffffff !important;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+/* 4 & 5. STANDART TOOLTIP: Görsel 5 Referansındaki WCAG AAA Yüksek Kontrast */
+.fact-tooltip {
+  position: absolute;
+  bottom: calc(100% + 14px);
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  background: #090d16 !important;
+  color: #ffffff !important;
+  padding: 12px 16px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5) !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  width: 290px !important;
+  max-width: 90vw !important;
+  text-align: left !important;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.22s ease, transform 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  z-index: 99999 !important;
+  border: 1px solid #38bdf8 !important;
+}
+
+.fact-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+  border-top-color: #090d16 !important;
+}
+
+.fact-tooltip-wrap:hover .fact-tooltip,
+.fact-tooltip-wrap:focus-within .fact-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Tooltip İçerik Tipografisi: Canlı Mavi + Kristal Beyaz */
+.fact-tooltip .tooltip-en {
+  display: block !important;
+  color: #38bdf8 !important;
+  font-weight: 800 !important;
+  font-size: 13px !important;
+  margin-bottom: 5px !important;
+  line-height: 1.4 !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.fact-tooltip .tooltip-tr {
+  display: block !important;
+  color: #ffffff !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+  padding-top: 5px !important;
+  background: transparent !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+
+/* Chapter Meta Rozetleri: Kesin Çakışma Önleyici */
+.meta-tooltip-wrap {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+/* YALNIZCA doğrudan alt çocuk olan rozet span'ı etkilenecek, tooltip içindekiler ASLA etkilenmeyecek! */
+.meta-tooltip-wrap:hover > span.meta-badge {
+  background: #dbeafe !important;
+  border-color: #93c5fd !important;
+}
+
+.meta-tooltip-wrap .fact-tooltip {
+  width: 280px !important;
+}
+
+.meta-tooltip-wrap:hover .fact-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* 4 & 7. Pizza Çeşitlerinde Tek Sütun, Ortalı Başlık ve Kırpılmayan Görseller */
+.recipe-guide .recipe-chapters {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.recipe-guide .chapter-intro {
+  text-align: center !important;
+  margin-bottom: 2rem;
+}
+
+.recipe-guide .chapter-intro .eyebrow {
+  text-align: center !important;
+}
+
+.recipe-guide .chapter-intro .section-intro {
+  text-align: left !important;
+}
+
+.recipe-chapter,
+.recipe-guide .recipe-chapter {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.2rem !important;
+  padding: 3rem 0 !important;
+  border-top: 1px solid var(--ko-border);
+  width: 100% !important;
+  max-width: 860px !important;
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+}
+
+.recipe-guide .chapter-head {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem !important;
+}
+
+.recipe-guide .chapter-head .variant-number {
+  margin: 0 auto;
+}
+
+.recipe-guide .chapter-head h2 {
+  text-align: center !important;
+  margin: 0.2rem auto 0.4rem auto !important;
+  font-size: clamp(1.6rem, 3vw, 2.1rem) !important;
+}
+
+.recipe-guide .chapter-head p {
+  text-align: left !important;
+  max-width: 800px;
+  margin: 0 auto 0.6rem auto !important;
+  line-height: 1.65;
+  color: #475569;
+}
+
+.recipe-guide .chapter-meta {
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: 0.6rem !important;
+  margin: 0.4rem auto 0 auto !important;
+}
+
+.recipe-guide .recipe-chapter figure {
+  width: 100% !important;
+  margin: 0.6rem 0 0 0 !important;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background: #f8fafc;
+}
+
+/* Görsellerin Sağ Üst Logo ve Sol Alt Rozeti Asla Kırpılmaz! */
+.recipe-guide .recipe-chapter figure img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  display: block;
+}
+
+.recipe-guide .recipe-chapter figcaption {
+  display: none !important;
+}
+
+.recipe-guide .chapter-panels {
+  width: 100% !important;
+  margin-top: 0.8rem !important;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* 6. Diğer Tarifler Bölümü: Ortalı Başlık, Ferah Marjinler */
+.recipe-guide .related-recipes {
+  text-align: center !important;
+  padding: clamp(2.2rem, 4vw, 3.5rem) !important;
+  margin: 4rem auto 0 auto !important;
+  max-width: 920px !important;
+}
+
+.recipe-guide .related-recipes .eyebrow {
+  text-align: center !important;
+  margin-bottom: 0.4rem !important;
+}
+
+.recipe-guide .related-recipes h2 {
+  text-align: center !important;
+  margin: 0.2rem auto 0.8rem auto !important;
+  font-size: clamp(1.7rem, 3vw, 2.3rem) !important;
+}
+
+.recipe-guide .related-recipes .section-intro {
+  text-align: left !important;
+  max-width: 760px !important;
+  margin: 0 auto 2rem auto !important;
+}
+
+
+
+/* 7. Açılır Panellerde Yazı-Çerçeve Arası Ferah Boşluk (Padding & Margin) */
+.recipe-guide .learning-panel {
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s ease;
+  overflow: hidden;
+}
+
+.recipe-guide .learning-panel:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.recipe-guide .learning-panel summary {
+  padding: 1.5rem 3.5rem 1.5rem 1.8rem !important;
+  gap: 0.6rem !important;
+  background: #f8fafc;
+  transition: background 0.2s ease;
+}
+
+.recipe-guide .learning-panel[open] summary {
+  background: #f0f7ff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.recipe-guide .learning-panel summary h3 {
+  font-size: 1.25rem !important;
+  color: var(--ko-dark);
+  margin: 0;
+}
+
+.recipe-guide .learning-panel summary span {
+  color: var(--ko-blue);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.recipe-guide .learning-panel .panel-body {
+  padding: 2.2rem 2.2rem 2.6rem 2.2rem !important;
+}
+
+/* 8. 7 Adım Bölümü İçin Modern Akordiyon Tasarımı (.step-accordion) */
+.step-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 2rem;
+}
+
+.step-accordion-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s ease;
+  overflow: hidden;
+}
+
+.step-accordion-item:hover {
+  border-color: #93c5fd;
+  box-shadow: 0 8px 24px rgba(48, 157, 255, 0.08);
+}
+
+.step-accordion-item[open] {
+  border-color: #309dff;
+  box-shadow: 0 10px 28px rgba(48, 157, 255, 0.12);
+}
+
+.step-accordion-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 1.8rem;
+  background: #f8fafc;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+.step-accordion-item[open] .step-accordion-summary {
+  background: #f0f7ff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.step-accordion-summary::-webkit-details-marker {
+  display: none;
+}
+
+.step-acc-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.step-acc-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #e0f2fe;
+  color: #0284c7;
+  font-weight: 800;
+  font-size: 16px;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.step-accordion-item[open] .step-acc-badge {
+  background: #309dff;
+  color: #ffffff;
+}
+
+.step-acc-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ko-dark);
+  margin: 0;
+}
+
+.step-acc-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #64748b;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.step-accordion-item[open] .step-acc-icon {
+  background: #309dff;
+  border-color: #309dff;
+  color: #ffffff;
+  transform: rotate(180deg);
+}
+
+.step-accordion-body {
+  padding: 1.8rem 2rem 2rem;
+  background: #ffffff;
+}
+
+.step-acc-en {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #0f172a;
+  margin: 0 0 10px 0;
+}
+
+.step-acc-tr {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #475569;
+  margin-top: 0.8rem !important;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* 6. Diğer Tarifler Bölümü: Ortalı Başlık, Ferah Marjinler */
+.recipe-guide .related-recipes {
+  text-align: center !important;
+  padding: clamp(2.2rem, 4vw, 3.5rem) !important;
+  margin: 4.5rem auto 4.5rem auto !important;
+  max-width: 860px !important;
+}
+
+.recipe-guide .related-recipes .eyebrow {
+  text-align: center !important;
+  margin-bottom: 0.4rem !important;
+}
+
+.recipe-guide .related-recipes h2 {
+  text-align: center !important;
+  margin: 0.2rem auto 0.8rem auto !important;
+  font-size: clamp(1.7rem, 3vw, 2.3rem) !important;
+}
+
+.recipe-guide .related-recipes .section-intro {
+  text-align: left !important;
+  max-width: 760px !important;
+  margin: 0 auto 2rem auto !important;
+}
+
+
+
+/* 7. Açılır Panellerde Yazı-Çerçeve Arası Ferah Boşluk (Padding & Margin) */
+.recipe-guide .learning-panel {
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s ease;
+  overflow: hidden;
+}
+
+.recipe-guide .learning-panel:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.recipe-guide .learning-panel summary {
+  padding: 1.5rem 3.5rem 1.5rem 1.8rem !important;
+  gap: 0.6rem !important;
+  background: #f8fafc;
+  transition: background 0.2s ease;
+}
+
+.recipe-guide .learning-panel[open] summary {
+  background: #f0f7ff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.recipe-guide .learning-panel summary h3 {
+  font-size: 1.45rem !important;
+  font-weight: 700 !important;
+  line-height: 1.4 !important;
+  color: var(--ko-dark);
+  margin: 0;
+}
+
+.recipe-guide .learning-panel summary span {
+  color: var(--ko-blue);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.recipe-guide .learning-panel .panel-body {
+  padding: 2.2rem 2.2rem 2.6rem 2.2rem !important;
+}
+
+/* 8. 7 Adım Bölümü İçin Modern Akordiyon Tasarımı (.step-accordion) */
+.step-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 2rem;
+}
+
+.step-accordion-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s ease;
+  overflow: hidden;
+}
+
+.step-accordion-item:hover {
+  border-color: #93c5fd;
+  box-shadow: 0 8px 24px rgba(48, 157, 255, 0.08);
+}
+
+.step-accordion-item[open] {
+  border-color: #309dff;
+  box-shadow: 0 10px 28px rgba(48, 157, 255, 0.12);
+}
+
+.step-accordion-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 1.8rem;
+  background: #f8fafc;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+.step-accordion-item[open] .step-accordion-summary {
+  background: #f0f7ff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.step-accordion-summary::-webkit-details-marker {
+  display: none;
+}
+
+.step-acc-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.step-acc-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #e0f2fe;
+  color: #0284c7;
+  font-weight: 800;
+  font-size: 16px;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.step-accordion-item[open] .step-acc-badge {
+  background: #309dff;
+  color: #ffffff;
+}
+
+.step-acc-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ko-dark);
+  margin: 0;
+}
+
+.step-acc-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #64748b;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.step-accordion-item[open] .step-acc-icon {
+  background: #309dff;
+  border-color: #309dff;
+  color: #ffffff;
+  transform: rotate(180deg);
+}
+
+.step-accordion-body {
+  padding: 1.8rem 2rem 2rem;
+  background: #ffffff;
+}
+
+.step-acc-en {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #0f172a;
+  margin: 0 0 10px 0;
+}
+
+.step-acc-tr {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #475569;
+  margin: 0 0 16px 0;
+  padding-left: 14px;
+  border-left: 3px solid #309dff;
+}
+
+.step-acc-action-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #334155;
+}
+
+.step-acc-action-badge strong {
+  color: #0284c7;
+}
+
+/* 9. Quiz / Alıştırma Bölümü - Centered Header, High-Contrast & Ergonomic Alignment */
+.recipe-guide .exercise {
+  background: #0f172a !important;
+  color: #ffffff !important;
+  border: 1px solid #1e293b !important;
+  border-radius: 24px !important;
+  padding: clamp(2.2rem, 5vw, 3.5rem) !important;
+  text-align: left !important;
+  max-width: 860px !important;
+  margin: 0 auto !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25) !important;
+  box-sizing: border-box !important;
+}
+
+.recipe-guide .exercise .eyebrow {
+  color: #38bdf8 !important;
+  text-align: center !important;
+  display: block !important;
+  margin: 0 auto 0.6rem auto !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+}
+
+.recipe-guide .exercise h2 {
+  color: #ffffff !important;
+  text-align: center !important;
+  margin: 0.4rem auto 0.8rem auto !important;
+  max-width: 760px !important;
+  font-size: clamp(1.5rem, 3.2vw, 2.1rem) !important;
+  line-height: 1.35 !important;
+}
+
+.recipe-guide .exercise .section-intro {
+  color: #94a3b8 !important;
+  text-align: center !important;
+  max-width: 740px !important;
+  margin: 0 auto 2.2rem auto !important;
+  font-size: 1rem !important;
+  line-height: 1.7 !important;
+}
+
+.recipe-guide .exercise ol {
+  display: block !important;
+  padding-left: 0 !important;
+  list-style: none !important;
+  margin: 0 !important;
+}
+
+.recipe-guide .exercise ol > li {
+  background: #1e293b !important;
+  border: 1px solid #334155 !important;
+  border-radius: 18px !important;
+  padding: 1.6rem 1.8rem !important;
+  margin-bottom: 20px !important;
+}
+
+.recipe-guide .exercise ol > li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.recipe-guide .quiz-q-num {
+  display: inline-block;
+  color: #38bdf8;
+  font-weight: 800;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+
+.recipe-guide .quiz-q-title,
+.recipe-guide .exercise ol > li p.quiz-q-title,
+.recipe-guide .exercise p.quiz-q-title {
+  color: #ffffff !important;
+  font-size: 1.12rem !important;
+  font-weight: 700 !important;
+  line-height: 1.5 !important;
+  margin: 0 0 6px 0 !important;
+}
+
+.recipe-guide .quiz-q-tr,
+.recipe-guide .exercise ol > li p.quiz-q-tr,
+.recipe-guide .exercise p.quiz-q-tr {
+  color: #94a3b8 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.5 !important;
+  margin: 0 0 16px 0 !important;
+}
+
+.recipe-guide .quiz-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.recipe-guide .quiz-option {
+  background: #0f172a !important;
+  border: 1px solid #334155 !important;
+  color: #f1f5f9 !important;
+  padding: 12px 16px !important;
+  border-radius: 12px !important;
+  font-size: 14px !important;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.recipe-guide .quiz-option strong {
+  color: #38bdf8 !important;
+}
+
+.recipe-guide .quiz-option:hover {
+  background: #1e293b !important;
+  border-color: #38bdf8 !important;
+  color: #38bdf8 !important;
+}
+
+.recipe-guide .quiz-option.correct {
+  background: rgba(16, 185, 129, 0.2) !important;
+  border-color: #10b981 !important;
+  color: #34d399 !important;
+  font-weight: 700 !important;
+}
+
+.recipe-guide .answer-key {
+  margin-top: 2rem !important;
+  background: #1e293b !important;
+  border: 1px solid #334155 !important;
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+
+.recipe-guide .answer-key summary {
+  background: #0f172a !important;
+  color: #38bdf8 !important;
+  padding: 16px 22px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.recipe-guide .answer-key .key-content {
+  padding: 18px 24px;
+  color: #e2e8f0 !important;
+  line-height: 1.7;
+}
+
+.recipe-guide .answer-key ol li {
+  background: transparent !important;
+  border: none !important;
+  padding: 4px 0 !important;
+  margin-bottom: 8px !important;
+  color: #cbd5e1;
+}
+
+.recipe-guide .answer-key strong {
+  color: #38bdf8;
+}
+
+/* 10. Diğer Tarifler Stretched-Link Mimarisi */
+.related-card {
+  position: relative !important;
+  cursor: pointer !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease !important;
+}
+
+.related-card:hover {
+  transform: translateY(-6px) !important;
+  border-color: var(--ko-blue) !important;
+  box-shadow: 0 16px 36px rgba(48, 157, 255, 0.16) !important;
+}
+
+.related-card-title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.related-card-title .related-card-link {
+  color: var(--ko-dark);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.related-card:hover .related-card-title .related-card-link {
+  color: var(--ko-blue);
+}
+
+.related-card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* 11. Bilingual Headings - Ergonomic Two-Line Balance & High-Contrast Typography */
+.recipe-guide h1,
+.recipe-guide h2,
+.recipe-guide h3,
+.recipe-guide .chapter-head h2,
+.recipe-guide .learning-panel summary h3,
+.recipe-guide .definition-heading {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  color: #0f172a !important;
+  text-wrap: balance;
+  letter-spacing: -0.015em;
+}
+
+.recipe-guide h1 .heading-main,
+.recipe-guide h2 .heading-main,
+.recipe-guide h3 .heading-main,
+.recipe-guide h2 .heading-en,
+.recipe-guide h3 .heading-en,
+.recipe-guide .learning-panel summary h3 .heading-main {
+  display: inline;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #0f172a !important;
+}
+
+.recipe-guide h1 .heading-sub,
+.recipe-guide h2 .heading-sub,
+.recipe-guide h3 .heading-sub,
+.recipe-guide h2 .heading-tr,
+.recipe-guide h3 .heading-tr,
+.recipe-guide .learning-panel summary h3 .heading-sub {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: #475569 !important;
+  opacity: 0.92;
+  line-height: 1.35;
+  margin-left: 6px;
+}
+
+.recipe-guide .learning-panel summary {
+  padding: 1.4rem 3.5rem 1.4rem 1.8rem !important;
+  gap: 0.5rem !important;
+  background: #ffffff !important;
+  border-radius: 16px;
+  transition: background 0.2s ease;
+}
+
+.recipe-guide .learning-panel summary:hover {
+  background: #f8fafc !important;
+}
+
+.recipe-guide .learning-panel[open] summary {
+  background: #f0f7ff !important;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.recipe-guide .learning-panel summary h3 {
+  font-size: 1.45rem !important;
+  font-weight: 800 !important;
+  line-height: 1.35 !important;
+  color: #0f172a !important;
+  margin: 0 !important;
+}
+
+.recipe-guide .learning-panel summary span {
+  color: #0284c7 !important;
+  font-weight: 700;
+  font-size: 15px !important;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.recipe-guide .exercise h2 .heading-main {
+  color: #ffffff !important;
+}
+
+.recipe-guide .exercise h2 .heading-sub,
+.recipe-guide .exercise h2 .heading-tr {
+  color: #94a3b8 !important;
+  opacity: 1 !important;
+}
+
+/* 12. Ingredient Cards Section & Unified Panels */
+.ingredient-cards-section {
+  margin-top: 1.8rem;
+  padding-top: 1.2rem;
+  border-top: 1px dashed var(--ko-border, #e2e8f0);
+}
+
+.cards-subhead {
+  font-family: var(--font-heading, "Quicksand", sans-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.panel-body, .learning-content {
+  padding: 1.8rem 1.8rem 2.2rem 1.8rem !important;
+}

@@ -19,37 +19,37 @@
     "heroImage": "/blog/ingilizce-tarifler/images/menemen-hero.webp",
     "overviewVariationsTable": {
       "caption": "İngilizce ve Türkçe Menemen Çeşitleri Karşılaştırması",
-      "intro": "Aşağıdaki tabloda 4 temel menemen çeşidinin İngilizce isimlerini, ana malzemelerini ve temel pişirme adımlarını karşılaştırmalı olarak inceleyebilirsiniz. / Explore the four main Menemen variations with their English names, key ingredients, and cooking steps in the comparison table below.",
+      "intro": "Aşağıdaki tabloda 4 temel menemen çeşidinin İngilizce isimlerini, ana malzemelerini ve temel pişirme adımlarını karşılaştırmalıolarak inceleyebilirsiniz. (Explore the four main Menemen variations with their English names, key ingredients, and cooking steps in the comparison table below.)",
       "headers": [
         "English Recipe Name",
         "Türkçe Adı",
-        "Main Ingredients / Ana Malzemeler",
-        "Main Steps / Temel Adımlar"
+        "Main Ingredients (Ana Malzemeler)",
+        "Main Steps (Temel Adımlar)"
       ],
       "rows": [
         [
           "Classic Menemen",
           "Klasik Menemen",
-          "Eggs, tomatoes, green peppers / Yumurta, domates, yeşil biber",
-          "Chop, sauté, cook, crack, stir and serve / Doğrayın, kavurun, pişirin, kırın, karıştırın ve servis edin"
+          "Eggs, tomatoes, green peppers (Yumurta, domates, yeşil biber)",
+          "Chop, sauté, cook, crack, stir and serve (Doğrayın, kavurun, pişirin, kırın, karıştırın ve servis edin)"
         ],
         [
           "Menemen with Onion",
           "Soğanlı Menemen",
-          "Eggs, tomatoes, green peppers, onion / Yumurta, domates, yeşil biber, soğan",
-          "Chop, sauté the onion and peppers, add tomatoes, crack the eggs and serve / Doğrayın, soğan ve biberi kavurun, domatesi ekleyin, yumurtaları kırın ve servis edin"
+          "Eggs, tomatoes, green peppers, onion (Yumurta, domates, yeşil biber, soğan)",
+          "Chop, sautéthe onion and peppers, add tomatoes, crack the eggs and serve (Doğrayın, soğan ve biberi kavurun, domatesi ekleyin, yumurtaları kırın ve servis edin)"
         ],
         [
           "Menemen with Cheese",
           "Peynirli Menemen",
-          "Eggs, tomatoes, green peppers, white cheese / Yumurta, domates, yeşil biber, beyaz peynir",
-          "Cook the vegetables, add eggs, fold in the cheese and serve / Sebzeleri pişirin, yumurtayı ekleyin, peyniri karıştırın ve servis edin"
+          "Eggs, tomatoes, green peppers, white cheese (Yumurta, domates, yeşil biber, beyaz peynir)",
+          "Cook the vegetables, add eggs, fold in the cheese and serve (Sebzeleri pişirin, yumurtayı ekleyin, peyniri karıştırın ve servis edin)"
         ],
         [
           "Menemen with Sujuk",
           "Sucuklu Menemen",
-          "Eggs, tomatoes, green peppers, sujuk / Yumurta, domates, yeşil biber, sucuk",
-          "Brown the sujuk, cook the vegetables, add eggs and serve / Sucuğu kızartın, sebzeleri pişirin, yumurtayı ekleyin ve servis edin"
+          "Eggs, tomatoes, green peppers, sujuk (Yumurta, domates, yeşil biber, sucuk)",
+          "Brown the sujuk, cook the vegetables, add eggs and serve (Sucuğu kızartın, sebzeleri pişirin, yumurtayı ekleyin ve servis edin)"
         ]
       ]
     }
@@ -129,7 +129,7 @@
         "rows": [
           [
             "Recipe",
-            "Tarif / Yemek Tarifi",
+            "Tarif (Yemek Tarifi)",
             "A set of instructions that describes how to prepare and cook a dish, such as Classic Menemen."
           ],
           [
@@ -139,7 +139,7 @@
           ],
           [
             "Step",
-            "Adım / Aşama",
+            "Adım (Aşama)",
             "A numbered single action performed during cooking, such as chopping or stirring."
           ],
           [
@@ -153,8 +153,8 @@
             "Eggs beaten and cooked gently in a pan while stirring continuously."
           ],
           [
-            "Skillet / Pan",
-            "Tava / Mutfak Tavası",
+            "Skillet (Pan)",
+            "Tava (Mutfak Tavası)",
             "A shallow pan used for frying and simmering ingredients on top of the stove."
           ]
         ]
@@ -194,7 +194,7 @@
           [
             "Turkish Soft Scramble with Vegetables",
             "Gastronomi & Restoran Açıklaması",
-            "Yumurtanın sulu/yumuşak dokusunu ve sebze içeriğini öne çıkaran şef tanımıdır."
+            "Yumurtanın sulu veya yumuşak dokusunu ve sebze içeriğini öne çıkaran şef tanımıdır."
           ]
         ]
       },
@@ -223,22 +223,22 @@
           [
             "Chop",
             "Doğramak",
-            "Chop the green peppers and tomatoes into small pieces. / Yeşil biberleri ve domatesleri küçük parçalar halinde doğrayın."
+            "Chop the green peppers and tomatoes into small pieces. (Yeşil biberleri ve domatesleri küçük parçalar halinde doğrayın.)"
           ],
           [
-            "Saute / Sauté",
-            "Sotelemek / Kavurmak",
-            "Saute the chopped peppers in olive oil for 3 minutes. / Doğranmış biberleri zeytinyağında 3 dakika soteleyin."
+            "Saute (Saut)é",
+            "Sotelemek veya kavurmak",
+            "Saute the chopped peppers in olive oil for 3 minutes. (Doğranmış biberleri zeytinyağında 3 dakika soteleyin.)"
           ],
           [
             "Stir",
             "Karıştırmak",
-            "Stir the eggs gently on low heat until cooked. / Yumurtaları pişene kadar kısık ateşte yavaşça karıştırın."
+            "Stir the eggs gently on low heat until cooked. (Yumurtaları pişene kadar kısık ateşte yavaşça karıştırın.)"
           ],
           [
             "Crack",
             "Kırmak (Yumurta)",
-            "Crack 2 fresh eggs into the pan over the simmering tomatoes. / Pişen domateslerin üzerine tavaya 2 taze yumurta kırın."
+            "Crack 2 fresh eggs into the pan over the simmering tomatoes. (Pişen domateslerin üzerine tavaya 2 taze yumurta kırın.)"
           ]
         ]
       },
@@ -271,7 +271,7 @@
       "image": {
         "src": "/blog/ingilizce-tarifler/images/menemen-classic.webp",
         "alt": "Classic Turkish Menemen served hot in a skillet",
-        "captionEnglish": "Classic Menemen Recipe / Klasik Menemen Tarifi",
+        "captionEnglish": "Classic Menemen Recipe (Klasik Menemen Tarifi)",
         "captionTurkish": "Klasik Menemen Tarifi ve taze pişmiş tavada sunum."
       },
       "ingredients": {
@@ -472,7 +472,7 @@
           ],
           [
             "Green Peppers",
-            "Yeşil Biber / Sivri Biber",
+            "Yeşil biber veya sivri biber",
             "2 peppers",
             "Green peppers add fresh flavor and mild spice to the dish."
           ],
@@ -598,7 +598,7 @@
       "image": {
         "src": "/blog/ingilizce-tarifler/images/menemen-onion.webp",
         "alt": "Menemen with sauteed diced onions, green peppers, and tomatoes in a frying pan",
-        "captionEnglish": "Menemen with Onion Recipe / Soğanlı Menemen Tarifi",
+        "captionEnglish": "Menemen with Onion Recipe (Soğanlı Menemen Tarifi)",
         "captionTurkish": "Soğanlı Menemen Tarifi görsel sunumu."
       },
       "ingredients": {
@@ -920,7 +920,7 @@
       "definitionEnglish": "Menemen with Cheese Recipe is a rich breakfast dish topped with melted feta or shredded kasar cheese.",
       "definitionTurkish": "İngilizce Peynirli Menemen Tarifi; üzerine eritilmiş beyaz peynir veya rendelenmiş kaşar peyniri eklenen zengin bir kahvaltı yemeğidir.",
       "ingredientCount": 4,
-      "mainIngredient": "White Cheese / Kasar Cheese, Eggs, Tomatoes",
+      "mainIngredient": "White Cheese (Beyaz Peynir) veya Kaşar Peyniri, Eggs, Tomatoes",
       "prepTime": "PT5M",
       "cookTime": "PT14M",
       "totalTime": "PT19M",
@@ -933,7 +933,7 @@
       "image": {
         "src": "/blog/ingilizce-tarifler/images/menemen-cheese.webp",
         "alt": "Menemen with melted white feta cheese cooked in a traditional copper pan",
-        "captionEnglish": "Menemen with Cheese Recipe / Peynirli Menemen Tarifi",
+        "captionEnglish": "Menemen with Cheese Recipe (Peynirli Menemen Tarifi)",
         "captionTurkish": "Peynirli Menemen Tarifi bakır tavada sunumu."
       },
       "ingredients": {
@@ -1031,8 +1031,8 @@
           "sentenceTr": "Yeşil biberler peynirli sosa çıtırlık katar."
         },
         {
-          "en": "White cheese / Kasar",
-          "tr": "Beyaz peynir / Kaşar",
+          "en": "White cheese veya kasar",
+          "tr": "Beyaz peynir veya kaşar",
           "quantity": "100 g crumbled",
           "icon": "🧀",
           "sentenceEn": "White cheese or shredded kasar melts over the top.",
@@ -1130,7 +1130,7 @@
         ],
         "rows": [
           [
-            "White Cheese / Feta",
+            "White cheese veya feta (Beyaz peynir veya feta)",
             "Beyaz Peynir",
             "50 g (crumbled)",
             "Crumbled white cheese melts slightly into the warm tomato egg sauce."
@@ -1257,7 +1257,7 @@
       "image": {
         "src": "/blog/ingilizce-tarifler/images/menemen-sujuk.webp",
         "alt": "Menemen topped with fried slices of spicy Turkish sujuk sausage",
-        "captionEnglish": "Menemen with Sujuk Recipe / Sucuklu Menemen Tarifi",
+        "captionEnglish": "Menemen with Sujuk Recipe (Sucuklu Menemen Tarifi)",
         "captionTurkish": "Sucuklu Menemen Tarifi tavada sunumu."
       },
       "ingredients": {
@@ -1387,8 +1387,8 @@
           "sentenceTr": "Sucuk zaten tuzlu ve baharatlı olduğundan tuzu ölçülü ekleyin."
         },
         {
-          "en": "Warm pita / bread",
-          "tr": "Sıcak pide / ekmek",
+          "en": "Warm pita veya bread",
+          "tr": "Sıcak pide veya ekmek",
           "quantity": "4 slices",
           "icon": "🥖",
           "sentenceEn": "Warm bread soaks up the spiced red tomato-sujuk oil.",
@@ -1454,7 +1454,7 @@
         ],
         "rows": [
           [
-            "Sujuk / Turkish Sausage",
+            "Sujuk veya Turkish sausage (Sucuk veya Türk sucuğu)",
             "Sucuk",
             "60 g (sliced)",
             "Spiced dry beef sausage sliced into rounds."
@@ -1839,8 +1839,8 @@
         ],
         "rows": [
           [
-            "Copper Pan / Sahan",
-            "Bakır Tava / Sahan",
+            "Copper Pan veya Sahan",
+            "Bakır tava veya sahan",
             "Step 2, 3, 4, 5, 6"
           ],
           [
@@ -1871,7 +1871,7 @@
       "keyword": null,
       "methodology": "Kalori bilgisini ilk cümlede İngilizce ve Türkçe olarak birlikte ver. 100 g ve 1 porsiyon için kalori değerlerini İngilizce-Türkçe tabloda göster (Serving, Calories (kcal), Açıklama).",
       "componentType": "nutrition-table",
-      "introEnglish": "One standard serving of Menemen (approx. 200 g) contains about 220 calories. / Bir standart porsiyon Menemen (yaklaşık 200 g) ortalama 220 kalori içerir.",
+      "introEnglish": "One standard serving of Menemen (approx. 200 g)contains about 220 calories. (Bir standart porsiyon Menemen)(yaklaşık 200 g) ortalama 220 kalori içerir.",
       "introTurkish": "Menemenin kalori değeri kullanılan zeytinyağı ve ek malzemelere göre değişiklik gösterir.",
       "paragraphs": [],
       "table": {
@@ -1967,7 +1967,7 @@
           ],
           [
             "Origin",
-            "Turkey (Izmir / Menemen district)",
+            "Turkey (İzmir Menemen ilçesi)",
             "North Africa & Middle East"
           ],
           [
@@ -2037,31 +2037,31 @@
             "Tablespoon (tbsp)",
             "Yemek Kaşığı",
             "15 ml",
-            "Add 2 tablespoons of olive oil to the pan. / Tavaya 2 yemek kaşığı zeytinyağı ekleyin."
+            "Add 2 tablespoons of olive oil to the pan. (Tavaya 2 yemek kaşığı zeytinyağı ekleyin.)"
           ],
           [
             "Teaspoon (tsp)",
             "Çay Kaşığı",
             "5 ml",
-            "Add 1 teaspoon of salt. / 1 çay kaşığı tuz ekleyin."
+            "Add 1 teaspoon of salt. (1 çay kaşığı tuz ekleyin.)"
           ],
           [
             "Cup",
             "Su Bardağı",
             "240 ml",
-            "Use 1 cup of chopped tomatoes. / 1 su bardağı doğranmış domates kullanın."
+            "Use 1 cup of chopped tomatoes. (1 su bardağı doğranmış domates kullanın.)"
           ],
           [
             "Gram (g)",
             "Gram",
             "1 g",
-            "Slice 60 grams of sujuk. / 60 gram sucuk dilimleyin."
+            "Slice 60 grams of sujuk. (60 gram sucuk dilimleyin.)"
           ],
           [
             "Milliliter (ml)",
             "Mililitre",
             "1 ml",
-            "Pour 30 ml of oil into the skillet. / Tavaya 30 ml yağ dökün."
+            "Pour 30 ml of oil into the skillet. (Tavaya 30 ml yağ dökün.)"
           ]
         ]
       },
@@ -2090,52 +2090,52 @@
           [
             "Chop",
             "Doğramak",
-            "Chop the peppers into small rings. / Biberleri küçük halkalar halinde doğrayın."
+            "Chop the peppers into small rings. (Biberleri küçük halkalar halinde doğrayın.)"
           ],
           [
             "Dice",
             "Küp Küp Doğramak",
-            "Dice 2 ripe tomatoes into small cubes. / 2 olgun domatesi küçük küpler halinde doğrayın."
+            "Dice 2 ripe tomatoes into small cubes. (2 olgun domatesi küçük küpler halinde doğrayın.)"
           ],
           [
             "Saute",
-            "Sotelemek / Kavurmak",
-            "Saute the peppers in hot oil. / Biberleri sıcak yağda soteleyin."
+            "Sotelemek veya kavurmak",
+            "Saute the peppers in hot oil. (Biberleri sıcak yağda soteleyin.)"
           ],
           [
             "Simmer",
             "Kısık Ateşte Kaynatmak",
-            "Simmer the tomatoes for 10 minutes. / Domatesleri 10 dakika kısık ateşte pişirin."
+            "Simmer the tomatoes for 10 minutes. (Domatesleri 10 dakika kısık ateşte pişirin.)"
           ],
           [
             "Crack",
             "Kırmak (Yumurta)",
-            "Crack 2 eggs into the skillet. / Tavaya 2 yumurta kırın."
+            "Crack 2 eggs into the skillet. (Tavaya 2 yumurta kırın.)"
           ],
           [
             "Stir",
             "Karıştırmak",
-            "Stir gently on low heat. / Kısık ateşte nazikçe karıştırın."
+            "Stir gently on low heat. (Kısık ateşte nazikçe karıştırın.)"
           ],
           [
             "Season",
-            "Baharatlamak / Tatlandırmak",
-            "Season with salt and pepper. / Tuz ve karabiberle baharatlayın."
+            "Baharatlamak veya tatlandırmak",
+            "Season with salt and pepper. (Tuz ve karabiberle baharatlayın.)"
           ],
           [
             "Melt",
             "Eritmek",
-            "Melt the cheese over warm eggs. / Sıcak yumurtaların üzerinde peyniri eritin."
+            "Melt the cheese over warm eggs. (Sıcak yumurtaların üzerinde peyniri eritin.)"
           ],
           [
             "Skillet",
             "Tava",
-            "Cook Menemen in a shallow copper skillet. / Menemeni sığ bir bakır tavada pişirin."
+            "Cook Menemen in a shallow copper skillet. (Menemeni sığ bir bakır tavada pişirin.)"
           ],
           [
             "Serve",
             "Servis Etmek",
-            "Serve hot with crusty bread. / Çıtır ekmekle sıcak servis edin."
+            "Serve hot with crusty bread. (Çıtır ekmekle sıcak servis edin.)"
           ]
         ]
       },
@@ -2170,19 +2170,19 @@
             "1 tablespoon (tbsp)",
             "1 yemek kaşığı",
             "15 ml",
-            "Add 2 tablespoons of olive oil to the pan. / Tavaya 2 yemek kaşığı zeytinyağı ekleyin."
+            "Add 2 tablespoons of olive oil to the pan. (Tavaya 2 yemek kaşığı zeytinyağı ekleyin.)"
           ],
           [
             "1 teaspoon (tsp)",
             "1 çay kaşığı",
             "5 ml",
-            "Add 1 teaspoon of red pepper flakes. / 1 çay kaşığı pul biber ekleyin."
+            "Add 1 teaspoon of red pepper flakes. (1 çay kaşığı pul biber ekleyin.)"
           ],
           [
             "1 cup",
             "1 su bardağı",
             "240 ml",
-            "Add 1 cup of diced tomatoes. / 1 su bardağı doğranmış domates ekleyin."
+            "Add 1 cup of diced tomatoes. (1 su bardağı doğranmış domates ekleyin.)"
           ]
         ]
       },
@@ -2217,13 +2217,13 @@
             "100 g",
             "3.5 oz",
             "100 gram yaklaşık 3.5 ons değerine karşılık gelir.",
-            "Use 100 g of chopped peppers. / 100 g doğranmış biber kullanın."
+            "Use 100 g of chopped peppers. (100 g doğranmış biber kullanın.)"
           ],
           [
             "1 l",
             "4.2 cups",
             "1 litre yaklaşık 4.2 su bardağına karşılık gelir.",
-            "Wash vegetables with 1 l of cold water. / Sebzeleri 1 l soğuk suyla yıkayın."
+            "Wash vegetables with 1 l of cold water. (Sebzeleri 1 l soğuk suyla yıkayın.)"
           ]
         ]
       },
@@ -2238,8 +2238,8 @@
       "keyword": null,
       "methodology": "İlk cümlede İngilizce tarif yazımının 4 temel dil kuralını say: emir kipi, sıra zarfları, sayılabilir-sayılamayan isimler, ölçü ifadeleri. Her kuralı 1 cümleyle tanımla ve Menemen tarifinden 1 örnekle destekle. Bölümü İngilizce-Türkçe örnek tablosuyla kapat (Rule, English Example, Türkçe Karşılığı).",
       "componentType": "grammar-table",
-      "introEnglish": "The four core language rules for writing recipe texts in English are imperative mood, sequence adverbs, countable/uncountable nouns, and measurement expressions.",
-      "introTurkish": "İngilizce tarif metinleri yazmanın 4 temel dil kuralı; emir kipi, sıra zarfları, sayılabilir/sayılamayan isimler ve ölçü ifadeleridir.",
+      "introEnglish": "The four core language rules for writing recipe texts in English are imperative mood, sequence adverbs, countable and uncountable nouns, and measurement expressions.",
+      "introTurkish": "İngilizce tarif metinleri yazmanın 4 temel dil kuralı; emir kipi, sıra zarfları, sayılabilir ve sayılamayan isimler ve ölçü ifadeleridir.",
       "paragraphs": [],
       "table": {
         "caption": "Menemen Tarif Metinleri İçin 4 Dil Kuralı",
@@ -2260,7 +2260,7 @@
             "Önce biberleri soteleyin, ardından domatesleri ekleyin."
           ],
           [
-            "Countable / Uncountable Nouns",
+            "Countable and Uncountable Nouns (Sayılabilen ve Sayılamayan İsimler)",
             "2 eggs (countable), some salt (uncountable).",
             "2 yumurta (sayılabilir), biraz tuz (sayılamaz)."
           ],
@@ -2516,7 +2516,7 @@
           "question": "“_____ the sliced green peppers in olive oil for 3 minutes.” (Uygun mutfak fiilini yerleştiriniz)",
           "type": "fill-in",
           "answer": "Saute",
-          "explanation": "Saute = Tavada az yağda sotelemek/kavurmak."
+          "explanation": "Saute = Tavada az yağda sotelemek veya kavurmak."
         }
       ],
       "answerKey": [

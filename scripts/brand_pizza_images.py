@@ -20,26 +20,25 @@ def process_pizza_images():
     # 1. Hero
     if os.path.exists(hero_raw):
         img = Image.open(hero_raw)
-        create_branded_image(img, "Homemade Italian Pizza Recipe", os.path.join(output_dir, "pizza-hero.webp"), (1200, 675))
+        create_branded_image(img, "Homemade Italian Pizza Recipe", os.path.join(output_dir, "pizza-hero.webp"), (1200, 675), subtitle_text="Ev Yapımı İtalyan Pizzası Tarifi")
 
     # 2. Pizza Dough
     if os.path.exists(dough_raw):
         img = Image.open(dough_raw)
-        create_branded_image(img, "Homemade Pizza Dough Recipe", os.path.join(output_dir, "pizza-dough.webp"), (1200, 800))
+        create_branded_image(img, "Homemade Pizza Dough Recipe", os.path.join(output_dir, "pizza-dough.webp"), (1200, 800), subtitle_text="Ev Yapımı Pizza Hamuru Tarifi")
         
     # 3. Margherita Pizza
     if os.path.exists(margherita_raw):
         img = Image.open(margherita_raw)
-        create_branded_image(img, "Classic Margherita Pizza Recipe", os.path.join(output_dir, "pizza-margherita.webp"), (1200, 800))
+        create_branded_image(img, "Classic Margherita Pizza Recipe", os.path.join(output_dir, "pizza-margherita.webp"), (1200, 800), subtitle_text="Klasik Margarita Pizza Tarifi")
         
     # 4. Supreme Pizza (Hero crop with focus on toppings)
     if os.path.exists(hero_raw):
         img = Image.open(hero_raw)
-        # Crop focusing on the center pizza
         w, h = img.size
         crop_box = (int(w * 0.15), int(h * 0.25), int(w * 0.85), int(h * 0.95))
         cropped = img.crop(crop_box)
-        create_branded_image(cropped, "Supreme Pizza Recipe", os.path.join(output_dir, "pizza-supreme.webp"), (1200, 800))
+        create_branded_image(cropped, "Supreme Pizza Recipe", os.path.join(output_dir, "pizza-supreme.webp"), (1200, 800), subtitle_text="Karışık Pizza Tarifi")
 
     # 5. Pan Pizza (Crispy pan / peel focus)
     if os.path.exists(margherita_raw):
@@ -47,7 +46,7 @@ def process_pizza_images():
         w, h = img.size
         crop_box = (int(w * 0.1), int(h * 0.2), int(w * 0.9), int(h * 0.95))
         cropped = img.crop(crop_box)
-        create_branded_image(cropped, "Crispy Pan Pizza Recipe", os.path.join(output_dir, "pizza-pan.webp"), (1200, 800))
+        create_branded_image(cropped, "Crispy Pan Pizza Recipe", os.path.join(output_dir, "pizza-pan.webp"), (1200, 800), subtitle_text="Çıtır Tavada Pizza Tarifi")
 
 if __name__ == "__main__":
     process_pizza_images()

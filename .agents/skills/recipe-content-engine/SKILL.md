@@ -1,11 +1,11 @@
 ---
 name: recipe-content-engine
-description: Konuşarak Öğren İngilizce Tarifler projesi için Excel SEO Brieflerini ve Prompt Instance standartlarını zengin, çift dilli, görsel/ikon destekli malzeme kartlarına ve interaktif web bileşenlerine dönüştüren standart içerik motoru kuralları.
+description: Konuşarak Öğren İngilizce Tarifler projesi için Excel SEO Brieflerini ve Prompt Instance standartlarını zengin, çift dilli, görsel/ikon destekli malzeme kartlarına, kurumsal tasarım mimarisine ve interaktif web bileşenlerine dönüştüren standart içerik ve tasarım motoru kuralları.
 ---
 
-# Recipe Content Engine (Standart Tarif İçerik ve Görsel Motoru)
+# Recipe Content Engine (Standart Tarif İçerik ve Tasarım Motoru)
 
-Bu rehber, Konuşarak Öğren İngilizce Yemek Tarifleri projesinde yayına alınacak tüm tarif sayfalarının (**Menemen, Makarna, Kek, Omlet, Baklava, Smoothie vb.**) Excel SEO briefleri ve `Prompt Instance` dokümanı doğrultusunda aynı yüksek kalite, tasarım ve SEO standartlarında üretilmesini sağlayan kalıcı kurallar bütünüdür.
+Bu doküman, Konuşarak Öğren İngilizce Yemek Tarifleri projesinde yayına alınacak tüm tarif sayfalarının (**Pizza, Menemen, Makarna, Kek, Omlet, Baklava, Smoothie vb.**) Excel SEO briefleri, `Prompt Instance` dokümanı ve **Lead Frontend & UI/UX** tasarım standartları doğrultusunda aynı yüksek kalite, okunabilirlik ve SEO standartlarında üretilmesini sağlayan kalıcı kurallar bütünüdür.
 
 ---
 
@@ -17,122 +17,150 @@ Her yeni tarif içeriği şu 5 aşamalı hiyerarşiyi takip eder:
 [1. Excel SEO Brief] ──> [2. Çift Dilli Veri Modeli (.json)] ──> [3. Görsel Üretimi & Markalama (.webp)] ──> [4. Bileşen & CSS Rendering] ──> [5. SEO & Schema Doğrulama]
 ```
 
-### Temel Kurallar ve Brief Sadakati:
-1. **Brief Başlık Bütünlüğü (Sıfır Sapma)**:
-   - Excel briefindeki her satır (`H1`, `H2`, `H3`) eksiksiz olarak sayfada yer almalıdır.
-   - Başlık metinleri, seviyeleri ve sıralaması asla değiştirilemez.
-2. **H1 Altı "Definition" Zorunluluğu (Row 2 Standardı)**:
+### 1.1. İçerik ve Dil Kuralları (Bilingual Standards):
+1. **İki Dilli Ayrımda Parantez `(...)` Standardı (Kesme `/` Yasağı)**:
+   - Metinlerde, tablolarda, başlıklarda ve örnek cümlelerde İngilizce ve Türkçe ifadeler arasında asla kesme işareti (` / `) kullanılmaz.
+   - Standart format her zaman **`English (Türkçe)`** olmalıdır:
+     - **Tablo Başlıkları**: `MAIN INGREDIENTS (ANA MALZEMELER)`, `MAIN STEPS (TEMEL ADIMLAR)`, `Example Sentence (İngilizce - Türkçe)`
+     - **Tablo Hücreleri**: `Flour, yeast, warm water, olive oil, salt (Un, maya, ılık su, zeytinyağı, tuz)`
+     - **Örnek Cümleler**: `Preheat the oven to 220°C. (Fırını önceden 220 dereceye ısıtın.)`
+     - **Başlık ve Etiketler**: `How Do You Make Homemade Pizza Step by Step? (Homemade Pizza İngilizce Adım Adım Nasıl Yapılır?)`
+2. **Türkçe Karşılıklarda `veya` Bağlacı Standardı**:
+   - Türkçe alternatif veya eş anlamlı terimlerde kesme (` / `) yerine mutlaka `veya` bağlacı kullanılır:
+     - *Yanlış*: `Sürmek / Yaymak`, `Pizza Kenarı / Tabanı`, `Kepçe / Kaşık`
+     - *Doğru*: `Sürmek veya yaymak`, `Pizza kenarı veya tabanı`, `Kepçe veya kaşık`, `Pizza kesici veya rulet`, `İlk olarak veya önce`
+3. **H1 Altı "Definition" Zorunluluğu (Row 2 Standardı)**:
    - Brief'te H1 altındaki metodolojide istenen **"Definition"** bölümü iki parçadan oluşur:
-     a) **Çift Dilli Lede Tanım Cümlesi**: `<strong>English definition sentence.</strong> / Türkçe açıklayıcı tanım cümlesi.`
+     a) **Çift Dilli Lede Tanım Cümlesi**: `<strong>English definition sentence.</strong> (Türkçe açıklayıcı tanım cümlesi.)`
      b) **Çeşitler Özet Karşılaştırma Tablosu (`.hero-overview-table`)**:
-        - Tablo öncesinde iki dilli giriş cümlesi yer alır (`<p class="section-intro"><strong>İngilizce ve Türkçe Menemen Çeşitleri Karşılaştırması</strong>: ... / ...</p>`).
-        - Sütunlar: `English Recipe Name | Türkçe Adı | Main Ingredients / Ana Malzemeler | Main Steps / Temel Adımlar`.
-        - **Kritik Kural**: Tablodaki tüm malzeme ve adım özetleri **hem İngilizce hem Türkçe karşılıklı (`English / Türkçe`)** olarak yazılmalıdır.
-3. **Tarif Üstü Bilgi Rozetleri (Pill Badges)**:
-   - Her tarif çeşidi başlığının (`H2`) hemen altında süreyi, porsiyonu ve malzeme sayısını gösteren kapsül rozetler (`.chapter-meta`) yer alır (Örn: `[25 dakika] [2 kişilik] [7 malzeme]`).
-4. **Tablo Öncesi İki Dilli Açıklama Zorunluluğu**:
-   - Sayfadaki **istisnasız her tablonun** hemen öncesinde konuyu açıklayan iki dilli bir `<p class="section-intro">` cümlesi bulunmalıdır (`English sentence. / Türkçe açıklama cümlesi.`). Hiçbir tablo açıklamasız kalamaz.
-5. **Tartışma ve Karşılaştırma Kartları**:
-   - Başlık altında iki dilli tanıtım cümlesi yer alır.
-   - Altında `ENGLISH / TÜRKÇE` etiketli yan yana iki dilli kartlar (`.bilingual`) kullanılır.
-6. **Dil Kuralları Sekmeli (Tab) Yapı**:
-   - Birden fazla alt konuyu (`01 Genel kurallar`, `02 Emir kipi`, `03 Sıra zarfları`) barındıran gramer bölümlerinde `.grammar-tabs` interaktif sekmeli yapısı zorunludur.
-7. **Tablo ve Zengin Malzeme Kartları**:
-   - Malzemeler sadece tabloyla geçiştirilemez; her malzeme aynı zamanda görsel/ikon yuvalı bir **Malzeme Kartı (`.ingredient-card`)** olarak sunulmalıdır.
-8. **Kompakt Adım Listeleri**:
-   - Tarif varyasyonları yönergeleri düz metin veya tablo yerine sıra zarfları (`First`, `Then`, `After that`, `Next`, `Finally`) içeren `<ol class="compact-steps">` biçiminde olmalıdır.
-9. **İç Linkleme (Internal Links) Sadakati**:
-   - Brief'te belirtilen hedef anahtar kelimeler (Örn: `İngilizce Mutfak Sözcükleri`, `İngilizce Ölçü Birimleri`, `First, Then, After`, `8. Sınıf İngilizce Konuları`) ilgili paragraflarda doğal bağlamda `<a>` linki olarak yer almalıdır.
-10. **Kurumsal Renk ve Marka Kimliği Standartı**:
-   - Tablolar, sekmeler (tabs) ve rozetlerde yeşil vb. yabancı tema renkleri kullanılmaz.
-   - Konuşarak Öğren kurumsal marka renkleri esastır:
-     - **Tablo Başlıkları (`th`)**: Açık mavi zemin (`#f0f7ff`), derin lacivert metin (`#1e3a8a`), marka mavisi alt çizgi (`border-bottom: 2px solid #309dff`).
-     - **Gramer Sekmeleri (`.tab-list`)**: Nötr açık gri taban (`#f8fafc`), aktif sekme altında marka mavisi çizgi (`#309dff`), aktif numara mavisi (`#309dff`), hover (`#1d4ed8`).
-     - **Kapsül Rozetler (`.chapter-meta span`)**: Açık mavi zemin (`#f0f7ff`), mavi kenarlık (`#bfdbfe`), mavi metin (`#1d4ed8`).
-     - **Vurgu ve CTA Butonları**: Konuşarak Öğren Turuncusu (`#f16c00`).
+        - Tablo öncesinde iki dilli giriş cümlesi yer alır (`Explore the four main variations with their English names... (Aşağıdaki tabloda 4 temel çeşidin İngilizce isimlerini... inceleyebilirsiniz.)`).
+        - Sütunlar: `English Recipe Name | Türkçe Adı | Main Ingredients (Ana Malzemeler) | Main Steps (Temel Adımlar)`.
+        - Tablodaki tüm malzeme ve adım özetleri parantezli iki dilli olmalıdır (`English text (Türkçe açıklama)`).
+4. **Brief Başlık Bütünlüğü (Sıfır Sapma)**:
+   - Excel briefindeki her satır (`H1`, `H2`, `H3`) eksiksiz olarak sayfada yer almalıdır.
+   - Başlık seviyeleri ve sıralaması asla değiştirilemez.
+5. **Tablo Öncesi İki Dilli Açıklama Zorunluluğu**:
+   - Sayfadaki istisnasız her tablonun hemen öncesinde konuyu açıklayan iki dilli bir `<p class="section-intro">` cümlesi bulunmalıdır (`English sentence. (Türkçe açıklama cümlesi.)`).
+6. **Zengin Malzeme Kartları (`.ingredient-grid`)**:
+   - Malzemeler hem karşılaştırmalı bir tablo (`English Ingredient | Türkçe Karşılığı | Quantity`) hem de görsel/ikon yuvalı bir **Malzeme Kartı (`.ingredient-card`)** olarak sunulmalıdır.
+7. **Kompakt Adım Listeleri**:
+   - Tarif varyasyonları yönergeleri düz metin yerine sıra zarfları (`First`, `Then`, `After that`, `Next`, `Finally`) içeren `<ol class="compact-steps">` biçiminde olmalıdır.
+8. **7 Adım Bölümünde Akordiyon Standartı**:
+   - Adım adım ana tarif bölümü modern `.step-accordion` bileşeniyle sunulmalıdır. Her adım numara rozeti, eylem başlığı, İngilizce cümle, Türkçe çeviri ve `Key Cooking Action` rozeti içerir.
 
 ---
 
-## 2. Görsel Hazırlama ve Markalama Standartları
+## 2. Lead Frontend UI/UX ve Tipografi Standartları
 
-Tarif görselleri ham olarak sayfaya eklenemez. Kurumsal kimlik ve kullanıcı deneyimi için aşağıdaki kurallara göre markalanmalıdır:
+1. **Hizalama Kuralı: Başlıklar Ortalı (Center), Metinler Sola Dayalı (Align-Left)**:
+   - **H1, Bölüm Başlıkları (`H2`), Eyebrow Etiketleri ve Hero Kartı**: Sayfanın tam ortasında (`text-align: center; margin: 0 auto;`) yer alır.
+   - **Lede Paragrafları, `.section-intro` ve Gövde Metinleri**: Okuma ergonomisi gereği sola dayalıdır (`text-align: left; line-height: 1.75;`), ancak sayfa ortasındaki 860px genişliğindeki temiz okuma kolonunda merkezlenir (`margin-left: auto; margin-right: auto; max-width: 860px;`).
+2. **CTA Banner Standartları ve Quiz İzolasyonu (Kontrast & Tıklanabilirlik)**:
+   - Konuşarak Öğren CTA banner'ları (`.course-banner`, `.app-banner`, `.pro-course-banner`) ortalı ve ferah olmalıdır (`margin: 2.2rem auto; max-width: 860px;`).
+   - **CTA Banner'ları Asla `.exercise` (Quiz) Konteynerinin İçine Konulamaz**: Quiz alanı koyu renkli (`#0f172a`) olduğu için banner'lar okunaksız hale gelir ve buton tıklama dengesi bozulur. Banner'lar daima quiz bölümünün hemen DIŞINDA yer alır.
+   - **CTA Metinleri Orijinal Türkçe Kalır**: Tanıtım ve dönüşüm mesajları İngilizceye çevrilmez, orijinal Türkçe metin korunur (Örn: `İngilizceyi tarif ezberleyerek değil, konuşarak öğrenin.`).
+3. **Hero Facts Kartı (Tarif Özeti)**:
+   - Sola kayma engellenir; `max-width: 780px; margin: 2.2rem auto;` ile sayfanın tam ortasına simetrik oturur.
+   - Başlıklar iki satırlı ve iki dilli olmalıdır: `PREPARATION (HAZIRLIK)`, `COOKING (PİŞİRME)`, `SERVINGS (PORSİYON)`, `LEVEL (SEVİYE)`.
+4. **Öğrenme ve Bölüm Panelleri Başlık Tipografisi (Büyük Font Kuralı)**:
+   - Detay/özet kartlarının (`details.learning-panel summary h3`) başlıkları küçük bırakılamaz.
+   - `font-size: 1.45rem !important; font-weight: 800 !important; line-height: 1.35 !important;` olmalıdır.
+   - Altındaki eylem çağrısı span (`Malzeme kartları & tablosu`, `Adım adım yapılışı göster`): `font-size: 15px !important; font-weight: 700; color: #0284c7;`.
+5. **7-Adım Rehberinde Akordiyon Kuralı (`.step-accordion`)**:
+   - Ana adım adım tarif bölümü statik metin blokları yerine interaktif `<details class="step-accordion-item">` akordiyon bileşeniyle (`buildStepAccordionHTML`) sunulmalıdır.
+   - İlk adım açık (`open`), diğer adımlar kapalı gelir. Adım rozeti, İngilizce cümle, sol bordürlü Türkçe çeviri ve `Key Cooking Action` rozeti içerir.
+6. **Dil Kurallarında Sekme Sistemi (`.grammar-tabs`)**:
+   - Dil bilgisi kuralları asla alt alta düz tablolar olarak sunulamaz.
+   - Mutlaka erişilebilir `role="tablist"` ve `role="tabpanel"` içeren `.grammar-tabs` sekme sistemiyle sunulmalıdır (`Imperatives`, `Sequence Adverbs`, `Grammar Rules`).
+7. **Tarif Menüsü Sıralaması (En Yeni Tarif En Sağa)**:
+   - Üstteki Tarif Alt Menüsünde (`.sub-header-nav`) ve sayfa menülerinde en son hazırlanan en yeni tarif daima listenin **EN SAĞINA (en son sıraya)** eklenir.
+8. **Yüksek Kontrastlı (WCAG AAA) Hover Tooltip Standartı**:
+   - Rozet ve özet kartlarındaki bilgilendirme tooltip'leri:
+     - **Arka Plan**: Derin gece mavisi (`#090d16`)
+     - **İngilizce Başlık/Açıklama**: Canlı gök mavisi (`#38bdf8`)
+     - **Türkçe Çeviri**: Kristal beyaz (`#ffffff`)
+     - **CSS Kuralı**: Tooltip içindeki span'lerin bozulmaması için seçici `.meta-tooltip-wrap:hover > span.meta-badge` şeklinde sınırlandırılmalıdır.
+
+---
+
+## 3. Görsel Hazırlama ve Markalama Standartları
+
+Tarif görselleri ham olarak sayfaya eklenemez. Kurumsal kimlik için `scripts/brand_recipe_images.py` veya `scripts/brand_<recipe>_images.py` ile otomatik işlenir:
 
 1. **Format ve Çözünürlük**:
-   - Boyut: **1200 × 675 px** (16:9) veya varyasyonlar için **1200 × 800 px** (4:3 / 3:2).
-   - Format: Optimize edilmiş **`.webp`**.
+   - Boyut: **1200 × 675 px** (16:9 Hero) veya **1200 × 800 px** (Varyasyonlar).
+   - Format: Optimize edilmiş **`.webp`** (kalite: 92).
    - Dizin: `public/images/<tarif-slug>-<varyasyon>.webp`.
-
 2. **Sağ Üst Köşe (Logo Rozeti)**:
-   - `public/ko-logo-yatay.png` logosu kullanılır.
-   - Logo, yarı saydam şık beyaz zeminli, hafif gölgeli ve yuvarlatılmış köşeli bir rozet (`padding: 8px 14px`, `border-radius: 8px`, `background: rgba(255, 255, 255, 0.92)`) içine yerleştirilir.
-
-3. **Sol Alt Köşe (Görsel İsmi Rozeti)**:
-   - Tarifin İngilizce resmi adı (Örn: *Classic Menemen Recipe*, *Menemen with Cheese Recipe*) yazılır.
-   - Koyu cam / kontrastlı zemin üzerinde (`background: rgba(15, 23, 42, 0.82)`, `border-radius: 8px`, `color: #ffffff`, kalın modern tipografi) yer alır.
-
-4. **Otomasyon Scripti**:
-   - Görseller `scripts/brand_recipe_images.py` scripti kullanılarak tek komutla otomatik olarak markalanır ve `.webp` formatına dönüştürülür.
+   - `public/ko-logo-yatay.png` kullanılır.
+   - Şık beyaz zeminli, gölgeli ve yuvarlatılmış rozet (`border-radius: 8px; background: rgba(255, 255, 255, 0.94);`).
+3. **Sol Alt Köşe (Çift Satırlı İki Dilli Rozet)**:
+   - **1. Satır (İngilizce)**: Bold beyaz font (Örn: `Classic Butter Cookies Recipe`).
+   - **2. Satır (Türkçe Parantez)**: Açık gri font (Örn: `(Klasik Tereyağlı Kurabiye Tarifi)`).
+   - Zemin: Koyu lacivert yarı saydam cam (`background: rgba(15, 23, 42, 0.88); border: 1px solid rgba(255, 255, 255, 0.28);`).
+4. **CSS Kırpılma (Crop) Koruması**:
+   - Görsellerin sağ üstteki logoyu veya sol alttaki iki satırlı rozeti kesmesini önlemek için CSS kuralı:
+     ```css
+     .recipe-chapter figure img {
+       width: 100% !important;
+       height: auto !important;
+       object-fit: contain !important;
+       border-radius: 20px;
+     }
+     ```
 
 ---
 
-## 3. Zengin Malzeme Kartları Standardı (`.ingredient-grid`)
+## 4. Akıllı Çift Yönlü Navigasyon Standartı (Scroll Direction Switch)
 
-Brief'te *"List definition + listing with headwords"* istenen her malzeme bölümünde iki bileşen yan yana/alt alta sunulur:
+Kullanıcı sayfada gezinirken navigasyon çakışmalarını önlemek için yön bazlı görünürlük uygulanır:
 
-1. **Karşılaştırmalı Tablo**:
-   - Sütunlar: `English Ingredient | Türkçe Karşılığı | Quantity`
-2. **Görsel/İkon Hazırlıklı Malzeme Kartları (`.ingredient-grid`)**:
-   ```html
-   <div class="ingredient-grid">
-     <article class="ingredient-card">
-       <div class="ingredient-card-header">
-         <div class="ingredient-thumb">
-           <span class="ingredient-icon">🥚</span>
-         </div>
-         <span class="quantity-badge">4 large</span>
-       </div>
-       <h4>Eggs <small>(Yumurta)</small></h4>
-       <p class="card-en">Eggs give menemen its soft, creamy texture.</p>
-       <p class="card-tr">Yumurta, menemeni yumuşak ve kremamsı yapar.</p>
-     </article>
-   </div>
+1. **Aşağı Kaydırırken (Scroll DOWN)**:
+   - Sayfa içi detaylar incelenirken Sayfa Navigatörü (`.toc`) aktif kalır (`top: 12px` / `top: 16px`).
+   - Tarifler Menüsü (`.sub-header`) alanı ferah tutmak için gizlenir (`transform: translateY(-100%); opacity: 0;`).
+2. **Yukarı Kaydırırken (Scroll UP)**:
+   - Sayfa başına dönülürken Tarifler Menüsü (`.sub-header`) görünür hale gelir (`top: 0`).
+   - Sayfa Navigatörü (`.toc`) gizlenir (`transform: translateY(-120%); opacity: 0;`).
+3. **Sayfa Başı ve Tıklama Koruması**:
+   - `scrollY < 180` olduğunda her iki menü de doğal yerinde görünür.
+   - Sayfa içi link tıklandığında yumuşak kaydırma (`smooth scroll`) esnasında menünün kaybolmaması için 750ms koruma süresi (`isNavClicking`) uygulanır.
+   - Bölümlere `scroll-margin-top: 80px` verilir.
+
+---
+
+## 5. Mobil ve DevTools Inspect Görünüm Standartları (Taşma ve Boşluk Önleme)
+
+Masaüstünde F12 Inspect / mobil modunda veya küçük ekranlarda sağ tarafta beyaz boşluk kalmasını engellemek için şu kurallar zorunludur:
+
+1. **Gövde Kısıtı**:
+   ```css
+   html, body {
+     overflow-x: hidden !important;
+     width: 100% !important;
+     max-width: 100vw !important;
+   }
    ```
+2. **Menü ve Navigatörlerde Yatay Kaydırma**:
+   - `.sub-header` ve `.sub-header-inner`: `overflow-x: auto; -webkit-overflow-scrolling: touch;` ile ekran genişliğini asla aşamaz.
+   - `.toc`: `width: calc(100% - 24px); max-width: calc(100vw - 24px); margin: 0 12px;` ile ekrana sığar ve sekmeler kendi içinde kayar.
+3. **Mobil App Banner Butonları**:
+   - `App Store` ve `Google Play` butonları mobilde yan yana zorlanmaz; alt alta istiflenir (`flex-direction: column; width: 100%; max-width: 280px;`).
+4. **Tablolar**:
+   - Tüm tablolar `.table-container` içinde `width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch;` ile sarılır.
 
 ---
 
-## 4. Pişirme Adımları Standardı (`.compact-steps`)
+## 6. Her Yeni Tarif İçin Zorunlu Kontrol Listesi (Pre-Delivery Audit Checklist)
 
-Tarif çeşitleri adımlarında düz tablo kullanılmaz. Sıra zarfları (First, Then, After that, Next, Finally) içeren şu yapı zorunludur:
+Her yeni sayfa veya tarif tamamlandığında teslimden önce aşağıdaki 10 madde tek tek doğrulanmalıdır:
 
-```html
-<ol class="compact-steps">
-  <li>
-    <span class="step-num-badge">1. adım</span>
-    <div class="step-body">
-      <p class="en-text"><strong>First, chop 2 green peppers and 3 tomatoes.</strong></p>
-      <p class="tr-text">Önce 2 yeşil biberi ve 3 domatesi doğrayın.</p>
-    </div>
-  </li>
-  <!-- ... -->
-</ol>
-```
-
----
-
-## 5. Dil Kuralları ve Vurgu Standartları
-
-1. **Sekmeli Arayüz (`.grammar-tabs`)**:
-   - `01 Genel kurallar`: 4 kural listesi + Kural tablosu
-   - `02 Emir kipi`: Tanım + 5 emir kipi cümlesi tablosu + `.negative-imperative-box`
-   - `03 Sıra zarfları`: Tanım + 5 sıra zarfı tablosu + `.bilingual-sequence-card` (5 cümlelik metin)
-2. **Negatif Emir Kipi Kutusu**: Olumsuz talimatlar (`Do not overcook the eggs...`) için `.negative-imperative-box` vurgu kutusu kullanılır.
-3. **5 Cümlelik Sıralı Paragraf Kartı**: Sıra zarflarını pekiştiren 5 cümlelik metin `.bilingual-sequence-card` içerisinde İngilizce ve Türkçe olarak sunulur.
-
----
-
-## 6. 8. Sınıf Alıştırma Standardı (`.exercise`)
-
-Alıştırma soruları yanıtları açıkta verilmez:
-1. **Soru 1 & 2 (Çoktan Seçmeli)**: `<ul class="quiz-options">` ile A, B, C, D seçenek butonları.
-2. **Soru 3 & 4 (Boşluk Doldurma)**: Cümle içi boşluklar (`“_____ 4 fresh eggs into the sauce.”`).
-3. **Cevap Anahtarı**: Bölüm sonunda `<details class="answer-key"><summary>Cevap Anahtarını Göster</summary>...` ile gizlenir.
+1. [x] **Başlık & Rozet Formatı**: Tüm başlık ve rozetler istisnasız `English (Türkçe)` şeklinde İngilizce öncelikli mi?
+2. [x] **Font Büyüklüğü**: Detay/öğrenme paneli (`summary h3`) başlıkları en az `1.45rem` ve kalın mı?
+3. [x] **7-Adım Akordiyon**: 7 adım bölümü `.step-accordion` ile interaktif ve açılır-kapanır mı?
+4. [x] **Dil Bilgisi Sekmeleri**: Dil kuralları bölümü `.grammar-tabs` sekme sistemiyle ayrılmış mı?
+5. [x] **CTA Banner Konumu**: CTA banner'ı quiz (`.exercise`) dışına alınmış, tam kontrastlı ve butonları tıklanabilir mi?
+6. [x] **Menü Sıralaması**: Yeni tarif `.sub-header-nav` içinde en sağda yer alıyor mu?
+7. [x] **Kurumsal Markalama**: Tüm görseller `scripts/brand_recipe_images.py` ile logo ve iki dilli başlıkla damgalandı mı?
+8. [x] **Alternatif Terimler**: Eş anlamlı Türkçe terimlerde kesme (`/`) yerine `veya` kullanıldı mı?
+9. [x] **Tablo Tanıtım Cümlesi**: Her tablonun üzerinde iki dilli bir `.section-intro` yer alıyor mu?
+10. [x] **Derleme & Taşma Testi**: `npm run build` hatasız geçiyor ve sayfada yatay taşma sıfır mı?

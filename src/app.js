@@ -1,6 +1,7 @@
 import "./styles.css";
 import menemenData from "./data/menemen.json";
 import pizzaData from "./data/pizza.json";
+import kurabiyeData from "./data/kurabiye.json";
 
 const sharedVocab = [
   ["boil", "kaynatmak", "Boil the water before adding the ingredients."],
@@ -160,6 +161,27 @@ const recipes = {
     equipment: [["Copper Pan / Sahan", "Bakır Tava / Sahan", "Adım 2, 3, 4, 5, 6"], ["Chef Knife", "Mutfak Bıçağı", "Adım 1"], ["Cutting Board", "Kesme Tahtası", "Adım 1"], ["Wooden Spoon", "Tahta Kaşık", "Adım 2, 3, 5"]],
     vocab: [["chop", "doğramak", "Chop the peppers into small rings."], ["dice", "küp küp doğramak", "Dice 2 ripe tomatoes into small cubes."], ["saute", "sotelemek", "Saute the peppers in hot oil."], ["simmer", "kısık ateşte pişirmek", "Simmer the tomatoes for 10 minutes."], ["crack", "kırmak", "Crack 2 eggs into the skillet."], ["stir", "karıştırmak", "Stir gently on low heat."]]
   },
+  kurabiye: {
+    label: "Tatlı ve Atıştırmalık",
+    title: "İngilizce Kurabiye Tarifi",
+    englishTitle: "Butter Cookie Recipe",
+    image: "/blog/ingilizce-tarifler/images/kurabiye-hero.webp",
+    introEn: kurabiyeData.page.introEnglish,
+    introTr: kurabiyeData.page.introTurkish,
+    time: "35 dakika", serves: "24 adet", level: "A1–A2", calories: "140 kcal (1 adet)",
+    ingredients: [["Butter", "Tuzsuz tereyağı", "200 g"], ["Powdered Sugar", "Pudra şekeri", "100 g"], ["All-Purpose Flour", "Çok amaçlı un", "280 g"], ["Vanilla", "Vanilya özütü", "1 tsp"]],
+    steps: [
+      ["1. Soften the Butter (Tereyağını Yumuşatın)", "Soften 200 g of unsalted butter at room temperature.", "200 g tuzsuz tereyağını oda sıcaklığında yumuşatın."],
+      ["2. Mix with Powdered Sugar (Pudra Şekeriyle Karıştırın)", "Beat butter and 100 g powdered sugar until creamy.", "Tereyağı ve 100 g pudra şekerini kremsi olana dek çırpın."],
+      ["3. Add Flour and Vanilla (Un ve Vanilyayı Ekleyin)", "Sift 280 g flour and 1 tsp vanilla into the bowl.", "280 g un ve 1 çay kaşığı vanilyayı kaseye eleyin."],
+      ["4. Knead Soft Dough (Hamuru Yoğurun)", "Knead gently into a smooth, pliable dough.", "Pürüzsüz ve yumuşak bir hamur olana dek nazikçe yoğurun."],
+      ["5. Shape into Balls (Toplar Halinde Şekillendirin)", "Roll walnut-sized pieces into 24 round balls.", "Ceviz büyüklüğündeki hamur parçalarını 24 yuvarlak top halinde yuvarlayın."],
+      ["6. Place on Baking Tray (Tepsiye Dizin)", "Arrange cookies on parchment-lined sheet 3 cm apart.", "Kurabiyeleri pişirme kağıdı serili tepsiye 3 cm arayla dizin."],
+      ["7. Bake for 15 Minutes (15 Dakika Pişirin)", "Bake at 170°C for 15 minutes until golden.", "170°C'de 15 dakika altın rengi alana kadar pişirin."]
+    ],
+    equipment: [["Baking sheet", "Fırın tepsisi", "Step 6, 7"], ["Mixing bowl", "Karıştırma kabı", "Step 2, 3, 4"], ["Flour sieve", "Un eleği", "Step 3"], ["Cooling rack", "Tel ızgara", "Step 7"]],
+    vocab: [["cream", "kremalaştırmak", "Cream the butter and sugar."], ["sift", "elemek", "Sift the flour."], ["roll", "yuvarlamak", "Roll the dough into balls."], ["shape", "şekil vermek", "Shape with a fork."], ["bake", "fırında pişirmek", "Bake for 15 minutes."]]
+  }
 };
 
 const root = document.querySelector("#content");
@@ -180,24 +202,166 @@ function getRelatedRecipesHTML(currentSlug) {
   return `
     <section class="related-recipes" aria-labelledby="related-title">
       <div>
-        <p class="eyebrow">DERS GEÇİŞLERİ</p>
-        <h2 id="related-title">Diğer İngilizce Tarifler</h2>
-        <p class="section-intro">Farklı mutfak kelimelerini ve tarif kalıplarını diğer lezzetli tariflerle öğrenmeye devam edin.</p>
+        <p class="eyebrow">OTHER RECIPES (DİĞER İNGİLİZCE TARİFLER)</p>
+        <h2 id="related-title">Other English Recipes (Diğer İngilizce Tarifler)</h2>
+        <p class="section-intro">Öğrendiğiniz mutfak terimlerini ve adım adım anlatım kalıplarını pekiştirmek için diğer popüler tarifleri de inceleyebilirsiniz.</p>
       </div>
       <div class="related-grid">
         ${availableSlugs.map(slug => {
           const item = recipes[slug];
           return `
-            <a href="/blog/ingilizce-tarifler/${slug}" class="related-card">
+            <article class="related-card">
               <span class="recipe-badge">${item.label} · ${item.level}</span>
-              <strong>${item.title}</strong>
+              <h3 class="related-card-title">
+                <a href="/blog/ingilizce-tarifler/${slug}" class="related-card-link">${item.title}</a>
+              </h3>
               <small>${item.englishTitle}</small>
-              <b class="card-link-btn">Tarife git →</b>
-            </a>
+              <b class="card-link-btn" aria-hidden="true">Tarife git →</b>
+            </article>
           `;
         }).join("")}
       </div>
     </section>
+  `;
+}
+
+
+function buildFactsCardHTML(facts) {
+  return `
+    <aside class="hero-card pasta-facts" aria-label="Tarif özeti">
+      <table class="recipe-facts">
+        <caption>Tarif özeti</caption>
+        <thead>
+          <tr>
+            <th scope="col"><span class="fact-th-en">PREPARATION</span><span class="fact-th-tr">(HAZIRLIK)</span></th>
+            <th scope="col"><span class="fact-th-en">COOKING</span><span class="fact-th-tr">(PİŞİRME)</span></th>
+            <th scope="col"><span class="fact-th-en">SERVINGS</span><span class="fact-th-tr">(PORSİYON)</span></th>
+            <th scope="col"><span class="fact-th-en">LEVEL</span><span class="fact-th-tr">(SEVİYE)</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="fact-tooltip-wrap">
+                <span class="fact-value" tabindex="0">${facts.prep.val}</span>
+                <div class="fact-tooltip">
+                  <span class="tooltip-en">${facts.prep.en}</span>
+                  <span class="tooltip-tr">${facts.prep.tr}</span>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="fact-tooltip-wrap">
+                <span class="fact-value" tabindex="0">${facts.cook.val}</span>
+                <div class="fact-tooltip">
+                  <span class="tooltip-en">${facts.cook.en}</span>
+                  <span class="tooltip-tr">${facts.cook.tr}</span>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="fact-tooltip-wrap">
+                <span class="fact-value" tabindex="0">${facts.servings.val}</span>
+                <div class="fact-tooltip">
+                  <span class="tooltip-en">${facts.servings.en}</span>
+                  <span class="tooltip-tr">${facts.servings.tr}</span>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="fact-tooltip-wrap">
+                <span class="fact-value" tabindex="0">${facts.level.val}</span>
+                <div class="fact-tooltip">
+                  <span class="tooltip-en">${facts.level.en}</span>
+                  <span class="tooltip-tr">${facts.level.tr}</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </aside>
+  `;
+}
+
+function buildChapterMetaHTML(meta) {
+  const time = meta?.time?.val ? meta.time : null;
+  const servings = meta?.servings?.val ? meta.servings : null;
+  const count = meta?.count?.val ? meta.count : null;
+  return `
+    <div class="chapter-meta">
+      ${time ? `
+      <div class="meta-tooltip-wrap">
+        <span class="meta-badge">${time.val}</span>
+        <div class="fact-tooltip">
+          <span class="tooltip-en">${time.en}</span>
+          <span class="tooltip-tr">${time.tr}</span>
+        </div>
+      </div>` : ""}
+      ${servings ? `
+      <div class="meta-tooltip-wrap">
+        <span class="meta-badge">${servings.val}</span>
+        <div class="fact-tooltip">
+          <span class="tooltip-en">${servings.en}</span>
+          <span class="tooltip-tr">${servings.tr}</span>
+        </div>
+      </div>` : ""}
+      ${count ? `
+      <div class="meta-tooltip-wrap">
+        <span class="meta-badge">${count.val}</span>
+        <div class="fact-tooltip">
+          <span class="tooltip-en">${count.en}</span>
+          <span class="tooltip-tr">${count.tr}</span>
+        </div>
+      </div>` : ""}
+    </div>
+  `;
+}
+
+function buildIngredientCardsHTML(cards) {
+  if (!cards || !cards.length) return "";
+  return `
+    <div class="ingredient-cards-section">
+      <h4 class="cards-subhead">Visual Ingredient Cards (Görsel Malzeme Kartları):</h4>
+      <div class="ingredient-grid">
+        ${cards.map(c => `
+          <article class="ingredient-card">
+            <div class="ingredient-card-header">
+              <div class="ingredient-thumb"><span class="ingredient-icon">${c.icon || "🥗"}</span></div>
+              <span class="quantity-badge">${c.quantity || ""}</span>
+            </div>
+            <h4>${c.en} <small>(${c.tr})</small></h4>
+            <p class="card-en">${c.sentenceEn || ""}</p>
+            <p class="card-tr">${c.sentenceTr || ""}</p>
+          </article>
+        `).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function buildStepAccordionHTML(items) {
+  return `
+    <div class="step-accordion">
+      ${items.map((s, idx) => `
+        <details class="step-accordion-item" ${idx === 0 ? "open" : ""}>
+          <summary class="step-accordion-summary">
+            <div class="step-acc-header">
+              <span class="step-acc-badge">${s.number || idx + 1}</span>
+              <h3 class="step-acc-title">${s.titleEn} <span style="font-weight:500; font-size:0.92em; color:#64748b;">(${s.titleTr})</span></h3>
+            </div>
+            <span class="step-acc-icon" aria-hidden="true">↓</span>
+          </summary>
+          <div class="step-accordion-body">
+            <p class="step-acc-en"><strong>${s.sentenceEn}</strong></p>
+            <p class="step-acc-tr">${s.sentenceTr}</p>
+            <div class="step-acc-action-badge">
+              <span>Cooking Action (Mutfak Eylemi):</span> <strong>${s.actionEn || "Cooking"} (${s.actionTr || "Pişirme"})</strong>
+            </div>
+          </div>
+        </details>
+      `).join("")}
+    </div>
   `;
 }
 
@@ -293,7 +457,7 @@ function renderRecipe(r, slug) {
       </nav>
       <div class="content">
         <section id="tanim">
-          <p class="eyebrow">Tanım</p>
+          <p class="eyebrow">DEFINITION &amp; OVERVIEW (TANIM VE GENEL BAKIŞ)</p>
           <h2>${r.englishTitle} nedir?</h2>
           <div class="bilingual">
             <div class="language-card"><small>İngilizce</small><p>${r.introEn}</p></div>
@@ -337,7 +501,7 @@ function renderRecipe(r, slug) {
         </section>
         <section id="alistirma">
           <div class="exercise">
-            <p class="eyebrow">8. sınıf İngilizce</p>
+            <p class="eyebrow">8TH GRADE PRACTICE & QUIZ (8. SINIF QUIZ VE ALIŞTIRMALAR)</p>
             <h2>4 soruluk mini alıştırma</h2>
             <ol>
               <li>Tarifin ana malzemesi nedir?</li>
@@ -430,7 +594,1448 @@ const pastaVariants = [
 ];
 
 function grammarTabs() {
-  return `<p class="eyebrow">İngilizce dil kuralları</p><h2>İngilizce Makarna Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları</h2><p class="section-intro">Üç kısa derste kuralı inceleyin, örneği okuyun ve Türkçe karşılığıyla pekiştirin.</p><div class="grammar-tabs"><div class="tab-list" role="tablist" aria-label="Dil kuralı konuları"><button id="tab-overview" role="tab" aria-selected="true" aria-controls="panel-overview" tabindex="0" data-tab="overview"><span>01</span>Genel kurallar</button><button id="tab-imperative" role="tab" aria-selected="false" aria-controls="panel-imperative" tabindex="-1" data-tab="imperative"><span>02</span>Emir kipi</button><button id="tab-sequence" role="tab" aria-selected="false" aria-controls="panel-sequence" tabindex="-1" data-tab="sequence"><span>03</span>Sıra zarfları</button></div><div class="tab-panels"><div id="panel-overview" class="tab-panel" role="tabpanel" aria-labelledby="tab-overview" data-panel="overview">${table(["Kural","İngilizce örnek","Türkçe karşılığı"],[["Emir kipi","Boil the water.","Suyu kaynatın."],["Sıra zarfları","First, boil the water.","Önce suyu kaynatın."],["Sayılabilen/sayılamayan isimler","Add two tomatoes and some salt.","İki domates ve biraz tuz ekleyin."],["Ölçü ifadeleri","Add 1 tablespoon of oil.","1 yemek kaşığı yağ ekleyin."]])}</div><div id="panel-imperative" class="tab-panel" role="tabpanel" aria-labelledby="tab-imperative" data-panel="imperative" hidden><h3>İngilizce Makarna Tarif Metinlerinde Emir Kipi (Imperative) Nasıl Kullanılır?</h3><p class="section-intro">Emir kipi, özne kullanmadan fiilin yalın hâliyle başlar: <strong>Boil, add, cook, drain, serve.</strong> Olumsuz talimatta <em>do not</em> kullanılır.</p>${table(["İngilizce emir","Türkçe karşılığı","Fiil"],[["Boil the water.","Suyu kaynatın.","boil"],["Add the pasta.","Makarnayı ekleyin.","add"],["Cook for 10 minutes.","10 dakika pişirin.","cook"],["Drain the pasta.","Makarnayı süzün.","drain"],["Serve while hot.","Sıcakken servis edin.","serve"]])}</div><div id="panel-sequence" class="tab-panel" role="tabpanel" aria-labelledby="tab-sequence" data-panel="sequence" hidden><h3>Bağlaçlar ve Sıra Zarfları: First, Then, After That, Finally</h3>${table(["Sıra zarfı","Türkçe karşılığı","Örnek"],[["First","Önce","First, boil the water."],["Then","Ardından","Then, add the pasta."],["After that","Daha sonra","After that, cook for 10 minutes."],["Next","Sonra","Next, drain the pasta."],["Finally","Son olarak","Finally, serve while hot."]])}<div class="language-card sequence"><small>Kısa tarif paragrafı</small><p>First, boil the water. Then, add the salt and pasta. After that, cook for 8–10 minutes. Next, drain the pasta and add butter. Finally, serve it while hot.</p><p class="translation">Önce suyu kaynatın. Ardından tuz ve makarnayı ekleyin. Daha sonra 8–10 dakika pişirin. Sonra makarnayı süzüp tereyağı ekleyin. Son olarak sıcakken servis edin.</p></div></div></div></div>`;
+  return `<p class="eyebrow">RECIPE GRAMMAR & USAGE RULES (TARİF DİL BİLGİSİ VE ANLATIM KURALLARI)</p><h2>İngilizce Makarna Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları</h2><p class="section-intro">Üç kısa derste kuralı inceleyin, örneği okuyun ve Türkçe karşılığıyla pekiştirin.</p><div class="grammar-tabs"><div class="tab-list" role="tablist" aria-label="Dil kuralı konuları"><button id="tab-overview" role="tab" aria-selected="true" aria-controls="panel-overview" tabindex="0" data-tab="overview"><span>01</span>Genel kurallar</button><button id="tab-imperative" role="tab" aria-selected="false" aria-controls="panel-imperative" tabindex="-1" data-tab="imperative"><span>02</span>Emir kipi</button><button id="tab-sequence" role="tab" aria-selected="false" aria-controls="panel-sequence" tabindex="-1" data-tab="sequence"><span>03</span>Sıra zarfları</button></div><div class="tab-panels"><div id="panel-overview" class="tab-panel" role="tabpanel" aria-labelledby="tab-overview" data-panel="overview">${table(["Kural","İngilizce örnek","Türkçe karşılığı"],[["Emir kipi","Boil the water.","Suyu kaynatın."],["Sıra zarfları","First, boil the water.","Önce suyu kaynatın."],["Sayılabilen/sayılamayan isimler","Add two tomatoes and some salt.","İki domates ve biraz tuz ekleyin."],["Ölçü ifadeleri","Add 1 tablespoon of oil.","1 yemek kaşığı yağ ekleyin."]])}</div><div id="panel-imperative" class="tab-panel" role="tabpanel" aria-labelledby="tab-imperative" data-panel="imperative" hidden><h3>İngilizce Makarna Tarif Metinlerinde Emir Kipi (Imperative) Nasıl Kullanılır?</h3><p class="section-intro">Emir kipi, özne kullanmadan fiilin yalın hâliyle başlar: <strong>Boil, add, cook, drain, serve.</strong> Olumsuz talimatta <em>do not</em> kullanılır.</p>${table(["İngilizce emir","Türkçe karşılığı","Fiil"],[["Boil the water.","Suyu kaynatın.","boil"],["Add the pasta.","Makarnayı ekleyin.","add"],["Cook for 10 minutes.","10 dakika pişirin.","cook"],["Drain the pasta.","Makarnayı süzün.","drain"],["Serve while hot.","Sıcakken servis edin.","serve"]])}</div><div id="panel-sequence" class="tab-panel" role="tabpanel" aria-labelledby="tab-sequence" data-panel="sequence" hidden><h3>Bağlaçlar ve Sıra Zarfları: First, Then, After That, Finally</h3>${table(["Sıra zarfı","Türkçe karşılığı","Örnek"],[["First","Önce","First, boil the water."],["Then","Ardından","Then, add the pasta."],["After that","Daha sonra","After that, cook for 10 minutes."],["Next","Sonra","Next, drain the pasta."],["Finally","Son olarak","Finally, serve while hot."]])}<div class="language-card sequence"><small>Kısa tarif paragrafı</small><p>First, boil the water. Then, add the salt and pasta. After that, cook for 8–10 minutes. Next, drain the pasta and add butter. Finally, serve it while hot.</p><p class="translation">Önce suyu kaynatın. Ardından tuz ve makarnayı ekleyin. Daha sonra 8–10 dakika pişirin. Sonra makarnayı süzüp tereyağı ekleyin. Son olarak sıcakken servis edin.</p></div></div></div></div>`;
+}
+
+
+const pastaCards = [
+  [
+    {
+      "en": "Pasta",
+      "tr": "Makarna",
+      "quantity": "200 g",
+      "icon": "🍝",
+      "sentenceEn": "Boil the dry pasta in well-salted water.",
+      "sentenceTr": "Kuru makarnayı bol tuzlu suda haşlayın."
+    },
+    {
+      "en": "Water",
+      "tr": "Su",
+      "quantity": "2 l",
+      "icon": "💧",
+      "sentenceEn": "Bring cold water to a rolling boil before adding pasta.",
+      "sentenceTr": "Makarnayı eklemeden önce soğuk suyu fokurdayana kadar kaynatın."
+    },
+    {
+      "en": "Salt",
+      "tr": "Tuz",
+      "quantity": "1 tsp",
+      "icon": "🧂",
+      "sentenceEn": "Salt seasons the pasta noodles from the inside out.",
+      "sentenceTr": "Tuz, makarna hamurunu içten dışa doğru lezzetlendirir."
+    },
+    {
+      "en": "Butter",
+      "tr": "Tereyağı",
+      "quantity": "1 tbsp",
+      "icon": "🧈",
+      "sentenceEn": "Melt butter into hot pasta for a glossy, rich coat.",
+      "sentenceTr": "Parlak ve zengin bir kaplama için sıcak makarnada tereyağını eritin."
+    }
+  ],
+  [
+    {
+      "en": "Pasta",
+      "tr": "Makarna",
+      "quantity": "200 g",
+      "icon": "🍝",
+      "sentenceEn": "Cook your pasta to al dente firmness.",
+      "sentenceTr": "Makarnanızı al dente (dişe dokunur) kıvamda pişirin."
+    },
+    {
+      "en": "Crushed tomatoes",
+      "tr": "Ezilmiş domates",
+      "quantity": "250 g",
+      "icon": "🥫",
+      "sentenceEn": "Crushed tomatoes create a rich, savory sauce base.",
+      "sentenceTr": "Ezilmiş domatesler lezzetli ve zengin bir sos bazı oluşturur."
+    },
+    {
+      "en": "Garlic",
+      "tr": "Sarımsak",
+      "quantity": "2 cloves",
+      "icon": "🧄",
+      "sentenceEn": "Gently sauté sliced garlic to release sweet aroma.",
+      "sentenceTr": "Tatlı aromasını açığa çıkarmak için dilimlenmiş sarımsağı hafifçe soteleyin."
+    },
+    {
+      "en": "Olive oil",
+      "tr": "Zeytinyağı",
+      "quantity": "1 tbsp",
+      "icon": "🫒",
+      "sentenceEn": "Extra virgin olive oil brings Mediterranean flavor.",
+      "sentenceTr": "Sızma zeytinyağı Akdeniz lezzetini yemeğe kazandırır."
+    }
+  ],
+  [
+    {
+      "en": "Fettuccine",
+      "tr": "Fettuccine makarna",
+      "quantity": "250 g",
+      "icon": "🍝",
+      "sentenceEn": "Wide fettuccine ribbons hold thick cream sauce gracefully.",
+      "sentenceTr": "Geniş fettuccine şeritleri yoğun kremalı sosu mükemmel taşır."
+    },
+    {
+      "en": "Chicken breast",
+      "tr": "Tavuk göğsü",
+      "quantity": "200 g",
+      "icon": "🍗",
+      "sentenceEn": "Sear seasoned chicken strips until golden brown.",
+      "sentenceTr": "Baharatlanmış tavuk dilimlerini altın sarısı olana kadar mühürleyin."
+    },
+    {
+      "en": "Heavy cream",
+      "tr": "Sıvı krema",
+      "quantity": "150 ml",
+      "icon": "🥛",
+      "sentenceEn": "Simmer heavy cream on low heat to thicken naturally.",
+      "sentenceTr": "Doğal şekilde koyulaşması için sıvı kremayı kısık ateşte kaynatın."
+    },
+    {
+      "en": "Parmesan",
+      "tr": "Parmesan peyniri",
+      "quantity": "50 g",
+      "icon": "🧀",
+      "sentenceEn": "Grated Parmesan adds a sharp, nutty savoriness.",
+      "sentenceTr": "Rendelenmiş Parmesan keskin ve fındıksı bir lezzet katar."
+    }
+  ],
+  [
+    {
+      "en": "Macaroni",
+      "tr": "Dirsek makarna",
+      "quantity": "250 g",
+      "icon": "🧀",
+      "sentenceEn": "Curved macaroni catches creamy sauce in every curve.",
+      "sentenceTr": "Kıvrımlı makarna kremamsı sosu her kıvrımında tutar."
+    },
+    {
+      "en": "Cheddar cheese",
+      "tr": "Cheddar peyniri",
+      "quantity": "150 g",
+      "icon": "🧀",
+      "sentenceEn": "Cheddar melts into a bubbly, deeply golden gratin crust.",
+      "sentenceTr": "Cheddar, üzeri kabarcıklı altın rengi bir graten kabuğuna dönüşür."
+    },
+    {
+      "en": "Milk",
+      "tr": "Süt",
+      "quantity": "200 ml",
+      "icon": "🥛",
+      "sentenceEn": "Warm whole milk yields a velvety, smooth béchamel sauce.",
+      "sentenceTr": "Ilık tam yağlı süt kadifemsi ve pürüzsüz bir beşamel sos sağlar."
+    },
+    {
+      "en": "Butter",
+      "tr": "Tereyağı",
+      "quantity": "30 g",
+      "icon": "🧈",
+      "sentenceEn": "Whisk butter with flour to form a golden roux.",
+      "sentenceTr": "Altın sarısı bir meyane elde etmek için tereyağını unla çırpın."
+    }
+  ],
+  [
+    {
+      "en": "Spaghetti",
+      "tr": "Spagetti makarna",
+      "quantity": "250 g",
+      "icon": "🍝",
+      "sentenceEn": "Long spaghetti strands twine perfectly around rich meat sauce.",
+      "sentenceTr": "Uzun spagetti telleri zengin etli sosa mükemmel sarılır."
+    },
+    {
+      "en": "Ground beef",
+      "tr": "Kıyma",
+      "quantity": "200 g",
+      "icon": "🥩",
+      "sentenceEn": "Brown minced beef until all moisture evaporates.",
+      "sentenceTr": "Tüm suyunu çekene kadar kıymayı kavurun."
+    },
+    {
+      "en": "Tomato paste",
+      "tr": "Domates salçası",
+      "quantity": "2 tbsp",
+      "icon": "🥫",
+      "sentenceEn": "Tomato paste infuses deep umami sweetness into the sauce.",
+      "sentenceTr": "Domates salçası sosa derin bir umami tatlılığı katar."
+    },
+    {
+      "en": "Onion",
+      "tr": "Kuru soğan",
+      "quantity": "1 piece",
+      "icon": "🧅",
+      "sentenceEn": "Finely diced onion creates the savory flavor foundation.",
+      "sentenceTr": "İnce doğranmış kuru soğan lezzetli bir aroma temeli oluşturur."
+    }
+  ],
+  [
+    {
+      "en": "Pasta",
+      "tr": "Burgu makarna",
+      "quantity": "200 g",
+      "icon": "🍝",
+      "sentenceEn": "Fusilli twists trap savory chunks of tuna and corn.",
+      "sentenceTr": "Burgu makarna ton balığı ve mısır tanelerini içine hapseder."
+    },
+    {
+      "en": "Canned tuna",
+      "tr": "Konserve ton balığı",
+      "quantity": "160 g",
+      "icon": "🐟",
+      "sentenceEn": "Drain high-quality tuna before flaking into pasta.",
+      "sentenceTr": "Makarnaya ufalamadan önce kaliteli ton balığını süzün."
+    },
+    {
+      "en": "Sweet corn",
+      "tr": "Tatlı mısır",
+      "quantity": "80 g",
+      "icon": "🌽",
+      "sentenceEn": "Sweet corn provides juicy crunch and bright yellow pop.",
+      "sentenceTr": "Tatlı mısır sulu bir çıtırlık ve canlı sarı bir renk katar."
+    },
+    {
+      "en": "Olive oil",
+      "tr": "Zeytinyağı",
+      "quantity": "2 tbsp",
+      "icon": "🫒",
+      "sentenceEn": "Cold-pressed olive oil ties all Mediterranean flavors together.",
+      "sentenceTr": "Soğuk sıkım zeytinyağı tüm Akdeniz aromalarını birbirine bağlar."
+    }
+  ]
+];
+const kekCards = [
+  [
+    {
+      "en": "Flour",
+      "tr": "Un",
+      "quantity": "200 g",
+      "icon": "🌾",
+      "sentenceEn": "Sift all-purpose flour for a delicate, fluffy sponge.",
+      "sentenceTr": "Yumuşak ve kabarık bir kek için çok amaçlı unu eleyin."
+    },
+    {
+      "en": "Granulated Sugar",
+      "tr": "Toz şeker",
+      "quantity": "150 g",
+      "icon": "🍬",
+      "sentenceEn": "Whisk sugar with eggs until pale and frothy.",
+      "sentenceTr": "Şekeri yumurtalarla köpük köpük ve açık renk olana dek çırpın."
+    },
+    {
+      "en": "Eggs",
+      "tr": "Yumurta",
+      "quantity": "3 large",
+      "icon": "🥚",
+      "sentenceEn": "Room-temperature eggs create maximum batter volume.",
+      "sentenceTr": "Oda sıcaklığındaki yumurtalar hamura en yüksek hacmi kazandırır."
+    },
+    {
+      "en": "Milk",
+      "tr": "Süt",
+      "quantity": "120 ml",
+      "icon": "🥛",
+      "sentenceEn": "Milk provides rich moisture and a tender crumb.",
+      "sentenceTr": "Süt zengin bir nem ve yumuşak bir doku kazandırır."
+    }
+  ],
+  [
+    {
+      "en": "Cocoa powder",
+      "tr": "Kakao tozu",
+      "quantity": "40 g",
+      "icon": "🍫",
+      "sentenceEn": "Dutch-process cocoa yields a dark, intense chocolate aroma.",
+      "sentenceTr": "Kaliteli kakao tozu koyu ve yoğun bir çikolata aroması verir."
+    },
+    {
+      "en": "Milk",
+      "tr": "Süt",
+      "quantity": "200 ml",
+      "icon": "🥛",
+      "sentenceEn": "Simmer milk with cocoa to create the glossy soak syrup.",
+      "sentenceTr": "Parlak ıslatma sosunu oluşturmak için sütü kakaoyla kaynatın."
+    },
+    {
+      "en": "Eggs",
+      "tr": "Yumurta",
+      "quantity": "3 large",
+      "icon": "🥚",
+      "sentenceEn": "Beat eggs thoroughly to support the dense cocoa batter.",
+      "sentenceTr": "Yoğun kakaolu hamuru desteklemek için yumurtaları iyice çırpın."
+    },
+    {
+      "en": "Vegetable Oil",
+      "tr": "Sıvı yağ",
+      "quantity": "100 ml",
+      "icon": "🫒",
+      "sentenceEn": "Vegetable oil ensures the cake stays moist for days.",
+      "sentenceTr": "Sıvı yağ kekin günlerce nemli kalmasını güvenceye alır."
+    }
+  ],
+  [
+    {
+      "en": "Grated carrots",
+      "tr": "Rendelenmiş havuç",
+      "quantity": "200 g",
+      "icon": "🥕",
+      "sentenceEn": "Fresh grated carrots release sweet moisture during baking.",
+      "sentenceTr": "Taze rendelenmiş havuç pişme sırasında tatlı bir nem salar."
+    },
+    {
+      "en": "Ground cinnamon",
+      "tr": "Toz tarçın",
+      "quantity": "1 tbsp",
+      "icon": "🪵",
+      "sentenceEn": "Cinnamon gives the cake an inviting, warm bakery aroma.",
+      "sentenceTr": "Tarçın keke davetkar, sıcacık bir fırın kokusu kazandırır."
+    },
+    {
+      "en": "Walnuts",
+      "tr": "Ceviz içi",
+      "quantity": "60 g",
+      "icon": "🌰",
+      "sentenceEn": "Toasted walnuts offer a delightful crunchy contrast.",
+      "sentenceTr": "Kavrulmuş cevizler harika bir çıtır lezzet tezatı sunar."
+    },
+    {
+      "en": "Flour",
+      "tr": "Un",
+      "quantity": "220 g",
+      "icon": "🌾",
+      "sentenceEn": "Whisk flour with warm spices before combining.",
+      "sentenceTr": "Karıştırmadan önce unu ılık baharatlarla birlikte harmanlayın."
+    }
+  ],
+  [
+    {
+      "en": "Lemon zest",
+      "tr": "Limon kabuğu rendesi",
+      "quantity": "1 tbsp",
+      "icon": "🍋",
+      "sentenceEn": "Rub lemon zest into sugar to release fragrant citrus oils.",
+      "sentenceTr": "Aromatik narenciye yağlarını çıkarmak için kabuğu şekerle ovun."
+    },
+    {
+      "en": "Lemon juice",
+      "tr": "Taze limon suyu",
+      "quantity": "50 ml",
+      "icon": "🍋",
+      "sentenceEn": "Fresh lemon juice adds a zesty, bright tang to the crumb.",
+      "sentenceTr": "Taze limon suyu kek dokusuna mayhoş ve parlak bir canlılık katar."
+    },
+    {
+      "en": "Poppy seeds",
+      "tr": "Mavi haşhaş",
+      "quantity": "20 g",
+      "icon": "🌱",
+      "sentenceEn": "Tiny poppy seeds add pleasant crunch and speckled beauty.",
+      "sentenceTr": "Minik haşhaş tohumları hoş bir çıtırlık ve benekli güzellik katar."
+    },
+    {
+      "en": "Flour",
+      "tr": "Un",
+      "quantity": "200 g",
+      "icon": "🌾",
+      "sentenceEn": "Sift flour with baking powder for a lofty, cloud-like rise.",
+      "sentenceTr": "Bulut gibi hafif bir kabarma için unu kabartma tozuyla eleyin."
+    }
+  ]
+];
+const omletCards = [
+  [
+    {
+      "en": "Eggs",
+      "tr": "Taze yumurta",
+      "quantity": "2 large",
+      "icon": "🥚",
+      "sentenceEn": "Beat fresh eggs until yolk and white form a silky blend.",
+      "sentenceTr": "Sarı ve beyaz ipeksi bir kıvam alana kadar taze yumurtaları çırpın."
+    },
+    {
+      "en": "Butter",
+      "tr": "Tereyağı",
+      "quantity": "1 tbsp",
+      "icon": "🧈",
+      "sentenceEn": "Melt butter gently without letting it turn brown.",
+      "sentenceTr": "Tereyağını yakmadan orta-kısık ateşte nazikçe eritin."
+    },
+    {
+      "en": "Salt",
+      "tr": "İnce tuz",
+      "quantity": "1 pinch",
+      "icon": "🧂",
+      "sentenceEn": "A pinch of fine salt enhances the savory richness of eggs.",
+      "sentenceTr": "Bir tutam ince tuz yumurtanın zengin lezzetini öne çıkarır."
+    },
+    {
+      "en": "Black pepper",
+      "tr": "Karabiber",
+      "quantity": "1 pinch",
+      "icon": "🌶️",
+      "sentenceEn": "Freshly ground black pepper adds warmth and aroma.",
+      "sentenceTr": "Taze çekilmiş karabiber sıcaklık ve aroma katar."
+    }
+  ],
+  [
+    {
+      "en": "Eggs",
+      "tr": "Yumurta",
+      "quantity": "2 large",
+      "icon": "🥚",
+      "sentenceEn": "Whisk eggs until light and slightly frothy.",
+      "sentenceTr": "Yumurtaları hafif ve köpüklü olana kadar çırpın."
+    },
+    {
+      "en": "Feta or Cheddar",
+      "tr": "Beyaz peynir veya kaşar",
+      "quantity": "50 g",
+      "icon": "🧀",
+      "sentenceEn": "Crumbled cheese melts luxuriously within the hot folded egg.",
+      "sentenceTr": "Ufalanmış peynir sıcak katlanmış yumurtanın içinde erir."
+    },
+    {
+      "en": "Butter",
+      "tr": "Tereyağı",
+      "quantity": "1 tbsp",
+      "icon": "🧈",
+      "sentenceEn": "Butter guarantees a smooth non-stick slide out of the pan.",
+      "sentenceTr": "Tereyağı omletin tavadan kayarak çıkmasını sağlar."
+    },
+    {
+      "en": "Parsley",
+      "tr": "Maydanoz",
+      "quantity": "1 tbsp",
+      "icon": "🌿",
+      "sentenceEn": "Chopped parsley adds herbal freshness to rich cheese.",
+      "sentenceTr": "Kıyılmış maydanoz zengin peynire ferah bir tat katar."
+    }
+  ],
+  [
+    {
+      "en": "Eggs",
+      "tr": "Yumurta",
+      "quantity": "3 large",
+      "icon": "🥚",
+      "sentenceEn": "Three eggs create a hearty base to hold the vegetables.",
+      "sentenceTr": "Üç yumurta sebzeleri taşıyacak doyurucu bir taban oluşturur."
+    },
+    {
+      "en": "Bell pepper",
+      "tr": "Renkli biber",
+      "quantity": "½ cup",
+      "icon": "🫑",
+      "sentenceEn": "Diced bell peppers bring crisp sweetness and crunch.",
+      "sentenceTr": "Küp doğranmış biberler çıtır bir tatlılık katar."
+    },
+    {
+      "en": "Cherry tomato",
+      "tr": "Çeri domates",
+      "quantity": "4 pieces",
+      "icon": "🍅",
+      "sentenceEn": "Ripe tomatoes offer tangy bursts of juicy flavor.",
+      "sentenceTr": "Olgun domatesler sulu ve mayhoş lezzet patlamaları sunar."
+    },
+    {
+      "en": "Baby spinach",
+      "tr": "Bebek ıspanak",
+      "quantity": "1 handful",
+      "icon": "🥬",
+      "sentenceEn": "Tender spinach wilts softly into the warm fluffy eggs.",
+      "sentenceTr": "Taze ıspanak sıcak kabarık yumurtaların içinde nazikçe erir."
+    }
+  ],
+  [
+    {
+      "en": "Button mushrooms",
+      "tr": "Kültür mantarı",
+      "quantity": "100 g",
+      "icon": "🍄",
+      "sentenceEn": "Sauté sliced mushrooms until golden and caramelized.",
+      "sentenceTr": "Dilimlenmiş mantarları karamelize ve altın rengi olana dek soteleyin."
+    },
+    {
+      "en": "Eggs",
+      "tr": "Yumurta",
+      "quantity": "2 large",
+      "icon": "🥚",
+      "sentenceEn": "Whisk eggs gently for a soft and delicate texture.",
+      "sentenceTr": "Yumuşak ve narin bir doku için yumurtaları nazikçe çırpın."
+    },
+    {
+      "en": "Butter",
+      "tr": "Tereyağı",
+      "quantity": "1.5 tbsp",
+      "icon": "🧈",
+      "sentenceEn": "Sautéing mushrooms in rich butter unlocks deep earthy flavors.",
+      "sentenceTr": "Mantarları tereyağında sotelemek derin topraksı tatları açığa çıkarır."
+    },
+    {
+      "en": "Fresh thyme",
+      "tr": "Taze kekik",
+      "quantity": "1 sprig",
+      "icon": "🌿",
+      "sentenceEn": "Earthy thyme is the quintessential herb companion for mushrooms.",
+      "sentenceTr": "Topraksı kekik mantarların en kusursuz baharat eşlikçisidir."
+    }
+  ]
+];
+
+pastaVariants.forEach((v, idx) => { v.ingredientCards = pastaCards[idx]; });
+
+
+const baklavaVariants = [
+  {
+    title: "Ev Yapımı Baklava",
+    briefTitle: "İngilizce Ev Yapımı Baklava Tarifi (Homemade Baklava Recipe)",
+    ingredientsHeading: "Ev Yapımı Baklava Tarifinin İngilizce Malzemeleri Nelerdir?",
+    stepsHeading: "Ev Yapımı Baklava Pişirme Adımları İngilizce Nasıl Yazılır?",
+    english: "Homemade Baklava Recipe",
+    description: "Homemade Baklava (Ev Yapımı Baklava); incecik açılan yufka katları arasına ceviz içi serpilip tereyağıyla fırınlanan ve soğuk şerbetle tatlandırılan geleneksel Türk tatlısıdır.",
+    image: "/blog/ingilizce-tarifler/images/baklava-hero.webp",
+    alt: "A tray of golden Turkish homemade baklava cut into diamond shapes",
+    ingredients: [
+      ["Phyllo sheets", "Baklavalık yufka", "40 sheets"],
+      ["Walnuts", "Dövülmüş ceviz içi", "300 g"],
+      ["Clarified butter", "Eritilmiş sade yağ veya tereyağı", "250 g"],
+      ["Granulated sugar", "Toz şeker (şerbet için)", "400 g (2 cups)"],
+      ["Water", "Su (şerbet için)", "400 ml (2 cups)"],
+      ["Lemon juice", "Taze limon suyu", "1 tbsp"]
+    ],
+    steps: "First, prepare the sugar syrup and let it cool. Then, brush each phyllo sheet with butter and layer 20 sheets. Next, spread crushed walnuts evenly and layer the remaining 20 sheets. Finally, cut into diamond shapes, bake at 170°C for 45 minutes, and pour cold syrup over hot baklava.",
+    ingredientCards: [
+      { en: "Phyllo sheets", tr: "Baklavalık yufka", quantity: "40 sheets", icon: "📜", sentenceEn: "Keep phyllo sheets covered with a damp cloth so they do not dry out.", sentenceTr: "Kurumamaları için baklavalık yufkaların üzerini nemli bir bezle örtün." },
+      { en: "Crushed walnuts", tr: "Dövülmüş ceviz", quantity: "300 g", icon: "🌰", sentenceEn: "Crush fresh walnuts into coarse crumbs for authentic crunch.", sentenceTr: "Otantik bir çıtırlık için taze cevizleri iri kırıntılar halinde dövün." },
+      { en: "Clarified butter", tr: "Sade yağ", quantity: "250 g", icon: "🧈", sentenceEn: "Clarified butter prevents burning and produces a golden, flaky pastry.", sentenceTr: "Sade yağ yanmayı önler ve altın sarısı, çıtır katlar oluşturur." },
+      { en: "Sugar syrup", tr: "Şeker şerbeti", quantity: "400 ml", icon: "🍯", sentenceEn: "Simmer sugar and water with a dash of lemon juice until thickened.", sentenceTr: "Şeker ve suyu kıvam alana kadar bir miktar limon suyuyla kaynatın." }
+    ]
+  },
+  {
+    title: "Fıstıklı Baklava",
+    briefTitle: "İngilizce Fıstıklı Baklava Tarifi (Pistachio Baklava Recipe)",
+    ingredientsHeading: "Fıstıklı Baklava Tarifinin İngilizce Malzemeleri Nelerdir?",
+    stepsHeading: "Fıstıklı Baklava Pişirme Adımları İngilizce Nasıl Yazılır?",
+    english: "Pistachio Baklava Recipe",
+    description: "Pistachio Baklava (Fıstıklı Baklava); Gaziantep'in meşhur zümrüt yeşili boz Antep fıstığı ve saf sade yağ ile hazırlanan en asil baklava çeşididir.",
+    image: "/blog/ingilizce-tarifler/images/baklava-fistikli.webp",
+    alt: "Pistachio baklava garnished with bright green ground pistachios",
+    ingredients: [
+      ["Phyllo sheets", "İnce baklavalık yufka", "40 sheets"],
+      ["Gaziantep pistachios", "Boz Antep fıstığı içi", "350 g"],
+      ["Clarified butter", "Sade yağ (urfa yağı)", "250 g"],
+      ["Sugar", "Toz şeker", "450 g"],
+      ["Water", "Su", "450 ml"],
+      ["Lemon juice", "Limon suyu", "1 tsp"]
+    ],
+    steps: "First, boil water, sugar and lemon juice for 15 minutes, then cool completely. Then, layer 20 buttered phyllo sheets in the tray. Next, distribute ground green pistachios generously. After that, top with 20 more sheets, slice, and bake at 165°C for 50 minutes. Finally, pour cold syrup over the bubbling pastry.",
+    ingredientCards: [
+      { en: "Green pistachios", tr: "Boz Antep fıstığı", quantity: "350 g", icon: "🥜", sentenceEn: "Vibrant early-harvest green pistachios deliver unsurpassed aroma.", sentenceTr: "Canlı erken hasat boz fıstıklar eşsiz bir aroma sunar." },
+      { en: "Phyllo sheets", tr: "İnce yufka", quantity: "40 sheets", icon: "📜", sentenceEn: "Brush each paper-thin layer lightly with hot melted butter.", sentenceTr: "Her kağıt inceliğindeki katı sıcak eritilmiş yağla hafifçe yağlayın." },
+      { en: "Clarified butter", tr: "Sade yağ", quantity: "250 g", icon: "🧈", sentenceEn: "Skim milk solids off melted butter to achieve clarified perfection.", sentenceTr: "Sade yağ elde etmek için eritilmiş tereyağının köpüğünü ve tortusunu süzün." },
+      { en: "Sweet syrup", tr: "Tatlı şerbet", quantity: "450 ml", icon: "🍯", sentenceEn: "Add lemon juice to prevent the sugar syrup from crystallizing.", sentenceTr: "Şeker şerbetinin kristalleşmesini veya şekerlenmesini önlemek için limon suyu ekleyin." }
+    ]
+  },
+  {
+    title: "Cevizli Baklava",
+    briefTitle: "İngilizce Cevizli Baklava Tarifi (Walnut Baklava Recipe)",
+    ingredientsHeading: "Cevizli Baklava Tarifinin İngilizce Malzemeleri Nelerdir?",
+    stepsHeading: "Cevizli Baklava Pişirme Adımları İngilizce Nasıl Yazılır?",
+    english: "Walnut Baklava Recipe",
+    description: "Walnut Baklava (Cevizli Baklava); ince yufka katları arasında bol ceviz dolgusu ve dengeli şerbetiyle Türk evlerinin en sevilen geleneksel bayram tatlısıdır.",
+    image: "/blog/ingilizce-tarifler/images/baklava-cevizli.webp",
+    alt: "Classic walnut baklava pieces cut in diamonds on a brass platter",
+    ingredients: [
+      ["Phyllo pastry", "Baklavalık yufka", "36 sheets"],
+      ["Fresh walnuts", "Taze ceviz içi", "300 g"],
+      ["Butter", "Tuzsuz tereyağı", "220 g"],
+      ["Sugar", "Şeker", "350 g"],
+      ["Water", "Su", "350 ml"],
+      ["Lemon slice", "Limon dilimi", "1 slice"]
+    ],
+    steps: "First, prepare and chill the lemon syrup. Then, layer 18 sheets in a baking pan, brushing each with melted butter. Next, spread crushed walnuts in an even layer. Then, stack the remaining 18 buttered sheets. Finally, cut into diamonds, bake at 175°C for 45 minutes, and ladle cool syrup over the hot pastry.",
+    ingredientCards: [
+      { en: "Fresh walnuts", tr: "Taze ceviz içi", quantity: "300 g", icon: "🌰", sentenceEn: "Use light-colored fresh walnuts to prevent bitterness.", sentenceTr: "Acılığı önlemek için açık renkli taze ceviz içi kullanın." },
+      { en: "Unsalted butter", tr: "Tuzsuz tereyağı", quantity: "220 g", icon: "🧈", sentenceEn: "Always use unsalted butter when preparing delicate sweet pastries.", sentenceTr: "Hassas tatlı hamur işleri hazırlarken daima tuzsuz tereyağı kullanın." },
+      { en: "Phyllo pastry", tr: "Yufka katları", quantity: "36 sheets", icon: "📜", sentenceEn: "Trim phyllo sheets to fit your baking pan precisely.", sentenceTr: "Yufkaları fırın tepsinizin ebadına tam uyacak şekilde kesin." },
+      { en: "Lemon slice", tr: "Limon dilimi", quantity: "1 slice", icon: "🍋", sentenceEn: "A slice of lemon adds gentle citrus brightness to the sweet syrup.", sentenceTr: "Bir dilim limon tatlı şerbete hafif narenciye ferahlığı katar." }
+    ]
+  },
+  {
+    title: "Hazır Yufkadan Baklava",
+    briefTitle: "İngilizce Hazır Yufkadan Baklava Tarifi (Baklava with Ready Phyllo Recipe)",
+    ingredientsHeading: "Hazır Yufkadan Baklava Tarifinin İngilizce Malzemeleri Nelerdir?",
+    stepsHeading: "Hazır Yufkadan Baklava Pişirme Adımları İngilizce Nasıl Yazılır?",
+    english: "Baklava with Ready Phyllo Recipe",
+    description: "Baklava with Ready Phyllo (Hazır Yufkadan Baklava); marketten alınan hazır baklavalık yufka ile sadece 20 dakikada tepsiye dizilip fırına verilen pratik ev baklavasıdır.",
+    image: "/blog/ingilizce-tarifler/images/baklava-hazir-yufka.webp",
+    alt: "Crispy homemade baklava prepared using store-bought ready phyllo dough",
+    ingredients: [
+      ["Ready phyllo dough", "Hazır baklavalık yufka", "1 package (500 g)"],
+      ["Butter or ghee", "Eritilmiş tereyağı veya sade yağ", "200 g"],
+      ["Chopped nuts", "Dövülmüş ceviz veya fıstık", "250 g"],
+      ["Granulated sugar", "Toz şeker", "3 cups (600 g)"],
+      ["Water", "Su", "3 cups (600 ml)"],
+      ["Lemon juice", "Limon suyu", "1 tbsp"]
+    ],
+    steps: "First, simmer sugar, water and lemon juice for 12 minutes and cool. Then, layer half of the store-bought phyllo sheets, buttering every two sheets. Next, scatter the chopped nuts across the surface. Cover with the remaining sheets, slice into squares or diamonds, bake at 180°C for 40 minutes, and drench with cold syrup.",
+    ingredientCards: [
+      { en: "Ready phyllo dough", tr: "Hazır baklavalık yufka", quantity: "500 g", icon: "📜", sentenceEn: "Ready phyllo makes home baklava preparation remarkably quick.", sentenceTr: "Hazır yufka evde baklava yapımını olağanüstü derecede hızlandırır." },
+      { en: "Chopped nuts", tr: "Dövülmüş kuruyemiş", quantity: "250 g", icon: "🥜", sentenceEn: "Combine walnuts and pistachios for a mixed nutty flavor.", sentenceTr: "Karışık fındıksı bir tat için ceviz ve Antep fıstığını harmanlayın." },
+      { en: "Melted butter", tr: "Eritilmiş tereyağı", quantity: "200 g", icon: "🧈", sentenceEn: "Brush melted butter generously across the top layer before baking.", sentenceTr: "Fırınlamadan önce en üst katmana cömertçe eritilmiş tereyağı sürün." },
+      { en: "Lemon juice", tr: "Limon suyu", quantity: "1 tbsp", icon: "🍋", sentenceEn: "Lemon juice balances the intense sweetness of the sugar syrup.", sentenceTr: "Limon suyu şeker şerbetinin yoğun tatlılığını dengeler." }
+    ]
+  }
+];
+
+function renderBaklavaPage() {
+  document.title = "İngilizce Baklava Tarifi (Baklava Yapılışı İngilizce) | Konuşarak Öğren";
+  setStructuredData({
+    "@context": "https://schema.org", "@type": "Recipe",
+    name: "İngilizce Baklava Tarifi (Baklava Yapılışı İngilizce)",
+    image: ["https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=1600&q=85"],
+    author: { "@type": "Organization", name: "Konuşarak Öğren" },
+    datePublished: "2026-08-01",
+    description: "İngilizce baklava tarifi; malzemeler, şerbet kuralları, pişirme adımları ve Türkçe karşılıkları.",
+    prepTime: "PT45M", cookTime: "PT40M", totalTime: "PT85M", recipeYield: "24 dilim",
+    recipeCategory: "Tatlı", recipeCuisine: "Türk",
+    nutrition: { "@type": "NutritionInformation", calories: "380 calories" },
+    recipeIngredient: ["40 phyllo sheets", "300 g walnuts", "250 g clarified butter", "400 g sugar", "400 ml water", "1 tbsp lemon juice"],
+    recipeInstructions: [
+      { "@type": "HowToStep", position: 1, name: "Prepare the Syrup", text: "Boil 400 g sugar and 400 ml water with 1 tbsp lemon juice for 15 minutes, then cool completely." },
+      { "@type": "HowToStep", position: 2, name: "Brush the Baking Tray", text: "Brush a large rectangular baking tray generously with melted clarified butter." },
+      { "@type": "HowToStep", position: 3, name: "Layer Half of Phyllo", text: "Layer 20 phyllo sheets in the tray, brushing each individual sheet with melted butter." },
+      { "@type": "HowToStep", position: 4, name: "Spread Walnuts", text: "Spread 300 g of crushed walnuts evenly across the layered phyllo surface." },
+      { "@type": "HowToStep", position: 5, name: "Layer Remaining Sheets", text: "Layer the remaining 20 phyllo sheets on top, brushing each sheet with butter." },
+      { "@type": "HowToStep", position: 6, name: "Cut into Diamonds", text: "Cut the layered pastry diagonally into traditional diamond-shaped pieces with a sharp knife." },
+      { "@type": "HowToStep", position: 7, name: "Bake Golden Brown", text: "Bake in a preheated oven at 170°C for 45 minutes until the pastry is deep golden brown." },
+      { "@type": "HowToStep", position: 8, name: "Soak with Syrup", text: "Pour the cool syrup immediately over the boiling hot baklava straight out of the oven." }
+    ]
+  });
+
+  const baklavaSteps = [
+    { number: 1, titleEn: "Prepare the Syrup with Sugar, Water and Lemon", titleTr: "Şeker, Su ve Limonla Şerbeti Hazırlayın", sentenceEn: "First, boil 400 g of sugar and 400 ml of water with 1 tablespoon of lemon juice for 15 minutes, then remove from heat and let it cool completely.", sentenceTr: "İlk olarak 400 g şeker ve 400 ml suyu 1 yemek kaşığı limon suyuyla 15 dakika kaynatın, ardından ocaktan alıp tamamen soğumaya bırakın.", actionEn: "Boiling (Kaynatma)", actionTr: "Şerbet kaynatma" },
+    { number: 2, titleEn: "Brush the Baking Tray with Melted Butter", titleTr: "Fırın Tepsisini Eritilmiş Tereyağıyla Yağlayın", sentenceEn: "Then, brush a large baking tray generously with melted clarified butter so the pastry does not stick.", sentenceTr: "Ardından hamurun yapışmaması için geniş bir fırın tepsisini eritilmiş sade yağla cömertçe yağlayın.", actionEn: "Brushing (Yağlama)", actionTr: "Tepsi tabanını yağlama" },
+    { number: 3, titleEn: "Layer Half of the Phyllo Sheets with Butter", titleTr: "Yufkaların Yarısını Tereyağıyla Katlayın", sentenceEn: "After that, place 20 sheets of phyllo dough one by one into the tray, brushing each individual layer with melted butter.", sentenceTr: "Daha sonra her bir katmanı eritilmiş tereyağıyla yağlayarak 20 adet baklavalık yufkayı tepsiye tek tek dizin.", actionEn: "Layering (Kat Kat Dizme)", actionTr: "Yufka katlama" },
+    { number: 4, titleEn: "Spread the Crushed Walnuts Evenly", titleTr: "Dövülmüş Cevizi Eşit Şekilde Yayın", sentenceEn: "Next, spread 300 g of finely crushed walnuts evenly across the entire surface of the layered phyllo sheets.", sentenceTr: "Sonra 300 g ince dövülmüş cevizi katlanmış yufka tabanının tüm yüzeyine eşit biçimde yayın.", actionEn: "Spreading (Eşit Yayma)", actionTr: "İç harcı yayma" },
+    { number: 5, titleEn: "Layer the Remaining Sheets on Top", titleTr: "Kalan Yufkaları Üzerine Serin", sentenceEn: "Cover the walnut layer with the remaining 20 sheets of phyllo, brushing each layer with butter as before.", sentenceTr: "Ceviz katmanının üzerini kalan 20 yufkayla kapatın ve daha önce olduğu gibi her katı tereyağıyla yağlayın.", actionEn: "Covering (Üstünü Kapatma)", actionTr: "Üst katmanları dizme" },
+    { number: 6, titleEn: "Cut the Baklava into Diamond Shapes", titleTr: "Baklavayı Baklava Dilimi Şeklinde Kesin", sentenceEn: "Using a sharp chef's knife, slice the layered pastry diagonally into traditional diamond or square shapes before baking.", sentenceTr: "Keskin bir mutfak bıçağı kullanarak pişirmeden önce katmanlı tatlıyı geleneksel baklava dilimi veya kare şeklinde kesin.", actionEn: "Slicing (Dilimleme)", actionTr: "Baklava dilimi kesme" },
+    { number: 7, titleEn: "Bake the Baklava Until Golden Brown", titleTr: "Baklavayı Altın Rengi Alana Kadar Pişirin", sentenceEn: "Bake in a preheated oven at 170°C for 45 minutes until the pastry is puffed and golden brown.", sentenceTr: "Önceden 170°C ısıtılmış fırında tatlı kabarıp altın rengini alana dek 45 dakika pişirin.", actionEn: "Baking (Fırınlama)", actionTr: "Fırında pişirme" },
+    { number: 8, titleEn: "Soak the Hot Baklava with Cold Syrup", titleTr: "Sıcak Baklavayı Soğuk Şerbetle Islatın", sentenceEn: "Finally, pour the cool syrup evenly over the boiling hot baklava straight out of the oven and let it soak for at least 4 hours.", sentenceTr: "Son olarak fırından yeni çıkmış kaynar baklavanın üzerine soğuk şerbeti eşitçe dökün ve en az 4 saat şerbeti çekmeye bırakın.", actionEn: "Soaking (Şerbetleme)", actionTr: "Şerbet dökme" }
+  ];
+
+  const baklavaVocab = [
+    ["phyllo dough", "baklavalık yufka", "Handle paper-thin phyllo dough gently."],
+    ["syrup (sorbet)", "şerbet", "Pour cool syrup over hot pastry."],
+    ["clarified butter", "sade yağ (tortusuz tereyağı)", "Clarified butter gives baklava its signature crispness."],
+    ["pistachio", "Antep fıstığı", "Sprinkle emerald green pistachios over the dessert."],
+    ["walnut", "ceviz", "Spread freshly crushed walnuts evenly."],
+    ["layer", "katman veya kat kat dizmek", "Layer forty micro-thin sheets of pastry."],
+    ["brush", "fırçayla yağ sürmek", "Brush melted butter across every single sheet."],
+    ["soak", "şerbeti emmek veya ıslatmak", "Allow the pastry to soak up the sweet syrup."],
+    ["diamond shape", "baklava dilimi kesimi", "Slice the pastry into neat diamond shapes."],
+    ["Crispy or Crunchy", "Çıtır veya gevrek", "Baklava must stay crispy, not soggy."]
+  ];
+
+  root.innerHTML = `<article class="pasta-guide recipe-guide">
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">DESSERT & SWEET RECIPES (TATLI VE YEMEK TARİFLERİ)</p>
+        <h1>İngilizce Baklava Tarifi (Baklava Yapılışı İngilizce)</h1>
+        <aside class="course-banner" aria-label="İngilizce kursu">
+          <div class="course-banner-text">
+            <small class="cta-eyebrow">KONUŞARAK ÖĞREN İNGİLİZCE KURSU</small>
+            <strong class="cta-heading">İngilizceyi tarif ezberleyerek değil, konuşarak öğrenin.</strong>
+          </div>
+          <button class="cta-btn cta-btn-orange" onclick="window.location.href='https://student.konusarakogren.com/auth/register'">Ücretsiz tanışma dersi <span class="arrow">→</span></button>
+        </aside>
+        <p class="lede"><strong>Turkish Baklava Recipe.</strong> İngilizce baklava tarifi; incecik yufka katlarını (phyllo layers), şerbet (syrup) dökme kurallarını ve emir kipindeki hazırlık adımlarını Türkçe karşılıklarıyla öğreten kapsamlı bir gastronomi ve dil rehberidir.</p>
+        <address class="article-meta" rel="author"><span class="author-mark" aria-hidden="true">KO</span><span><strong>Konuşarak Öğren Editör</strong><small>Yayınlanma tarihi: <time datetime="2026-08-01">1 Ağustos 2026</time></small></span></address>
+      </div>
+      <figure class="hero-visual">
+        <img src="/blog/ingilizce-tarifler/images/baklava-hero.webp" alt="Tepside altın sarısı geleneksel ev yapımı baklava dilimleri" loading="eager" fetchpriority="high">
+        <figcaption>Homemade Baklava (Ev Yapımı Türk Baklavası)</figcaption>
+      </figure>
+      ${buildFactsCardHTML({
+        prep: { val: "45 mins (45 dk)", en: "Layering and buttering forty phyllo sheets takes 45 minutes.", tr: "Kırk kat yufkayı tek tek yağlayıp dizmek yaklaşık 45 dakika sürer." },
+        cook: { val: "40 mins (40 dk)", en: "Baking until golden and crisp takes 40 to 45 minutes.", tr: "Fırında altın sarısı ve çıtır olana dek pişirme 40-45 dakika sürer." },
+        servings: { val: "24 slices (24 dilim)", en: "Yields 24 generous diamond-shaped dessert portions.", tr: "24 dilim zengin ve geleneksel tatlı porsiyonu sunar." },
+        level: { val: "B1–B2 (Orta-İleri)", en: "Covers pastry terminology, sequence adverbs and culinary techniques.", tr: "Hamur işi terimleri, sıra zarfları ve püf noktalarına odaklanan orta-ileri düzey." }
+      })}
+      <div class="hero-overview-table" id="definition-variations">
+        <p class="eyebrow">OVERVIEW &amp; COMPARISON (TANIM VE ÇEŞİTLER KARŞILAŞTIRMASI)</p>
+        <h2 class="definition-heading">English Baklava Recipes: Variations, Fillings and Baking Times (İngilizce Baklava Çeşitleri, İç Harçları ve Pişirme Süreleri)</h2>
+        <p class="section-intro"><strong>İngilizce ve Türkçe Baklava Çeşitleri Karşılaştırması</strong>: Aşağıdaki tabloda 4 temel baklava çeşidinin İngilizce isimlerini, iç malzemelerini, yufka katlarını ve fırınlama sürelerini karşılaştırmalı olarak inceleyebilirsiniz.</p>
+        ${table(["Baklava Variation (Baklava Çeşidi)", "Main Filling & Fat (Ana Harç ve Yağ Türü)", "Layers & Time (Kat Sayısı ve Süre)", "Calories (Kalori)"], [
+          ["Homemade Baklava (Ev Yapımı Baklava)", "Walnuts, clarified butter, sugar syrup (Ceviz, sade yağ, şerbet)", "40 sheets, 45 mins (40 kat, 45 dk)", "380 kcal / 1 piece"],
+          ["Pistachio Baklava (Fıstıklı Baklava)", "Gaziantep green pistachios, clarified butter (Boz Antep fıstığı, sade yağ)", "40 sheets, 50 mins (40 kat, 50 dk)", "410 kcal / 1 piece"],
+          ["Walnut Baklava (Cevizli Baklava)", "Crushed walnuts, unsalted butter (Dövülmüş ceviz içi, tereyağı)", "36 sheets, 45 mins (36 kat, 45 dk)", "390 kcal / 1 piece"],
+          ["Ready Phyllo Baklava (Hazır Yufkadan Baklava)", "Store-bought phyllo, mixed nuts, butter (Hazır baklavalık yufka, ceviz/fıstık, yağ)", "30-40 sheets, 40 mins (30-40 kat, 40 dk)", "370 kcal / 1 piece"]
+        ])}
+      </div>
+    </header>
+
+    <div class="page-grid">
+      <nav class="toc" aria-label="İçindekiler">
+        <a href="/blog/ingilizce-tarifler/baklava#kavramlar" data-scroll-target="kavramlar">Terms (Kavramlar)</a>
+        <a href="/blog/ingilizce-tarifler/baklava#tarifler" data-scroll-target="tarifler">Variations (Tarifler)</a>
+        <a href="/blog/ingilizce-tarifler/baklava#adim-adim" data-scroll-target="adim-adim">8 Steps (8 Adım)</a>
+        <a href="/blog/ingilizce-tarifler/baklava#malzemeler-ve-ekipman" data-scroll-target="malzemeler-ve-ekipman">Ingredients (Malzemeler)</a>
+        <a href="/blog/ingilizce-tarifler/baklava#besin-degerleri" data-scroll-target="besin-degerleri">Nutrition (Besin Değerleri)</a>
+        <a href="/blog/ingilizce-tarifler/baklava#puf-noktalari" data-scroll-target="puf-noktalari">Rules (Püf Noktaları)</a>
+        <a href="/blog/ingilizce-tarifler/baklava#olculer" data-scroll-target="olculer">Units (Ölçüler)</a>
+        <a href="/blog/ingilizce-tarifler/baklava#dil-kurallari" data-scroll-target="dil-kurallari">Grammar (Dil Kuralları)</a>
+        <a href="/blog/ingilizce-tarifler/baklava#alistirma" data-scroll-target="alistirma">Quiz (Alıştırma)</a>
+      </nav>
+
+      <div class="content">
+        <section id="kavramlar">
+          <p class="eyebrow">CORE CONCEPTS &amp; VOCABULARY (TEMEL KAVRAMLAR VE SÖZLÜK)</p>
+          <h2>İngilizce Baklava Tarifi Kavramları ve Türkçe Karşılıkları</h2>
+          <h3>Baklava Kelimesi İngilizce Sözlüklerde: Phyllo, Syrup, Pistachio Terimleri</h3>
+          <p class="section-intro">İngilizcede <strong>phyllo pastry</strong> kağıt inceliğindeki özel baklava yufkasını, <strong>clarified butter</strong> suyu ve süt köpüğü ayrıştırılmış saf sade yağı, <strong>sugar syrup</strong> ise limonlu tatlı şerbeti ifade eder.</p>
+          ${table(["İngilizce Kavram", "Türkçe Karşılığı", "Kullanım Alanı"], [
+            ["Phyllo pastry (veya Filo dough)", "Baklavalık yufka", "Baklavanın katmanlarını oluşturan çok ince hamur"],
+            ["Sugar syrup (veya Simple syrup)", "Tatlı şerbet", "Pişen sıcak baklavaya dökülen şekerli ve limonlu sıvı"],
+            ["Clarified butter (Ghee)", "Sade yağ", "Yanmayı önleyen, süt proteini ayrılmış saf tereyağı"],
+            ["Pistachio", "Antep fıstığı", "Fıstıklı baklavanın zümrüt yeşili zengin iç dolgusu"],
+            ["Walnut", "Ceviz", "Geleneksel ev baklavasının klasik iç harcı"],
+            ["Diamond cut", "Baklava dilimi kesimi", "Fırınlamadan önce yapılan geleneksel verev kesim"]
+          ])}
+
+          <h3>İngilizce Tarif Yazımında Kullanılan Fiiller: Layer, Brush, Bake, Soak</h3>
+          ${table(["İngilizce Fiil", "Türkçe Karşılığı", "Örnek Tarif Cümlesi"], [
+            ["Layer", "Kat kat dizmek veya sermek", "Layer twenty sheets of phyllo into the pan."],
+            ["Brush", "Fırçayla yağ sürmek", "Brush each layer generously with melted butter."],
+            ["Spread", "Eşit biçimde yaymak", "Spread crushed walnuts evenly across the surface."],
+            ["Bake", "Fırında pişirmek", "Bake in the oven at 170°C for 45 minutes."],
+            ["Soak", "Şerbeti çekmek veya ıslatmak", "Pour cold syrup so the hot pastry can soak it up."],
+            ["Slice", "Dilimlemek veya kesmek", "Slice into neat diamond shapes before baking."]
+          ])}
+        </section>
+
+        <div id="tarifler" class="recipe-chapters">
+          <div class="chapter-intro">
+            <p class="eyebrow">4 BAKLAVA VARIATIONS (4 FARKLI BAKLAVA TARİFİ)</p>
+            <p class="section-intro">Her tarifte malzeme listesi, ölçüler, görsel malzeme kartları ve İngilizce yapılış özeti yer alır.</p>
+          </div>
+          ${baklavaVariants.map((v, i) => `
+            <section class="recipe-chapter">
+              <div class="chapter-head">
+                <span class="variant-number">${String(i + 1).padStart(2, "0")}</span>
+                <div>
+                  <h2>${v.briefTitle}</h2>
+                  <p>${v.description}</p>
+                  ${buildChapterMetaHTML({
+                    time: { val: "45-50 dakika", en: "Total baking and preparation time.", tr: "Toplam hazırlık ve fırınlama süresi." },
+                    servings: { val: "24 dilim", en: "Serves 24 dessert portions.", tr: "24 dilim porsiyon sunar." },
+                    count: { val: "${v.ingredients.length} malzeme", en: "Made with authentic ingredients.", tr: "${v.ingredients.length} geleneksel malzeme içerir." }
+                  })}
+                </div>
+              </div>
+              <figure>
+                <img src="${v.image}" alt="${v.alt}" loading="lazy">
+                <figcaption>${v.english}</figcaption>
+              </figure>
+              <div class="chapter-panels">
+                <details class="learning-panel" ${i === 0 ? "open" : ""}>
+                  <summary><h3>${v.ingredientsHeading}</h3><span>Malzeme tablosu</span></summary>
+                  <div class="panel-body">
+                    ${table(["İngilizce malzeme", "Türkçe karşılığı", "Miktar"], v.ingredients)}
+                    ${buildIngredientCardsHTML(v.ingredientCards)}
+                  </div>
+                </details>
+                <details class="learning-panel">
+                  <summary><h3>${v.stepsHeading}</h3><span>Yöntemi göster</span></summary>
+                  <div class="panel-body">
+                    <p class="method-note">${v.steps}</p>
+                  </div>
+                </details>
+              </div>
+            </section>
+          `).join("")}
+        </div>
+
+        <section id="adim-adim">
+          <div class="steps-heading">
+            <p class="eyebrow">FIXED 8 STEPS (SABİT 8 ADIM)</p>
+            <h2>Homemade Baklava İngilizce Adım Adım Nasıl Yapılır? (How Do You Make Homemade Baklava Step by Step?)</h2>
+            <p class="section-intro">Ev yapımı cevizli baklava 8 temel adımdan oluşur. Mutfak eylemleri (actions) ve emir kipi kalıpları aşağıda detaylandırılmıştır.</p>
+            <div class="steps-meta"><span>8 adım</span><span>85 dakika</span><span>B1–B2 seviye</span></div>
+          </div>
+          ${buildStepAccordionHTML(baklavaSteps)}
+          ${table(["Adım No", "İngilizce Talimat", "Türkçe Karşılığı"], baklavaSteps.map((s, i) => [i + 1, s.sentenceEn, s.sentenceTr]))}
+        </section>
+
+        <section id="malzemeler-ve-ekipman">
+          <p class="eyebrow">ESSENTIAL INGREDIENTS &amp; TOOLS (MALZEMELER VE EKİPMANLAR)</p>
+          <h2>Which Ingredients Are Essential for Baklava? (Baklava İçin Hangi Malzemeler Şarttır?)</h2>
+          <p class="section-intro">Kusursuz bir baklava için kaliteli taze un veya baklavalık yufka, yanmayan sade yağ, taze kuruyemiş ve kristalleşmeyen berrak şeker şerbeti şarttır.</p>
+          ${table(["Malzeme (Ingredient)", "Önemi ve İşlevi", "Kalite Kriteri"], [
+            ["Phyllo Sheets (Baklavalık Yufka)", "Kat kat çıtır dokuyu sağlayan temel yapı", "Tül inceliğinde, yırtılmamış ve nemini korumuş olmalıdır"],
+            ["Clarified Butter (Sade Yağ)", "Yufkaların kabarmasını ve çıtırlaşmasını sağlar", "Suyu ve süt tortusu tamamen ayrıştırılmış saf tereyağı"],
+            ["Walnuts veya Pistachios (Kuruyemiş)", "Tatlıya gövde ve karakteristik lezzet verir", "Yeni mahsul, taze dövülmüş ve acılaşmamış olmalıdır"],
+            ["Sugar and Water (Şeker ve Su)", "Şerbetin tatlılık dengesini ve viskozitesini sağlar", "Doğal pancar şekeri ve taze sıkılmış limon suyu kullanılmalıdır"]
+          ])}
+
+          <h3>What Equipment Do You Need to Make Baklava? (Baklava Yapmak İçin Hangi Ekipmanlar Gerekir?)</h3>
+          ${table(["İngilizce Ekipman", "Türkçe Karşılığı", "Kullanıldığı Aşama"], [
+            ["Rectangular baking tray", "Köşeli fırın tepsisi", "Yufkaların kat kat dizilmesi ve fırınlanması"],
+            ["Pastry brush", "Yumurta veya yağ sürme fırçası", "Yufkaların arasına tereyağı sürülmesi"],
+            ["Sharp chef's knife", "Keskin şef bıçağı", "Baklavanın fırına girmeden önce dilimlenmesi"],
+            ["Saucepan", "Sos tenceresi", "Şeker şerbetinin kaynatılması"],
+            ["Rolling pin (veya Oklava)", "İnce oklava", "El açması yufkaların inceltilmesi"]
+          ])}
+        </section>
+
+        <section id="besin-degerleri">
+          <p class="eyebrow">CALORIES &amp; NUTRITION (KALORİ VE BESİN DEĞERLERİ)</p>
+          <h2>How Many Calories Is 1 Piece of Baklava? (1 Dilim Baklava Kaç Kalori?)</h2>
+          <p class="section-intro">Standart bir dilim cevizli baklava (yaklaşık 40–45 g) yaklaşık <strong>160–180 kcal</strong> enerji içerir; porsiyon olarak iki dilim tüketildiğinde enerji değeri <strong>350–380 kcal</strong> bandına ulaşır.</p>
+          ${table(["Porsiyon Ölçüsü", "Kalori (Energy)", "Açıklama"], [
+            ["1 dilim cevizli baklava (40 g)", "175 kcal", "Tek dilim ortalama değer"],
+            ["1 dilim fıstıklı baklava (40 g)", "190 kcal", "Fıstığın doğal yağı nedeniyle biraz daha zengin"],
+            ["1 porsiyon (2 dilim, 80 g)", "360 kcal", "Geleneksel tatlı tabağı servisi"]
+          ])}
+
+          <h3>What Are the Nutrition Facts of Walnut Baklava? (Cevizli Baklavanın Besin Değerleri Nelerdir?)</h3>
+          ${table(["Besin Ögesi (Nutrient)", "100 g Miktar", "1 Dilim (40 g) Miktar"], [
+            ["Carbohydrate (Karbonhidrat)", "52 g", "21 g"],
+            ["Sugar (Şeker)", "29 g", "12 g"],
+            ["Fat (Yağ)", "24 g", "9.6 g"],
+            ["Protein (Protein)", "6.8 g", "2.7 g"],
+            ["Dietary Fiber (Lif)", "2.4 g", "1.0 g"]
+          ])}
+          <p class="source-note">Besin değerleri Türk mutfağı cevizli baklava analizlerine ve <a href="https://fdc.nal.usda.gov/" target="_blank" rel="noreferrer">USDA FoodData Central</a> verilerine dayanmaktadır.</p>
+        </section>
+
+        <section id="puf-noktalari">
+          <p class="eyebrow">CRITICAL PASTRY RULES (ÖNEMLİ PÜF NOKTALARI)</p>
+          <h2>Kaç Kat Yufka? Baklava Katmanları İngilizce Nasıl Anlatılır?</h2>
+          <p class="section-intro">Geleneksel Türk baklavasında en az <strong>36 ila 40 kat</strong> yufka kullanılır. İngilizce tarif metinlerinde katman anlatımı şöyle yapılır: <em>"A classic Turkish baklava requires at least 40 paper-thin sheets of phyllo dough to create its signature flaky structure." (Klasik bir Türk baklavası, kendine has çıtır katmanlarını oluşturmak için en az 40 tül inceliğinde yufka katı gerektirir.)</em></p>
+
+          <h3>Şerbet (Syrup) Dökme Kuralı: Hot on Cold İngilizce Nasıl Açıklanır?</h3>
+          <p class="section-intro">Baklavanın hamurlaşmadan çıtır çıtır kalmasının altın kuralı <strong>sıcak tatlıya soğuk şerbet</strong> (veya ılık tatlıya sıcak şerbet) dökmektir. İngilizce bu kural şöyle ifade edilir: <strong>"Always pour cold syrup over bubbling hot baklava. If both are hot, the pastry will become soggy." (Daima fırından yeni çıkmış kaynar baklavanın üzerine soğuk şerbet dökün. İkisi de sıcak olursa tatlı hamurlaşır.)</strong></p>
+        </section>
+
+        <section id="olculer">
+          <p class="eyebrow">MEASUREMENT UNITS &amp; VOCABULARY (ÖLÇÜ BİRİMLERİ VE MUTFAK KELİMELERİ)</p>
+          <h2>İngilizce Baklava Tariflerinde Kullanılan Ölçü Birimleri Nelerdir?</h2>
+          <p class="section-intro">Baklava tariflerinde hassas gramaj tartımı, cup (su bardağı) ve tablespoon (yemek kaşığı) ölçüleri kullanılır.</p>
+          <h3>Baklava Tarif Metninde Geçen Temel İngilizce Mutfak Kelimeleri Nelerdir?</h3>
+          <div class="vocab vocab-wide">
+            ${baklavaVocab.map(v => `<article><h4>${v[0]}</h4><strong>${v[1]}</strong><p>${v[2]}</p></article>`).join("")}
+          </div>
+
+          <h3>Tablespoon, Teaspoon, Cup: İngilizce Ölçü Birimlerinin Türkçe Karşılıkları</h3>
+          ${table(["İngilizce Ölçü Birimi", "Türkçe Karşılığı", "Metrik Eşdeğeri", "Tarif Cümlesi Örneği"], [
+            ["1 cup (c)", "1 su bardağı", "200 g şeker / 240 ml su", "Add 2 cups of sugar to the saucepan."],
+            ["1 tablespoon (tbsp)", "1 yemek kaşığı", "15 ml / 15 g", "Add 1 tablespoon of fresh lemon juice."],
+            ["1 teaspoon (tsp)", "1 tatlı / çay kaşığı", "5 ml / 5 g", "Add 1 teaspoon of ground cinnamon if desired."]
+          ])}
+
+          <h3>Gram ve Litre İngilizce Tariflerde Nasıl Kullanılır?</h3>
+          ${table(["Metrik Ölçü", "İngilizce Yazımı", "Kullanım Şekli"], [
+            ["300 gram", "300 g / 300 grams", "Weigh 300 g of crushed walnuts."],
+            ["250 gram", "250 g of clarified butter", "Melt 250 g of butter gently."],
+            ["400 mililitre", "400 ml of water", "Simmer 400 ml of water with sugar."]
+          ])}
+        </section>
+
+        <section id="dil-kurallari">
+          <p class="eyebrow">GRAMMAR RULES (DİL BİLGİSİ VE YAZIM KURALLARI)</p>
+          <h2>İngilizce Baklava Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları</h2>
+          <p class="section-intro">İngilizce tariflerde doğrudan emir kipi (imperatives) ve adım geçişlerini bağlayan zaman zarfları (sequencing adverbs) esastır.</p>
+
+          <div class="grammar-tabs">
+            <div class="tab-list" role="tablist" aria-label="Dil kuralı konuları">
+              <button id="baklava-tab-imperative" role="tab" aria-selected="true" aria-controls="baklava-panel-imperative" tabindex="0" data-tab="imperative" class="active"><span>01</span>Emir Kipi (Imperatives)</button>
+              <button id="baklava-tab-sequence" role="tab" aria-selected="false" aria-controls="baklava-panel-sequence" tabindex="-1" data-tab="sequence"><span>02</span>Sıra Zarfları (Connectors)</button>
+            </div>
+            <div class="tab-panels">
+              <div id="baklava-panel-imperative" class="tab-panel active" role="tabpanel" aria-labelledby="baklava-tab-imperative">
+                <h3>İngilizce Baklava Tarif Metinlerinde Emir Kipi (Imperative) Nasıl Kullanılır?</h3>
+                <p class="section-intro">Emir cümleleri özne içermez; doğrudan fiilin yalın haliyle başlar: <strong>Brush each layer, cut into diamond shapes, pour the cool syrup.</strong></p>
+                ${table(["İngilizce Emir Cümlesi", "Türkçe Anlamı", "Kullanılan Fiil"], [
+                  ["Brush every phyllo sheet with butter.", "Her yufkayı tereyağıyla yağlayın.", "Brush (Fırçayla yağlamak)"],
+                  ["Spread the crushed nuts evenly.", "Dövülmüş kuruyemişi eşitçe yayın.", "Spread (Yaymak)"],
+                  ["Cut the pastry diagonally.", "Hamuru verev biçimde dilimleyin.", "Cut / Slice (Kesmek)"],
+                  ["Do not pour hot syrup on hot baklava.", "Sıcak baklavaya sıcak şerbet dökmeyin.", "Do not pour (Dökmeyin)"]
+                ])}
+              </div>
+              <div id="baklava-panel-sequence" class="tab-panel" role="tabpanel" aria-labelledby="baklava-tab-sequence" hidden>
+                <h3>Bağlaçlar ve Sıra Zarfları: First, Then, After That, Finally</h3>
+                <p class="section-intro">Adımları kronolojik sıraya koymak için <em>First, Then, After that, Next, Finally</em> zarfları kullanılır.</p>
+                <div class="language-card sequence">
+                  <small>Örnek Tarif Paragrafı (Example Recipe Paragraph)</small>
+                  <p>First, prepare the sugar syrup and let it cool completely. Then, brush each phyllo sheet with clarified butter and layer twenty sheets. After that, spread the walnuts evenly. Next, layer the remaining twenty sheets. Finally, cut into diamonds, bake until golden, and pour the cool syrup over the hot pastry.</p>
+                  <p class="translation">Önce şeker şerbetini hazırlayıp tamamen soğumaya bırakın. Ardından her yufkayı sade yağla yağlayarak yirmi kat dizin. Daha sonra cevizleri eşitçe yayın. Sonrasında kalan yirmi katı dizin. Son olarak baklava dilimi kesin, altın sarısı olana dek pişirin ve sıcak tatlının üzerine soğuk şerbeti dökün.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="alistirma">
+          <div class="exercise">
+            <p class="eyebrow">PRACTICE &amp; QUIZ (KAZANIM KONTROLÜ VE ALIŞTIRMA)</p>
+            <h2>8. Sınıf İngilizce Baklava Tarifi Alıştırma ve Quizi</h2>
+            <p class="section-intro">Öğrendiğiniz baklava mutfak terimlerini, şerbet kurallarını ve bağlaçları bu interaktif mini test ile test edin.</p>
+            <ol>
+              <li>
+                <span class="quiz-q-num">Soru 1</span>
+                <p class="quiz-q-title">What is the golden rule of pouring syrup onto baklava?</p>
+                <p class="quiz-q-tr">(Baklavaya şerbet dökmenin altın kuralı nedir?)</p>
+                <ul class="quiz-options">
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('correct');">A) Cold syrup over hot baklava ✓</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">B) Boiling hot syrup over hot baklava</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">C) Cold syrup over cold baklava</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">D) Never use lemon in syrup</li>
+                </ul>
+              </li>
+              <li>
+                <span class="quiz-q-num">Soru 2</span>
+                <p class="quiz-q-title">Which kitchen action means "fırçayla yağ sürmek" in English?</p>
+                <p class="quiz-q-tr">("Fırçayla yağ sürmek" anlamına gelen İngilizce mutfak fiili hangisidir?)</p>
+                <ul class="quiz-options">
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">A) Boil</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('correct');">B) Brush ✓</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">C) Drain</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">D) Sift</li>
+                </ul>
+              </li>
+              <li>
+                <span class="quiz-q-num">Soru 3</span>
+                <p class="quiz-q-title">What does "phyllo pastry" mean in Turkish?</p>
+                <p class="quiz-q-tr">("Phyllo pastry" teriminin Türkçe karşılığı nedir?)</p>
+                <ul class="quiz-options">
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">A) Ekmek hamuru</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('correct');">B) Baklavalık yufka ✓</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">C) Kabartma tozu</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">D) Mayalı çörek</li>
+                </ul>
+              </li>
+              <li>
+                <span class="quiz-q-num">Soru 4</span>
+                <p class="quiz-q-title">Which sentence correctly instructs someone to cut baklava?</p>
+                <p class="quiz-q-tr">(Baklavayı dilimlemeyi doğru şekilde tarif eden emir cümlesi hangisidir?)</p>
+                <ul class="quiz-options">
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">A) You are cutting into diamond shapes.</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('correct');">B) Cut the baklava into diamond shapes. ✓</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">C) Cutting diamonds is fun.</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">D) Diamond shapes are cut by us.</li>
+                </ul>
+              </li>
+            </ol>
+            <details class="answer-key">
+              <summary>Cevap Anahtarını Göster</summary>
+              <div class="key-content">
+                <ol>
+                  <li><strong>Soru 1: A) Cold syrup over hot baklava</strong> — <em>Baklavanın çıtırlığını koruması için şerbet daima tamamen soğuk, tatlı ise fırından yeni çıkmış kaynar sıcaklıkta olmalıdır.</em></li>
+                  <li><strong>Soru 2: B) Brush</strong> — <em>Yufkaların arasına fırçayla eritilmiş tereyağı sürme işlemi İngilizcede "brush" fiili ile ifade edilir.</em></li>
+                  <li><strong>Soru 3: B) Baklavalık yufka</strong> — <em>Phyllo (veya filo), baklava ve börek yapımında kullanılan kağıt inceliğindeki yufkadır.</em></li>
+                  <li><strong>Soru 4: B) Cut the baklava into diamond shapes.</strong> — <em>İngilizce tariflerde talimatlar öznesiz ve fiilin yalın haliyle başlayan emir kipi (imperative) ile yazılır.</em></li>
+                </ol>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        ${getMidPageCTAHTML()}
+        ${getRelatedRecipesHTML("baklava")}
+      </div>
+    </div>
+  </article>`;
+
+  // Attach grammar tabs interactivity
+  const tabButtons = root.querySelectorAll(".grammar-tabs button[role='tab']");
+  tabButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const targetId = btn.getAttribute("aria-controls");
+      tabButtons.forEach(b => {
+        b.setAttribute("aria-selected", "false");
+        b.classList.remove("active");
+        b.tabIndex = -1;
+      });
+      btn.setAttribute("aria-selected", "true");
+      btn.classList.add("active");
+      btn.tabIndex = 0;
+      root.querySelectorAll(".grammar-tabs .tab-panel").forEach(p => {
+        p.hidden = p.id !== targetId;
+        p.classList.toggle("active", p.id === targetId);
+      });
+    });
+  });
+}
+
+
+const smoothieVariants = [
+  {
+    title: "Muzlu Smoothie",
+    briefTitle: "İngilizce Muzlu Smoothie Tarifi (Banana Smoothie Recipe)",
+    ingredientsHeading: "Muzlu Smoothie Tarifinin İngilizce Malzemeleri Nelerdir?",
+    stepsHeading: "Muzlu Smoothie Pişirme Adımları İngilizce Nasıl Yazılır?",
+    english: "Banana Smoothie Recipe",
+    description: "Banana Smoothie (Muzlu Smoothie); muzun süt, yoğurt ve balla blenderda homojen ve kremsi olana dek çekilmesiyle hazırlanan besleyici bir kahvaltılık içecektir.",
+    image: "/blog/ingilizce-tarifler/images/smoothie-hero.webp",
+    alt: "A tall glass of creamy banana smoothie garnished with fresh banana slices",
+    ingredients: [
+      ["Bananas", "Olgun muz", "2 medium"],
+      ["Milk", "Soğuk süt veya bitkisel süt", "1 cup (240 ml)"],
+      ["Yogurt", "Süzme yoğurt", "½ cup (120 g)"],
+      ["Honey", "Bal", "1 tbsp (15 ml)"],
+      ["Ice cubes", "Buz küpü", "4-5 cubes"]
+    ],
+    steps: "First, peel and slice 2 ripe bananas into rounds. Then, add milk, yogurt, honey and ice cubes to the blender jar. After that, blend on high speed for 45 seconds until velvety smooth. Finally, pour into a chilled glass and serve immediately.",
+    ingredientCards: [
+      { en: "Ripe bananas", tr: "Olgun muz", quantity: "2 pieces", icon: "🍌", sentenceEn: "Ripe bananas provide natural sweetness and thick creaminess.", sentenceTr: "Olgun muzlar doğal tatlılık ve yoğun bir kremamsılık kazandırır." },
+      { en: "Cold milk", tr: "Soğuk süt", quantity: "1 cup", icon: "🥛", sentenceEn: "Cold whole milk or oat milk blends the ingredients effortlessly.", sentenceTr: "Soğuk tam yağlı süt veya yulaf sütü malzemeleri kolayca karıştırır." },
+      { en: "Greek yogurt", tr: "Süzme yoğurt", quantity: "½ cup", icon: "🥣", sentenceEn: "Thick yogurt adds protein and a delightful, subtle tang.", sentenceTr: "Koyu kıvamlı yoğurt protein ve hoş, hafif bir mayhoşluk katar." },
+      { en: "Natural honey", tr: "Doğal bal", quantity: "1 tbsp", icon: "🍯", sentenceEn: "Honey imparts gentle floral sweetness without refined sugar.", sentenceTr: "Bal, rafine şeker içermeden zarif çiçeksi bir tatlılık sağlar." }
+    ]
+  },
+  {
+    title: "Çilekli Smoothie",
+    briefTitle: "İngilizce Çilekli Smoothie Tarifi (Strawberry Smoothie Recipe)",
+    ingredientsHeading: "Çilekli Smoothie Tarifinin İngilizce Malzemeleri Nelerdir?",
+    stepsHeading: "Çilekli Smoothie Pişirme Adımları İngilizce Nasıl Yazılır?",
+    english: "Strawberry Smoothie Recipe",
+    description: "Strawberry Smoothie (Çilekli Smoothie); taze veya dondurulmuş çileklerin badem sütü ve chia tohumuyla buluştuğu pembe, canlı ve ferahlatıcı bir yaz içeceğidir.",
+    image: "/blog/ingilizce-tarifler/images/smoothie-cilekli.webp",
+    alt: "Vibrant pink strawberry smoothie in a mason jar with a straw",
+    ingredients: [
+      ["Strawberries", "Taze veya dondurulmuş çilek", "200 g (1.5 cups)"],
+      ["Almond milk", "Badem sütü", "1 cup (240 ml)"],
+      ["Greek yogurt", "Yoğurt", "½ cup (120 g)"],
+      ["Chia seeds", "Chia tohumu", "1 tsp"],
+      ["Maple syrup veya honey", "Akçaağaç şurubu veya bal", "1 tbsp"]
+    ],
+    steps: "First, wash, hull and slice fresh strawberries. Then, put sliced strawberries, almond milk, yogurt and chia seeds into the blender. Next, blend on high for 50 seconds until completely smooth. Finally, garnish with a whole strawberry and enjoy cold.",
+    ingredientCards: [
+      { en: "Strawberries", tr: "Taze çilek", quantity: "200 g", icon: "🍓", sentenceEn: "Strawberries impart vibrant pink color and bright berry aroma.", sentenceTr: "Çilekler canlı pembe bir renk ve ferah kırmızı meyve aroması verir." },
+      { en: "Almond milk", tr: "Badem sütü", quantity: "1 cup", icon: "🥛", sentenceEn: "Unsweetened almond milk keeps the drink light and refreshing.", sentenceTr: "Şekersiz badem sütü içeceği hafif ve ferahlatıcı tutar." },
+      { en: "Chia seeds", tr: "Chia tohumu", quantity: "1 tsp", icon: "🌱", sentenceEn: "Chia seeds add healthy omega-3 fats and natural thickening.", sentenceTr: "Chia tohumu sağlıklı omega-3 yağları ve doğal kıvam artışı sağlar." },
+      { en: "Honey or syrup", tr: "Bal veya şurup", quantity: "1 tbsp", icon: "🍯", sentenceEn: "Drizzle honey to balance the natural tartness of strawberries.", sentenceTr: "Çileğin doğal mayhoşluğunu dengelemek için bal gezdirin." }
+    ]
+  },
+  {
+    title: "Yeşil Smoothie",
+    briefTitle: "İngilizce Yeşil Smoothie Tarifi (Green Smoothie Recipe)",
+    ingredientsHeading: "Yeşil Smoothie Tarifinin İngilizce Malzemeleri Nelerdir?",
+    stepsHeading: "Yeşil Smoothie Pişirme Adımları İngilizce Nasıl Yazılır?",
+    english: "Green Smoothie Recipe",
+    description: "Green Smoothie (Yeşil Smoothie); taze bebek ıspanak, yeşil elma, salatalık ve limon suyuyla hazırlanan lif ve vitamin zengini alkali bir detoks içeceğidir.",
+    image: "/blog/ingilizce-tarifler/images/smoothie-yesil.webp",
+    alt: "Bright green detox smoothie with cucumber slices and fresh spinach leaves",
+    ingredients: [
+      ["Baby spinach", "Taze bebek ıspanak", "2 cups packed (60 g)"],
+      ["Green apple", "Ekşi yeşil elma (Granny Smith)", "1 medium"],
+      ["Cucumber", "Salatalık", "½ medium"],
+      ["Water veya coconut water", "Su veya Hindistan cevizi suyu", "1 cup (240 ml)"],
+      ["Lemon juice", "Taze limon suyu", "1 tbsp"]
+    ],
+    steps: "First, blend the baby spinach and coconut water together for 30 seconds to break down the greens. Then, add chopped green apple, cucumber and lemon juice. Next, blend on high speed for 1 minute until silky smooth with no leaf fragments. Finally, pour into a tall glass and drink fresh.",
+    ingredientCards: [
+      { en: "Baby spinach", tr: "Bebek ıspanak", quantity: "2 cups", icon: "🥬", sentenceEn: "Baby spinach has a mild taste that disappears into sweet fruit flavors.", sentenceTr: "Bebek ıspanak tatlı meyve tatları arasında kaybolan hafif bir lezzete sahiptir." },
+      { en: "Green apple", tr: "Yeşil elma", quantity: "1 piece", icon: "🍏", sentenceEn: "Crisp green apple adds refreshing tartness and cleansing fiber.", sentenceTr: "Çıtır yeşil elma ferahlatıcı mayhoşluk ve arındırıcı lif kazandırır." },
+      { en: "Cucumber", tr: "Salatalık", quantity: "½ piece", icon: "🥒", sentenceEn: "Hydrating cucumber gives the smoothie clean, cool crispness.", sentenceTr: "Su zengini salatalık smoothieye tertemiz ve serin bir tazelik verir." },
+      { en: "Lemon juice", tr: "Limon suyu", quantity: "1 tbsp", icon: "🍋", sentenceEn: "Lemon juice prevents browning and brightens all green notes.", sentenceTr: "Limon suyu kararmayı önler ve tüm yeşil notaları canlandırır." }
+    ]
+  },
+  {
+    title: "Proteinli Smoothie",
+    briefTitle: "İngilizce Proteinli Smoothie Tarifi (Protein Smoothie Recipe)",
+    ingredientsHeading: "Proteinli Smoothie Tarifinin İngilizce Malzemeleri Nelerdir?",
+    stepsHeading: "Proteinli Smoothie Pişirme Adımları İngilizce Nasıl Yazılır?",
+    english: "Protein Smoothie Recipe",
+    description: "Protein Smoothie (Proteinli Smoothie); spor öncesi veya sonrası kas onarımını desteklemek için fıstık ezmesi, protein tozu, muz ve yulaf sütüyle hazırlanan yüksek enerjili bir karışımdır.",
+    image: "/blog/ingilizce-tarifler/images/smoothie-protein.webp",
+    alt: "Thick post-workout protein smoothie topped with chia and peanut butter drizzle",
+    ingredients: [
+      ["Whey or plant protein powder", "Protein tozu (vanilyalı veya çikolatalı)", "1 scoop (30 g)"],
+      ["Peanut butter", "Doğal fıstık ezmesi", "1.5 tbsp (25 g)"],
+      ["Banana", "Muz", "1 frozen banana"],
+      ["Oat milk", "Yulaf sütü", "1.5 cups (350 ml)"],
+      ["Rolled oats", "Yulaf ezmesi", "2 tbsp (20 g)"]
+    ],
+    steps: "First, pour the oat milk into the blender first to prevent powder from sticking to the blades. Then, add protein powder, peanut butter, rolled oats and frozen banana chunks. Next, blend on medium-high speed for 60 seconds until thick and velvety. Finally, pour into a shaker cup and consume within 30 minutes after your workout.",
+    ingredientCards: [
+      { en: "Protein powder", tr: "Protein tozu", quantity: "1 scoop", icon: "🏋️", sentenceEn: "Whey or plant-based protein helps rebuild and repair muscle tissue.", sentenceTr: "Peynir altı suyu veya bitkisel protein kas dokusunu onarmaya yardımcı olur." },
+      { en: "Peanut butter", tr: "Fıstık ezmesi", quantity: "1.5 tbsp", icon: "🥜", sentenceEn: "Natural peanut butter adds healthy fats and a satisfying nutty body.", sentenceTr: "Doğal fıstık ezmesi sağlıklı yağlar ve doyurucu fındıksı gövde sağlar." },
+      { en: "Oat milk", tr: "Yulaf sütü", quantity: "1.5 cups", icon: "🥛", sentenceEn: "Creamy oat milk creates a dairy-free, silky beverage foundation.", sentenceTr: "Kremamsı yulaf sütü sütsüz, ipeksi bir içecek bazı oluşturur." },
+      { en: "Rolled oats", tr: "Yulaf ezmesi", quantity: "2 tbsp", icon: "🌾", sentenceEn: "Oats release slow-burning complex carbohydrates for lasting stamina.", sentenceTr: "Yulaf kalıcı dayanıklılık için yavaş sindirilen kompleks karbonhidrat sağlar." }
+    ]
+  }
+];
+
+function renderSmoothiePage() {
+  document.title = "İngilizce Smoothie Tarifi (Smoothie Yapılışı İngilizce) | Konuşarak Öğren";
+  setStructuredData({
+    "@context": "https://schema.org", "@type": "Recipe",
+    name: "İngilizce Smoothie Tarifi (Smoothie Yapılışı İngilizce)",
+    image: ["https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=1600&q=85"],
+    author: { "@type": "Organization", name: "Konuşarak Öğren" },
+    datePublished: "2026-08-01",
+    description: "İngilizce muzlu smoothie tarifi; malzemeler, blender ayarları, besin değerleri ve Türkçe karşılıkları.",
+    prepTime: "PT5M", cookTime: "PT0M", totalTime: "PT5M", recipeYield: "2 bardak",
+    recipeCategory: "İçecek", recipeCuisine: "Uluslararası",
+    nutrition: { "@type": "NutritionInformation", calories: "210 calories" },
+    recipeIngredient: ["2 ripe bananas", "1 cup cold milk", "½ cup yogurt", "1 tbsp honey", "4 ice cubes"],
+    recipeInstructions: [
+      { "@type": "HowToStep", position: 1, name: "Peel and Slice", text: "Peel 2 bananas and slice them into thick rounds." },
+      { "@type": "HowToStep", position: 2, name: "Add to Blender", text: "Add the milk, yogurt, honey and ice cubes into the blender jar." },
+      { "@type": "HowToStep", position: 3, name: "Blend Until Smooth", text: "Blend the mixture on high speed for 45 seconds until completely smooth." },
+      { "@type": "HowToStep", position: 4, name: "Pour and Serve", text: "Pour the smoothie into glasses and serve chilled immediately." }
+    ]
+  });
+
+  const smoothieSteps = [
+    { number: 1, titleEn: "Peel and Slice 2 Bananas", titleTr: "2 Muzu Soyun ve Dilimleyin", sentenceEn: "First, peel 2 ripe bananas with your hands and slice them into thick rounds with a kitchen knife.", sentenceTr: "İlk olarak 2 olgun muzu elinizle soyun ve bir mutfak bıçağıyla kalın halkalar halinde dilimleyin.", actionEn: "Peeling & Slicing (Soyma ve Dilimleme)", actionTr: "Meyve hazırlığı" },
+    { number: 2, titleEn: "Add the Milk, Yogurt and Honey to the Blender", titleTr: "Sütü, Yoğurdu ve Balı Blendera Ekleyin", sentenceEn: "Then, pour 1 cup of cold milk into the blender jar first, followed by ½ cup of yogurt, sliced bananas and 1 tablespoon of natural honey.", sentenceTr: "Ardından blender haznesine önce 1 su bardağı soğuk sütü dökün, ardından ½ su bardağı yoğurdu, dilimlenmiş muzları ve 1 yemek kaşığı doğal balı ekleyin.", actionEn: "Adding (Malzemeleri Hazneye Ekleme)", actionTr: "Sıvı ve katıları ekleme" },
+    { number: 3, titleEn: "Blend the Mixture Until Smooth", titleTr: "Karışımı Pürüzsüz Olana Kadar Çekin", sentenceEn: "After that, secure the lid and blend the ingredients on high speed for 45 to 60 seconds until completely creamy and velvety smooth.", sentenceTr: "Daha sonra kapağı sıkıca kapatın ve malzemeleri tamamen kremamsı ve ipeksi bir kıvama gelene kadar yüksek hızda 45-60 saniye çekin.", actionEn: "Blending (Blenderda Çekme)", actionTr: "Yüksek hızda püre yapma" },
+    { number: 4, titleEn: "Pour the Smoothie into a Glass and Serve", titleTr: "Smoothie'yi Bardağa Dökün ve Servis Edin", sentenceEn: "Finally, pour the fresh smoothie into 2 chilled drinking glasses, garnish with a fresh mint leaf or banana slice, and serve immediately.", sentenceTr: "Son olarak taze smoothieyi 2 soğuk bardağa dökün, taze nane yaprağı veya muz dilimiyle süsleyip bekletmeden servis edin.", actionEn: "Pouring & Serving (Dökme ve Servis)", actionTr: "Bardağa aktarma" }
+  ];
+
+  const smoothieVocab = [
+    ["smoothie", "meyveli soğuk içecek", "A fresh fruit smoothie is full of vitamins."],
+    ["milkshake", "dondurmalı sütlü içecek", "Milkshakes use ice cream, while smoothies use yogurt or fruit."],
+    ["peel", "kabuğunu soymak", "Peel the bananas before placing them in the blender."],
+    ["slice", "dilimlemek", "Slice the fresh strawberries into halves."],
+    ["blend", "blenderda homojen çekmek", "Blend on high speed until completely smooth."],
+    ["puree", "püre haline getirmek", "Puree leafy greens with cold water first."],
+    ["pour", "bardağa dökmek", "Pour the chilled smoothie into tall glasses."],
+    ["garnish", "süslemek", "Garnish with chia seeds or fresh berries."],
+    ["pulse", "aralıklı çalıştırmak", "Pulse the blender a few times to crush ice cubes."],
+    ["thick & creamy", "yoğun ve kremamsı", "Frozen fruit gives a thick, creamy consistency."]
+  ];
+
+  root.innerHTML = `<article class="pasta-guide recipe-guide">
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">DRINK & BEVERAGE RECIPES (İÇECEK TARİFLERİ)</p>
+        <h1>İngilizce Smoothie Tarifi (Smoothie Yapılışı İngilizce)</h1>
+        <aside class="course-banner" aria-label="İngilizce kursu">
+          <div class="course-banner-text">
+            <small class="cta-eyebrow">KONUŞARAK ÖĞREN İNGİLİZCE KURSU</small>
+            <strong class="cta-heading">İngilizceyi tarif ezberleyerek değil, konuşarak öğrenin.</strong>
+          </div>
+          <button class="cta-btn cta-btn-orange" onclick="window.location.href='https://student.konusarakogren.com/auth/register'">Ücretsiz tanışma dersi <span class="arrow">→</span></button>
+        </aside>
+        <p class="lede"><strong>Banana Smoothie Recipe.</strong> İngilizce smoothie tarifi; taze meyveleri, blender ayarlarını, sıvı–meyve dengesini ve emir kipindeki hazırlama adımlarını Türkçe karşılıklarıyla öğreten modern ve enerjik bir İngilizce içecek rehberidir.</p>
+        <address class="article-meta" rel="author"><span class="author-mark" aria-hidden="true">KO</span><span><strong>Konuşarak Öğren Editör</strong><small>Yayınlanma tarihi: <time datetime="2026-08-01">1 Ağustos 2026</time></small></span></address>
+      </div>
+      <figure class="hero-visual">
+        <img src="/blog/ingilizce-tarifler/images/smoothie-hero.webp" alt="Cam bardakta servis edilen taze kremamsı muzlu smoothie" loading="eager" fetchpriority="high">
+        <figcaption>Banana Smoothie (Muzlu Smoothie)</figcaption>
+      </figure>
+      ${buildFactsCardHTML({
+        prep: { val: "5 mins (5 dk)", en: "Peeling, slicing fruit and measuring liquids takes 5 minutes.", tr: "Meyve soyma, dilimleme ve sıvıları ölçme yaklaşık 5 dakika sürer." },
+        cook: { val: "0 mins (0 dk)", en: "No stove or baking needed; made entirely in a blender.", tr: "Ocak veya fırın gerekmez; tamamen blenderda hazırlanır." },
+        servings: { val: "2 glasses (2 bardak)", en: "Yields 2 large refreshing drinking glasses.", tr: "2 büyük ferahlatıcı servis bardağı sunar." },
+        level: { val: "A1–A2 (Temel Seviye)", en: "Focuses on daily action verbs, kitchen equipment and fruit terms.", tr: "Günlük eylem fiilleri, mutfak aletleri ve meyve terimlerine odaklanan temel seviye." }
+      })}
+      <div class="hero-overview-table" id="definition-variations">
+        <p class="eyebrow">OVERVIEW &amp; COMPARISON (TANIM VE ÇEŞİTLER KARŞILAŞTIRMASI)</p>
+        <h2 class="definition-heading">English Smoothie Recipes: Variations, Ingredients and Nutrient Profiles (İngilizce Smoothie Çeşitleri, Malzemeleri ve Besin Profilleri)</h2>
+        <p class="section-intro"><strong>İngilizce ve Türkçe Smoothie Çeşitleri Karşılaştırması</strong>: Aşağıdaki tabloda 4 popüler smoothie çeşidinin İngilizce isimlerini, sıvı ve meyve bileşenlerini ve enerji değerlerini inceleyebilirsiniz.</p>
+        ${table(["Smoothie Variation (Çeşit)", "Key Ingredients (Temel Malzemeler)", "Function & Best Time (İşlev ve Tüketim Zamanı)", "Calories (Kalori)"], [
+          ["Banana Smoothie (Muzlu Smoothie)", "Bananas, milk, yogurt, honey (Muz, süt, yoğurt, bal)", "Energy breakfast (Kahvaltı ve enerji)", "210 kcal / glass"],
+          ["Strawberry Smoothie (Çilekli Smoothie)", "Strawberries, almond milk, chia (Çilek, badem sütü, chia)", "Refreshing snack (Serinletici ara öğün)", "185 kcal / glass"],
+          ["Green Smoothie (Yeşil Smoothie)", "Spinach, green apple, cucumber, lemon (Ispanak, elma, salatalık, limon)", "Detox & wellness (Detoks ve zindelik)", "140 kcal / glass"],
+          ["Protein Smoothie (Proteinli Smoothie)", "Protein powder, peanut butter, oat milk (Protein tozu, fıstık ezmesi, yulaf sütü)", "Post-workout recovery (Antrenman sonrası)", "320 kcal / glass"]
+        ])}
+      </div>
+    </header>
+
+    <div class="page-grid">
+      <nav class="toc" aria-label="İçindekiler">
+        <a href="/blog/ingilizce-tarifler/smoothie#kavramlar" data-scroll-target="kavramlar">Terms (Kavramlar)</a>
+        <a href="/blog/ingilizce-tarifler/smoothie#tarifler" data-scroll-target="tarifler">Variations (Tarifler)</a>
+        <a href="/blog/ingilizce-tarifler/smoothie#adim-adim" data-scroll-target="adim-adim">4 Steps (4 Adım)</a>
+        <a href="/blog/ingilizce-tarifler/smoothie#malzemeler-ve-ekipman" data-scroll-target="malzemeler-ve-ekipman">Ingredients (Malzemeler)</a>
+        <a href="/blog/ingilizce-tarifler/smoothie#besin-degerleri" data-scroll-target="besin-degerleri">Nutrition (Besin Değerleri)</a>
+        <a href="/blog/ingilizce-tarifler/smoothie#puf-noktalari" data-scroll-target="puf-noktalari">Tips (İpuçları)</a>
+        <a href="/blog/ingilizce-tarifler/smoothie#olculer" data-scroll-target="olculer">Units (Ölçüler)</a>
+        <a href="/blog/ingilizce-tarifler/smoothie#dil-kurallari" data-scroll-target="dil-kurallari">Grammar (Dil Kuralları)</a>
+        <a href="/blog/ingilizce-tarifler/smoothie#alistirma" data-scroll-target="alistirma">Quiz (Alıştırma)</a>
+      </nav>
+
+      <div class="content">
+        <section id="kavramlar">
+          <p class="eyebrow">CORE CONCEPTS &amp; VOCABULARY (TEMEL KAVRAMLAR VE SÖZLÜK)</p>
+          <h2>Smoothie Tarifinin İngilizce Terim Sözlüğü: Temel Kavramlar</h2>
+          <h3>Smoothie mi Shake mi? İçerik Farkı İngilizce Nasıl Anlatılır?</h3>
+          <p class="section-intro">İngilizcede <strong>smoothie</strong> meyve, sebze, yoğurt ve süt/su karışımıyla yapılan sağlıklı ve posalı içecekleri anlatırken; <strong>milkshake</strong> ise dondurma, süt ve aromatik şuruplarla hazırlanan tatlı bir süt tatlısıdır. <em>"A smoothie focuses on fruit, greens and yogurt, whereas a milkshake is made with ice cream and milk."</em></p>
+          ${table(["İngilizce Kavram", "Türkçe Karşılığı", "Temel Ayrım"], [
+            ["Smoothie", "Meyveli / Sebzeli Püre İçecek", "Meyve, yoğurt ve sağlıklı sıvılarla hazırlanır; lif oranı yüksektir"],
+            ["Milkshake", "Dondurmalı Sütlü İçecek", "Süt ve dondurma bazlıdır; tatlı ve kalorili bir içecektir"],
+            ["Green smoothie", "Yeşil detoks içeceği", "Ispanak veya karalahana gibi taze yeşilliklerle meyvelerin karışımıdır"],
+            ["Slushie", "Kırılmış buzlu meyve içeceği", "Yoğurt veya süt içermeyen, tamamen buz ve meyve suyu bazlı içecektir"]
+          ])}
+
+          <h3>İngilizce Tarif Yazımında Kullanılan Fiiller: Peel, Slice, Blend, Serve</h3>
+          ${table(["İngilizce Fiil", "Türkçe Karşılığı", "Örnek Cümle"], [
+            ["Peel", "Kabuğunu soymak", "Peel 2 bananas before adding them to the pitcher."],
+            ["Slice", "Dilimlemek", "Slice the fresh fruit into smaller pieces for easy blending."],
+            ["Blend", "Blenderda homojen çekmek", "Blend on high speed for 45 seconds until smooth."],
+            ["Pour", "Bardağa dökmek", "Pour the cold drink into glasses and serve right away."],
+            ["Puree", "Püre yapmak", "Puree the ingredients until completely velvety."]
+          ])}
+        </section>
+
+        <div id="tarifler" class="recipe-chapters">
+          <div class="chapter-intro">
+            <p class="eyebrow">4 SMOOTHIE VARIATIONS (4 FARKLI SMOOTHIE ÇEŞİDİ)</p>
+            <p class="section-intro">Her tarifte malzeme listesi, ölçüler, görsel malzeme kartları ve İngilizce yapılış özeti yer alır.</p>
+          </div>
+          ${smoothieVariants.map((v, i) => `
+            <section class="recipe-chapter">
+              <div class="chapter-head">
+                <span class="variant-number">${String(i + 1).padStart(2, "0")}</span>
+                <div>
+                  <h2>${v.briefTitle}</h2>
+                  <p>${v.description}</p>
+                  ${buildChapterMetaHTML({
+                    time: { val: "5 dakika", en: "Total blending and prep time.", tr: "Toplam hazırlık ve blender süresi." },
+                    servings: { val: "2 bardak", en: "Yields 2 refreshing glasses.", tr: "2 bardak porsiyon sunar." },
+                    count: { val: "${v.ingredients.length} malzeme", en: "Simple and nutritious ingredients.", tr: "${v.ingredients.length} doğal malzeme içerir." }
+                  })}
+                </div>
+              </div>
+              <figure>
+                <img src="${v.image}" alt="${v.alt}" loading="lazy">
+                <figcaption>${v.english}</figcaption>
+              </figure>
+              <div class="chapter-panels">
+                <details class="learning-panel" ${i === 0 ? "open" : ""}>
+                  <summary><h3>${v.ingredientsHeading}</h3><span>Malzeme tablosu</span></summary>
+                  <div class="panel-body">
+                    ${table(["İngilizce malzeme", "Türkçe karşılığı", "Miktar"], v.ingredients)}
+                    ${buildIngredientCardsHTML(v.ingredientCards)}
+                  </div>
+                </details>
+                <details class="learning-panel">
+                  <summary><h3>${v.stepsHeading}</h3><span>Yöntemi göster</span></summary>
+                  <div class="panel-body">
+                    <p class="method-note">${v.steps}</p>
+                  </div>
+                </details>
+              </div>
+            </section>
+          `).join("")}
+        </div>
+
+        <section id="adim-adim">
+          <div class="steps-heading">
+            <p class="eyebrow">FIXED 4 STEPS (SABİT 4 ADIM)</p>
+            <h2>Banana Smoothie İngilizce Adım Adım Nasıl Yapılır? (How Do You Make Banana Smoothie Step by Step?)</h2>
+            <p class="section-intro">Klasik muzlu smoothie 4 pratik adımdan oluşur ve yaklaşık 5 dakikada hazırlanır.</p>
+            <div class="steps-meta"><span>4 adım</span><span>5 dakika</span><span>A1–A2 seviye</span></div>
+          </div>
+          ${buildStepAccordionHTML(smoothieSteps)}
+          ${table(["Adım No", "İngilizce Talimat", "Türkçe Karşılığı"], smoothieSteps.map((s, i) => [i + 1, s.sentenceEn, s.sentenceTr]))}
+        </section>
+
+        <section id="malzemeler-ve-ekipman">
+          <p class="eyebrow">FRUITS, LIQUIDS &amp; TOOLS (MEYVELER, SIVILAR VE EKİPMANLAR)</p>
+          <h2>Which Fruits and Liquids Go into a Smoothie? (Smoothie'ye Hangi Meyveler ve Sıvılar Girer?)</h2>
+          <p class="section-intro">İdeal bir smoothie; taban meyvesi, lezzet meyvesi, sıvı ve protein/lif kaynağının dengeli birleşiminden oluşur.</p>
+          ${table(["Bileşen Grubu", "İngilizce Örnekler", "Türkçe Karşılıkları", "İşlevi"], [
+            ["Base Fruit (Taban)", "Bananas, mango, avocado", "Muz, mango, avokado", "İçeceğe kıvam, gövde ve kadifemsi pürüzsüzlük katar"],
+            ["Flavor Fruit (Aroma)", "Strawberries, blueberries, peaches", "Çilek, yaban mersini, şeftali", "Canlı renk, antioksidan ve mayhoş lezzet katar"],
+            ["Liquids (Sıvılar)", "Cow's milk, almond milk, oat milk, coconut water", "İnek sütü, badem sütü, yulaf sütü, Hindistan cevizi suyu", "Bıçakların rahat dönmesini ve içilebilir akışkanlığı sağlar"],
+            ["Boosters (Katkılar)", "Chia seeds, flaxseeds, peanut butter, honey", "Chia tohumu, keten tohumu, fıstık ezmesi, bal", "Omega-3, sağlıklı yağ ve doğal enerji takviyesi sağlar"]
+          ])}
+
+          <h3>Which Blender Settings Are Used for Smoothies? (Smoothie İçin Hangi Blender Ayarları Kullanılır?)</h3>
+          ${table(["Blender Ayarı (Setting)", "Ne Zaman Kullanılır?", "İngilizce Kullanım Talimatı"], [
+            ["Pulse", "Buzları ve donmuş meyveleri ilk başta kırmak için", "Pulse 3 to 4 times to crush hard frozen chunks."],
+            ["Low Speed", "Sıvı ve yeşillikleri ilk karıştırma anında", "Start on low speed for 10 seconds to create a whirlpool."],
+            ["High Speed", "Tamamen pürüzsüz ve homojen krema dokusu için", "Switch to high speed for 45 seconds for a velvety texture."]
+          ])}
+        </section>
+
+        <section id="besin-degerleri">
+          <p class="eyebrow">CALORIES &amp; NUTRITION (KALORİ VE BESİN DEĞERLERİ)</p>
+          <h2>How Many Calories Does a Banana Smoothie Have? (Muzlu Smoothie Kaç Kalori?)</h2>
+          <p class="section-intro">1 büyük su bardağı (yaklaşık 300 ml) klasik muzlu smoothie ortalama <strong>210 kcal</strong> enerji içerir; kullanılan süt türü ve eklenen bala göre kalori miktarı değişebilir.</p>
+          ${table(["Porsiyon (Serving)", "Kalori (Energy)", "Açıklama"], [
+            ["1 bardak Muzlu Smoothie (300 ml)", "210 kcal", "Muz, az yağlı süt, yoğurt ve 1 tatlı kaşığı bal"],
+            ["1 bardak Çilekli Smoothie (300 ml)", "185 kcal", "Badem sütü ile yapıldığında daha düşük kalorilidir"],
+            ["1 bardak Yeşil Smoothie (300 ml)", "140 kcal", "Şekersiz, bol ıspanak ve yeşil elmalı hafif içecek"],
+            ["1 bardak Proteinli Smoothie (400 ml)", "320 kcal", "Protein tozu ve fıstık ezmeli sporcu öğünü"]
+          ])}
+
+          <h3>What Are the Nutrition Facts of a Banana Smoothie? (Muzlu Smoothie'nin Besin Değerleri Nelerdir?)</h3>
+          ${table(["Besin Ögesi (Nutrient)", "Miktar (1 Bardak / 300 ml)", "Günlük Değer Oranı (% DV)"], [
+            ["Potassium (Potasyum)", "540 mg", "%12 DV (Kalp ve kas sağlığı)"],
+            ["Carbohydrate (Karbonhidrat)", "42 g", "%14 DV (Doğal meyve şekeri)"],
+            ["Dietary Fiber (Diyet Lifi)", "4.2 g", "%15 DV (Sindirim dostu)"],
+            ["Protein (Protein)", "7.5 g", "%15 DV (Süt ve yoğurt katkısı)"],
+            ["Calcium (Kalsiyum)", "220 mg", "%17 DV (Kemik sağlığı)"]
+          ])}
+          <p class="source-note">Besin değerleri standart taze meyve ve süt bileşimlerine dayalı <a href="https://fdc.nal.usda.gov/" target="_blank" rel="noreferrer">USDA FoodData Central</a> verileridir.</p>
+        </section>
+
+        <section id="puf-noktalari">
+          <p class="eyebrow">PRO TIPS &amp; TECHNIQUES (PÜF NOKTALARI VE TEKNİKLER)</p>
+          <h2>Frozen Fruit ve Fresh Fruit: Smoothie Tarifinde Hangisi Kullanılır?</h2>
+          <p class="section-intro">Smoothie yaparken en lezzetli sonuç için <strong>donmuş meyve (frozen fruit)</strong> tercih edilir. Dondurulmuş meyveler buz küpüne ihtiyaç duymadan yoğun, dondurma kıvamında ve sulanmayan bir doku sağlar. Taze meyve kullanıyorsanız içeceğin serin olması için 3–4 adet buz küpü ekleyebilirsiniz.</p>
+
+          <h3>Green Smoothie İngilizce Tarifte Nasıl Anlatılır?</h3>
+          <p class="section-intro">Yeşil smoothielerde yaprakların ağza gelmemesi için iki aşamalı karıştırma kuralı uygulanır: <strong>"First, blend your leafy greens with the liquid for 30 seconds. Then, add the fruits and blend again until silky smooth." (Önce yeşillikleri sıvıyla 30 saniye çekin. Ardından meyveleri ekleyip pürüzsüz olana dek tekrar çekin.)</strong></p>
+        </section>
+
+        <section id="olculer">
+          <p class="eyebrow">MEASUREMENT UNITS &amp; VOCABULARY (ÖLÇÜ BİRİMLERİ VE MUTFAK KELİMELERİ)</p>
+          <h2>İngilizce Smoothie Tariflerinde Kullanılan Ölçü Birimleri Nelerdir?</h2>
+          <p class="section-intro">İngilizce içecek tariflerinde <strong>cup (su bardağı), tablespoon (tbsp), teaspoon (tsp), ml (milliliter)</strong> ve <strong>grams</strong> birimleri kullanılır.</p>
+
+          <h3>Smoothie Tarif Metninde Geçen Temel İngilizce Mutfak Kelimeleri Nelerdir?</h3>
+          <div class="vocab vocab-wide">
+            ${smoothieVocab.map(v => `<article><h4>${v[0]}</h4><strong>${v[1]}</strong><p>${v[2]}</p></article>`).join("")}
+          </div>
+
+          <h3>Tablespoon, Teaspoon, Cup: İngilizce Ölçü Birimlerinin Türkçe Karşılıkları</h3>
+          ${table(["İngilizce Birim", "Türkçe Karşılığı", "Metrik Eşdeğeri", "Örnek Cümle"], [
+            ["1 cup (c)", "1 su bardağı", "240 ml", "Add 1 cup of almond milk into the blender."],
+            ["½ cup", "Yarım su bardağı", "120 ml / 120 g", "Add ½ cup of Greek yogurt for thickness."],
+            ["1 tablespoon (tbsp)", "1 yemek kaşığı", "15 ml", "Add 1 tablespoon of pure honey."],
+            ["1 teaspoon (tsp)", "1 tatlı / çay kaşığı", "5 ml / 3 g", "Sprinkle 1 teaspoon of chia seeds on top."]
+          ])}
+
+          <h3>Gram ve Litre İngilizce Tariflerde Nasıl Kullanılır?</h3>
+          ${table(["Metrik Değer", "İngilizce Yazımı", "Kullanım Örneği"], [
+            ["200 gram", "200 g of strawberries", "Wash and hull 200 g of fresh strawberries."],
+            ["250 mililitre", "250 ml of cold milk", "Measure 250 ml of milk before pouring."]
+          ])}
+        </section>
+
+        <section id="dil-kurallari">
+          <p class="eyebrow">GRAMMAR RULES (DİL BİLGİSİ VE YAZIM KURALLARI)</p>
+          <h2>İngilizce Smoothie Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları</h2>
+          <p class="section-intro">İçecek tariflerinde eylemler anında ve dinamiktir; emir cümleleri (imperatives) ve sıralama zarfları (first, then, after that, finally) kullanılır.</p>
+
+          <div class="grammar-tabs">
+            <div class="tab-list" role="tablist" aria-label="Dil kuralı konuları">
+              <button id="smoothie-tab-imperative" role="tab" aria-selected="true" aria-controls="smoothie-panel-imperative" tabindex="0" data-tab="imperative" class="active"><span>01</span>Emir Kipi (Imperatives)</button>
+              <button id="smoothie-tab-sequence" role="tab" aria-selected="false" aria-controls="smoothie-panel-sequence" tabindex="-1" data-tab="sequence"><span>02</span>Sıra Zarfları (Connectors)</button>
+            </div>
+            <div class="tab-panels">
+              <div id="smoothie-panel-imperative" class="tab-panel active" role="tabpanel" aria-labelledby="smoothie-tab-imperative">
+                <h3>İngilizce Smoothie Tarif Metinlerinde Emir Kipi (Imperative) Nasıl Kullanılır?</h3>
+                <p class="section-intro">Cümle doğrudan yalın fiille başlar: <strong>Peel the bananas, pour the milk, blend on high speed.</strong></p>
+                ${table(["İngilizce Emir", "Türkçe Anlamı", "Kullanılan Fiil"], [
+                  ["Peel and slice 2 bananas.", "2 muzu soyun ve dilimleyin.", "Peel & Slice"],
+                  ["Pour the milk into the blender.", "Sütü blendera dökün.", "Pour"],
+                  ["Blend until creamy and smooth.", "Kremamsı ve pürüzsüz olana dek çekin.", "Blend"],
+                  ["Serve chilled immediately.", "Hemen soğuk servis edin.", "Serve"]
+                ])}
+              </div>
+              <div id="smoothie-panel-sequence" class="tab-panel" role="tabpanel" aria-labelledby="smoothie-tab-sequence" hidden>
+                <h3>Bağlaçlar ve Sıra Zarfları: First, Then, After That, Finally</h3>
+                <p class="section-intro">Tarif adımlarının sırasını belirtmek için sıra zarfları kullanılır.</p>
+                <div class="language-card sequence">
+                  <small>Örnek Tarif Paragrafı (Example Recipe Paragraph)</small>
+                  <p>First, peel and slice 2 bananas. Then, add 1 cup of milk, ½ cup of yogurt and 1 tablespoon of honey to the blender. After that, blend the mixture on high speed for 45 seconds until smooth. Finally, pour the smoothie into glasses and serve cold.</p>
+                  <p class="translation">İlk olarak 2 muzu soyun ve dilimleyin. Ardından blendera 1 su bardağı süt, yarım su bardağı yoğurt ve 1 yemek kaşığı bal ekleyin. Daha sonra karışımı pürüzsüz olana kadar yüksek hızda 45 saniye çekin. Son olarak smoothieyi bardaklara dökün ve soğuk servis edin.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="alistirma">
+          <div class="exercise">
+            <p class="eyebrow">PRACTICE &amp; QUIZ (KAZANIM KONTROLÜ VE ALIŞTIRMA)</p>
+            <h2>8. Sınıf İngilizce Smoothie Tarifi Alıştırma ve Quizi</h2>
+            <p class="section-intro">Öğrendiğiniz meyve isimlerini, blender eylemlerini ve sıralama bağlaçlarını bu testle pekiştirin.</p>
+            <ol>
+              <li>
+                <span class="quiz-q-num">Soru 1</span>
+                <p class="quiz-q-title">Which English verb means "meyvenin kabuğunu soymak"?</p>
+                <p class="quiz-q-tr">("Meyvenin kabuğunu soymak" anlamına gelen İngilizce fiil hangisidir?)</p>
+                <ul class="quiz-options">
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">A) Bake</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('correct');">B) Peel ✓</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">C) Boil</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">D) Drain</li>
+                </ul>
+              </li>
+              <li>
+                <span class="quiz-q-num">Soru 2</span>
+                <p class="quiz-q-title">Why is frozen fruit preferred over fresh fruit in a smoothie?</p>
+                <p class="quiz-q-tr">(Smoothie yaparken dondurulmuş meyve neden taze meyveye tercih edilir?)</p>
+                <ul class="quiz-options">
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('correct');">A) It gives a thick, creamy texture without needing ice ✓</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">B) It is much sweeter than fresh fruit</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">C) It changes the color to green</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">D) It makes the blender run faster</li>
+                </ul>
+              </li>
+              <li>
+                <span class="quiz-q-num">Soru 3</span>
+                <p class="quiz-q-title">What is the difference between a smoothie and a milkshake?</p>
+                <p class="quiz-q-tr">(Smoothie ile milkshake arasındaki temel fark nedir?)</p>
+                <ul class="quiz-options">
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">A) Smoothies are hot, milkshakes are cold</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('correct');">B) Smoothies use fruit & yogurt; milkshakes use ice cream & milk ✓</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">C) Milkshakes have no dairy</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">D) Smoothies require an oven to bake</li>
+                </ul>
+              </li>
+              <li>
+                <span class="quiz-q-num">Soru 4</span>
+                <p class="quiz-q-title">Which sentence is in the correct imperative form?</p>
+                <p class="quiz-q-tr">(Hangi cümle doğru emir kipi biçimindedir?)</p>
+                <ul class="quiz-options">
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">A) You should blend the ingredients.</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('correct');">B) Blend the mixture on high speed for 45 seconds. ✓</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">C) Blending on high speed is good.</li>
+                  <li class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(el=>el.classList.remove('selected','correct','wrong')); this.classList.add('wrong');">D) We blended the smoothie.</li>
+                </ul>
+              </li>
+            </ol>
+            <details class="answer-key">
+              <summary>Cevap Anahtarını Göster</summary>
+              <div class="key-content">
+                <ol>
+                  <li><strong>Soru 1: B) Peel</strong> — <em>Muz veya portakal gibi kabuklu meyvelerin kabuğunu soyma eylemi İngilizcede "peel" fiili ile belirtilir.</em></li>
+                  <li><strong>Soru 2: A) It gives a thick, creamy texture without needing ice</strong> — <em>Dondurulmuş meyveler buz kullanmaya gerek kalmadan içeceğe yoğun, kıvamlı ve sulanmayan bir kremsilik katar.</em></li>
+                  <li><strong>Soru 3: B) Smoothies use fruit & yogurt; milkshakes use ice cream & milk</strong> — <em>Smoothie meyve ve yoğurt ağırlıklı besleyici bir içecekken, milkshake dondurma bazlı tatlı bir süt içeceğidir.</em></li>
+                  <li><strong>Soru 4: B) Blend the mixture on high speed for 45 seconds.</strong> — <em>İngilizce tarif talimatları doğrudan yalın eylem fiili ile başlayan emir kipiyle ifade edilir.</em></li>
+                </ol>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        ${getMidPageCTAHTML()}
+        ${getRelatedRecipesHTML("smoothie")}
+      </div>
+    </div>
+  </article>`;
+
+  // Attach grammar tabs interactivity
+  const tabButtons = root.querySelectorAll(".grammar-tabs button[role='tab']");
+  tabButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const targetId = btn.getAttribute("aria-controls");
+      tabButtons.forEach(b => {
+        b.setAttribute("aria-selected", "false");
+        b.classList.remove("active");
+        b.tabIndex = -1;
+      });
+      btn.setAttribute("aria-selected", "true");
+      btn.classList.add("active");
+      btn.tabIndex = 0;
+      root.querySelectorAll(".grammar-tabs .tab-panel").forEach(p => {
+        p.hidden = p.id !== targetId;
+        p.classList.toggle("active", p.id === targetId);
+      });
+    });
+  });
 }
 
 function renderPastaPage() {
@@ -458,17 +2063,17 @@ function renderPastaPage() {
   });
   root.innerHTML = `<article class="pasta-guide">
     <div class="reading-progress" aria-hidden="true"><span></span></div>
-    <header class="hero"><div><p class="eyebrow">İngilizce yemek tarifleri</p><h1>İngilizce Makarna Tarifi (Makarna Yapılışı İngilizce)</h1><aside class="course-banner" aria-label="İngilizce kursu"><div class="course-banner-text"><small class="cta-eyebrow">KONUŞARAK ÖĞREN İNGİLİZCE KURSU</small><strong class="cta-heading">İngilizceyi tarif ezberleyerek değil, konuşarak öğrenin.</strong></div><button class="cta-btn cta-btn-orange" onclick="window.location.href='https://student.konusarakogren.com/auth/register'">Ücretsiz tanışma dersi <span class="arrow">→</span></button></aside><p class="lede"><strong>Plain Pasta Recipe.</strong> İngilizce makarna tarifi; malzemeleri, emir kipindeki pişirme adımlarını ve Türkçe karşılıklarını birlikte öğreten uygulamalı bir İngilizce rehberidir.</p><div class="article-meta"><span class="author-mark" aria-hidden="true">KO</span><span><strong>Konuşarak Öğren Editör</strong><small>Yayınlanma tarihi: <time datetime="2026-07-29">29 Temmuz 2026</time></small></span></div></div><figure class="hero-visual"><img src="/blog/ingilizce-tarifler/images/makarna-hero.webp" alt="Masada servis edilmeye hazır sade makarna tabağı"><figcaption>Plain pasta · sade makarna</figcaption></figure><aside class="hero-card pasta-facts" aria-label="Tarif özeti"><table class="recipe-facts"><caption>Sade makarna tarifi özeti</caption><thead><tr><th scope="col">Hazırlık</th><th scope="col">Pişirme</th><th scope="col">Porsiyon</th><th scope="col">Seviye</th></tr></thead><tbody><tr><td><span class="fact-value" tabindex="0" aria-label="Hazırlık süresi 5 dakikadır." data-verbalization="Hazırlık süresi 5 dakikadır.">5 dakika</span></td><td><span class="fact-value" tabindex="0" aria-label="Pişirme süresi 10 dakikadır." data-verbalization="Pişirme süresi 10 dakikadır.">10 dakika</span></td><td><span class="fact-value" tabindex="0" aria-label="Tarif 2 kişiliktir." data-verbalization="Tarif 2 kişiliktir.">2 kişilik</span></td><td><span class="fact-value" tabindex="0" aria-label="İngilizce seviyesi A2 ile B1 arasındadır." data-verbalization="İngilizce seviyesi A2 ile B1 arasındadır.">A2–B1</span></td></tr></tbody></table></aside></header>
+    <header class="hero"><div><p class="eyebrow">RECIPES & COOKING GUIDE (İNGİLİZCE YEMEK TARİFLERİ)</p><h1>İngilizce Makarna Tarifi (Makarna Yapılışı İngilizce)</h1><aside class="course-banner" aria-label="İngilizce kursu"><div class="course-banner-text"><small class="cta-eyebrow">KONUŞARAK ÖĞREN İNGİLİZCE KURSU</small><strong class="cta-heading">İngilizceyi tarif ezberleyerek değil, konuşarak öğrenin.</strong></div><button class="cta-btn cta-btn-orange" onclick="window.location.href='https://student.konusarakogren.com/auth/register'">Ücretsiz tanışma dersi <span class="arrow">→</span></button></aside><p class="lede"><strong>Plain Pasta Recipe.</strong> İngilizce makarna tarifi; malzemeleri, emir kipindeki pişirme adımlarını ve Türkçe karşılıklarını birlikte öğreten uygulamalı bir İngilizce rehberidir.</p><div class="article-meta"><span class="author-mark" aria-hidden="true">KO</span><span><strong>Konuşarak Öğren Editör</strong><small>Yayınlanma tarihi: <time datetime="2026-07-29">29 Temmuz 2026</time></small></span></div></div><figure class="hero-visual"><img src="/blog/ingilizce-tarifler/images/makarna-hero.webp" alt="Masada servis edilmeye hazır sade makarna tabağı"><figcaption>Plain pasta · sade makarna</figcaption></figure><aside class="hero-card pasta-facts" aria-label="Tarif özeti"><table class="recipe-facts"><caption>Sade makarna tarifi özeti</caption><thead><tr><th scope="col">Hazırlık</th><th scope="col">Pişirme</th><th scope="col">Porsiyon</th><th scope="col">Seviye</th></tr></thead><tbody><tr><td><span class="fact-value" tabindex="0" aria-label="Hazırlık süresi 5 dakikadır." data-verbalization="Hazırlık süresi 5 dakikadır.">5 dakika</span></td><td><span class="fact-value" tabindex="0" aria-label="Pişirme süresi 10 dakikadır." data-verbalization="Pişirme süresi 10 dakikadır.">10 dakika</span></td><td><span class="fact-value" tabindex="0" aria-label="Tarif 2 kişiliktir." data-verbalization="Tarif 2 kişiliktir.">2 kişilik</span></td><td><span class="fact-value" tabindex="0" aria-label="İngilizce seviyesi A2 ile B1 arasındadır." data-verbalization="İngilizce seviyesi A2 ile B1 arasındadır.">A2–B1</span></td></tr></tbody></table></aside></header>
     <div class="page-grid"><nav class="toc" aria-label="İçindekiler"><a href="#kavramlar" data-scroll-target="kavramlar">Kavramlar</a><a href="#tarifler" data-scroll-target="tarifler">Tarifler</a><a href="#sade-makarna" data-scroll-target="sade-makarna">Adımlar</a><a href="#besin-degerleri" data-scroll-target="besin-degerleri">Besin değerleri</a><a href="#olculer" data-scroll-target="olculer">Ölçüler</a><a href="#dil-kurallari" data-scroll-target="dil-kurallari">Dil kuralları</a><a href="#alistirma" data-scroll-target="alistirma">Alıştırma</a></nav>
     <div class="content">
-      <section id="kavramlar"><p class="eyebrow">Temel kavramlar ve çeviriler</p><h2>İngilizce Makarna Tarifi Nedir? Temel Kavramlar ve Çeviriler</h2><h3>Makarna İngilizcede Ne Anlama Gelir?</h3><p class="section-intro">İngilizcede <strong>pasta</strong> genel kategoriyi, <strong>spaghetti</strong>, <strong>penne</strong> ve <strong>fettuccine</strong> ise belirli makarna biçimlerini anlatır. Tarif boyunca İngilizce talimat önce, Türkçe açıklama hemen sonra verilir.</p>${table(["İngilizce kavram", "Türkçe karşılığı", "İlgili tarif"], [["pasta","makarna","Tüm tarifler"],["plain pasta","sade makarna","Sade makarna"],["spaghetti","spagetti","Bolonez"],["fettuccine","şerit makarna","Alfredo"],["penne","kalem makarna","Domates soslu veya fırında makarna"]])}<h3>İngilizce Tarif Yazımında Kullanılan Fiiller: Boil, Drain, Saute, Cook</h3>${table(["Fiil", "Türkçe karşılığı", "Örnek cümle"], [["Boil","Kaynatmak","Boil 2 l of water. / 2 l su kaynatın."],["Drain","Süzmek","Drain the pasta. / Makarnayı süzün."],["Saute / Sauté","Sotelemek","Sauté the garlic. / Sarımsağı soteleyin."],["Cook","Pişirmek","Cook for 10 minutes. / 10 dakika pişirin."]])}</section>
-      <div id="tarifler" class="recipe-chapters"><div class="chapter-intro"><p class="eyebrow">6 tarif çeşidi</p><p class="section-intro">Her tarifte tanım, İngilizce–Türkçe malzemeler, miktarlar ve kısa yapılış birlikte verilmiştir. Başlıklara dokunarak öğrenme panellerini açabilirsiniz.</p></div>${pastaVariants.map((v, i) => `<section class="recipe-chapter"><div class="chapter-head"><span class="variant-number">${String(i + 1).padStart(2,"0")}</span><div><h2>${v.briefTitle}</h2><p>${v.description}</p></div></div><figure><img src="${v.image}" alt="${v.alt}" loading="lazy"><figcaption>${v.english}</figcaption></figure><div class="chapter-panels"><details class="learning-panel" ${i === 0 ? "open" : ""}><summary><h3>${v.ingredientsHeading}</h3><span>Malzeme tablosu</span></summary><div class="panel-body">${table(["İngilizce malzeme","Türkçe karşılığı","Miktar"],v.ingredients)}</div></details><details class="learning-panel"><summary><h3>${v.stepsHeading}</h3><span>Yöntemi göster</span></summary><div class="panel-body"><p class="method-note">${v.steps}</p></div></details></div></section>`).join("")}</div>
-      <section id="sade-makarna"><div class="steps-heading"><p class="eyebrow">Sabit 6 adım</p><h2>Plain Pasta İngilizce Adım Adım Nasıl Yapılır? (How Do You Make Plain Pasta Step by Step?)</h2><p class="section-intro">Bu sade makarna tarifi 6 adımdan oluşur ve yaklaşık 15 dakika sürer. İngilizce cümleler emir kipiyle başlar.</p><div class="steps-meta"><span>6 adım</span><span>15 dakika</span><span>A2–B1 seviye</span></div></div><ol class="steps">${r.steps.map(s => `<li><div class="step-copy"><h3>${s[0]}</h3><div class="step-language"><span class="lang-label">English</span><p><strong>${s[1]}</strong></p></div><div class="step-language turkish"><span class="lang-label">Türkçe</span><p>${s[2]}</p></div></div></li>`).join("")}</ol>${table(["Adım","İngilizce talimat","Türkçe açıklama"],r.steps.map((s,i)=>[i+1,s[1],s[2]]))}</section>
-      <section id="malzemeler-ve-ekipman"><p class="eyebrow">Malzemeler ve ekipman</p><h2>Which Ingredients Do You Need to Cook Pasta? (Makarna Pişirmek İçin Hangi Malzemeler Gerekir?)</h2>${table(["İngilizce malzeme","Türkçe karşılığı","Miktar"],r.ingredients)}<h3>Which Kitchen Equipment Is Used to Cook Pasta? (Makarna Pişirmek İçin Hangi Mutfak Ekipmanları Kullanılır?)</h3>${table(["İngilizce ekipman","Türkçe karşılığı","Kullanıldığı adım"],[["Large pot","Büyük tencere","1–3"],["Measuring spoon","Ölçü kaşığı","2 ve 5"],["Wooden spoon","Tahta kaşık","2, 3 ve 5"],["Colander","Süzgeç","4"],["Serving bowl","Servis kasesi","6"]])}</section>
-      <section id="besin-degerleri"><p class="eyebrow">Kalori ve besin değerleri</p><h2>How Many Calories Are in a Serving of Pasta? (Bir Porsiyon Makarna Kaç Kalori?)</h2><p class="section-intro">Sossuz, pişmiş makarnanın enerji değeri yaklaşık <strong>158 kcal/100 g</strong>; 180 g'lık örnek bir porsiyonun enerji değeri yaklaşık <strong>284 kcal</strong> kabul edilebilir. Kullanılan makarna ve yağ miktarı sonucu değiştirir.</p>${table(["Porsiyon","Kalori","Açıklama"],[["100 g pişmiş makarna","158 kcal","Sossuz yaklaşık değer"],["1 porsiyon (180 g)","284 kcal","Yağ ve sos hariç yaklaşık değer"]])}<h3>What Are the Nutrition Facts of Plain Pasta? (Sade Makarnanın Besin Değerleri Nelerdir?)</h3>${table(["İngilizce besin ögesi","Türkçe karşılığı","100 g'daki miktar"],[["Protein","Protein","5.8 g"],["Carbohydrate","Karbonhidrat","30.9 g"],["Fat","Yağ","0.9 g"],["Dietary fiber","Lif","1.8 g"]])}<p class="source-note">Değerler genel pişmiş makarna verilerine dayalı yaklaşık eğitim değerleridir. Kaynak yöntemi: <a href="https://fdc.nal.usda.gov/" target="_blank" rel="noreferrer">USDA FoodData Central</a>.</p></section>
-      <section id="olculer"><p class="eyebrow">Ölçü birimleri ve kelimeler</p><h2>İngilizce Makarna Tariflerinde Kullanılan Ölçü Birimleri Nelerdir?</h2><p class="section-intro">İngilizce makarna tariflerinde <strong>cup, tablespoon, teaspoon, gram</strong> ve <strong>milliliter</strong> birimleri kullanılır.</p><h3>Makarna Tarif Metninde Geçen Temel İngilizce Mutfak Kelimeleri Nelerdir?</h3><div class="vocab vocab-wide">${vocab.map(v=>`<article><h4>${v[0]}</h4><strong>${v[1]}</strong><p>${v[2]}</p></article>`).join("")}</div><h3>Tablespoon, Teaspoon, Cup: İngilizce Ölçü Birimlerinin Türkçe Karşılıkları</h3>${table(["İngilizce birim","Türkçe karşılığı","Metrik karşılığı","Tarif örneği"],[["cup","su bardağı","240 ml","Add 1 cup of sauce."],["tablespoon (tbsp)","yemek kaşığı","15 ml","Add 1 tablespoon of oil."],["teaspoon (tsp)","çay kaşığı","5 ml","Add 1 teaspoon of salt."]])}<h3>Gram ve Litre İngilizce Tariflerde Nasıl Kullanılır?</h3>${table(["Metrik birim","Emperyal karşılığı","Türkçe açıklama"],[["100 g","3.5 oz","Yaklaşık 100 gram"],["1 l","4.2 cups","Yaklaşık 1 litre"]])}</section>
-      <section id="dil-kurallari"><p class="eyebrow">İngilizce dil kuralları</p><h2>İngilizce Makarna Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları</h2>${table(["Kural","İngilizce örnek","Türkçe karşılığı"],[["Emir kipi","Boil the water.","Suyu kaynatın."],["Sıra zarfları","First, boil the water.","Önce suyu kaynatın."],["Sayılabilen/sayılamayan isimler","Add two tomatoes and some salt.","İki domates ve biraz tuz ekleyin."],["Ölçü ifadeleri","Add 1 tablespoon of oil.","1 yemek kaşığı yağ ekleyin."]])}<h3>İngilizce Makarna Tarif Metinlerinde Emir Kipi (Imperative) Nasıl Kullanılır?</h3><p class="section-intro">Emir kipi, özne kullanmadan fiilin yalın hâliyle başlar: <strong>Boil, add, cook, drain, serve.</strong> Olumsuz talimatta <em>do not</em> kullanılır: <strong>Do not overcook the pasta. / Makarnayı fazla pişirmeyin.</strong></p>${table(["İngilizce emir","Türkçe karşılığı","Fiil"],[["Boil the water.","Suyu kaynatın.","boil"],["Add the pasta.","Makarnayı ekleyin.","add"],["Cook for 10 minutes.","10 dakika pişirin.","cook"],["Drain the pasta.","Makarnayı süzün.","drain"],["Serve while hot.","Sıcakken servis edin.","serve"]])}<h3>Bağlaçlar ve Sıra Zarfları: First, Then, After That, Finally</h3>${table(["Sıra zarfı","Türkçe karşılığı","Örnek"],[["First","Önce","First, boil the water."],["Then","Ardından","Then, add the pasta."],["After that","Daha sonra","After that, cook for 10 minutes."],["Next","Sonra","Next, drain the pasta."],["Finally","Son olarak","Finally, serve while hot."]])}<div class="language-card sequence"><small>Kısa tarif paragrafı</small><p>First, boil the water. Then, add the salt and pasta. After that, cook for 8–10 minutes. Next, drain the pasta and add butter. Finally, serve it while hot.</p><p class="translation">Önce suyu kaynatın. Ardından tuz ve makarnayı ekleyin. Daha sonra 8–10 dakika pişirin. Sonra makarnayı süzüp tereyağı ekleyin. Son olarak sıcakken servis edin.</p></div></section>
-      <section id="alistirma"><div class="exercise"><p class="eyebrow">Kazanım kontrolü</p><h2>8. sınıf İngilizce Makarna Tarifi</h2><p>Tarif sıralama, emir kipi ve temel mutfak kelimelerini birlikte pekiştirin.</p><ol><li>“Drain the pasta” cümlesinin Türkçe karşılığı nedir?</li><li>Makarnayı kaç dakika pişirmelisiniz?</li><li>Tarifin son adımını İngilizce yazın.</li><li><em>First</em> ve <em>finally</em> kelimelerini kullanarak iki tarif cümlesi kurun.</li></ol></div></section>
+      <section id="kavramlar"><p class="eyebrow">CORE CONCEPTS & TRANSLATIONS (TEMEL KAVRAMLAR VE ÇEVİRİLER)</p><h2>İngilizce Makarna Tarifi Nedir? Temel Kavramlar ve Çeviriler</h2><h3>Makarna İngilizcede Ne Anlama Gelir?</h3><p class="section-intro">İngilizcede <strong>pasta</strong> genel kategoriyi, <strong>spaghetti</strong>, <strong>penne</strong> ve <strong>fettuccine</strong> ise belirli makarna biçimlerini anlatır. Tarif boyunca İngilizce talimat önce, Türkçe açıklama hemen sonra verilir.</p>${table(["İngilizce kavram", "Türkçe karşılığı", "İlgili tarif"], [["pasta","makarna","Tüm tarifler"],["plain pasta","sade makarna","Sade makarna"],["spaghetti","spagetti","Bolonez"],["fettuccine","şerit makarna","Alfredo"],["penne","kalem makarna","Domates soslu veya fırında makarna"]])}<h3>İngilizce Tarif Yazımında Kullanılan Fiiller: Boil, Drain, Saute, Cook</h3>${table(["Fiil", "Türkçe karşılığı", "Örnek cümle"], [["Boil","Kaynatmak","Boil 2 l of water. / 2 l su kaynatın."],["Drain","Süzmek","Drain the pasta. / Makarnayı süzün."],["Saute / Sauté","Sotelemek","Sauté the garlic. / Sarımsağı soteleyin."],["Cook","Pişirmek","Cook for 10 minutes. / 10 dakika pişirin."]])}</section>
+      <div id="tarifler" class="recipe-chapters"><div class="chapter-intro"><p class="eyebrow">6 PASTA VARIATIONS (6 MAKARNA ÇEŞİDİ)</p><p class="section-intro">Her tarifte tanım, İngilizce–Türkçe malzemeler, miktarlar ve kısa yapılış birlikte verilmiştir. Başlıklara dokunarak öğrenme panellerini açabilirsiniz.</p></div>${pastaVariants.map((v, i) => `<section class="recipe-chapter"><div class="chapter-head"><span class="variant-number">${String(i + 1).padStart(2,"0")}</span><div><h2>${v.briefTitle}</h2><p>${v.description}</p></div></div><figure><img src="${v.image}" alt="${v.alt}" loading="lazy"><figcaption>${v.english}</figcaption></figure><div class="chapter-panels"><details class="learning-panel" ${i === 0 ? "open" : ""}><summary><h3>${v.ingredientsHeading}</h3><span>Malzeme tablosu</span></summary><div class="panel-body">${table(["İngilizce malzeme","Türkçe karşılığı","Miktar"],v.ingredients)}${buildIngredientCardsHTML(v.ingredientCards)}</div></details><details class="learning-panel"><summary><h3>${v.stepsHeading}</h3><span>Yöntemi göster</span></summary><div class="panel-body"><p class="method-note">${v.steps}</p></div></details></div></section>`).join("")}</div>
+      <section id="sade-makarna"><div class="steps-heading"><p class="eyebrow">6-STEP PLAIN PASTA GUIDE (6 ADIMDA SADE MAKARNA REHBERİ)</p><h2>Plain Pasta İngilizce Adım Adım Nasıl Yapılır? (How Do You Make Plain Pasta Step by Step?)</h2><p class="section-intro">Bu sade makarna tarifi 6 adımdan oluşur ve yaklaşık 15 dakika sürer. İngilizce cümleler emir kipiyle başlar.</p><div class="steps-meta"><span>6 adım</span><span>15 dakika</span><span>A2–B1 seviye</span></div></div>${buildStepAccordionHTML(r.steps.map((s, idx) => { const title = s[0].replace(/^\d+\.\s*/, ""); const m = title.match(/^(.*?)\s*\((.*?)\)$/); return { number: idx + 1, titleEn: m ? m[1].trim() : title, titleTr: m ? m[2].trim() : ("Adım " + (idx + 1)), sentenceEn: s[1], sentenceTr: s[2], actionEn: s[1].split(" ")[0], actionTr: "Mutfak Eylemi" }; }))}${table(["Adım","İngilizce talimat","Türkçe açıklama"],r.steps.map((s,i)=>[i+1,s[1],s[2]]))}</section>
+      <section id="malzemeler-ve-ekipman"><p class="eyebrow">INGREDIENTS & EQUIPMENT (MALZEME VE EKİPMAN LİSTESİ)</p><h2>Which Ingredients Do You Need to Cook Pasta? (Makarna Pişirmek İçin Hangi Malzemeler Gerekir?)</h2>${table(["İngilizce malzeme","Türkçe karşılığı","Miktar"],r.ingredients)}<h3>Which Kitchen Equipment Is Used to Cook Pasta? (Makarna Pişirmek İçin Hangi Mutfak Ekipmanları Kullanılır?)</h3>${table(["İngilizce ekipman","Türkçe karşılığı","Kullanıldığı adım"],[["Large pot","Büyük tencere","1–3"],["Measuring spoon","Ölçü kaşığı","2 ve 5"],["Wooden spoon","Tahta kaşık","2, 3 ve 5"],["Colander","Süzgeç","4"],["Serving bowl","Servis kasesi","6"]])}</section>
+      <section id="besin-degerleri"><p class="eyebrow">CALORIES & NUTRITION (KALORİ VE BESİN DEĞERLERİ)</p><h2>How Many Calories Are in a Serving of Pasta? (Bir Porsiyon Makarna Kaç Kalori?)</h2><p class="section-intro">Sossuz, pişmiş makarnanın enerji değeri yaklaşık <strong>158 kcal/100 g</strong>; 180 g'lık örnek bir porsiyonun enerji değeri yaklaşık <strong>284 kcal</strong> kabul edilebilir. Kullanılan makarna ve yağ miktarı sonucu değiştirir.</p>${table(["Porsiyon","Kalori","Açıklama"],[["100 g pişmiş makarna","158 kcal","Sossuz yaklaşık değer"],["1 porsiyon (180 g)","284 kcal","Yağ ve sos hariç yaklaşık değer"]])}<h3>What Are the Nutrition Facts of Plain Pasta? (Sade Makarnanın Besin Değerleri Nelerdir?)</h3>${table(["İngilizce besin ögesi","Türkçe karşılığı","100 g'daki miktar"],[["Protein","Protein","5.8 g"],["Carbohydrate","Karbonhidrat","30.9 g"],["Fat","Yağ","0.9 g"],["Dietary fiber","Lif","1.8 g"]])}<p class="source-note">Değerler genel pişmiş makarna verilerine dayalı yaklaşık eğitim değerleridir. Kaynak yöntemi: <a href="https://fdc.nal.usda.gov/" target="_blank" rel="noreferrer">USDA FoodData Central</a>.</p></section>
+      <section id="olculer"><p class="eyebrow">MEASUREMENT UNITS & VOCABULARY (ÖLÇÜ BİRİMLERİ VE KELİMELER)</p><h2>İngilizce Makarna Tariflerinde Kullanılan Ölçü Birimleri Nelerdir?</h2><p class="section-intro">İngilizce makarna tariflerinde <strong>cup, tablespoon, teaspoon, gram</strong> ve <strong>milliliter</strong> birimleri kullanılır.</p><h3>Makarna Tarif Metninde Geçen Temel İngilizce Mutfak Kelimeleri Nelerdir?</h3><div class="vocab vocab-wide">${vocab.map(v=>`<article><h4>${v[0]}</h4><strong>${v[1]}</strong><p>${v[2]}</p></article>`).join("")}</div><h3>Tablespoon, Teaspoon, Cup: İngilizce Ölçü Birimlerinin Türkçe Karşılıkları</h3>${table(["İngilizce birim","Türkçe karşılığı","Metrik karşılığı","Tarif örneği"],[["cup","su bardağı","240 ml","Add 1 cup of sauce."],["tablespoon (tbsp)","yemek kaşığı","15 ml","Add 1 tablespoon of oil."],["teaspoon (tsp)","çay kaşığı","5 ml","Add 1 teaspoon of salt."]])}<h3>Gram ve Litre İngilizce Tariflerde Nasıl Kullanılır?</h3>${table(["Metrik birim","Emperyal karşılığı","Türkçe açıklama"],[["100 g","3.5 oz","Yaklaşık 100 gram"],["1 l","4.2 cups","Yaklaşık 1 litre"]])}</section>
+      <section id="dil-kurallari">${grammarTabs()}</section>
+      <section id="alistirma"><div class="exercise"><p class="eyebrow">PRACTICE & QUIZ (KAZANIM KONTROLÜ VE ALIŞTIRMALAR)</p><h2>8. sınıf İngilizce Makarna Tarifi</h2><p>Tarif sıralama, emir kipi ve temel mutfak kelimelerini birlikte pekiştirin.</p><ol><li>“Drain the pasta” cümlesinin Türkçe karşılığı nedir?</li><li>Makarnayı kaç dakika pişirmelisiniz?</li><li>Tarifin son adımını İngilizce yazın.</li><li><em>First</em> ve <em>finally</em> kelimelerini kullanarak iki tarif cümlesi kurun.</li></ol></div></section>
       ${getMidPageCTAHTML()}
       ${getRelatedRecipesHTML("makarna")}
     </div></div></article>`;
@@ -542,6 +2147,8 @@ const kekVariants = [
   },
 ];
 
+kekVariants.forEach((v, idx) => { v.ingredientCards = kekCards[idx]; });
+
 const omletVariants = [
   {
     title: "Sade Omlet Tarifi",
@@ -593,8 +2200,10 @@ const omletVariants = [
   },
 ];
 
+omletVariants.forEach((v, idx) => { v.ingredientCards = omletCards[idx]; });
+
 function kekGrammarTabs() {
-  return `<p class="eyebrow">İngilizce dil kuralları</p><h2>İngilizce Kek Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları</h2><p class="section-intro">İngilizce tarif yazımının 4 temel dil kuralı şunlardır: emir kipi (imperative mood), sıra zarfları (sequence adverbs), sayılabilir-sayılamayan isimler (countable-uncountable nouns) ve ölçü ifadeleri (measurement expressions).</p><div class="grammar-tabs"><div class="tab-list" role="tablist" aria-label="Dil kuralı konuları"><button id="tab-overview-kek" role="tab" aria-selected="true" aria-controls="panel-overview-kek" tabindex="0" data-tab="overview"><span>01</span>Genel kurallar</button><button id="tab-imperative-kek" role="tab" aria-selected="false" aria-controls="panel-imperative-kek" tabindex="-1" data-tab="imperative"><span>02</span>Emir kipi</button><button id="tab-sequence-kek" role="tab" aria-selected="false" aria-controls="panel-sequence-kek" tabindex="-1" data-tab="sequence"><span>03</span>Sıra zarfları</button></div><div class="tab-panels"><div id="panel-overview-kek" class="tab-panel" role="tabpanel" aria-labelledby="tab-overview-kek" data-panel="overview">${table(["Kural","İngilizce örnek","Türkçe karşılığı"],[["Imperative mood (Emir kipi)","Whisk the eggs.","Yumurtaları çırpın."],["Sequence adverbs (Sıra zarfları)","Then, add the milk.","Ardından sütü ekleyin."],["Countable-uncountable nouns","Add 200 g of flour and 3 eggs.","200 gram un ve 3 yumurta ekleyin."],["Measurement expressions","Add 120 ml of milk.","120 mililitre süt ekleyin."]])}</div><div id="panel-imperative-kek" class="tab-panel" role="tabpanel" aria-labelledby="tab-imperative-kek" data-panel="imperative" hidden><h3>İngilizce Kek Tarif Metinlerinde Emir Kipi (Imperative) Nasıl Kullanılır?</h3><p class="section-intro">Emir kipi (imperative mood), fiilin yalın haliyle başlayan ve özne içermeyen talimat cümlesidir.</p>${table(["English Imperative","Türkçe Karşılığı","Verb"],[["Whisk the eggs and sugar.","Yumurta ve şekeri çırpın.","Whisk"],["Add the milk and oil.","Sütü ve sıvı yağı ekleyin.","Add"],["Sift the flour.","Unu eleyin.","Sift"],["Pour the batter into the pan.","Hamuru kalıba dökün.","Pour"],["Bake the cake for 40 minutes.","Keki 40 dakika pişirin.","Bake"]])}<p class="method-note">Olumsuz emir kipi örneği: <strong>Do not overcook the cake. (Keki fazla pişirmeyin.)</strong></p></div><div id="panel-sequence-kek" class="tab-panel" role="tabpanel" aria-labelledby="tab-sequence-kek" data-panel="sequence" hidden><h3>Bağlaçlar ve Sıra Zarfları: First, Then, After That, Finally</h3><p class="section-intro">First, then, after that, next ve finally zarfları, tarif adımlarını sıralamak için kullanılır.</p>${table(["Sequence Adverb","Türkçe Karşılığı","Example Sentence"],[["First","Önce","First, whisk the eggs and sugar."],["Then","Ardından","Then, add the milk and oil."],["After that","Bunun ardından","After that, sift in the flour."],["Next","Sonra","Next, mix the batter until smooth."],["Finally","Son olarak","Finally, bake the cake for 40 minutes."]])}<div class="language-card sequence"><small>Kısa tarif paragrafı</small><p>First, whisk the eggs and sugar for 2 minutes. Then, add the milk and oil. After that, sift in the flour and baking powder. Next, mix the batter until smooth. Finally, pour the batter into the pan and bake it for 40 minutes.</p><p class="translation">Önce yumurta ve şekeri 2 dakika çırpın. Ardından süt ve sıvı yağı ekleyin. Bunun ardından unu ve kabartma tozunu eleyerek ekleyin. Sonra hamuru pürüzsüz olana kadar karıştırın. Son olarak hamuru kalıba dökün ve 40 dakika pişirin.</p></div></div></div></div>`;
+  return `<p class="eyebrow">RECIPE GRAMMAR & USAGE RULES (TARİF DİL BİLGİSİ VE ANLATIM KURALLARI)</p><h2>İngilizce Kek Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları</h2><p class="section-intro">İngilizce tarif yazımının 4 temel dil kuralı şunlardır: emir kipi (imperative mood), sıra zarfları (sequence adverbs), sayılabilir-sayılamayan isimler (countable-uncountable nouns) ve ölçü ifadeleri (measurement expressions).</p><div class="grammar-tabs"><div class="tab-list" role="tablist" aria-label="Dil kuralı konuları"><button id="tab-overview-kek" role="tab" aria-selected="true" aria-controls="panel-overview-kek" tabindex="0" data-tab="overview"><span>01</span>Genel kurallar</button><button id="tab-imperative-kek" role="tab" aria-selected="false" aria-controls="panel-imperative-kek" tabindex="-1" data-tab="imperative"><span>02</span>Emir kipi</button><button id="tab-sequence-kek" role="tab" aria-selected="false" aria-controls="panel-sequence-kek" tabindex="-1" data-tab="sequence"><span>03</span>Sıra zarfları</button></div><div class="tab-panels"><div id="panel-overview-kek" class="tab-panel" role="tabpanel" aria-labelledby="tab-overview-kek" data-panel="overview">${table(["Kural","İngilizce örnek","Türkçe karşılığı"],[["Imperative mood (Emir kipi)","Whisk the eggs.","Yumurtaları çırpın."],["Sequence adverbs (Sıra zarfları)","Then, add the milk.","Ardından sütü ekleyin."],["Countable-uncountable nouns","Add 200 g of flour and 3 eggs.","200 gram un ve 3 yumurta ekleyin."],["Measurement expressions","Add 120 ml of milk.","120 mililitre süt ekleyin."]])}</div><div id="panel-imperative-kek" class="tab-panel" role="tabpanel" aria-labelledby="tab-imperative-kek" data-panel="imperative" hidden><h3>İngilizce Kek Tarif Metinlerinde Emir Kipi (Imperative) Nasıl Kullanılır?</h3><p class="section-intro">Emir kipi (imperative mood), fiilin yalın haliyle başlayan ve özne içermeyen talimat cümlesidir.</p>${table(["English Imperative","Türkçe Karşılığı","Verb"],[["Whisk the eggs and sugar.","Yumurta ve şekeri çırpın.","Whisk"],["Add the milk and oil.","Sütü ve sıvı yağı ekleyin.","Add"],["Sift the flour.","Unu eleyin.","Sift"],["Pour the batter into the pan.","Hamuru kalıba dökün.","Pour"],["Bake the cake for 40 minutes.","Keki 40 dakika pişirin.","Bake"]])}<p class="method-note">Olumsuz emir kipi örneği: <strong>Do not overcook the cake. (Keki fazla pişirmeyin.)</strong></p></div><div id="panel-sequence-kek" class="tab-panel" role="tabpanel" aria-labelledby="tab-sequence-kek" data-panel="sequence" hidden><h3>Bağlaçlar ve Sıra Zarfları: First, Then, After That, Finally</h3><p class="section-intro">First, then, after that, next ve finally zarfları, tarif adımlarını sıralamak için kullanılır.</p>${table(["Sequence Adverb","Türkçe Karşılığı","Example Sentence"],[["First","Önce","First, whisk the eggs and sugar."],["Then","Ardından","Then, add the milk and oil."],["After that","Bunun ardından","After that, sift in the flour."],["Next","Sonra","Next, mix the batter until smooth."],["Finally","Son olarak","Finally, bake the cake for 40 minutes."]])}<div class="language-card sequence"><small>Kısa tarif paragrafı</small><p>First, whisk the eggs and sugar for 2 minutes. Then, add the milk and oil. After that, sift in the flour and baking powder. Next, mix the batter until smooth. Finally, pour the batter into the pan and bake it for 40 minutes.</p><p class="translation">Önce yumurta ve şekeri 2 dakika çırpın. Ardından süt ve sıvı yağı ekleyin. Bunun ardından unu ve kabartma tozunu eleyerek ekleyin. Sonra hamuru pürüzsüz olana kadar karıştırın. Son olarak hamuru kalıba dökün ve 40 dakika pişirin.</p></div></div></div></div>`;
 }
 
 function renderKekPage() {
@@ -618,7 +2227,7 @@ function renderKekPage() {
     <div class="reading-progress" aria-hidden="true"><span></span></div>
     <header class="hero">
       <div>
-        <p class="eyebrow">İngilizce yemek tarifleri</p>
+        <p class="eyebrow">RECIPES & COOKING GUIDE (İNGİLİZCE YEMEK TARİFLERİ)</p>
         <h1>İngilizce Kek Tarifi (Kek Yapılışı İngilizce)</h1>
         <aside class="course-banner" aria-label="İngilizce kursu">
           <div class="course-banner-text">
@@ -651,7 +2260,7 @@ function renderKekPage() {
       </nav>
       <div class="content">
         <section id="kavramlar">
-          <p class="eyebrow">Temel kavramlar ve çeviriler</p>
+          <p class="eyebrow">CORE CONCEPTS & TRANSLATIONS (TEMEL KAVRAMLAR VE ÇEVİRİLER)</p>
           <h2>İngilizce Kek Tarifi Nedir? Temel Kavramlar ve Çeviriler</h2>
           <p class="section-intro">İngilizce kek tarifi nedir sorusunun cevabı, tarifte geçen temel kavramların hangi kek türüyle ilgili olduğunu bilmekten geçer. Aşağıdaki tablo bu kavramları ilgili tarifle eşleştirir.</p>
           ${table(["Kavram (English)", "Türkçe Karşılığı", "İlgili Tarif"], [["Batter", "Kek hamuru (sıvı kıvamda)", "Tüm kek türleri"], ["Icing / Frosting", "Kek kreması / sürme şeker", "Chocolate Cake, Carrot Cake"], ["Zest", "Rende (kabuk rendesi)", "Lemon Cake"], ["Fold in", "Hafifçe karıştırarak eklemek", "Carrot Cake (rendelenmiş havuç)"], ["Cake Pan", "Kek kalıbı", "Tüm kek türleri"]])}
@@ -664,32 +2273,42 @@ function renderKekPage() {
         </section>
         <div id="tarifler" class="recipe-chapters">
           <div class="chapter-intro">
-            <p class="eyebrow">4 kek çeşidi</p>
+            <p class="eyebrow">4 CAKE VARIATIONS (4 KEK ÇEŞİDİ)</p>
             <p class="section-intro">Her tarifte tanım, İngilizce–Türkçe malzemeler, miktarlar ve kısa yapılış birlikte verilmiştir. Başlıklara dokunarak öğrenme panellerini açabilirsiniz.</p>
           </div>
           ${kekVariants.map((v, i) => `<section class="recipe-chapter">
             <div class="chapter-head"><span class="variant-number">${String(i + 1).padStart(2, "0")}</span><div><h2>${v.briefTitle}</h2><p>${v.description}</p></div></div>
             <figure><img src="${v.image}" alt="${v.alt}" loading="lazy"><figcaption>${v.english}</figcaption></figure>
             <div class="chapter-panels">
-              <details class="learning-panel" ${i === 0 ? "open" : ""}><summary><h3>${v.ingredientsHeading}</h3><span>Malzeme tablosu</span></summary><div class="panel-body">${table(["İngilizce malzeme", "Türkçe karşılığı", "Miktar"], v.ingredients)}</div></details>
+              <details class="learning-panel" ${i === 0 ? "open" : ""}><summary><h3>${v.ingredientsHeading}</h3><span>Malzeme tablosu</span></summary><div class="panel-body">${table(["İngilizce malzeme", "Türkçe karşılığı", "Miktar"], v.ingredients)}${buildIngredientCardsHTML(v.ingredientCards)}</div></details>
               <details class="learning-panel"><summary><h3>${v.stepsHeading}</h3><span>Yöntemi göster</span></summary><div class="panel-body"><p class="method-note">${v.steps}</p></div></details>
             </div>
           </section>`).join("")}
         </div>
         <section id="sade-kek">
           <div class="steps-heading">
-            <p class="eyebrow">Sabit 7 adım</p>
+            <p class="eyebrow">7-STEP PLAIN CAKE GUIDE (7 ADIMDA SADE KEK REHBERİ)</p>
             <h2>Plain Cake İngilizce Adım Adım Nasıl Yapılır? (How Do You Make Plain Cake Step by Step?)</h2>
             <p class="section-intro">Bu sade kek tarifi 7 adımdan oluşur ve yaklaşık 40 dakika pişirme süresi gerektirir.</p>
             <div class="steps-meta"><span>7 adım</span><span>40 dakika pişirme</span><span>A2–B1 seviye</span></div>
           </div>
-          <ol class="steps">
-            ${r.steps.map(s => `<li><div class="step-copy"><h3>${s[0]}</h3><div class="step-language"><span class="lang-label">English</span><p><strong>${s[1]}</strong></p></div><div class="step-language turkish"><span class="lang-label">Türkçe</span><p>${s[2]}</p></div></div></li>`).join("")}
-          </ol>
+          ${buildStepAccordionHTML(r.steps.map((s, idx) => {
+            const title = s[0].replace(/^\d+\.\s*/, "");
+            const m = title.match(/^(.*?)\s*\((.*?)\)$/);
+            return {
+              number: idx + 1,
+              titleEn: m ? m[1].trim() : title,
+              titleTr: m ? m[2].trim() : ("Adım " + (idx + 1)),
+              sentenceEn: s[1],
+              sentenceTr: s[2],
+              actionEn: s[1].split(" ")[0],
+              actionTr: "Mutfak Eylemi"
+            };
+          }))}
           ${table(["Adım", "İngilizce talimat", "Türkçe açıklama"], r.steps.map((s, i) => [i + 1, s[1], s[2]]))}
         </section>
         <section id="malzemeler-ve-ekipman">
-          <p class="eyebrow">Malzemeler ve ekipman</p>
+          <p class="eyebrow">INGREDIENTS & EQUIPMENT (MALZEME VE EKİPMAN LİSTESİ)</p>
           <h2>What Do You Need to Bake a Cake in English? (İngilizce Kek Yapmak İçin Neler Gerekir?)</h2>
           <p class="section-intro">Kek yapmak için gereken temel malzemeler flour, sugar, eggs, milk, oil ve baking powder'dır.</p>
           ${table(["İngilizce malzeme", "Türkçe karşılığı", "Miktar"], r.ingredients)}
@@ -697,7 +2316,7 @@ function renderKekPage() {
           ${table(["İngilizce araç adı", "Türkçe karşılığı", "Kullanıldığı adım"], r.equipment)}
         </section>
         <section id="besin-degerleri">
-          <p class="eyebrow">Kalori ve besin değerleri</p>
+          <p class="eyebrow">CALORIES & NUTRITION (KALORİ VE BESİN DEĞERLERİ)</p>
           <h2>How Many Calories Does a Slice of Cake Contain? (Bir Dilim Kek Kaç Kalori İçerir?)</h2>
           <p class="section-intro">Bir dilim sade kek (yaklaşık 80 gram) ortalama 260-290 kalori içerir. Bu değer, tarifteki yağ ve şeker oranına göre değişir.</p>
           ${table(["Serving", "Calories (kcal)", "Açıklama"], [["100 g", "~350 kcal", "Standart sade kek hamurunun 100 gramı için ortalama değer."], ["1 dilim (~80 g)", "~275 kcal", "Orta boy bir dilim için yaklaşık değer."]])}
@@ -705,7 +2324,7 @@ function renderKekPage() {
           ${table(["Nutrient", "Besin Ögesi", "Amount per 100 g"], [["Protein", "Protein", "~5 g"], ["Carbohydrate", "Karbonhidrat", "~45 g"], ["Fat", "Yağ", "~15 g"], ["Fiber", "Lif", "~1 g"]])}
         </section>
         <section id="olculer">
-          <p class="eyebrow">Ölçü birimleri ve kelimeler</p>
+          <p class="eyebrow">MEASUREMENT UNITS & VOCABULARY (ÖLÇÜ BİRİMLERİ VE KELİMELER)</p>
           <h2>İngilizce Kek Tariflerinde Kullanılan Ölçü Birimleri Nelerdir?</h2>
           <p class="section-intro">İngilizce kek tariflerinde en sık kullanılan ölçü birimleri cup, tablespoon, teaspoon, gram ve milliliter'dır.</p>
           ${table(["English Unit", "Türkçe Karşılığı", "Metric Equivalent"], [["Cup", "Su bardağı", "240 ml"], ["Tablespoon (tbsp)", "Yemek kaşığı", "15 ml"], ["Teaspoon (tsp)", "Çay kaşığı", "5 ml"], ["Gram (g)", "Gram", "1 g"], ["Milliliter (ml)", "Mililitre", "1 ml"]])}
@@ -723,7 +2342,7 @@ function renderKekPage() {
         </section>
         <section id="alistirma">
           <div class="exercise">
-            <p class="eyebrow">Kazanım kontrolü</p>
+            <p class="eyebrow">PRACTICE & QUIZ (KAZANIM KONTROLÜ VE ALIŞTIRMALAR)</p>
             <h2>8. Sınıf İngilizce Kek Tarifi Alıştırması</h2>
             <p>Aşağıdaki soruları yanıtlayarak kek tarifi kelimelerini pekiştirin:</p>
             <ol>
@@ -809,6 +2428,59 @@ function navigateTo(url) {
   route();
 }
 
+function omletGrammarTabs() {
+  return `
+    <p class="eyebrow">RECIPE GRAMMAR & USAGE RULES (TARİF DİL BİLGİSİ VE ANLATIM KURALLARI)</p>
+    <h2>Omlet Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları (Grammar Rules for Omelette Recipes)</h2>
+    <p class="section-intro">Explore the 3 essential grammar rules for writing English omelette recipes. (İngilizce omlet tariflerinde kullanılan 3 temel dil kuralını aşağıdaki sekmelerden inceleyebilirsiniz.)</p>
+    <div class="grammar-tabs">
+      <div class="tab-list" role="tablist" aria-label="Omlet Dil Kuralları">
+        <button id="tab-omlet-imperatives" role="tab" aria-selected="true" aria-controls="panel-omlet-imperatives" tabindex="0" data-tab="imperatives" onclick="switchGrammarTab('imperatives')">
+          <span>01</span> Imperatives (Emir Kipi)
+        </button>
+        <button id="tab-omlet-sequence" role="tab" aria-selected="false" aria-controls="panel-omlet-sequence" tabindex="-1" data-tab="sequence" onclick="switchGrammarTab('sequence')">
+          <span>02</span> Sequence Adverbs (Sıra Zarfları)
+        </button>
+        <button id="tab-omlet-rules" role="tab" aria-selected="false" aria-controls="panel-omlet-rules" tabindex="-1" data-tab="rules" onclick="switchGrammarTab('rules')">
+          <span>03</span> Grammar Rules (Dil Kuralları)
+        </button>
+      </div>
+      <div class="tab-panels">
+        <div id="panel-omlet-imperatives" class="tab-panel" role="tabpanel" aria-labelledby="tab-omlet-imperatives" data-panel="imperatives">
+          <p class="section-intro">Imperatives give direct cooking instructions without a subject. (Emir kipi, tariflerde öznesiz doğrudan pişirme eylemi belirtir.)</p>
+          ${table(["İngilizce Emir Kipi", "Mutfak Eylemi", "Türkçe Çeviri"], [
+            ["Beat the eggs with salt and pepper.", "Beat (Çırpmak)", "Yumurtaları tuz ve karabiberle çırpın."],
+            ["Melt the butter in a non-stick pan.", "Melt (Eritmek)", "Tereyağını yapışmaz tavada eritin."],
+            ["Pour the mixture into the hot skillet.", "Pour (Dökmek)", "Karışımı sıcak tavaya dökün."],
+            ["Cook for 2–3 minutes over medium heat.", "Cook (Pişirmek)", "Orta ateşte 2–3 dakika pişirin."],
+            ["Fold the omelette in half carefully.", "Fold (Katlamak)", "Omleti dikkatlice ikiye katlayın."]
+          ])}
+        </div>
+        <div id="panel-omlet-sequence" class="tab-panel" role="tabpanel" aria-labelledby="tab-omlet-sequence" data-panel="sequence" hidden>
+          <p class="section-intro">Sequence adverbs show the chronological progression of cooking steps. (Sıra zarfları tarif adımlarının kronolojik sırasını belirler.)</p>
+          ${table(["Sequence Adverb", "Fonksiyon", "Örnek Cümle (İngilizce - Türkçe)"], [
+            ["First (İlk olarak)", "Başlangıç adımı", "First, crack the fresh eggs into a bowl. (İlk olarak taze yumurtaları bir kaseye kırın.)"],
+            ["Then (Ardından)", "İkinci adım", "Then, whisk thoroughly with a fork. (Ardından bir çatalla iyice çırpın.)"],
+            ["Next (Sonra)", "Gelişme adımı", "Next, pour into the melted butter. (Sonra erimiş tereyağının içine dökün.)"],
+            ["After that (Daha sonra)", "Tamamlama adımı", "After that, lift the edges gently. (Daha sonra kenarları nazikçe kaldırın.)"],
+            ["Finally (Son olarak)", "Servis adımı", "Finally, slide onto a warm plate. (Son olarak ılık bir tabağa kaydırın.)"]
+          ])}
+        </div>
+        <div id="panel-omlet-rules" class="tab-panel" role="tabpanel" aria-labelledby="tab-omlet-rules" data-panel="rules" hidden>
+          <p class="section-intro">Key grammar constraints including countable/uncountable nouns and negative imperatives. (Sayılabilir/sayılamayan isimler ve olumsuz emir kipi kuralları.)</p>
+          ${table(["Dil Kuralı", "Açıklama & Örnek", "Türkçe Karşılığı"], [
+            ["Countable Nouns", "2 eggs, 3 mushrooms", "2 yumurta, 3 mantar (sayılabilir)"],
+            ["Uncountable Nouns", "some salt, butter, oil", "biraz tuz, tereyağı, sıvı yağ (sayılamaz)"],
+            ["Negative Imperative", "Do not overcook the eggs.", "Yumurtaları fazla pişirmeyin."],
+            ["Cooking Temperature", "Cook over low-medium heat.", "Kısık-orta ateşte pişirin."]
+          ])}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+
 function renderOmletPage() {
   const r = recipes.omlet;
   document.title = "İngilizce Omlet Tarifi (Omlet Yapılışı İngilizce) | Konuşarak Öğren";
@@ -829,7 +2501,7 @@ function renderOmletPage() {
     <div class="reading-progress" aria-hidden="true"><span></span></div>
     <header class="hero">
       <div>
-        <p class="eyebrow">İngilizce yemek tarifleri</p>
+        <p class="eyebrow">RECIPES & COOKING GUIDE (İNGİLİZCE YEMEK TARİFLERİ)</p>
         <h1>İngilizce Omlet Tarifi (Omlet Yapılışı İngilizce)</h1>
         <aside class="course-banner" aria-label="İngilizce kursu">
           <div class="course-banner-text">
@@ -862,14 +2534,14 @@ function renderOmletPage() {
       </nav>
       <div class="content">
         <section id="kavramlar">
-          <p class="eyebrow">Temel kavramlar ve malzemeler</p>
+          <p class="eyebrow">CORE CONCEPTS & INGREDIENTS (TEMEL KAVRAMLAR VE MALZEMELER)</p>
           <h2>İngilizce Omlet Tarifi: Temel Fiiller, Kelimeler ve Malzemeler</h2>
           <p class="section-intro">İngilizce omlet tarifi okurken ve yazarken bilmeniz gereken temel fiiller, işlem adımları ve mutfak malzemeleri aşağıda 16:9 geniş ekran görsel kartlarımızla sunulmuştur.</p>
           <figure class="vocab-card-visual" style="margin: 2rem 0; text-align: center;">
             <img src="/blog/ingilizce-tarifler/images/omlet-vocab-card.webp" alt="Cooking in English - Omelette Verbs Widescreen Visual Card" style="width: 100%; border-radius: 20px; box-shadow: 0 12px 36px rgba(0,0,0,0.12); border: 1px solid var(--ko-border);" />
             <figcaption style="margin-top: 10px; color: var(--ko-gray-muted); font-size: 14px;"><strong>Cooking in English:</strong> Omlet tariflerinde kullanılan temel fiiller ve işlem adımları kartı.</figcaption>
           </figure>
-          ${table(["Fiil / Terim (English)", "Türkçe Karşılığı", "Tarifteki Cümle Örneği"], [["Crack", "Kırmak (Yumurta)", "Crack 2 eggs into a bowl."], ["Beat", "Çırpmak", "Beat the eggs with salt and pepper."], ["Heat", "Isıtmak (Tava/Tereyağı)", "Heat 1 tbsp of butter in a pan."], ["Pour", "Dökmek", "Pour the egg mixture into the pan."], ["Fold", "Katlamak", "Fold the omelette in half."], ["Whisk / Fluffy", "Telle çırpmak / Kabarık", "Whisk the eggs for a fluffy texture."]])}
+          ${table(["Verb or Term (Fiil veya Terim)", "Turkish Meaning (Türkçe Karşılığı)", "Example Sentence (Örnek Cümle)"], [["Crack", "Kırmak (Yumurta)", "Crack 2 eggs into a bowl."], ["Beat", "Çırpmak", "Beat the eggs with salt and pepper."], ["Heat", "Isıtmak (Tava/Tereyağı)", "Heat 1 tbsp of butter in a pan."], ["Pour", "Dökmek", "Pour the egg mixture into the pan."], ["Fold", "Katlamak", "Fold the omelette in half."], ["Whisk / Fluffy", "Telle çırpmak / Kabarık", "Whisk the eggs for a fluffy texture."]])}
           
           <h3 style="margin-top: 3rem;">İngilizce Omlet Malzemeleri ve Mutfak Gereçleri</h3>
           <p class="section-intro">Sade, peynirli, sebzeli ve mantarlı omlet yapımında kullanılan ana malzemeler ve İngilizce karşılıkları:</p>
@@ -881,33 +2553,31 @@ function renderOmletPage() {
         </section>
         <section id="tarifler" class="recipe-chapters">
           <div class="chapter-intro">
-            <p class="eyebrow">4 omlet çeşidi</p>
+            <p class="eyebrow">4 OMELETTE VARIATIONS (4 OMLET ÇEŞİDİ)</p>
             <p class="section-intro">Her tarifte tanım, İngilizce–Türkçe malzemeler ve adım detayları yer almaktadır.</p>
           </div>
           ${omletVariants.map((v, i) => `<section class="recipe-chapter"><div class="chapter-head"><span class="variant-number">${String(i + 1).padStart(2,"0")}</span><div><h2>${v.briefTitle}</h2><p>${v.description}</p></div></div><figure><img src="${v.image}" alt="${v.alt}" loading="lazy"><figcaption><strong>${v.english}</strong><span>${v.title}</span></figcaption></figure><div class="chapter-panels"><details class="learning-panel" ${i === 0 ? "open" : ""}><summary><h3>${v.ingredientsHeading}</h3><span>Malzeme tablosu</span></summary><div class="panel-body">${table(["İngilizce malzeme","Türkçe karşılığı","Miktar"],v.ingredients)}</div></details><details class="learning-panel"><summary><h3>${v.stepsHeading}</h3><span>Yöntemi göster</span></summary><div class="panel-body"><p class="method-note">${v.steps}</p></div></details></div></section>`).join("")}
         </section>
         <section id="sade-omlet">
           <div class="steps-heading">
-            <p class="eyebrow">Adım adım omlet yapılışı</p>
+            <p class="eyebrow">5-STEP PLAIN OMELETTE GUIDE (5 ADIMDA SADE OMLET REHBERİ)</p>
             <h2>Plain Omelette İngilizce Adım Adım Nasıl Yapılır?</h2>
             <p class="section-intro">Sade omlet 5 adımda hazırlanır. İngilizce cümleler emir kipiyle (imperative) kurulur.</p>
           </div>
-          <ol class="steps">${r.steps.map(s => `<li><div class="step-copy"><h3>${s[0]}</h3><div class="step-language"><span class="lang-label">English</span><p><strong>${s[1]}</strong></p></div><div class="step-language turkish"><span class="lang-label">Türkçe</span><p>${s[2]}</p></div></div></li>`).join("")}</ol>
+          ${buildStepAccordionHTML(r.steps.map((s, idx) => { const title = s[0].replace(/^\d+\.\s*/, ""); const m = title.match(/^(.*?)\s*\((.*?)\)$/); return { number: idx + 1, titleEn: m ? m[1].trim() : title, titleTr: m ? m[2].trim() : ("Adım " + (idx + 1)), sentenceEn: s[1], sentenceTr: s[2], actionEn: s[1].split(" ")[0], actionTr: "Mutfak Eylemi" }; }))}
         </section>
         <section id="besin-degerleri">
-          <p class="eyebrow">Kalori ve besin değerleri</p>
+          <p class="eyebrow">CALORIES & NUTRITION (KALORİ VE BESİN DEĞERLERİ)</p>
           <h2>How Many Calories Does an Omelette Have? (Omlet Kaç Kalori?)</h2>
           <p class="section-intro">2 yumurtalı sade omlet yaklaşık <strong>200 kcal</strong> kabul edilir.</p>
           ${table(["Porsiyon", "Kalori", "Açıklama"], [["100 g sade omlet", "154 kcal", "Tereyağlı ortalama değer"], ["1 porsiyon (2 yumurta)", "200 kcal", "Sade omlet porsiyon değeri"]])}
         </section>
         <section id="dil-kurallari">
-          <p class="eyebrow">İngilizce dil kuralları</p>
-          <h2>Omlet Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları</h2>
-          ${table(["Dil Kuralı", "İngilizce Örnek", "Türkçe Karşılığı"], [["Imperative (Emir kipi)", "Beat the eggs with salt.", "Yumurtaları tuzla çırpın."], ["Sequence Adverbs", "First, crack the eggs.", "Önce yumurtaları kırın."], ["Countable / Uncountable", "2 eggs (sayılabilir), salt (sayılamaz)", "2 yumurta, biraz tuz"], ["Negative Imperative", "Do not overcook the omelette.", "Omleti fazla pişirmeyin."]])}
+          ${omletGrammarTabs()}
         </section>
         <section id="alistirma">
           <div class="exercise">
-            <p class="eyebrow">Kazanım kontrolü</p>
+            <p class="eyebrow">PRACTICE & QUIZ (KAZANIM KONTROLÜ VE ALIŞTIRMALAR)</p>
             <h2>8. Sınıf İngilizce Omlet Tarifi Alıştırması</h2>
             <ol>
               <li>“____ the eggs into a bowl.” &nbsp; <strong>Answer: Crack</strong></li>
@@ -936,7 +2606,6 @@ window.switchGrammarTab = function(panelId, btn) {
   const target = document.getElementById(panelId);
   if (target) target.hidden = false;
 };
-
 
 function renderPizzaPage() {
   document.title = "İngilizce Pizza Tarifi (Pizza Yapılışı İngilizce) | Konuşarak Öğren";
@@ -1019,7 +2688,7 @@ function renderPizzaPage() {
     <div class="reading-progress" aria-hidden="true"><span></span></div>
     <header class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">İngilizce yemek tarifleri</p>
+        <p class="eyebrow">RECIPES & COOKING GUIDE (İNGİLİZCE YEMEK TARİFLERİ)</p>
         <h1>İngilizce Pizza Tarifi (Pizza Yapılışı İngilizce)</h1>
         <aside class="course-banner" aria-label="İngilizce kursu">
           <div class="course-banner-text">
@@ -1043,7 +2712,7 @@ function renderPizzaPage() {
         </table>
       </aside>
       <div class="hero-overview-table" id="definition-variations">
-        <p class="eyebrow">Tanım ve Çeşitler Karşılaştırması · Definition &amp; Variations</p>
+        <p class="eyebrow">DEFINITION &amp; VARIATIONS (TANIM VE ÇEŞİTLER KARŞILAŞTIRMASI)</p>
         <h2 class="definition-heading">İngilizce Pizza Tarifi Çeşitleri, Malzemeleri ve Adımları</h2>
         <p class="section-intro"><strong>İngilizce ve Türkçe Pizza Çeşitleri Karşılaştırması</strong>: ${overviewTbl?.intro || ""}</p>
         ${overviewTbl ? table(overviewTbl.headers, overviewTbl.rows, overviewTbl.caption) : ""}
@@ -1065,7 +2734,7 @@ function renderPizzaPage() {
 
       <div class="content">
         <section id="kavramlar">
-          <p class="eyebrow">Temel kavramlar ve adlandırmalar</p>
+          <p class="eyebrow">CORE CONCEPTS & VOCABULARY (TEMEL KAVRAMLAR VE ADLANDIRMALAR)</p>
           <h2>${pizzaData.contentBlocks[0].heading}</h2>
           <aside class="app-banner"><div class="app-icon" aria-hidden="true"><img src="ko-logo-papagan.png" alt="Konuşarak Öğren Logo" /></div><div class="app-banner-text"><small class="cta-eyebrow">KONUŞARAK ÖĞREN UYGULAMASI</small><strong class="cta-heading">Her gün 10 dakika konuşma pratiğini cebinize alın.</strong></div><div class="app-actions"><a href="https://apps.apple.com/tr/app/konu%C5%9Farak-%C3%B6%C4%9Fren-i-ngilizce/id1099431274" target="_blank" rel="noopener" class="cta-btn cta-btn-outline">App Store</a><a href="https://play.google.com/store/apps/details?id=com.konusarakogren.m.konusarakogrenmobil&hl=tr" target="_blank" rel="noopener" class="cta-btn cta-btn-blue">Google Play</a></div></aside>
           
@@ -1080,7 +2749,7 @@ function renderPizzaPage() {
 
         <div id="tarifler" class="recipe-chapters">
           <div class="chapter-intro">
-            <p class="eyebrow">4 pizza çeşidi</p>
+            <p class="eyebrow">4 PIZZA VARIATIONS (4 PİZZA ÇEŞİDİ)</p>
             <p class="section-intro">Ev yapımı pizza hamuru, klasik margarita, karışık ve tavada pizza tarifleri İngilizce malzemeleri, görsel kartları ve adım adım pişirme yönergeleriyle aşağıda verilmiştir. Başlıklara tıklayarak detayları açabilirsiniz.</p>
           </div>
           ${pizzaChapters.map((c, i) => `
@@ -1141,22 +2810,30 @@ function renderPizzaPage() {
         </div>
 
         <section id="sade-pizza">
-          <p class="eyebrow">7 adımda ev yapımı pizza</p>
+          <p class="eyebrow">7-STEP HOMEMADE PIZZA GUIDE (7 ADIMDA EV YAPIMI PİZZA REHBERİ)</p>
           <h2>${fixedStepBlock.heading}</h2>
           <p class="section-intro">${fixedStepBlock.introEnglish} / ${fixedStepBlock.introTurkish}</p>
-          <div class="step-guide-grid">
-            ${fixedStepBlock.steps.map(s => `
-              <div class="step-guide-card">
-                <h3>${s.title}</h3>
-                <p class="step-guide-en"><strong>${s.enText}</strong></p>
-                <p class="step-guide-tr">${s.trText}</p>
-              </div>
-            `).join("")}
-          </div>
+          ${buildStepAccordionHTML(fixedStepBlock.steps.map((s, idx) => {
+            const titleClean = s.title.replace(/^\d+\.\s*/, '');
+            const m = titleClean.match(/^(.*?)\s*\((.*?)\)$/);
+            const titleEn = m ? m[1].trim() : titleClean;
+            const titleTr = m ? m[2].trim() : ('Adım ' + (idx + 1));
+            const words = s.enText.split(' ');
+            const actionEn = words[0];
+            return {
+              number: idx + 1,
+              titleEn: titleEn,
+              titleTr: titleTr,
+              sentenceEn: s.enText,
+              sentenceTr: s.trText,
+              actionEn: actionEn,
+              actionTr: 'Mutfak Eylemi'
+            };
+          }))}
         </section>
 
         <section id="malzemeler-ve-ekipman">
-          <p class="eyebrow">Malzeme ve ekipman listesi</p>
+          <p class="eyebrow">INGREDIENTS & EQUIPMENT (MALZEME VE EKİPMAN LİSTESİ)</p>
           <h2>${pizzaData.contentBlocks[16].heading}</h2>
           <p class="section-intro">${pizzaData.contentBlocks[16].introEnglish} / ${pizzaData.contentBlocks[16].introTurkish}</p>
           ${table(pizzaData.contentBlocks[16].table.headers, pizzaData.contentBlocks[16].table.rows)}
@@ -1167,7 +2844,7 @@ function renderPizzaPage() {
         </section>
 
         <section id="besin-degerleri">
-          <p class="eyebrow">Kalori ve besin analizi</p>
+          <p class="eyebrow">CALORIES & NUTRITION (KALORİ VE BESİN ANALİZİ)</p>
           <h2>${pizzaData.contentBlocks[18].heading}</h2>
           <p class="section-intro">${pizzaData.contentBlocks[18].introEnglish} / ${pizzaData.contentBlocks[18].introTurkish}</p>
           ${table(pizzaData.contentBlocks[18].table.headers, pizzaData.contentBlocks[18].table.rows)}
@@ -1178,7 +2855,7 @@ function renderPizzaPage() {
         </section>
 
         <section id="farklar">
-          <p class="eyebrow">Hamur stilleri ve pizza tarihi</p>
+          <p class="eyebrow">DOUGH STYLES & PIZZA HISTORY (HAMUR STİLLERİ VE PİZZA TARİHİ)</p>
           <h2>${pizzaData.contentBlocks[20].heading}</h2>
           <p class="section-intro">${pizzaData.contentBlocks[20].introEnglish} / ${pizzaData.contentBlocks[20].introTurkish}</p>
           ${table(pizzaData.contentBlocks[20].table.headers, pizzaData.contentBlocks[20].table.rows)}
@@ -1189,7 +2866,7 @@ function renderPizzaPage() {
         </section>
 
         <section id="olculer">
-          <p class="eyebrow">Ölçü birimleri ve kelimeler</p>
+          <p class="eyebrow">MEASUREMENT UNITS & VOCABULARY (ÖLÇÜ BİRİMLERİ VE KELİMELER)</p>
           <h2>${pizzaData.contentBlocks[22].heading}</h2>
           <p class="section-intro">${pizzaData.contentBlocks[22].introEnglish} / ${pizzaData.contentBlocks[22].introTurkish}</p>
           ${table(pizzaData.contentBlocks[22].table.headers, pizzaData.contentBlocks[22].table.rows)}
@@ -1208,7 +2885,7 @@ function renderPizzaPage() {
         </section>
 
         <section id="dil-kurallari">
-          <p class="eyebrow">İngilizce dil kuralları</p>
+          <p class="eyebrow">RECIPE GRAMMAR & USAGE RULES (TARİF DİL BİLGİSİ VE ANLATIM KURALLARI)</p>
           <h2>${pizzaData.contentBlocks[26].heading}</h2>
           <p class="section-intro">${pizzaData.contentBlocks[26].introEnglish} / ${pizzaData.contentBlocks[26].introTurkish}</p>
 
@@ -1247,7 +2924,7 @@ function renderPizzaPage() {
 
         <section id="alistirma">
           <div class="exercise">
-            <p class="eyebrow">8. sınıf İngilizce</p>
+            <p class="eyebrow">8TH GRADE PRACTICE & QUIZ (8. SINIF QUIZ VE ALIŞTIRMALAR)</p>
             <h2>${pizzaData.contentBlocks[29].heading}</h2>
             <p class="section-intro">${pizzaData.contentBlocks[29].introEnglish} / ${pizzaData.contentBlocks[29].introTurkish}</p>
             <ol style="margin-top:20px; padding-left:20px;">
@@ -1321,7 +2998,7 @@ function renderMenemenPage() {
     <div class="reading-progress" aria-hidden="true"><span></span></div>
     <header class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">İngilizce yemek tarifleri</p>
+        <p class="eyebrow">RECIPES & COOKING GUIDE (İNGİLİZCE YEMEK TARİFLERİ)</p>
         <h1>İngilizce Menemen Tarifi (Menemen Yapılışı İngilizce)</h1>
         <aside class="course-banner" aria-label="İngilizce kursu">
           <div class="course-banner-text">
@@ -1345,7 +3022,7 @@ function renderMenemenPage() {
         </table>
       </aside>
       <div class="hero-overview-table" id="definition-variations">
-        <p class="eyebrow">Tanım ve Çeşitler Karşılaştırması · Definition &amp; Variations</p>
+        <p class="eyebrow">DEFINITION &amp; VARIATIONS (TANIM VE ÇEŞİTLER KARŞILAŞTIRMASI)</p>
         <h2 class="definition-heading">İngilizce Menemen Tarifi Çeşitleri, Malzemeleri ve Adımları</h2>
         <p class="section-intro"><strong>İngilizce ve Türkçe Menemen Çeşitleri Karşılaştırması</strong>: ${overviewTbl?.intro || "Aşağıdaki tabloda 4 temel menemen çeşidinin İngilizce isimlerini, ana malzemelerini ve temel pişirme adımlarını karşılaştırmalı olarak inceleyebilirsiniz."}</p>
         ${overviewTbl ? table(overviewTbl.headers, overviewTbl.rows, overviewTbl.caption) : ""}
@@ -1367,7 +3044,7 @@ function renderMenemenPage() {
 
       <div class="content">
         <section id="kavramlar">
-          <p class="eyebrow">Temel kavramlar ve adlandırmalar</p>
+          <p class="eyebrow">CORE CONCEPTS & VOCABULARY (TEMEL KAVRAMLAR VE ADLANDIRMALAR)</p>
           <h2>İngilizce Menemen Tarifinde Kullanılan Temel Kavramlar ve Adlandırmalar</h2>
           <aside class="app-banner"><div class="app-icon" aria-hidden="true"><img src="ko-logo-papagan.png" alt="Konuşarak Öğren Logo" /></div><div class="app-banner-text"><small class="cta-eyebrow">KONUŞARAK ÖĞREN UYGULAMASI</small><strong class="cta-heading">Her gün 10 dakika konuşma pratiğini cebinize alın.</strong></div><div class="app-actions"><a href="https://apps.apple.com/tr/app/konu%C5%9Farak-%C3%B6%C4%9Fren-i-ngilizce/id1099431274" target="_blank" rel="noopener" class="cta-btn cta-btn-outline">App Store</a><a href="https://play.google.com/store/apps/details?id=com.konusarakogren.m.konusarakogrenmobil&hl=tr" target="_blank" rel="noopener" class="cta-btn cta-btn-blue">Google Play</a></div></aside>
           
@@ -1386,7 +3063,7 @@ function renderMenemenPage() {
 
         <div id="tarifler" class="recipe-chapters">
           <div class="chapter-intro">
-            <p class="eyebrow">4 menemen çeşidi</p>
+            <p class="eyebrow">4 MENEMEN VARIATIONS (4 MENEMEN ÇEŞİDİ)</p>
             <p class="section-intro">Klasik, soğanlı, peynirli ve sucuklu menemen tarifleri İngilizce malzemeleri, görsel kartları ve adım adım pişirme yönergeleriyle aşağıda verilmiştir. Başlıklara tıklayarak panelleri açabilirsiniz.</p>
           </div>
           ${menemenChapters.map((v, i) => `<section class="recipe-chapter">
@@ -1446,20 +3123,33 @@ function renderMenemenPage() {
 
         <section id="sade-menemen">
           <div class="steps-heading">
-            <p class="eyebrow">Sabit 6 adım</p>
+            <p class="eyebrow">6-STEP CLASSIC MENEMEN GUIDE (6 ADIMDA KLASİK MENEMEN REHBERİ)</p>
             <h2>Classic Menemen İngilizce Adım Adım Nasıl Yapılır? (How Do You Make Classic Menemen Step by Step?)</h2>
             <p class="section-intro">Classic menemen is prepared in exactly 6 steps, with the English instruction followed immediately by its Turkish explanation. / Klasik menemen tam olarak 6 adımda hazırlanır; İngilizce talimatın hemen ardından Türkçe açıklama verilir.</p>
             <div class="steps-meta"><span>6 adım</span><span>15 dakika</span><span>A1–A2 seviye</span></div>
           </div>
-          <ol class="steps">
-            ${fixedStepBlock.list.items.map(s => `<li><div class="step-copy"><h3>${s.heading}</h3><div class="step-language"><span class="lang-label">English</span><p><strong>${s.english}</strong></p></div><div class="step-language turkish"><span class="lang-label">Türkçe</span><p>${s.turkish}</p></div></div></li>`).join("")}
-          </ol>
+          ${buildStepAccordionHTML(fixedStepBlock.list.items.map((s, idx) => {
+            const m = s.heading.match(/^(.*?)\s*\((.*?)\)$/);
+            const titleEn = m ? m[1].trim() : s.heading;
+            const titleTr = m ? m[2].trim() : ('Adım ' + (idx + 1));
+            const words = s.english.split(' ');
+            const actionEn = words[0];
+            return {
+              number: idx + 1,
+              titleEn: titleEn,
+              titleTr: titleTr,
+              sentenceEn: s.english,
+              sentenceTr: s.turkish,
+              actionEn: actionEn,
+              actionTr: 'Mutfak Eylemi'
+            };
+          }))}
           <p class="section-intro" style="margin-top:20px;">Here is the complete bilingual summary table of all 6 steps for reference. / İşte başvuru için 6 adımın tamamının iki dilli özet tablosu:</p>
           ${table(["Step", "English Instruction", "Türkçe Açıklama"], fixedStepBlock.list.summaryTable.rows)}
         </section>
 
         <section id="malzemeler-ve-ekipman">
-          <p class="eyebrow">Malzemeler ve ekipman</p>
+          <p class="eyebrow">INGREDIENTS & EQUIPMENT (MALZEME VE EKİPMAN LİSTESİ)</p>
           <h2>Which Ingredients Make a Traditional Menemen? (Geleneksel Menemeni Hangi Malzemeler Oluşturur?)</h2>
           <p class="section-intro">Traditional menemen combines eggs with tomatoes and green peppers cooked in olive oil. / Geleneksel menemen, yumurtayı zeytinyağında pişirilmiş domates ve yeşil biberle birleştirir.</p>
           ${table(["English Ingredient", "Türkçe Karşılığı", "Quantity (Miktar)"], menemenData.contentBlocks[23].table.rows)}
@@ -1470,7 +3160,7 @@ function renderMenemenPage() {
         </section>
 
         <section id="besin-degerleri">
-          <p class="eyebrow">Kalori ve besin değerleri</p>
+          <p class="eyebrow">CALORIES & NUTRITION (KALORİ VE BESİN DEĞERLERİ)</p>
           <h2>How Many Calories Is 1 Serving of Menemen? (1 Porsiyon Menemen Kaç Kalori?)</h2>
           <p class="section-intro">One serving of this classic menemen contains approximately 240 kcal; bu klasik menemenin 1 porsiyonu yaklaşık 240 kcal içerir. Değerler kullanılan yağ miktarına, yumurta boyutuna ve pişmiş verime göre değişebilir.</p>
           ${table(["Serving", "Calories (kcal)", "Açıklama"], menemenData.contentBlocks[25].table.rows)}
@@ -1481,7 +3171,7 @@ function renderMenemenPage() {
         </section>
 
         <section id="karsilastirma">
-          <p class="eyebrow">Yemek karşılaştırmaları</p>
+          <p class="eyebrow">CULINARY COMPARISONS (YEMEK KARŞILAŞTIRMALARI)</p>
           <h2>Menemen vs Shakshuka: İngilizce Farkları Nasıl Açıklanır?</h2>
           <p class="section-intro">The best-known difference is that menemen usually contains gently stirred eggs, whereas shakshuka usually contains whole eggs poached in tomato sauce. / En bilinen fark, menemende yumurtaların genellikle karıştırılması; shakshukada ise bütün yumurtaların domates sosunda poşe edilmesidir.</p>
           ${table(["Feature", "Menemen", "Shakshuka"], shakshukaBlock.table.rows)}
@@ -1503,7 +3193,7 @@ function renderMenemenPage() {
         </section>
 
         <section id="olculer">
-          <p class="eyebrow">Ölçü birimleri ve kelimeler</p>
+          <p class="eyebrow">MEASUREMENT UNITS & VOCABULARY (ÖLÇÜ BİRİMLERİ VE KELİMELER)</p>
           <h2>İngilizce Menemen Tariflerinde Kullanılan Ölçü Birimleri Nelerdir?</h2>
           <p class="section-intro">English menemen recipes use the units cup, tablespoon, teaspoon, gram and milliliter. / İngilizce menemen tariflerinde cup, tablespoon, teaspoon, gram ve milliliter ölçü birimleri kullanılır.</p>
           ${table(["English Unit", "Türkçe Karşılığı", "Metric Equivalent"], menemenData.contentBlocks[29].table.rows)}
@@ -1522,7 +3212,7 @@ function renderMenemenPage() {
         </section>
 
         <section id="dil-kurallari">
-          <p class="eyebrow">İngilizce dil kuralları</p>
+          <p class="eyebrow">RECIPE GRAMMAR & USAGE RULES (TARİF DİL BİLGİSİ VE ANLATIM KURALLARI)</p>
           <h2>İngilizce Menemen Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları</h2>
           <p class="section-intro">The 4 core language rules of English recipe writing are the imperative mood, sequence adverbs, countable and uncountable nouns, and measurement expressions. / İngilizce tarif yazımının 4 temel dil kuralı emir kipi, sıra zarfları, sayılabilir ve sayılamayan isimler ile ölçü ifadeleridir.</p>
           
@@ -1562,7 +3252,7 @@ function renderMenemenPage() {
 
         <section id="alistirma">
           <div class="exercise">
-            <p class="eyebrow">8. sınıf İngilizce</p>
+            <p class="eyebrow">8TH GRADE PRACTICE & QUIZ (8. SINIF QUIZ VE ALIŞTIRMALAR)</p>
             <h2>8. Sınıf İngilizce Menemen Tarifi Alıştırması</h2>
             <p>Aşağıdaki soruları yanıtlayarak mutfak fiillerini (chop, saute, stir, crack) pekiştirin:</p>
             
@@ -1616,6 +3306,420 @@ function renderMenemenPage() {
   </article>`;
 }
 
+function renderKurabiyePage() {
+  document.title = "İngilizce Kurabiye Tarifi (Kurabiye Yapılışı İngilizce) | Konuşarak Öğren";
+  setStructuredData({
+    "@context": "https://schema.org", "@type": "Recipe",
+    name: "İngilizce Kurabiye Tarifi (Kurabiye Yapılışı İngilizce)",
+    image: ["/blog/ingilizce-tarifler/images/kurabiye-hero.webp"],
+    author: { "@type": "Organization", name: "Konuşarak Öğren" },
+    datePublished: "2026-09-12",
+    description: "İngilizce kurabiye tarifi; tereyağlı, damla çikolatalı, yulaflı ve zencefilli kurabiye çeşitleri, çift dilli malzeme tabloları, 7 adım yönergeleri ve mutfak terimleri.",
+    prepTime: "PT20M", cookTime: "PT15M", totalTime: "PT35M", recipeYield: "24 adet",
+    recipeCategory: "Tatlı ve Atıştırmalık", recipeCuisine: "Uluslararası",
+    nutrition: { "@type": "NutritionInformation", calories: "140 calories" },
+    recipeIngredient: [
+      "200 g unsalted butter",
+      "100 g powdered sugar",
+      "280 g all-purpose flour",
+      "1 tsp pure vanilla extract"
+    ],
+    recipeInstructions: [
+      { "@type": "HowToStep", position: 1, name: "1. Soften the Butter at Room Temperature", text: "Leave 200 g of unsalted butter on the kitchen counter for 30 minutes until soft to the touch." },
+      { "@type": "HowToStep", position: 2, name: "2. Mix the Butter with Powdered Sugar", text: "Beat 200 g of soft butter and 100 g of powdered sugar in a bowl for 2 minutes until creamy." },
+      { "@type": "HowToStep", position: 3, name: "3. Add the Flour and Vanilla", text: "Sift 280 g of all-purpose flour and 1 teaspoon of vanilla extract directly into the creamed mixture." },
+      { "@type": "HowToStep", position: 4, name: "4. Knead a Soft Cookie Dough", text: "Knead the mixture gently by hand for 2 minutes until a non-sticky and smooth dough forms." },
+      { "@type": "HowToStep", position: 5, name: "5. Shape the Dough into Small Balls", text: "Roll walnut-sized pieces of dough into 24 round balls and press lightly with a fork." },
+      { "@type": "HowToStep", position: 6, name: "6. Place the Cookies on a Baking Tray", text: "Arrange the shaped cookies on a parchment-lined tray, leaving 3 cm spaces between them." },
+      { "@type": "HowToStep", position: 7, name: "7. Bake the Cookies for 15 Minutes", text: "Bake in a preheated oven at 170°C for 15 minutes until bottom edges turn delicate golden brown." }
+    ]
+  });
+
+  const bTerms = kurabiyeData.contentBlocks.find(b => b.id === "temel-terimler");
+  const bBiscuit = kurabiyeData.contentBlocks.find(b => b.id === "cookie-mi-biscuit-mi");
+  const bVerbs = kurabiyeData.contentBlocks.find(b => b.id === "kullanilan-fiiller");
+
+  const bButter = kurabiyeData.contentBlocks.find(b => b.id === "tereyagli-kurabiye-tarifi");
+  const bChoc = kurabiyeData.contentBlocks.find(b => b.id === "damla-cikolatali-kurabiye");
+  const bOat = kurabiyeData.contentBlocks.find(b => b.id === "yulafli-kurabiye-tarifi");
+  const bGinger = kurabiyeData.contentBlocks.find(b => b.id === "zencefilli-kurabiye-tarifi");
+
+  const bSteps = kurabiyeData.contentBlocks.find(b => b.id === "adim-adim-butter-cookies");
+  const bIng = kurabiyeData.contentBlocks.find(b => b.id === "hangi-malzemeler-ve-ekipmanlar");
+  const bEquip = bIng.subsections[0];
+
+  const bCal = kurabiyeData.contentBlocks.find(b => b.id === "kalori-ve-besin-degerleri");
+  const bNut = bCal.subsections.find(s => s.id === "besin-degerleri-tablosu");
+  const bAmBis = bCal.subsections.find(s => s.id === "amerikan-biscuit-farki");
+  const bTex = bCal.subsections.find(s => s.id === "kurabiye-dokulari");
+
+  const bUnits = kurabiyeData.contentBlocks.find(b => b.id === "olcu-birimleri-ve-kelimeler");
+  const bVocab = bUnits.subsections.find(s => s.id === "mutfak-kelimeleri");
+  const bTsp = bUnits.subsections.find(s => s.id === "olcu-karsiliklari");
+  const bGram = bUnits.subsections.find(s => s.id === "gram-litre-kullanimi");
+
+  const bGrammar = kurabiyeData.contentBlocks.find(b => b.id === "dil-bilgisi-kurallari");
+  const bImp = bGrammar.subsections.find(s => s.id === "emir-kipi-kullanimi");
+  const bSeq = bGrammar.subsections.find(s => s.id === "sira-zarflari");
+
+  const bQuiz = kurabiyeData.contentBlocks.find(b => b.id === "8-sinif-alistirma-ve-quiz");
+
+  const kurabiyeChapters = [
+    {
+      block: bButter,
+      ing: bButter.subsections[0],
+      steps: bButter.subsections[1],
+      img: "/blog/ingilizce-tarifler/images/kurabiye-butter.webp",
+      titleEn: "Classic Butter Cookies Recipe",
+      titleTr: "Geleneksel Tereyağlı Kurabiye Tarifi",
+      metaTime: "35 dakika",
+      metaServings: "24 adet",
+      metaCount: "4 malzeme"
+    },
+    {
+      block: bChoc,
+      ing: bChoc.subsections[0],
+      steps: bChoc.subsections[1],
+      img: "/blog/ingilizce-tarifler/images/kurabiye-chocolate-chip.webp",
+      titleEn: "Chocolate Chip Cookie Recipe",
+      titleTr: "Damla Çikolatalı Kurabiye Tarifi",
+      metaTime: "30 dakika",
+      metaServings: "20 adet",
+      metaCount: "4 malzeme"
+    },
+    {
+      block: bOat,
+      ing: bOat.subsections[0],
+      steps: bOat.subsections[1],
+      img: "/blog/ingilizce-tarifler/images/kurabiye-oatmeal.webp",
+      titleEn: "Oatmeal Cookie Recipe",
+      titleTr: "Yulaflı Kurabiye Tarifi",
+      metaTime: "30 dakika",
+      metaServings: "18 adet",
+      metaCount: "4 malzeme"
+    },
+    {
+      block: bGinger,
+      ing: bGinger.subsections[0],
+      steps: bGinger.subsections[1],
+      img: "/blog/ingilizce-tarifler/images/kurabiye-gingerbread.webp",
+      titleEn: "Gingerbread Cookie Recipe",
+      titleTr: "Zencefilli Kurabiye Tarifi",
+      metaTime: "40 dakika",
+      metaServings: "24 adet",
+      metaCount: "4 malzeme"
+    }
+  ];
+
+  const overviewTbl = kurabiyeData.page.overviewVariationsTable;
+
+  root.innerHTML = `<article class="recipe-guide">
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">DESSERT &amp; SNACK RECIPES (TATLI VE ATIŞTIRMALIK)</p>
+        <h1>İngilizce Kurabiye Tarifi (Kurabiye Yapılışı İngilizce)</h1>
+        <aside class="course-banner" aria-label="İngilizce kursu">
+          <div class="course-banner-text">
+            <small class="cta-eyebrow">KONUŞARAK ÖĞREN İNGİLİZCE KURSU</small>
+            <strong class="cta-heading">İngilizceyi tarif ezberleyerek değil, konuşarak öğrenin.</strong>
+          </div>
+          <button class="cta-btn cta-btn-orange" onclick="window.location.href='https://student.konusarakogren.com/auth/register'">Ücretsiz tanışma dersi <span class="arrow">→</span></button>
+        </aside>
+        <p class="lede"><strong>${kurabiyeData.page.introEnglish}</strong> (${kurabiyeData.page.introTurkish})</p>
+        <address class="article-meta" rel="author"><span class="author-mark" aria-hidden="true">KO</span><span><strong>Konuşarak Öğren Editör Ekibi</strong><small>İngilizce seviyesi: A1–A2 · Yayınlanma: <time datetime="2026-09-12">12 Eylül 2026</time></small></span></address>
+      </div>
+      <figure class="hero-visual">
+        <img src="/blog/ingilizce-tarifler/images/kurabiye-hero.webp" alt="Taze fırınlanmış kıyır kıyır tereyağlı kurabiyeler" loading="eager" fetchpriority="high">
+        <figcaption><strong>Classic Butter Cookies Recipe</strong><span>Fırından yeni çıkmış, altın renginde kıyır kıyır tereyağlı kurabiyeler.</span></figcaption>
+      </figure>
+      ${buildFactsCardHTML({
+        prep: { val: "20 min", en: "Preparation Time", tr: "Hazırlık Süresi: 20 dakika" },
+        cook: { val: "15 min", en: "Baking Time", tr: "Pişirme Süresi: 15 dakika" },
+        servings: { val: "24 pcs", en: "Servings", tr: "Porsiyon: 24 adet" },
+        level: { val: "A1–A2", en: "English Level", tr: "İngilizce Seviyesi: Temel (A1–A2)" }
+      })}
+      <div class="hero-overview-table" id="definition-variations">
+        <p class="eyebrow">DEFINITION &amp; VARIATIONS (TANIM VE ÇEŞİTLER KARŞILAŞTIRMASI)</p>
+        <h2 class="definition-heading">English Cookie Variations, Ingredients and Steps (İngilizce Kurabiye Çeşitleri, Malzemeleri ve Temel Adımları)</h2>
+        <p class="section-intro"><strong>İngilizce ve Türkçe Kurabiye Çeşitleri Karşılaştırması</strong>: ${overviewTbl?.intro || ""}</p>
+        ${overviewTbl ? table(overviewTbl.headers, overviewTbl.rows, overviewTbl.caption) : ""}
+      </div>
+    </header>
+
+    <div class="page-grid">
+      <nav class="toc" aria-label="İçindekiler">
+        <a href="#kavramlar" data-scroll-target="kavramlar">Terms (Kavramlar)</a>
+        <a href="#tarifler" data-scroll-target="tarifler">Variations (Tarifler)</a>
+        <a href="#adim-adim" data-scroll-target="adim-adim">7 Steps (7 Adım)</a>
+        <a href="#malzemeler-ve-ekipman" data-scroll-target="malzemeler-ve-ekipman">Ingredients (Malzemeler)</a>
+        <a href="#besin-degerleri" data-scroll-target="besin-degerleri">Nutrition (Besin Değerleri)</a>
+        <a href="#olculer" data-scroll-target="olculer">Units (Ölçüler)</a>
+        <a href="#dil-kurallari" data-scroll-target="dil-kurallari">Grammar (Dil Kuralları)</a>
+        <a href="#alistirma" data-scroll-target="alistirma">Quiz (Alıştırma)</a>
+      </nav>
+
+      <div class="content">
+        <!-- 1. TEMEL TERİMLER & KAVRAMLAR -->
+        <section id="kavramlar">
+          <p class="eyebrow">CORE TERMS &amp; CONCEPTS (TEMEL TERİMLER VE ANLAM FARKLILIKLARI)</p>
+          <h2>Core Terms and Accurate Translations for Cookie Recipes (İngilizce Kurabiye Tarifi İçin Temel Terimler ve Doğru Çeviriler)</h2>
+          <p class="section-intro">${bTerms.introEnglish} (${bTerms.introTurkish})</p>
+          ${table(bTerms.table.headers, bTerms.table.rows)}
+
+          <aside class="app-banner"><div class="app-icon" aria-hidden="true"><img src="ko-logo-papagan.png" alt="Konuşarak Öğren Logo" /></div><div class="app-banner-text"><small class="cta-eyebrow">KONUŞARAK ÖĞREN UYGULAMASI</small><strong class="cta-heading">Her gün 10 dakika konuşma pratiğini cebinize alın.</strong></div><div class="app-actions"><a href="https://apps.apple.com/tr/app/konu%C5%9Farak-%C3%B6%C4%9Fren-i-ngilizce/id1099431274" target="_blank" rel="noopener" class="cta-btn cta-btn-outline">App Store</a><a href="https://play.google.com/store/apps/details?id=com.konusarakogren.m.konusarakogrenmobil&hl=tr" target="_blank" rel="noopener" class="cta-btn cta-btn-blue">Google Play</a></div></aside>
+
+          <h3 style="margin-top:2rem;">Cookie or Biscuit? Cookies in American and British English (Cookie mi Biscuit mı? Amerikan ve İngiliz İngilizcesinde Kurabiye)</h3>
+          <p class="section-intro">${bBiscuit.introEnglish} (${bBiscuit.introTurkish})</p>
+          ${table(bBiscuit.table.headers, bBiscuit.table.rows)}
+
+          <h3 style="margin-top:2.5rem;">Verbs Used in English Recipe Writing: Mix, Roll, Shape, Bake (İngilizce Tarif Yazımında Kullanılan Fiiller: Mix, Roll, Shape, Bake)</h3>
+          <p class="section-intro">${bVerbs.introEnglish} (${bVerbs.introTurkish})</p>
+          ${table(bVerbs.table.headers, bVerbs.table.rows)}
+        </section>
+
+        <!-- 2. 4 KURABİYE ÇEŞİDİ -->
+        <div id="tarifler" class="recipe-chapters">
+          <div class="chapter-intro">
+            <p class="eyebrow">4 DISTINCT COOKIE VARIATIONS (4 FARKLI KURABİYE ÇEŞİDİ)</p>
+            <p class="section-intro">Tereyağlı, damla çikolatalı, yulaflı ve zencefilli kurabiye tariflerinin İngilizce malzeme tablolarını, görsel kartlarını ve adım adım yapılışlarını aşağıdaki sekmeleri açarak inceleyebilirsiniz.</p>
+          </div>
+          ${kurabiyeChapters.map((c, i) => `
+            <section class="recipe-chapter">
+              <div class="chapter-head">
+                <span class="variant-number">${String(i + 1).padStart(2, "0")}</span>
+                <div>
+                  <h2>${c.titleEn} (${c.titleTr})</h2>
+                  <p><strong>${c.block.introEnglish}</strong> (${c.block.introTurkish})</p>
+                  ${buildChapterMetaHTML({
+                    time: { val: c.metaTime, en: "Baking Time", tr: `Pişirme Süresi: ${c.metaTime}` },
+                    servings: { val: c.metaServings, en: "Servings", tr: `Porsiyon: ${c.metaServings}` },
+                    count: { val: c.metaCount, en: "Ingredients Count", tr: `Malzeme Sayısı: ${c.metaCount}` }
+                  })}
+                </div>
+              </div>
+              <figure><img src="${c.img}" alt="${c.titleEn}" loading="lazy"><figcaption><strong>${c.titleEn}</strong><span>${c.titleTr}</span></figcaption></figure>
+              <div class="chapter-panels">
+                <details class="learning-panel" ${i === 0 ? "open" : ""}><summary><h3>What Are ${c.titleEn.replace(" Recipe", "")} Ingredients in English? (${c.ing.heading.replace("What Are ", "").replace(" in English?", "")})</h3><span>Malzeme kartları &amp; tablosu</span></summary>
+                  <div class="panel-body">
+                    <p class="section-intro">${c.ing.introEnglish} (${c.ing.introTurkish})</p>
+                    ${table(c.ing.table.headers, c.ing.table.rows)}
+                    ${buildIngredientCardsHTML((c.ing.cards || []).map(card => ({
+                      icon: card.icon || "🍪",
+                      quantity: card.quantity || "",
+                      en: card.en,
+                      tr: card.tr,
+                      sentenceEn: card.sentenceEn,
+                      sentenceTr: card.sentenceTr
+                    })))}
+                  </div>
+                </details>
+                <details class="learning-panel"><summary><h3>How to Write ${c.titleEn.replace(" Recipe", "")} Baking Steps in English? (${c.steps.heading.replace("How to Write ", "").replace(" in English?", "")})</h3><span>Adım adım yapılışı göster</span></summary>
+                  <div class="panel-body">
+                    <p class="section-intro">${c.steps.introEnglish} (${c.steps.introTurkish})</p>
+                    <ol class="compact-steps">
+                      ${c.steps.stepsList.map(s => `
+                        <li>
+                          <span class="step-num-badge">${s.order}</span>
+                          <div class="step-body">
+                            <p class="en-text"><strong>${s.en}</strong></p>
+                            <p class="tr-text">${s.tr}</p>
+                          </div>
+                        </li>
+                      `).join("")}
+                    </ol>
+                  </div>
+                </details>
+              </div>
+            </section>
+          `).join("")}
+        </div>
+
+        <!-- 3. BUTTER COOKIES 7 ADIM AKORDİYONU -->
+        <section id="adim-adim">
+          <p class="eyebrow">OFFICIAL STEP-BY-STEP BAKING GUIDE (RESMİ ADIM ADIM PİŞİRME REHBERİ)</p>
+          <h2>How Do You Make Butter Cookies Step by Step? (Butter Cookies İngilizce Adım Adım Nasıl Yapılır?)</h2>
+          <p class="section-intro">${bSteps.introEnglish} (${bSteps.introTurkish})</p>
+          
+          ${buildStepAccordionHTML(bSteps.steps)}
+
+          <h3 style="margin-top:2.5rem;">Butter Cookies 7-Step Baking Summary (Butter Cookies 7 Pişirme Adımı Özet Tablosu)</h3>
+          <p class="section-intro">Tüm pişirme sürecini tek bir tabloda inceleyerek fırınlama yönergelerini pekiştirebilirsiniz.</p>
+          ${table(bSteps.summaryTable.headers, bSteps.summaryTable.rows)}
+        </section>
+
+        <!-- 4. MALZEMELER VE EKİPMANLAR -->
+        <section id="malzemeler-ve-ekipman">
+          <p class="eyebrow">INGREDIENTS &amp; BAKING EQUIPMENT (MALZEMELER VE FIRINCILIK GEREÇLERİ)</p>
+          <h2>Which Ingredients Go into Butter Cookies? (Tereyağlı Kurabiyeye Hangi Malzemeler Girer?)</h2>
+          <p class="section-intro">${bIng.introEnglish} (${bIng.introTurkish})</p>
+          ${table(bIng.table.headers, bIng.table.rows)}
+
+          <h3 style="margin-top:2.5rem;">What Equipment Do You Need to Bake Cookies? (Kurabiye Pişirmek İçin Hangi Ekipmanlar Gerekir?)</h3>
+          <p class="section-intro">${bEquip.introEnglish} (${bEquip.introTurkish})</p>
+          ${table(bEquip.table.headers, bEquip.table.rows)}
+        </section>
+
+        <!-- 5. BESİN DEĞERLERİ & KALORİ -->
+        <section id="besin-degerleri">
+          <p class="eyebrow">SERVING, CALORIE &amp; TEXTURE ANALYSIS (PORSİYON, KALORİ VE DOKU ANALİZİ)</p>
+          <h2>How Many Calories Is 1 Butter Cookie? (1 Tereyağlı Kurabiye Kaç Kalori?)</h2>
+          <p class="section-intro">${bCal.introEnglish} (${bCal.introTurkish})</p>
+          ${table(bCal.table.headers, bCal.table.rows)}
+
+          <h3 style="margin-top:2.5rem;">What Are the Nutrition Facts of Butter Cookies? (Tereyağlı Kurabiyenin Besin Değerleri Nelerdir?)</h3>
+          <p class="section-intro">${bNut.introEnglish} (${bNut.introTurkish})</p>
+          ${table(bNut.table.headers, bNut.table.rows)}
+
+          <h3 style="margin-top:2.5rem;">Why Is an American Biscuit Not a Cookie? (Amerikan Biscuit Neden Kurabiye Değildir?)</h3>
+          <p class="section-intro">${bAmBis.introEnglish} (${bAmBis.introTurkish})</p>
+          ${table(bAmBis.table.headers, bAmBis.table.rows)}
+
+          <h3 style="margin-top:2.5rem;">Chewy, Crunchy, Crumbly: Describing Cookie Textures in English (Chewy, Crunchy, Crumbly: Kurabiye Dokuları İngilizce Nasıl Tanımlanır?)</h3>
+          <p class="section-intro">${bTex.introEnglish} (${bTex.introTurkish})</p>
+          ${table(bTex.table.headers, bTex.table.rows)}
+        </section>
+
+        <!-- 6. ÖLÇÜ BİRİMLERİ VE MUTFAK KELİMELERİ -->
+        <section id="olculer">
+          <p class="eyebrow">MEASUREMENT CONVERSIONS &amp; KITCHEN GLOSSARY (ÖLÇÜ DÖNÜŞÜMLERİ VE MUTFAK SÖZLÜĞÜ)</p>
+          <h2>What Measurement Units Are Used in English Cookie Recipes? (İngilizce Kurabiye Tariflerinde Kullanılan Ölçü Birimleri Nelerdir?)</h2>
+          <p class="section-intro">${bUnits.introEnglish} (${bUnits.introTurkish})</p>
+          ${table(bUnits.table.headers, bUnits.table.rows)}
+
+          <h3 style="margin-top:2.5rem;">Core English Kitchen Words in Cookie Recipes (Kurabiye Tarif Metninde Geçen Temel İngilizce Mutfak Kelimeleri Nelerdir?)</h3>
+          <p class="section-intro">${bVocab.introEnglish} (${bVocab.introTurkish})</p>
+          ${table(bVocab.table.headers, bVocab.table.rows)}
+
+          <h3 style="margin-top:2.5rem;">Tablespoon, Teaspoon, Cup: Turkish Equivalents (Tablespoon, Teaspoon, Cup: İngilizce Ölçü Birimlerinin Türkçe Karşılıkları)</h3>
+          <p class="section-intro">${bTsp.introEnglish} (${bTsp.introTurkish})</p>
+          ${table(bTsp.table.headers, bTsp.table.rows)}
+
+          <h3 style="margin-top:2.5rem;">How Are Gram and Liter Used in English Recipes? (Gram ve Litre İngilizce Tariflerde Nasıl Kullanılır?)</h3>
+          <p class="section-intro">${bGram.introEnglish} (${bGram.introTurkish})</p>
+          ${table(bGram.table.headers, bGram.table.rows)}
+        </section>
+
+        <!-- 7. DİL BİLGİSİ & GRAMMAR (TABS) -->
+        <section id="dil-kurallari">
+          <p class="eyebrow">RECIPE GRAMMAR &amp; USAGE RULES (TARİF DİL BİLGİSİ VE ANLATIM KURALLARI)</p>
+          <h2>Grammar Rules for English Cookie Recipes (İngilizce Kurabiye Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları)</h2>
+          <p class="section-intro">${bGrammar.introEnglish} (${bGrammar.introTurkish})</p>
+
+          <div class="grammar-tabs">
+            <div class="tab-list" role="tablist">
+              <button type="button" role="tab" data-tab="tab-imp" id="tab-btn-imp" aria-controls="panel-imp" aria-selected="true" class="active">
+                <span>1. Imperatives (Emir Kipi)</span>
+              </button>
+              <button type="button" role="tab" data-tab="tab-seq" id="tab-btn-seq" aria-controls="panel-seq" aria-selected="false">
+                <span>2. Sequence Adverbs (Sıra Zarfları)</span>
+              </button>
+              <button type="button" role="tab" data-tab="tab-rules" id="tab-btn-rules" aria-controls="panel-rules" aria-selected="false">
+                <span>3. Grammar Rules (Dil Kuralları)</span>
+              </button>
+            </div>
+
+            <!-- Tab 1: Imperatives -->
+            <div class="tab-panel active" id="panel-imp" data-panel="tab-imp" role="tabpanel">
+              <h3 style="margin-top:0.5rem;">How to Use Imperatives in English Cookie Recipes (İngilizce Kurabiye Tarif Metinlerinde Emir Kipi Nasıl Kullanılır?)</h3>
+              <p class="section-intro">${bImp.introEnglish} (${bImp.introTurkish})</p>
+              ${table(bImp.table.headers, bImp.table.rows)}
+            </div>
+
+            <!-- Tab 2: Sequence Adverbs -->
+            <div class="tab-panel" id="panel-seq" data-panel="tab-seq" role="tabpanel" hidden>
+              <h3 style="margin-top:0.5rem;">Conjunctions and Sequence Adverbs: First, Then, After That, Finally (Bağlaçlar ve Sıra Zarfları: First, Then, After That, Finally)</h3>
+              <p class="section-intro">${bSeq.introEnglish} (${bSeq.introTurkish})</p>
+              ${table(bSeq.table.headers, bSeq.table.rows)}
+              <div class="bilingual-paragraph" style="margin-top:1.5rem; background: rgba(248,250,252,0.9); border: 1px solid #cbd5e1; border-radius: 12px; padding: 1.5rem;">
+                <p><strong>English:</strong> ${bSeq.connectedParagraphEn}</p>
+                <p style="margin-top:0.75rem; color:#475569;"><strong>Türkçe:</strong> ${bSeq.connectedParagraphTr}</p>
+              </div>
+            </div>
+
+            <!-- Tab 3: Grammar Summary -->
+            <div class="tab-panel" id="panel-rules" data-panel="tab-rules" role="tabpanel" hidden>
+              <h3 style="margin-top:0.5rem;">Core Recipe Grammar Rules (4 Temel Tarif Dil Kuralı)</h3>
+              <p class="section-intro">İngilizce tarif yazımının 4 temel dil kuralı: emir kipi, sıra zarfları, sayılabilir/sayılamayan isimler ve ölçü ifadeleri.</p>
+              ${table(bGrammar.table.headers, bGrammar.table.rows)}
+            </div>
+          </div>
+        </section>
+
+        <!-- 8. 8. SINIF ALISTIRMA VE QUIZ -->
+        <section id="alistirma" class="exercise">
+          <p class="eyebrow" style="color:#93c5fd;">8TH GRADE PRACTICE &amp; QUIZ (8. SINIF QUIZ VE ALIŞTIRMALAR)</p>
+          <h2 style="color:#ffffff;">8th Grade English Cookie Recipe Practice &amp; Quiz (8. Sınıf İngilizce Kurabiye Tarifi)</h2>
+          <p class="section-intro" style="color:#cbd5e1;">${bQuiz.introEnglish} (${bQuiz.introTurkish})</p>
+
+          <div class="quiz-grid" style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem;">
+            ${bQuiz.quiz.map((q, idx) => `
+              <div class="quiz-card" data-correct="${q.correctAnswer}" style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:1.6rem; text-align:left; color:#0f172a; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
+                <span class="quiz-badge" style="background:#0284c7; color:#ffffff; padding:4px 10px; border-radius:6px; font-size:0.85rem; font-weight:700;">Soru ${q.number} · ${q.type === "multiple-choice" ? "Çoktan Seçmeli" : "Boşluk Doldurma"}</span>
+                <p style="font-size:1.15rem; font-weight:700; margin-top:1rem; color:#0f172a;">${q.questionEn}</p>
+                <p style="font-size:0.95rem; color:#64748b; margin-top:0.25rem;">(${q.questionTr})</p>
+                <div class="quiz-options" style="display:flex; flex-wrap:wrap; gap:0.6rem; margin-top:1.2rem;">
+                  ${q.options.map(opt => `
+                    <button type="button" class="quiz-option-btn" data-val="${opt}" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px; padding:10px 16px; cursor:pointer; font-weight:600; font-size:0.95rem; text-align:left; transition:all 0.2s; color:#0f172a;">${opt}</button>
+                  `).join("")}
+                </div>
+                <div class="quiz-feedback" style="display:none; margin-top:1rem; padding:0.85rem 1.1rem; border-radius:8px; font-size:0.95rem;"></div>
+              </div>
+            `).join("")}
+          </div>
+        </section>
+
+        <!-- CTA Banner (Always outside quiz, fully clickable with high contrast) -->
+        ${getMidPageCTAHTML()}
+        ${getRelatedRecipesHTML("kurabiye")}
+      </div>
+    </div>
+  </article>`;
+
+  // Quiz interactivity
+  const quizCards = root.querySelectorAll(".quiz-card");
+  quizCards.forEach(card => {
+    const correct = card.getAttribute("data-correct");
+    const feedback = card.querySelector(".quiz-feedback");
+    const buttons = card.querySelectorAll(".quiz-option-btn");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const val = btn.getAttribute("data-val");
+        const isMatch = val.trim().toLowerCase() === correct.trim().toLowerCase() || val.includes(correct);
+
+        buttons.forEach(b => {
+          b.disabled = true;
+          if (b.getAttribute("data-val") === correct || b.getAttribute("data-val").includes(correct)) {
+            b.style.background = "#dcfce7";
+            b.style.borderColor = "#22c55e";
+            b.style.color = "#15803d";
+          }
+        });
+
+        if (isMatch) {
+          btn.style.background = "#dcfce7";
+          btn.style.borderColor = "#22c55e";
+          feedback.style.display = "block";
+          feedback.style.background = "#f0fdf4";
+          feedback.style.color = "#166534";
+          feedback.style.border = "1px solid #bbf7d0";
+          feedback.innerHTML = `<strong>Doğru Cevap! ✓</strong> Tebrikler, soruyu doğru yanıtladınız.`;
+        } else {
+          btn.style.background = "#fee2e2";
+          btn.style.borderColor = "#ef4444";
+          btn.style.color = "#991b1b";
+          feedback.style.display = "block";
+          feedback.style.background = "#fef2f2";
+          feedback.style.color = "#991b1b";
+          feedback.style.border = "1px solid #fecaca";
+          feedback.innerHTML = `<strong>Yanlış Cevap.</strong> Doğru seçenek: <em>${correct}</em>`;
+        }
+      });
+    });
+  });
+}
+
 function route() {
   const slug = getSlugFromURL();
   updateSubHeaderActive(slug);
@@ -1628,6 +3732,10 @@ function route() {
     renderHome();
   } else if (slug === "makarna") {
     renderPastaPage();
+  } else if (slug === "baklava") {
+    renderBaklavaPage();
+  } else if (slug === "smoothie") {
+    renderSmoothiePage();
   } else if (slug === "kek") {
     renderKekPage();
   } else if (slug === "omlet") {
@@ -1636,6 +3744,8 @@ function route() {
     renderMenemenPage();
   } else if (slug === "pizza") {
     renderPizzaPage();
+  } else if (slug === "kurabiye" || slug === "cookie") {
+    renderKurabiyePage();
   } else if (recipes[slug]) {
     renderRecipe(recipes[slug], slug);
   } else {

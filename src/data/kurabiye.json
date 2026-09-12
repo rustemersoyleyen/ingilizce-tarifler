@@ -1,0 +1,1493 @@
+{
+  "page": {
+    "slug": "kurabiye",
+    "route": "/blog/ingilizce-tarifler/kurabiye",
+    "h1": "İngilizce Kurabiye Tarifi (Kurabiye Yapılışı İngilizce)",
+    "title": "İngilizce Kurabiye Tarifi (Kurabiye Yapılışı İngilizce) | Konuşarak Öğren",
+    "metaDescription": "İngilizce kurabiye tarifi ve yapılışı: Tereyağlı, damla çikolatalı, yulaflı ve zencefilli kurabiye çeşitleri, çift dilli malzeme tabloları, 7 adım yönergeleri ve mutfak terimleri.",
+    "introEnglish": "A cookie recipe provides step-by-step baking instructions for combining butter, sugar, eggs, and flour into sweet dough and baking until golden.",
+    "introTurkish": "İngilizce kurabiye tarifi; tereyağı, şeker, un ve vanilyanın harmanlanarak lezzetli kurabiye hamuru hazırlanması ve fırınlanması adımlarını anlatan kapsamlı iki dilli bir gastronomi rehberidir.",
+    "label": "Tatlı ve Atıştırmalık",
+    "author": "Konuşarak Öğren Editör Ekibi",
+    "publishDate": "12 Eylül 2026",
+    "englishLevel": "A1–A2",
+    "prepTime": "20 dakika",
+    "cookTime": "15 dakika",
+    "totalTime": "35 dakika",
+    "servings": "24 adet",
+    "calories": "140 kcal (1 adet)",
+    "heroImage": "/blog/ingilizce-tarifler/images/kurabiye-hero.webp",
+    "overviewVariationsTable": {
+      "caption": "İngilizce ve Türkçe Kurabiye Çeşitleri Karşılaştırması",
+      "intro": "Aşağıdaki tabloda 4 temel kurabiye çeşidinin İngilizce isimlerini, ana malzemelerini ve temel pişirme adımlarını karşılaştırmalı olarak inceleyebilirsiniz. (Explore the four main cookie variations with their English names, key ingredients, and baking steps in the comparison table below.)",
+      "headers": [
+        "English Recipe Name",
+        "Türkçe Adı",
+        "Main Ingredients (Ana Malzemeler)",
+        "Main Steps (Temel Adımlar)"
+      ],
+      "rows": [
+        [
+          "Butter Cookies",
+          "Tereyağlı Kurabiye",
+          "Butter, powdered sugar, flour, vanilla (Tereyağı, pudra şekeri, un, vanilya)",
+          "Cream butter and sugar, add flour, shape balls, bake 15 mins (Tereyağı ve pudra şekerini karıştırın, unu ekleyin, yuvarlayıp 15 dakika pişirin)"
+        ],
+        [
+          "Chocolate Chip Cookies",
+          "Damla Çikolatalı Kurabiye",
+          "Butter, brown sugar, egg, flour, chocolate chips (Tereyağı, esmer şeker, yumurta, un, damla çikolata)",
+          "Beat butter and sugars, add chocolate chips, scoop onto tray, bake 12 mins (Tereyağı ve şekeri çırpın, damla çikolatayı ekleyin, tepsiye dizip 12 dakika pişirin)"
+        ],
+        [
+          "Oatmeal Cookies",
+          "Yulaflı Kurabiye",
+          "Rolled oats, flour, cinnamon, butter, honey (Yulaf ezmesi, un, tarçın, tereyağı, bal)",
+          "Whisk wet and dry ingredients, fold in rolled oats, shape rounds, bake 14 mins (Kuru ve sıvı malzemeleri harmanlayın, yulafı ekleyin, yuvarlayıp 14 dakika pişirin)"
+        ],
+        [
+          "Gingerbread Cookies",
+          "Zencefilli Kurabiye",
+          "Flour, molasses, ground ginger, cinnamon, butter (Un, pekmez, toz zencefil, tarçın, tereyağı)",
+          "Knead spiced dough, chill 30 mins, cut into shapes, bake 10 mins (Baharatlı hamuru yoğurun, 30 dakika soğutun, şekiller kesip 10 dakika pişirin)"
+        ]
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "id": "temel-terimler",
+      "heading": "İngilizce Kurabiye Tarifi İçin Temel Terimler ve Doğru Çeviriler",
+      "headingLevel": "H2",
+      "keyword": "kurabiye tarifi ingilizce",
+      "methodology": "Kavramları isimlendir: recipe, ingredient, step, serving + Kurabiye özel 2 terim; her kavramı 1 cümleyle tanımla ve ilgili tarif başlığına bağla.",
+      "componentType": "vocabulary-table",
+      "introEnglish": "Mastering these foundational baking terms ensures you can understand, write, and execute any English cookie recipe with complete confidence.",
+      "introTurkish": "Bu temel fırıncılık terimlerini öğrenmek, İngilizce kurabiye tariflerini eksiksiz anlamanızı, yazmanızı ve başarıyla uygulamanızı sağlar.",
+      "table": {
+        "headers": [
+          "English Term",
+          "Türkçe Karşılığı",
+          "Tanım ve Tarif Bağlantısı"
+        ],
+        "rows": [
+          [
+            "Recipe",
+            "Tarif",
+            "A recipe provides step-by-step instructions for baking delicious cookies (Bir tarif lezzetli kurabiyeler pişirmek için adım adım yönergeler sunar)."
+          ],
+          [
+            "Ingredient",
+            "Malzeme",
+            "Every ingredient like butter and flour must be measured precisely (Tereyağı ve un gibi her malzeme tam ölçüsünde kullanılmalıdır)."
+          ],
+          [
+            "Step",
+            "Adım veya aşama",
+            "Each numbered step guides you through mixing, shaping, and baking (Her numaralı adım karıştırma, şekil verme ve pişirme boyunca size rehberlik eder)."
+          ],
+          [
+            "Serving",
+            "Porsiyon veya adet",
+            "This butter cookie recipe yields approximately 24 individual servings (Bu tereyağlı kurabiye tarifi yaklaşık 24 adet kurabiye sunar)."
+          ],
+          [
+            "Dough",
+            "Kurabiye hamuru",
+            "The cookie dough should be soft, pliable, and non-sticky (Kurabiye hamuru yumuşak, şekil alabilir ve ele yapışmayan kıvamda olmalıdır)."
+          ],
+          [
+            "Texture",
+            "Doku veya kıvam",
+            "Baking temperature determines whether the texture is chewy or crunchy (Pişirme sıcaklığı kurabiyenin kıvamının yumuşak mı yoksa çıtır mı olacağını belirler)."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cookie-mi-biscuit-mi",
+      "heading": "Cookie mi Biscuit mı? Amerikan ve İngiliz İngilizcesinde Kurabiye",
+      "headingLevel": "H3",
+      "keyword": "kurabiye ingilizce tarifi",
+      "methodology": "İlk cümlede kurabiye kelimesinin ABD İngilizcesinde cookie, İngiliz İngilizcesinde biscuit olduğunu tanımla; cookie, biscuit, cracker ve shortbread terimlerini tabloda ayır (Term, Ülke Kullanımı, Türkçe Karşılığı).",
+      "componentType": "comparison-table",
+      "introEnglish": "While Americans use the word 'cookie' for all sweet baked rounds, British English prefers 'biscuit' for crisp varieties.",
+      "introTurkish": "Amerikan İngilizcesinde tatlı yuvarlak fırın atıştırmalıklarının tümüne 'cookie' denirken, İngiliz İngilizcesinde çıtır çeşitler için 'biscuit' terimi tercih edilir.",
+      "table": {
+        "headers": [
+          "Term (İngilizce Terim)",
+          "Country Usage (Ülke Kullanımı)",
+          "Türkçe Karşılığı",
+          "Açıklama (Description)"
+        ],
+        "rows": [
+          [
+            "Cookie",
+            "American English (ABD)",
+            "Tatlı kurabiye",
+            "Soft, chewy, or chunky sweet baked dough containing chocolate chips or nuts (Çikolata veya fındık içeren yumuşak ya da çıtır tatlı kurabiye)."
+          ],
+          [
+            "Biscuit",
+            "British English (İngiltere)",
+            "Çıtır bisküvi veya kurabiye",
+            "Thin, crisp, and snap-textured baked sweet treat served with afternoon tea (İkindi çayıyla sunulan ince ve çıtır tatlı bisküvi)."
+          ],
+          [
+            "Cracker",
+            "Global English (Genel)",
+            "Tuzlu kraker",
+            "Savory, flat, and crispy baked bread dough served with cheese or dips (Peynirle sunulan ince, tuzlu ve gevrek atıştırmalık)."
+          ],
+          [
+            "Shortbread",
+            "Scottish & British (İskoçya)",
+            "Tereyağlı un kurabiyesi",
+            "Traditional rich butter pastry made with 1 part sugar, 2 parts butter, and 3 parts flour (1 ölçü şeker, 2 ölçü tereyağı ve 3 ölçü unla yapılan klasik İskoç un kurabiyesi)."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "kullanilan-fiiller",
+      "heading": "İngilizce Tarif Yazımında Kullanılan Fiiller: Mix, Roll, Shape, Bake",
+      "headingLevel": "H3",
+      "keyword": "ingilizce yemek tarifi kurabiye",
+      "methodology": "Başlıktaki 4 fiili (Mix, Roll, Shape, Bake) İngilizce-Türkçe tabloda tanımla. Her fiil için Kurabiye tarifinden 1 emir kipi örneği yaz, önce İngilizce sonra Türkçe.",
+      "componentType": "verbs-table",
+      "introEnglish": "These four action verbs are the core building blocks of every English cookie recipe.",
+      "introTurkish": "Aşağıdaki dört temel eylem fiili, İngilizce kurabiye tariflerinin ana omurgasını oluşturur.",
+      "table": {
+        "headers": [
+          "Verb (Fiil)",
+          "Türkçe Karşılığı",
+          "Recipe Imperative (Tariften Emir Kipi Örneği)",
+          "Türkçe Açıklaması"
+        ],
+        "rows": [
+          [
+            "Mix",
+            "Karıştırmak",
+            "Mix the softened butter with powdered sugar until smooth.",
+            "Yumuşamış tereyağını pudra şekeriyle pürüzsüz olana dek karıştırın."
+          ],
+          [
+            "Roll",
+            "Yuvarlamak veya açmak",
+            "Roll small pieces of dough between your palms into smooth spheres.",
+            "Avuçlarınız arasında küçük hamur parçalarını pürüzsüz küreler halinde yuvarlayın."
+          ],
+          [
+            "Shape",
+            "Şekil vermek",
+            "Shape each dough ball gently by pressing down with a fork.",
+            "Çatalla hafifçe bastırarak her bir hamur topuna nazikçe şekil verin."
+          ],
+          [
+            "Bake",
+            "Fırında pişirmek",
+            "Bake the cookies in a preheated oven at 170°C for 15 minutes.",
+            "Kurabiyeleri önceden 170 dereceye ısıtılmış fırında 15 dakika pişirin."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "tereyagli-kurabiye-tarifi",
+      "heading": "İngilizce Tereyağlı Kurabiye Tarifi (Butter Cookie Recipe)",
+      "headingLevel": "H2",
+      "keyword": "ingilizce kurabiye tarifi kısa",
+      "methodology": "İngilizce-Türkçe tanımı ver, malzemeleri ve adımları aynı şekilde içer, bir örnek fotoğraf içer.",
+      "componentType": "recipe-chapter",
+      "image": "/blog/ingilizce-tarifler/images/kurabiye-butter.webp",
+      "alt": "Golden homemade butter cookies baked to crisp golden perfection",
+      "introEnglish": "A classic butter cookie recipe creates melt-in-your-mouth, delicate treats rich with natural creamery butter and aromatic vanilla.",
+      "introTurkish": "Klasik tereyağlı kurabiye tarifi; kaliteli tereyağı ve vanilya aromasıyla ağızda dağılan, kıyır kıyır enfes bir fırın klasiğidir.",
+      "subsections": [
+        {
+          "id": "tereyagli-kurabiye-malzemeleri",
+          "heading": "Tereyağlı Kurabiye Tarifinin İngilizce Malzemeleri Nelerdir?",
+          "headingLevel": "H3",
+          "keyword": "ingilizce kurabiye",
+          "introEnglish": "Butter cookies require only four fundamental baking ingredients combined in harmonious balance.",
+          "introTurkish": "Tereyağlı kurabiye, mükemmel bir dengeyle bir araya gelen sadece dört temel malzeme gerektirir.",
+          "table": {
+            "headers": [
+              "English Ingredient",
+              "Türkçe Karşılığı",
+              "Quantity",
+              "Tanım (Headword Definition)"
+            ],
+            "rows": [
+              [
+                "Unsalted butter",
+                "Tuzsuz tereyağı",
+                "200 g",
+                "Butter: High-fat butter gives the cookies their signature rich melt-in-mouth crumb (Yüksek yağlı tereyağı kurabiyeye ağızda dağılan imza dokusunu verir)."
+              ],
+              [
+                "Powdered sugar",
+                "Pudra şekeri",
+                "100 g (¾ cup)",
+                "Powdered sugar: Fine sugar dissolves instantly for a velvety, non-gritty texture (İnce pudra şekeri pürüzsüz bir doku için anında erir)."
+              ],
+              [
+                "All-purpose flour",
+                "Çok amaçlı un",
+                "280 g (2 cups)",
+                "Flour: Sifted wheat flour forms a tender dough without excessive gluten development (Elenmiş buğday unu sertleşme olmadan kıyır hamur oluşturur)."
+              ],
+              [
+                "Vanilla extract",
+                "Vanilya özütü veya vanilin",
+                "1 tsp (5 ml)",
+                "Vanilla: Pure vanilla extract adds warm and inviting bakery aroma (Doğal vanilya özütü sıcacık bir fırın aroması katar)."
+              ]
+            ]
+          },
+          "cards": [
+            {
+              "en": "Unsalted butter",
+              "tr": "Tuzsuz tereyağı",
+              "quantity": "200 g",
+              "icon": "🧈",
+              "sentenceEn": "Soften the unsalted butter at room temperature before mixing.",
+              "sentenceTr": "Karıştırmadan önce tuzsuz tereyağını oda sıcaklığında yumuşatın."
+            },
+            {
+              "en": "Powdered sugar",
+              "tr": "Pudra şekeri",
+              "quantity": "100 g",
+              "icon": "🍚",
+              "sentenceEn": "Powdered sugar ensures a silky texture that dissolves on your tongue.",
+              "sentenceTr": "Pudra şekeri dilinizde eriyen ipeksi bir kıvam sağlar."
+            },
+            {
+              "en": "All-purpose flour",
+              "tr": "Çok amaçlı buğday unu",
+              "quantity": "280 g",
+              "icon": "🌾",
+              "sentenceEn": "Sift the flour gently to avoid lumps in your cookie dough.",
+              "sentenceTr": "Kurabiye hamurunda topaklanmayı önlemek için unu nazikçe eleyin."
+            },
+            {
+              "en": "Vanilla extract",
+              "tr": "Vanilya özütü",
+              "quantity": "1 tsp",
+              "icon": "🌿",
+              "sentenceEn": "A teaspoon of vanilla enhances the sweet aroma of butter.",
+              "sentenceTr": "Bir çay kaşığı vanilya tereyağının tatlı aromasını zenginleştirir."
+            }
+          ]
+        },
+        {
+          "id": "tereyagli-kurabiye-adimlar",
+          "heading": "Tereyağlı Kurabiye Pişirme Adımları İngilizce Nasıl Yazılır?",
+          "headingLevel": "H3",
+          "keyword": "kurabiye yapımı ingilizce",
+          "introEnglish": "Follow these four core chronological steps connected by sequence adverbs.",
+          "introTurkish": "Sıra zarflarıyla bağlanan aşağıdaki dört temel adımı sırasıyla uygulayınız.",
+          "stepsList": [
+            {
+              "order": "First",
+              "en": "First, beat 200 g of softened butter with 100 g of powdered sugar for 3 minutes until pale and creamy.",
+              "tr": "Önce 200 g yumuşamış tereyağını 100 g pudra şekeriyle açık renk ve kremsi olana kadar 3 dakika çırpın."
+            },
+            {
+              "order": "Then",
+              "en": "Then, add 1 teaspoon of vanilla extract and 280 g of sifted flour, kneading gently into a smooth dough.",
+              "tr": "Ardından 1 çay kaşığı vanilya özütü ve 280 g elenmiş unu ekleyin, pürüzsüz bir hamur olana dek nazikçe yoğurun."
+            },
+            {
+              "order": "After that",
+              "en": "After that, shape the dough into small round balls and arrange them on a parchment-lined baking sheet.",
+              "tr": "Daha sonra hamuru küçük yuvarlak toplar halinde şekillendirin ve yağlı kağıt serili fırın tepsisine dizin."
+            },
+            {
+              "order": "Finally",
+              "en": "Finally, bake at 170°C for 15 minutes until the bottom edges are lightly golden, then cool completely.",
+              "tr": "Son olarak alt kenarları hafif altın sarısı olana kadar 170°C'de 15 dakika pişirin, ardından tamamen soğutun."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "damla-cikolatali-kurabiye",
+      "heading": "İngilizce Damla Çikolatalı Kurabiye Tarifi (Chocolate Chip Cookie Recipe)",
+      "headingLevel": "H2",
+      "keyword": "kurabiye ingilizce",
+      "methodology": "İlk cümlede başlıktaki tarifin tanımını İngilizce ve Türkçe olarak birlikte ver. Malzemeleri ve adımları İngilizce-Türkçe karşılıklı olarak içer; malzemelerde Quantity sütunu kullan. 1 örnek fotoğraf ekle ve alt metnini İngilizce yaz.",
+      "componentType": "recipe-chapter",
+      "image": "/blog/ingilizce-tarifler/images/kurabiye-chocolate-chip.webp",
+      "alt": "Warm homemade chocolate chip cookies with melted chocolate chips",
+      "introEnglish": "Chocolate chip cookie recipe is an iconic American dessert characterized by crisp golden edges, a chewy center, and pockets of molten chocolate.",
+      "introTurkish": "İngilizce damla çikolatalı kurabiye tarifi; çıtır kenarları, yumuşacık içi ve erimiş çikolata damlacıklarıyla dünya çapında sevilen efsanevi bir Amerikan klasiğidir.",
+      "subsections": [
+        {
+          "id": "damla-cikolatali-malzemeler",
+          "heading": "Damla Çikolatalı Kurabiye Tarifinin İngilizce Malzemeleri Nelerdir?",
+          "headingLevel": "H3",
+          "keyword": "ingilizce kurabiye tarifi first second",
+          "introEnglish": "Combining brown sugar with semisweet chocolate chips creates the signature deep caramel flavor.",
+          "introTurkish": "Esmer şeker ile bitter damla çikolatanın buluşması, kurabiyeye karakteristik karamel lezzetini kazandırır.",
+          "table": {
+            "headers": [
+              "English Ingredient",
+              "Türkçe Karşılığı",
+              "Quantity",
+              "Tanım (Headword Definition)"
+            ],
+            "rows": [
+              [
+                "Brown sugar",
+                "Esmer şeker",
+                "150 g (¾ cup)",
+                "Brown sugar: Moisture from molasses in brown sugar yields a delightfully chewy center (Esmer şekerdeki pekmez nemi nefis yumuşak bir kurabiye içi sağlar)."
+              ],
+              [
+                "Melted butter",
+                "Eritilmiş tereyağı",
+                "150 g",
+                "Butter: Melted butter enhances spreading and creates appealingly crisp ridges (Eritilmiş tereyağı kurabiyenin yayılmasını ve kenarlarının çıtırlaşmasını sağlar)."
+              ],
+              [
+                "Egg",
+                "Taze yumurta",
+                "1 large",
+                "Egg: One large egg binds the dough while contributing richness and rise (Bir büyük yumurta hamuru bağlarken zenginlik ve kabarma katar)."
+              ],
+              [
+                "Chocolate chips",
+                "Damla çikolata",
+                "150 g (1 cup)",
+                "Chocolate chips: Semisweet chocolate morsels melt into gooey pockets during baking (Yarı tatlı çikolata damlaları pişme sırasında akışkan lezzet cepleri oluşturur)."
+              ]
+            ]
+          },
+          "cards": [
+            {
+              "en": "Brown sugar",
+              "tr": "Esmer şeker",
+              "quantity": "150 g",
+              "icon": "🟤",
+              "sentenceEn": "Brown sugar lends deep caramel notes and chewy moisture.",
+              "sentenceTr": "Esmer şeker derin karamel notaları ve yumuşak bir nem kazandırır."
+            },
+            {
+              "en": "Chocolate chips",
+              "tr": "Damla çikolata",
+              "quantity": "150 g",
+              "icon": "🍫",
+              "sentenceEn": "Fold in dark chocolate chips just before scooping the dough.",
+              "sentenceTr": "Hamuru porsiyonlamadan hemen önce bitter damla çikolataları ekleyin."
+            },
+            {
+              "en": "Fresh egg",
+              "tr": "Taze yumurta",
+              "quantity": "1 large",
+              "icon": "🥚",
+              "sentenceEn": "Beat one room-temperature egg into the creamed butter.",
+              "sentenceTr": "Oda sıcaklığındaki bir yumurtayı çırpılmış tereyağına ekleyin."
+            },
+            {
+              "en": "Baking soda",
+              "tr": "Karbonat",
+              "quantity": "1 tsp",
+              "icon": "🧂",
+              "sentenceEn": "Baking soda helps the cookies spread and brown evenly.",
+              "sentenceTr": "Karbonat kurabiyelerin yayılmasına ve eşit kızarmasına yardımcı olur."
+            }
+          ]
+        },
+        {
+          "id": "damla-cikolatali-adimlar",
+          "heading": "Damla Çikolatalı Kurabiye Pişirme Adımları İngilizce Nasıl Yazılır?",
+          "headingLevel": "H3",
+          "keyword": "kurabiye yapılışı ingilizce",
+          "introEnglish": "Follow these chronological steps using sequence adverbs and precise baking measurements.",
+          "introTurkish": "Sıra zarflarını ve kesin pişirme ölçülerini kullanarak adımları sırayla izleyin.",
+          "stepsList": [
+            {
+              "order": "First",
+              "en": "First, whisk 150 g of melted butter with 150 g of brown sugar and 50 g of granulated sugar for 2 minutes.",
+              "tr": "Önce 150 g eritilmiş tereyağını 150 g esmer şeker ve 50 g toz şekerle 2 dakika çırpın."
+            },
+            {
+              "order": "Then",
+              "en": "Then, beat in 1 large egg and 1 teaspoon of vanilla extract until glossy and thoroughly incorporated.",
+              "tr": "Ardından 1 büyük yumurta ve 1 çay kaşığı vanilya özütünü parlak ve homojen olana dek çırparak ekleyin."
+            },
+            {
+              "order": "After that",
+              "en": "After that, fold in 220 g of flour, 1 teaspoon of baking soda, and 150 g of chocolate chips using a spatula.",
+              "tr": "Daha sonra bir spatula ile 220 g un, 1 çay kaşığı karbonat ve 150 g damla çikolatayı nazikçe karışıma yedirin."
+            },
+            {
+              "order": "Finally",
+              "en": "Finally, drop rounded tablespoons onto a baking sheet and bake at 180°C for 11 to 13 minutes until edges turn golden.",
+              "tr": "Son olarak birer yemek kaşığı dolusu harcı fırın tepsisine bırakın ve kenarları altın rengi olana kadar 180°C'de 11-13 dakika pişirin."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yulafli-kurabiye-tarifi",
+      "heading": "İngilizce Yulaflı Kurabiye Tarifi (Oatmeal Cookie Recipe)",
+      "headingLevel": "H2",
+      "keyword": "kurabiye ingilizcesi",
+      "methodology": "İlk cümlede başlıktaki tarifin tanımını İngilizce ve Türkçe olarak birlikte ver. Malzemeleri ve adımları İngilizce-Türkçe karşılıklı olarak içer; malzemelerde Quantity sütunu kullan. 1 örnek fotoğraf ekle ve alt metnini İngilizce yaz.",
+      "componentType": "recipe-chapter",
+      "image": "/blog/ingilizce-tarifler/images/kurabiye-oatmeal.webp",
+      "alt": "Nutritious and chewy homemade oatmeal raisin cookies on rustic parchment",
+      "introEnglish": "Oatmeal cookie recipe is a wholesome, hearty baked treat made with whole rolled oats, warm cinnamon, and sweet honey or raisins.",
+      "introTurkish": "İngilizce yulaflı kurabiye tarifi; tam yulaf ezmesi, hoş kokulu tarçın ve doğal bal veya kuru üzümle hazırlanan lif zengini, doyurucu bir atıştırmalıktır.",
+      "subsections": [
+        {
+          "id": "yulafli-kurabiye-malzemeleri",
+          "heading": "Yulaflı Kurabiye Tarifinin İngilizce Malzemeleri Nelerdir?",
+          "headingLevel": "H3",
+          "keyword": "ingilizce kurabiye tarifi 8. sınıf kısa",
+          "introEnglish": "Rolled oats and ground cinnamon provide rich texture and comforting home-baked aroma.",
+          "introTurkish": "Yulaf ezmesi ve toz tarçın, kurabiyeye zengin bir doku ve sıcacık ev yapımı kokusu kazandırır.",
+          "table": {
+            "headers": [
+              "English Ingredient",
+              "Türkçe Karşılığı",
+              "Quantity",
+              "Tanım (Headword Definition)"
+            ],
+            "rows": [
+              [
+                "Rolled oats",
+                "Yulaf ezmesi",
+                "180 g (2 cups)",
+                "Oats: Whole rolled oats deliver signature rustic chew and dietary fiber (Tam yulaf ezmesi kurabiyeye rustik çıtırlık ve lif kazandırır)."
+              ],
+              [
+                "Flour",
+                "Buğday unu",
+                "130 g (1 cup)",
+                "Flour: Flour provides structure to hold the hearty oats together (Un doyurucu yulafları bir arada tutan yapıyı kurar)."
+              ],
+              [
+                "Ground cinnamon",
+                "Toz tarçın",
+                "1 tsp",
+                "Cinnamon: Warm ground cinnamon pairs naturally with oats and dried fruit (Toz tarçın yulaf ve kuruyemişlerle mükemmel uyum sağlar)."
+              ],
+              [
+                "Honey or molasses",
+                "Bal veya pekmez",
+                "80 ml (⅓ cup)",
+                "Honey: Natural liquid sweetener adds moisture and golden browning (Doğal bal kurabiyeye yumuşak nem ve altın sarısı kızarıklık verir)."
+              ]
+            ]
+          },
+          "cards": [
+            {
+              "en": "Rolled oats",
+              "tr": "Yulaf ezmesi",
+              "quantity": "180 g",
+              "icon": "🥣",
+              "sentenceEn": "Use old-fashioned rolled oats for a delightful chewy texture.",
+              "sentenceTr": "Harika bir çiğnenebilir kıvam için geleneksel yulaf ezmesi kullanın."
+            },
+            {
+              "en": "Ground cinnamon",
+              "tr": "Toz tarçın",
+              "quantity": "1 tsp",
+              "icon": "🪵",
+              "sentenceEn": "A spoonful of cinnamon brings inviting bakery warmth.",
+              "sentenceTr": "Bir kaşık tarçın davetkar bir fırın sıcaklığı getirir."
+            },
+            {
+              "en": "Raisins",
+              "tr": "Kuru üzüm",
+              "quantity": "70 g",
+              "icon": "🍇",
+              "sentenceEn": "Plump raisins add bursts of sweet and tart flavor.",
+              "sentenceTr": "Etli kuru üzümler tatlı ve mayhoş lezzet patlamaları katar."
+            },
+            {
+              "en": "Coconut oil or butter",
+              "tr": "Hindistan cevizi yağı veya tereyağı",
+              "quantity": "100 g",
+              "icon": "🥥",
+              "sentenceEn": "Healthy fats bind the oat flakes into cohesive discs.",
+              "sentenceTr": "Sağlıklı yağlar yulaf tanelerini bir arada tutarak diskler oluşturur."
+            }
+          ]
+        },
+        {
+          "id": "yulafli-kurabiye-adimlar",
+          "heading": "Yulaflı Kurabiye Pişirme Adımları İngilizce Nasıl Yazılır?",
+          "headingLevel": "H3",
+          "keyword": "kurabiye nasıl yapılır ingilizce",
+          "introEnglish": "Step-by-step instructions for preparing nutritious homemade oatmeal cookies.",
+          "introTurkish": "Besleyici ev yapımı yulaflı kurabiyeler hazırlamak için adım adım pişirme yönergeleri.",
+          "stepsList": [
+            {
+              "order": "First",
+              "en": "First, stir 180 g of rolled oats with 130 g of flour, 1 teaspoon of cinnamon, and ½ teaspoon of baking powder.",
+              "tr": "Önce 180 g yulaf ezmesini 130 g un, 1 çay kaşığı tarçın ve ½ çay kaşığı kabartma tozuyla karıştırın."
+            },
+            {
+              "order": "Then",
+              "en": "Then, mix in 100 g of melted butter, 80 ml of honey, and 1 beaten egg until thick dough forms.",
+              "tr": "Ardından koyu bir hamur oluşana kadar 100 g eritilmiş tereyağı, 80 ml bal ve 1 çırpılmış yumurtayı ekleyip karıştırın."
+            },
+            {
+              "order": "After that",
+              "en": "After that, scoop mounds of dough onto a tray and press gently into 1 cm thick round patties.",
+              "tr": "Daha sonra tepsiye hamurdan parçalar koyun ve 1 cm kalınlığında yuvarlak diskler halinde hafifçe bastırın."
+            },
+            {
+              "order": "Finally",
+              "en": "Finally, bake at 175°C for 13 to 15 minutes until edges are crisp and center remains soft.",
+              "tr": "Son olarak kenarları çıtırlaşıp ortası yumuşak kalana dek 175°C'de 13-15 dakika pişirin."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zencefilli-kurabiye-tarifi",
+      "heading": "İngilizce Zencefilli Kurabiye Tarifi (Gingerbread Cookie Recipe)",
+      "headingLevel": "H2",
+      "keyword": "8. sınıf ingilizce kurabiye tarifi",
+      "methodology": "İlk cümlede başlıktaki tarifin tanımını İngilizce ve Türkçe olarak birlikte ver. Malzemeleri ve adımları İngilizce-Türkçe karşılıklı olarak içer; malzemelerde Quantity sütunu kullan. 1 örnek fotoğraf ekle ve alt metnini İngilizce yaz.",
+      "componentType": "recipe-chapter",
+      "image": "/blog/ingilizce-tarifler/images/kurabiye-gingerbread.webp",
+      "alt": "Festive gingerbread man cookies decorated with white royal icing",
+      "introEnglish": "Gingerbread cookie recipe is a festive holiday classic spiced with fragrant ginger, cinnamon, and dark molasses cut into delightful decorative shapes.",
+      "introTurkish": "İngilizce zencefilli kurabiye tarifi; zencefil, tarçın, karanfil ve koyu pekmezle tatlandırılan, neşeli kalıplarla kesilip süslenen geleneksel bir kış klasiğidir.",
+      "subsections": [
+        {
+          "id": "zencefilli-kurabiye-malzemeleri",
+          "heading": "Zencefilli Kurabiye Tarifinin İngilizce Malzemeleri Nelerdir?",
+          "headingLevel": "H3",
+          "keyword": "ingilizce kurabiye ne demek",
+          "introEnglish": "Aromatic ground ginger and dark molasses create the deep color and spicy warmth of gingerbread.",
+          "introTurkish": "Toz zencefil ve pekmez, zencefilli kurabiyeye koyu rengini ve sıcacık baharatlı lezzetini verir.",
+          "table": {
+            "headers": [
+              "English Ingredient",
+              "Türkçe Karşılığı",
+              "Quantity",
+              "Tanım (Headword Definition)"
+            ],
+            "rows": [
+              [
+                "All-purpose flour",
+                "Çok amaçlı un",
+                "350 g (2.5 cups)",
+                "Flour: Flour provides sturdy structure for rolling and cutting intricate cookie shapes (Un hamuru açıp şekilli kesmek için sağlam bir yapı sunar)."
+              ],
+              [
+                "Ground ginger",
+                "Toz zencefil",
+                "2 tsp",
+                "Ginger: Pungent dried ginger creates the distinctive zesty warmth (Kurutulmuş toz zencefil belirgin ferahlatıcı acılığı ve sıcaklığı katar)."
+              ],
+              [
+                "Dark molasses or pekmez",
+                "Pekmez",
+                "120 ml (½ cup)",
+                "Molasses: Thick dark syrup imparts deep bronze color and rich sweetness (Koyu pekmez derin bronz renk ve zengin tatlılık sağlar)."
+              ],
+              [
+                "Unsalted butter",
+                "Tereyağı",
+                "100 g",
+                "Butter: Butter keeps the spiced cutouts tender rather than rock-hard (Tereyağı şekilli kurabiyelerin taş gibi sertleşmesini önleyip gevrek tutar)."
+              ]
+            ]
+          },
+          "cards": [
+            {
+              "en": "Ground ginger",
+              "tr": "Toz zencefil",
+              "quantity": "2 tsp",
+              "icon": "🫚",
+              "sentenceEn": "Spicy ground ginger gives the cookies their signature kick.",
+              "sentenceTr": "Baharatlı toz zencefil kurabiyelere imza niteliğindeki canlı tadı verir."
+            },
+            {
+              "en": "Dark molasses",
+              "tr": "Koyu pekmez",
+              "quantity": "120 ml",
+              "icon": "🍯",
+              "sentenceEn": "Dark molasses yields an earthy sweetness and festive bronze hue.",
+              "sentenceTr": "Koyu pekmez topraksı bir tatlılık ve neşeli bronz renk sunar."
+            },
+            {
+              "en": "Ground cloves",
+              "tr": "Toz karanfil",
+              "quantity": "¼ tsp",
+              "icon": "🌸",
+              "sentenceEn": "A pinch of cloves deepens the aromatic complexity.",
+              "sentenceTr": "Bir tutam karanfil aromatik lezzet derinliğini artırır."
+            },
+            {
+              "en": "Brown sugar",
+              "tr": "Esmer şeker",
+              "quantity": "100 g",
+              "icon": "🟤",
+              "sentenceEn": "Brown sugar creates crisp edges and tender crumb.",
+              "sentenceTr": "Esmer şeker çıtır kenarlar ve gevrek bir doku oluşturur."
+            }
+          ]
+        },
+        {
+          "id": "zencefilli-kurabiye-adimlar",
+          "heading": "Zencefilli Kurabiye Pişirme Adımları İngilizce Nasıl Yazılır?",
+          "headingLevel": "H3",
+          "keyword": "ingilizcede kurabiye ne demek",
+          "introEnglish": "Step-by-step instructions for chilling, rolling, cutting, and baking gingerbread cookies.",
+          "introTurkish": "Zencefilli kurabiyeleri dinlendirme, açma, kesme ve pişirme için adım adım yönergeler.",
+          "stepsList": [
+            {
+              "order": "First",
+              "en": "First, cream 100 g of butter with 100 g of brown sugar, then beat in 120 ml of molasses and 1 egg.",
+              "tr": "Önce 100 g tereyağını 100 g esmer şekerle çırpın, ardından 120 ml pekmez ve 1 yumurtayı ekleyip karıştırın."
+            },
+            {
+              "order": "Then",
+              "en": "Then, stir in 350 g of flour, 2 teaspoons of ginger, and 1 teaspoon of cinnamon to form a firm dough.",
+              "tr": "Ardından 350 g un, 2 çay kaşığı zencefil ve 1 çay kaşığı tarçını ekleyerek toparlanan bir hamur yoğurun."
+            },
+            {
+              "order": "After that",
+              "en": "After that, chill the dough in the refrigerator for 30 minutes, then roll out to 5 mm thickness and cut festive shapes.",
+              "tr": "Daha sonra hamuru buzdolabında 30 dakika dinlendirin, 5 mm kalınlığında açın ve neşeli kalıplarla kesin."
+            },
+            {
+              "order": "Finally",
+              "en": "Finally, bake at 180°C for 9 to 11 minutes until edges are set, then decorate with white royal icing.",
+              "tr": "Son olarak kenarları hafif sertleşene kadar 180°C'de 9-11 dakika pişirin, ardından beyaz kremayla süsleyin."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adim-adim-butter-cookies",
+      "heading": "Butter Cookies İngilizce Adım Adım Nasıl Yapılır? (How Do You Make Butter Cookies Step by Step?)",
+      "headingLevel": "H2",
+      "keyword": "ingilizce kurabiye yapılışı",
+      "methodology": "Aşağıdaki 7 numaralı adım başlığını sırasıyla ve emir kipiyle kullan. Her adımın altında önce İngilizce talimat cümlesini, hemen ardından Türkçe açıklamasını yaz. Adım sayısını değiştirme; 7 adım bu tarifin karmaşıklığına göre belirlendi. Bölüm sonunda tüm adımları tek bir İngilizce-Türkçe tabloda özetle.",
+      "componentType": "step-accordion",
+      "introEnglish": "Follow this official 7-step guide to bake golden, flaky, and delicate butter cookies from scratch.",
+      "introTurkish": "Evde kıyır kıyır tereyağlı kurabiye hazırlamak için bu 7 adımlı resmi pişirme rehberini uygulayın.",
+      "steps": [
+        {
+          "number": 1,
+          "titleEn": "Soften the Butter at Room Temperature",
+          "titleTr": "Tereyağını Oda Sıcaklığında Yumuşatın",
+          "sentenceEn": "Leave 200 g of unsalted butter on the kitchen counter for 30 minutes until soft to the touch.",
+          "sentenceTr": "200 g tuzsuz tereyağını parmağınızla basıldığında yumuşayana dek 30 dakika tezgahta bekletin.",
+          "actionEn": "Softening (Yumuşatma)",
+          "actionTr": "Tereyağını yumuşatma"
+        },
+        {
+          "number": 2,
+          "titleEn": "Mix the Butter with Powdered Sugar",
+          "titleTr": "Tereyağını Pudra Şekeriyle Karıştırın",
+          "sentenceEn": "Beat 200 g of soft butter and 100 g of powdered sugar in a bowl for 2 minutes until creamy.",
+          "sentenceTr": "200 g yumuşak tereyağı ve 100 g pudra şekerini kremsi olana kadar kasede 2 dakika çırpın.",
+          "actionEn": "Mixing & Creaming (Kremalaştırma)",
+          "actionTr": "Şekerle yağı çırpma"
+        },
+        {
+          "number": 3,
+          "titleEn": "Add the Flour and Vanilla",
+          "titleTr": "Unu ve Vanilyayı Ekleyin",
+          "sentenceEn": "Sift 280 g of all-purpose flour and 1 teaspoon of vanilla extract directly into the creamed mixture.",
+          "sentenceTr": "280 g çok amaçlı buğday ununu ve 1 çay kaşığı vanilya özütünü doğrudan kaseye eleyin.",
+          "actionEn": "Sifting & Adding (Eleme ve Ekleme)",
+          "actionTr": "Un ve vanilya ilavesi"
+        },
+        {
+          "number": 4,
+          "titleEn": "Knead a Soft Cookie Dough",
+          "titleTr": "Yumuşak Bir Kurabiye Hamuru Yoğurun",
+          "sentenceEn": "Knead the mixture gently by hand for 2 minutes until a non-sticky and smooth dough forms.",
+          "sentenceTr": "Ele yapışmayan pürüzsüz bir hamur elde edene kadar malzemeleri elle 2 dakika nazikçe yoğurun.",
+          "actionEn": "Kneading (Yoğurma)",
+          "actionTr": "Hamuru toparlama"
+        },
+        {
+          "number": 5,
+          "titleEn": "Shape the Dough into Small Balls",
+          "titleTr": "Hamuru Küçük Toplar Halinde Şekillendirin",
+          "sentenceEn": "Roll walnut-sized pieces of dough into 24 round balls and press lightly with a fork.",
+          "sentenceTr": "Ceviz büyüklüğündeki hamur parçalarından 24 adet yuvarlak top yuvarlayın ve çatalla hafifçe bastırın.",
+          "actionEn": "Shaping (Şekil Verme)",
+          "actionTr": "Kurabiyeleri yuvarlama"
+        },
+        {
+          "number": 6,
+          "titleEn": "Place the Cookies on a Baking Tray",
+          "titleTr": "Kurabiyeleri Fırın Tepsisine Dizin",
+          "sentenceEn": "Arrange the shaped cookies on a parchment-lined tray, leaving 3 cm spaces between them.",
+          "sentenceTr": "Şekillendirilmiş kurabiyeleri aralarında 3 cm boşluk bırakarak yağlı kağıt serili fırın tepsisine dizin.",
+          "actionEn": "Arranging (Tepsiye Dizme)",
+          "actionTr": "Tepsiye aralıklı yerleştirme"
+        },
+        {
+          "number": 7,
+          "titleEn": "Bake the Cookies for 15 Minutes",
+          "titleTr": "Kurabiyeleri 15 Dakika Pişirin",
+          "sentenceEn": "Bake in a preheated oven at 170°C for 15 minutes until bottoms turn delicate golden brown.",
+          "sentenceTr": "Alt kısımları tatlı bir altın sarısı renk alana kadar önceden 170°C ısıtılmış fırında 15 dakika pişirin.",
+          "actionEn": "Baking (Fırında Pişirme)",
+          "actionTr": "170 derecede pişirme"
+        }
+      ],
+      "summaryTable": {
+        "headers": [
+          "Step (Adım Numarası)",
+          "English Instruction (İngilizce Talimat)",
+          "Türkçe Açıklama"
+        ],
+        "rows": [
+          [
+            "Step 1",
+            "Soften 200 g of butter at room temperature for 30 minutes.",
+            "200 g tereyağını oda sıcaklığında 30 dakika yumuşatın."
+          ],
+          [
+            "Step 2",
+            "Beat butter and 100 g powdered sugar for 2 minutes until creamy.",
+            "Tereyağını ve 100 g pudra şekerini 2 dakika kremsi olana dek çırpın."
+          ],
+          [
+            "Step 3",
+            "Sift 280 g flour and 1 tsp vanilla into the bowl.",
+            "280 g un ve 1 çay kaşığı vanilyayı kaseye eleyin."
+          ],
+          [
+            "Step 4",
+            "Knead gently for 2 minutes into smooth dough.",
+            "Pürüzsüz hamur olana kadar 2 dakika nazikçe yoğurun."
+          ],
+          [
+            "Step 5",
+            "Shape dough into 24 small balls and press with a fork.",
+            "Hamuru 24 küçük top halinde yuvarlayıp çatalla bastırın."
+          ],
+          [
+            "Step 6",
+            "Place cookies on a parchment-lined baking tray 3 cm apart.",
+            "Kurabiyeleri yağlı kağıt serili tepsiye 3 cm arayla dizin."
+          ],
+          [
+            "Step 7",
+            "Bake at 170°C for 15 minutes and let cool completely.",
+            "170°C'de 15 dakika pişirin ve tamamen soğumaya bırakın."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "hangi-malzemeler-ve-ekipmanlar",
+      "heading": "Which Ingredients Go into Butter Cookies? (Tereyağlı Kurabiyeye Hangi Malzemeler Girer?)",
+      "headingLevel": "H2",
+      "keyword": "tereyağlı kurabiye malzemeleri",
+      "methodology": "Malzemeleri İngilizce-Türkçe bir tabloda ver. Her malzemenin okunuşunu tabloya ekleme, sadece yazılışını ver. Tanımı İngilizce ve Türkçe olarak birlikte yaz.",
+      "componentType": "ingredients-overview-table",
+      "introEnglish": "Authentic butter cookies rely on pure, unadulterated kitchen staples with zero artificial additives.",
+      "introTurkish": "Otantik tereyağlı kurabiye, hiçbir yapay katkı maddesi içermeyen saf ve kaliteli mutfak malzemelerine dayanır.",
+      "table": {
+        "headers": [
+          "English Ingredient",
+          "Türkçe Karşılığı",
+          "Quantity",
+          "Tarifteki Görevi (Culinary Role)"
+        ],
+        "rows": [
+          [
+            "Unsalted butter",
+            "Tuzsuz tereyağı",
+            "200 g",
+            "Provides rich dairy flavor and creates crisp, flaky layers (Zengin tereyağı lezzeti ve kıyır katlar sağlar)."
+          ],
+          [
+            "Powdered sugar",
+            "Pudra şekeri",
+            "100 g",
+            "Sweetens the dough and yields a tender, melt-in-mouth crumb (Hamuru tatlandırır ve ağızda dağılan kıvam verir)."
+          ],
+          [
+            "All-purpose flour",
+            "Çok amaçlı un",
+            "280 g",
+            "Forms dough structure without making the cookies tough (Kurabiyeyi sertleştirmeden hamur iskeletini oluşturur)."
+          ],
+          [
+            "Vanilla extract",
+            "Vanilya özütü",
+            "1 tsp (5 ml)",
+            "Infuses delicate floral sweetness and bakery warmth (Zarif çiçeksi tatlılık ve fırın kokusu aşılar)."
+          ],
+          [
+            "Salt (optional)",
+            "İnce tuz (isteğe bağlı)",
+            "1 pinch",
+            "Balances sweetness and elevates buttery notes (Tatlılığı dengeler ve tereyağı lezzetini öne çıkarır)."
+          ]
+        ]
+      },
+      "subsections": [
+        {
+          "id": "ekipmanlar",
+          "heading": "What Equipment Do You Need to Bake Cookies? (Kurabiye Pişirmek İçin Hangi Ekipmanlar Gerekir?)",
+          "headingLevel": "H3",
+          "keyword": "kurabiye ekipmanları",
+          "introEnglish": "Standard household baking tools are all you need to bake perfect cookies.",
+          "introTurkish": "Kusursuz kurabiyeler pişirmek için standart ev tipi mutfak gereçleri tamamen yeterlidir.",
+          "table": {
+            "headers": [
+              "English Equipment",
+              "Türkçe Karşılığı",
+              "Used In Step (Kullanıldığı Adım)",
+              "Kullanım Amacı (Purpose)"
+            ],
+            "rows": [
+              [
+                "Mixing bowl",
+                "Karıştırma kabı",
+                "Step 2, Step 3, Step 4",
+                "Deep bowl for creaming butter and combining flour (Yağ çırpma ve un karıştırma için derin kap)."
+              ],
+              [
+                "Electric mixer or whisk",
+                "Mikser veya el çırpıcısı",
+                "Step 2",
+                "Whips butter and sugar into a light, pale cream (Tereyağı ve şekeri açık renkli krema haline getirir)."
+              ],
+              [
+                "Flour sieve",
+                "Un eleği",
+                "Step 3",
+                "Removes lumps and aerates the dry ingredients (Topakları giderir ve unu havalandırır)."
+              ],
+              [
+                "Baking sheet",
+                "Fırın tepsisi",
+                "Step 6, Step 7",
+                "Heavy metal tray that distributes oven heat evenly (Fırın ısısını tabana eşit dağıtan metal tepsi)."
+              ],
+              [
+                "Parchment paper",
+                "Pişirme kağıdı",
+                "Step 6",
+                "Prevents sticking and ensures easy cookie removal (Yapışmayı önler ve kurabiyelerin kolay çıkmasını sağlar)."
+              ],
+              [
+                "Wire cooling rack",
+                "Tel ızgara veya soğutma teli",
+                "Step 7",
+                "Allows air circulation to cool cookies without trapping steam (Buhar hapsolmadan kurabiyeleri havadar soğutur)."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "kalori-ve-besin-degerleri",
+      "heading": "How Many Calories Is 1 Butter Cookie? (1 Tereyağlı Kurabiye Kaç Kalori?)",
+      "headingLevel": "H2",
+      "keyword": "kurabiye kalori",
+      "methodology": "Kalori bilgisini ilk cümlede İngilizce ve Türkçe olarak birlikte ver. 100 g ve 1 porsiyon için kalori değerlerini İngilizce-Türkçe tabloda göster.",
+      "componentType": "calories-table",
+      "introEnglish": "One homemade butter cookie contains approximately 140 calories (1 adet ev yapımı tereyağlı kurabiye yaklaşık 140 kalori içerir).",
+      "introTurkish": "Porsiyon kontrolü ve dengeli beslenme için kurabiyelerin kalori ve porsiyon değerlerini bilmek önemlidir.",
+      "table": {
+        "headers": [
+          "Serving (Porsiyon)",
+          "Calories (Kalori Değeri)",
+          "Açıklama (Nutritional Note)"
+        ],
+        "rows": [
+          [
+            "1 butter cookie (1 adet / ~25 g)",
+            "140 kcal",
+            "Ideal single sweet serving to enjoy with coffee or afternoon tea (Kahve veya çay yanında tüketilebilecek ideal tatlı porsiyonu)."
+          ],
+          [
+            "2 butter cookies (2 adet / ~50 g)",
+            "280 kcal",
+            "Moderate afternoon snack portion providing quick energy (Hızlı enerji sağlayan dengeli ikindi atıştırmalığı)."
+          ],
+          [
+            "100 g butter cookies",
+            "495 kcal",
+            "Energy-dense baked treat rich in healthy dairy butter fat (Tereyağından gelen sağlıklı süt yağları içeren enerji yoğun lezzet)."
+          ]
+        ]
+      },
+      "subsections": [
+        {
+          "id": "besin-degerleri-tablosu",
+          "heading": "What Are the Nutrition Facts of Butter Cookies? (Tereyağlı Kurabiyenin Besin Değerleri Nelerdir?)",
+          "headingLevel": "H3",
+          "keyword": "kurabiye besin değerleri",
+          "introEnglish": "Nutritional breakdown of macro nutrients per 100 grams of baked butter cookies.",
+          "introTurkish": "100 gram pişmiş tereyağlı kurabiyedeki temel makro besin ögelerinin dağılımı.",
+          "table": {
+            "headers": [
+              "Nutrient (İngilizce Terim)",
+              "Besin Ögesi (Türkçe Karşılığı)",
+              "Amount per 100 g (100 g Değeri)",
+              "Günlük Değer Oranı (% DV)"
+            ],
+            "rows": [
+              [
+                "Total Carbohydrates",
+                "Toplam Karbonhidrat",
+                "58.0 g",
+                "%21"
+              ],
+              [
+                "Total Fat",
+                "Toplam Yağ",
+                "27.5 g",
+                "%35"
+              ],
+              [
+                "Saturated Fat",
+                "Doymuş Yağ",
+                "16.8 g",
+                "%84"
+              ],
+              [
+                "Protein",
+                "Protein",
+                "5.2 g",
+                "%10"
+              ],
+              [
+                "Dietary Fiber",
+                "Diyet Lifi",
+                "1.4 g",
+                "%5"
+              ],
+              [
+                "Sodium",
+                "Sodyum",
+                "95 mg",
+                "%4"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "amerikan-biscuit-farki",
+          "heading": "Amerikan Biscuit Neden Kurabiye Değildir?",
+          "headingLevel": "H3",
+          "keyword": "american biscuit farkı",
+          "introEnglish": "In the United States, a 'biscuit' refers to a savory, flaky quick bread resembling a Turkish poğaça, served hot with butter, gravy, or breakfast eggs.",
+          "introTurkish": "Amerika Birleşik Devletleri'nde 'biscuit' kelimesi tatlı bir kurabiye değil; poğaçaya benzeyen, kat kat kabaran, tuzlu ve tereyağlı sıcak bir kahvaltılık ekmektir.",
+          "table": {
+            "headers": [
+              "Feature (Özellik)",
+              "American Cookie",
+              "American Biscuit",
+              "British Biscuit"
+            ],
+            "rows": [
+              [
+                "Flavor Profile (Tat Profili)",
+                "Sweet (Tatlı)",
+                "Savory or buttery (Tuzlu veya tereyağlı)",
+                "Sweet (Tatlı)"
+              ],
+              [
+                "Texture (Doku)",
+                "Chewy or crunchy (Kıtır veya yumuşak)",
+                "Flaky and soft inside (Kat kat ve içi yumuşak)",
+                "Crisp and snap (Kıtır ve kuru)"
+              ],
+              [
+                "Serving Context (Sunum)",
+                "Dessert with coffee (Kahve yanında tatlı)",
+                "Breakfast with eggs & gravy (Kahvaltıda sosla)",
+                "Afternoon tea (İkindi çayı)"
+              ],
+              [
+                "Turkish Equivalent (Türkçe Karşılığı)",
+                "Kurabiye",
+                "Poğaça veya tuzlu çörek",
+                "Bisküvi veya kıtır kurabiye"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "kurabiye-dokulari",
+          "heading": "Chewy, Crunchy, Crumbly: Kurabiye Dokuları İngilizce Nasıl Tanımlanır?",
+          "headingLevel": "H3",
+          "keyword": "kurabiye dokuları ingilizce",
+          "introEnglish": "Describing cookie textures accurately expands your culinary English vocabulary.",
+          "introTurkish": "Kurabiye dokularını doğru sıfatlarla tanımlamak İngilizce gastronomi kelime dağarcığınızı zenginleştirir.",
+          "table": {
+            "headers": [
+              "Texture (Doku Sıfatı)",
+              "Tanım (Definition)",
+              "Örnek Kurabiye (Example Cookie)",
+              "Örnek Cümle (Sentence)"
+            ],
+            "rows": [
+              [
+                "Chewy",
+                "İçi yumuşak, hafif sakızımsı ve esnek doku",
+                "Chocolate Chip Cookies veya Oatmeal Cookies",
+                "Brown sugar creates a delightful chewy center (Esmer şeker harika bir sakızımsı yumuşak iç doku oluşturur)."
+              ],
+              [
+                "Crunchy",
+                "Isırıldığında ses çıkaran, diri ve çıtır çıtır doku",
+                "Gingersnaps veya Biscotti",
+                "Bake 3 minutes longer if you prefer crunchy cookies (Çıtır kurabiye tercih ediyorsanız 3 dakika daha fazla pişirin)."
+              ],
+              [
+                "Crumbly",
+                "Ağızda anında ufalanan, kıyır kıyır narin yapı",
+                "Butter Cookies veya Traditional Shortbread",
+                "A high ratio of butter yields a delightfully crumbly pastry (Yüksek tereyağı oranı ağızda dağılan kıyır kıyır bir doku verir)."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "olcu-birimleri-ve-kelimeler",
+      "heading": "İngilizce Kurabiye Tariflerinde Kullanılan Ölçü Birimleri Nelerdir?",
+      "headingLevel": "H2",
+      "keyword": "passive voice kurabiye tarifi",
+      "methodology": "İlk cümlede ölçü birimlerini say: cup, tablespoon, teaspoon, gram, milliliter. Birimleri İngilizce-Türkçe-Metrik tabloda ver. Her birim için örnek cümle ekle.",
+      "componentType": "measurement-units-table",
+      "introEnglish": "English cookie recipes commonly utilize cup, tablespoon, teaspoon, gram, and milliliter to measure wet and dry ingredients precisely.",
+      "introTurkish": "İngilizce kurabiye tariflerinde kuru ve sıvı malzemeleri tam ölçüsünde ayarlamak için cup, tablespoon, teaspoon, gram ve milliliter birimleri sıkça kullanılır.",
+      "table": {
+        "headers": [
+          "English Unit",
+          "Türkçe Karşılığı",
+          "Metric Equivalent (Metrik Karşılık)",
+          "Tarif İçi Örnek Cümle (Example Sentence)"
+        ],
+        "rows": [
+          [
+            "Cup (c)",
+            "Su bardağı",
+            "240 ml (un için ~140 g)",
+            "Add 2 cups of all-purpose flour to the mixing bowl (Karıştırma kabına 2 su bardağı un ekleyin)."
+          ],
+          [
+            "Tablespoon (tbsp)",
+            "Yemek kaşığı",
+            "15 ml (yağ/şeker için ~15 g)",
+            "Add 2 tablespoons of milk if the dough feels too stiff (Hamur çok sert hissedilirse 2 yemek kaşığı süt ekleyin)."
+          ],
+          [
+            "Teaspoon (tsp)",
+            "Çay kaşığı veya tatlı kaşığı",
+            "5 ml (~5 g)",
+            "Mix 1 teaspoon of pure vanilla extract into the butter (Tereyağına 1 çay kaşığı saf vanilya özütü karıştırın)."
+          ],
+          [
+            "Gram (g)",
+            "Gram",
+            "Ağırlık birimi (1 oz = 28.3 g)",
+            "Weigh 200 g of unsalted butter accurately on a digital scale (200 g tuzsuz tereyağını dijital mutfak terazisinde tam tartın)."
+          ],
+          [
+            "Milliliter (ml)",
+            "Mililitre",
+            "Hacim birimi (1 cup = 240 ml)",
+            "Measure 15 ml of cold milk using a graduated measuring spoon (Ölçülü kaşık kullanarak 15 ml soğuk süt ölçün)."
+          ]
+        ]
+      },
+      "subsections": [
+        {
+          "id": "mutfak-kelimeleri",
+          "heading": "Kurabiye Tarif Metninde Geçen Temel İngilizce Mutfak Kelimeleri Nelerdir?",
+          "headingLevel": "H3",
+          "keyword": "kurabiyenin ingilizcesi",
+          "introEnglish": "Here are 10 essential culinary terms frequently encountered in English baking instructions.",
+          "introTurkish": "İngilizce hamur işi ve kurabiye talimatlarında en sık karşılaşılan 10 temel mutfak kelimesi.",
+          "table": {
+            "headers": [
+              "English Term",
+              "Türkçe Karşılığı",
+              "Example Sentence (İngilizce Cümle)",
+              "Türkçe Çevirisi"
+            ],
+            "rows": [
+              [
+                "Cream",
+                "Krema kıvamına getirmek",
+                "Cream the butter and sugar for 3 minutes.",
+                "Tereyağı ve şekeri 3 dakika krema kıvamına gelene kadar çırpın."
+              ],
+              [
+                "Sift",
+                "Elemek",
+                "Sift the dry flour to remove all lumps.",
+                "Tüm topakları gidermek için kuru unu eleyin."
+              ],
+              [
+                "Fold",
+                "Alttan üste nazikçe karıştırmak",
+                "Fold the chocolate chips into the dough with a spatula.",
+                "Damla çikolataları bir spatulayla hamura nazikçe yedirin."
+              ],
+              [
+                "Preheat",
+                "Önceden ısıtmak",
+                "Preheat your oven to 170°C before shaping.",
+                "Şekil vermeye başlamadan önce fırınınızı 170°C'ye ısıtın."
+              ],
+              [
+                "Parchment paper",
+                "Yağlı pişirme kağıdı",
+                "Line the metal baking sheet with parchment paper.",
+                "Metal fırın tepsisine yağlı pişirme kağıdı serin."
+              ],
+              [
+                "Scoop",
+                "Kaşıkla porsiyonlamak",
+                "Scoop uniform balls of dough onto the tray.",
+                "Tepsiye eşit boyutta hamur topları porsiyonlayın."
+              ],
+              [
+                "Golden brown",
+                "Altın sarısı renk",
+                "Bake the cookies until the edges turn golden brown.",
+                "Kurabiyeleri kenarları altın sarısı olana kadar pişirin."
+              ],
+              [
+                "Cooling rack",
+                "Tel soğutma ızgarası",
+                "Transfer the cookies to a wire cooling rack.",
+                "Kurabiyeleri bir tel soğutma ızgarasına aktarın."
+              ],
+              [
+                "Airtight container",
+                "Hava almayan saklama kabı",
+                "Store crisp cookies in an airtight container.",
+                "Kıtır kurabiyeleri hava almayan bir saklama kabında saklayın."
+              ],
+              [
+                "Batch",
+                "Parti veya tepsi dolusu kurabiye",
+                "This recipe yields two generous batches of cookies.",
+                "Bu tarif iki dolu tepsi kurabiye üretir."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "olcu-karsiliklari",
+          "heading": "Tablespoon, Teaspoon, Cup: İngilizce Ölçü Birimlerinin Türkçe Karşılıkları",
+          "headingLevel": "H3",
+          "keyword": "ingilizce ölçü birimleri",
+          "introEnglish": "Tablespoon equals yemek kaşığı (15 ml), teaspoon equals çay kaşığı (5 ml), and cup equals su bardağı (240 ml).",
+          "introTurkish": "İngilizce tariflerde tablespoon yemek kaşığı (15 ml), teaspoon çay kaşığı (5 ml) ve cup standart su bardağı (240 ml) hacmine karşılık gelir.",
+          "table": {
+            "headers": [
+              "English Unit",
+              "Türkçe Karşılığı",
+              "Metric Equivalent",
+              "Örnek Cümle (İngilizce - Türkçe)"
+            ],
+            "rows": [
+              [
+                "1 tablespoon (tbsp)",
+                "1 yemek kaşığı",
+                "15 ml (3 teaspoons)",
+                "Add 1 tablespoon of vanilla sugar. (1 yemek kaşığı vanilya şekeri ekleyin.)"
+              ],
+              [
+                "1 teaspoon (tsp)",
+                "1 çay kaşığı",
+                "5 ml (⅓ tablespoon)",
+                "Stir in 1 teaspoon of baking powder. (1 çay kaşığı kabartma tozu ekleyip karıştırın.)"
+              ],
+              [
+                "1 cup (c)",
+                "1 su bardağı",
+                "240 ml (16 tablespoons)",
+                "Mix 1 cup of powdered sugar with butter. (1 su bardağı pudra şekerini tereyağıyla karıştırın.)"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "gram-litre-kullanimi",
+          "heading": "Gram ve Litre İngilizce Tariflerde Nasıl Kullanılır?",
+          "headingLevel": "H3",
+          "keyword": "gram litre ingilizce tarif",
+          "introEnglish": "In English recipes, gram is abbreviated as 'g' and liter as 'l' or 'ml' for liquid volume.",
+          "introTurkish": "İngilizce tariflerde ağırlık için gram 'g' olarak, sıvı hacmi için ise litre 'l' veya mililitre 'ml' olarak kısaltılır.",
+          "table": {
+            "headers": [
+              "Metric Unit",
+              "Imperial Equivalent",
+              "Türkçe Açıklama",
+              "Tariften Örnek Cümle"
+            ],
+            "rows": [
+              [
+                "100 g",
+                "3.5 oz",
+                "Katı maddeler için metrik ağırlık ölçüsü",
+                "Weigh 200 g of butter accurately. (200 g tereyağını tam tartın.)"
+              ],
+              [
+                "280 g",
+                "10 oz",
+                "Un ve toz şeker için standart ağırlık",
+                "Sift 280 g of white flour. (280 g beyaz unu eleyin.)"
+              ],
+              [
+                "15 ml",
+                "1 tablespoon",
+                "Küçük sıvı hacim ölçüsü",
+                "Measure 15 ml of vanilla essence. (15 ml vanilya aroması ölçün.)"
+              ],
+              [
+                "1 liter (l)",
+                "4.2 cups / 33.8 fl oz",
+                "Büyük sıvı hacim ölçüsü",
+                "Boil 1 liter of water for hot beverages. (Sıcak içecekler için 1 litre su kaynatın.)"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dil-bilgisi-kurallari",
+      "heading": "İngilizce Kurabiye Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları",
+      "headingLevel": "H2",
+      "keyword": "ingilizce tarif dil kuralları",
+      "methodology": "İlk cümlede 4 temel dil kuralını say: emir kipi, sıra zarfları, sayılabilir-sayılamayan isimler, ölçü ifadeleri. Her kuralı 1 cümleyle tanımla ve Kurabiye tarifinden 1 örnekle destekle. Bölümü İngilizce-Türkçe örnek tablosuyla kapat.",
+      "componentType": "grammar-overview-table",
+      "introEnglish": "Mastering recipe writing requires understanding four core linguistic rules: the imperative mood, sequence adverbs, countable and uncountable nouns, and measurement quantifiers.",
+      "introTurkish": "İngilizce tarif yazımında ustalaşmak dört temel dilbilgisi kuralını kavramayı gerektirir: emir kipi (imperatives), sıra zarfları (sequence adverbs), sayılabilen-sayılamayan isimler ve ölçü miktar ifadeleri.",
+      "table": {
+        "headers": [
+          "Rule (Dil Kuralı)",
+          "Kural Tanımı (Definition)",
+          "English Example (Tariften Örnek)",
+          "Türkçe Karşılığı"
+        ],
+        "rows": [
+          [
+            "Imperative Mood (Emir Kipi)",
+            "Cümleye öznesiz yalın fiille başlama kuralıdır.",
+            "Bake the cookies for 15 minutes.",
+            "Kurabiyeleri 15 dakika pişirin."
+          ],
+          [
+            "Sequence Adverbs (Sıra Zarfları)",
+            "Adımları kronolojik sıraya dizen bağlaçlardır.",
+            "First soften butter, then add flour.",
+            "Önce tereyağını yumuşatın, ardından unu ekleyin."
+          ],
+          [
+            "Countable / Uncountable Nouns",
+            "Sayılabilen (cookies, eggs) ve sayılamayan (flour, sugar) ayrımıdır.",
+            "Use 2 eggs and 200 g of flour.",
+            "2 adet yumurta ve 200 g un kullanın."
+          ],
+          [
+            "Measurement Quantifiers (Ölçü İfadeleri)",
+            "Sayılamayan malzemeleri miktarla sınırlandırma kuralıdır.",
+            "Add a pinch of salt and 1 cup of sugar.",
+            "Bir tutam tuz ve 1 su bardağı şeker ekleyin."
+          ]
+        ]
+      },
+      "subsections": [
+        {
+          "id": "emir-kipi-kullanimi",
+          "heading": "İngilizce Kurabiye Tarif Metinlerinde Emir Kipi (Imperative) Nasıl Kullanılır?",
+          "headingLevel": "H3",
+          "keyword": "imperative kurabiye tarifi",
+          "introEnglish": "The imperative mood is formed by starting the instruction directly with the base form of the verb without any subject pronoun.",
+          "introTurkish": "Emir kipi (imperative mood); hiçbir özne zamiri kullanılmadan, doğrudan fiilin yalın haliyle cümleye başlanarak oluşturulur.",
+          "table": {
+            "headers": [
+              "English Imperative",
+              "Türkçe Karşılığı",
+              "Base Verb (Kök Fiil)",
+              "Kullanım Türü"
+            ],
+            "rows": [
+              [
+                "Mix the butter with powdered sugar.",
+                "Tereyağını pudra şekeriyle karıştırın.",
+                "Mix",
+                "Olumlu emir (Positive imperative)"
+              ],
+              [
+                "Sift the flour into the bowl.",
+                "Unu kasenin içine eleyin.",
+                "Sift",
+                "Olumlu emir (Positive imperative)"
+              ],
+              [
+                "Shape the dough into small spheres.",
+                "Hamuru küçük küreler halinde şekillendirin.",
+                "Shape",
+                "Olumlu emir (Positive imperative)"
+              ],
+              [
+                "Place the cookies on the baking sheet.",
+                "Kurabiyeleri fırın tepsisine yerleştirin.",
+                "Place",
+                "Olumlu emir (Positive imperative)"
+              ],
+              [
+                "Bake in a preheated oven at 170°C.",
+                "Önceden 170°C ısıtılmış fırında pişirin.",
+                "Bake",
+                "Olumlu emir (Positive imperative)"
+              ],
+              [
+                "Do not overbake the cookies.",
+                "Kurabiyeleri fırında fazla tutup yakmayın.",
+                "Do not overbake",
+                "Olumsuz emir (Negative imperative)"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "sira-zarflari",
+          "heading": "Bağlaçlar ve Sıra Zarfları: First, Then, After That, Finally",
+          "headingLevel": "H3",
+          "keyword": "first then after that finally kurabiye",
+          "introEnglish": "Sequence adverbs—first, then, after that, next, and finally—connect distinct baking actions into a coherent chronological paragraph.",
+          "introTurkish": "First, then, after that, next ve finally sıra zarfları, farklı mutfak adımlarını kronolojik ve akıcı bir anlatım paragrafına dönüştürür.",
+          "table": {
+            "headers": [
+              "Sequence Adverb (Sıra Zarfı)",
+              "Türkçe Karşılığı",
+              "Cümle İçi Kullanımı (Example Sentence)",
+              "Aşama (Recipe Stage)"
+            ],
+            "rows": [
+              [
+                "First",
+                "İlk olarak veya önce",
+                "First, cream the softened butter with powdered sugar.",
+                "Başlangıç adımı (Opening step)"
+              ],
+              [
+                "Then",
+                "Ardından veya sonra",
+                "Then, sift the flour and knead into a pliable dough.",
+                "İkinci adım (Second step)"
+              ],
+              [
+                "After that",
+                "Daha sonra veya ondan sonra",
+                "After that, shape the dough balls and arrange on a tray.",
+                "Orta aşama (Intermediate step)"
+              ],
+              [
+                "Next",
+                "Sonraki aşamada",
+                "Next, press each cookie lightly with a fork.",
+                "Son hazırlık (Pre-baking step)"
+              ],
+              [
+                "Finally",
+                "Son olarak veya en sonunda",
+                "Finally, bake at 170°C for 15 minutes and enjoy warm.",
+                "Bitiş adımı (Closing step)"
+              ]
+            ]
+          },
+          "connectedParagraphEn": "First, soften 200 g of butter and cream it with 100 g of powdered sugar. Then, add 280 g of sifted flour and knead into soft dough. After that, shape the dough into 24 small balls. Next, place them on a parchment-lined baking tray. Finally, bake at 170°C for 15 minutes until golden.",
+          "connectedParagraphTr": "İlk olarak 200 g tereyağını yumuşatıp 100 g pudra şekeriyle krema haline getirin. Ardından 280 g elenmiş unu ekleyin ve yumuşak bir hamur yoğurun. Daha sonra hamuru 24 küçük top halinde şekillendirin. Sonraki aşamada fırın kağıdı serili tepsiye dizin. Son olarak altın rengini alana kadar 170°C'de 15 dakika pişirin."
+        }
+      ]
+    },
+    {
+      "id": "8-sinif-alistirma-ve-quiz",
+      "heading": "8. Sınıf İngilizce Kurabiye Tarifi",
+      "headingLevel": "H2",
+      "keyword": "8. sınıf ingilizce kurabiye",
+      "methodology": "İngilizce konular bağlamındaki içeriğe göre ilgili tarifi aktar. 4 soruluk alıştırma ekle: 2 çoktan seçmeli + 2 boşluk doldurma; soruları bu sekmenin 4 fiilinden (Mix, Roll, Shape, Bake) türet ve cevap anahtarını bölüm sonunda ver.",
+      "componentType": "quiz-section",
+      "introEnglish": "Test your kitchen English with this 4-question quiz covering imperatives and cooking verbs (Mix, Roll, Shape, Bake).",
+      "introTurkish": "Kurabiye tarifindeki 4 temel eylem fiili (Mix, Roll, Shape, Bake) ve emir kiplerini pekiştirmek için hazırlanmış 4 soruluk quizi tamamlayınız.",
+      "quiz": [
+        {
+          "number": 1,
+          "type": "multiple-choice",
+          "questionEn": "Which verb means putting butter and sugar together until smooth?",
+          "questionTr": "Hangi fiil tereyağı ve şekeri pürüzsüz olana dek bir araya getirmek anlamına gelir?",
+          "options": [
+            "A) Bake (Fırınlamak)",
+            "B) Mix (Karıştırmak)",
+            "C) Roll (Yuvarlamak)",
+            "D) Slice (Dilimlemek)"
+          ],
+          "correctAnswer": "B) Mix (Karıştırmak)",
+          "explanation": "'Mix' fiili malzemeleri bir kapta harmanlamak ve karıştırmak anlamına gelir."
+        },
+        {
+          "number": 2,
+          "type": "multiple-choice",
+          "questionEn": "What should you do in the oven at 170°C for 15 minutes?",
+          "questionTr": "170°C fırında 15 dakika boyunca hangi eylemi yapmalısınız?",
+          "options": [
+            "A) Knead (Yoğurmak)",
+            "B) Shape (Şekil vermek)",
+            "C) Bake (Fırında pişirmek)",
+            "D) Chill (Soğutmak)"
+          ],
+          "correctAnswer": "C) Bake (Fırında pişirmek)",
+          "explanation": "'Bake', kuru ısıda fırın ortamında pişirme eylemini ifade eder."
+        },
+        {
+          "number": 3,
+          "type": "fill-in-the-blank",
+          "questionEn": "______ the cookie dough between your hands into round balls.",
+          "questionTr": "Hamuru ellerinizin arasında yuvarlak toplar halinde ______.",
+          "options": [
+            "Roll",
+            "Bake",
+            "Boil"
+          ],
+          "correctAnswer": "Roll",
+          "explanation": "'Roll the dough into balls' ifadesi avuç içinde yuvarlayarak top haline getirme anlamına gelir."
+        },
+        {
+          "number": 4,
+          "type": "fill-in-the-blank",
+          "questionEn": "Use a fork to ______ the top of each butter cookie before baking.",
+          "questionTr": "Fırına vermeden önce her bir kurabiyenin üstüne çatalla ______ verin.",
+          "options": [
+            "shape",
+            "freeze",
+            "boil"
+          ],
+          "correctAnswer": "shape",
+          "explanation": "'Shape', hamura son biçimini ve desenini verme eylemidir."
+        }
+      ]
+    }
+  ]
+}
