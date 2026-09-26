@@ -180,3 +180,100 @@ Ajan veya geliştirici, bir tarifi tamamladığını beyan etmeden önce aşağ�
 - [ ] **8. Alternatif Terimler**: Türkçe ifadelerde kesme (`/`) yerine `veya` kullanıldı mı?
 - [ ] **9. Tablo Tanıtım Cümleleri**: Her tablonun üzerinde iki dilli bir `.section-intro` açıklaması mevcut mu?
 - [ ] **10. Sıfır Yatay Taşma & Derleme**: `npm run build` hatasız tamamlanıyor mu ve mobilde sıfır yatay taşma var mı?
+
+---
+
+## 7. 2026 STANDARTLARI: BİLİNGUAL HIGHLIGHT, ADIM GÖRSELLERİ VE ETKİLEŞİM KURALLARI
+
+Tüm tarif sayfalarında geçerli olan ve ilk olarak Kurabiye pilot sayfasında doğrulanan 10 zorunlu standart:
+
+1. **Türkçe Vurgusu (Soft Light Blue Highlight)**:
+   - Başlıklar, lede paragrafları, tablolar ve akordiyonlardaki tüm `(Türkçe)` parantez içi ifadeler göz yormayan açık pastel mavi `.tr-highlight` sınıfı (`background: rgba(224, 242, 254, 0.85); color: #0369a1; border-radius: 5px;`) ile sarmalanır.
+   - **Quiz Kartları ve Beyaz Zeminler**: Beyaz arka planlı kartlarda (`.quiz-card .tr-highlight`) soluk renkler yerine yüksek kontrastlı derin mavi (`color: #075985; background-color: #e0f2fe; font-weight: 600;`) kullanılır. Koyu zeminli bölüm başlıklarındaki açık renkler asla beyaz quiz kartlarının içine sızamaz (WCAG AAA uyumluluğu).
+2. **Tablo Standartları (Caption, th & td Hover & Tooltip Bütünlüğü)**:
+   - Tüm tablolarda `caption.table-caption` ve `.recipe-facts caption` görünür olmalı ve `[Tarif Adı] Özeti` formülü kullanılmalıdır.
+   - Tablo başlıkları (`thead th` ve `.recipe-facts th`) hover durumunda arka plan ve renk geçişine (`th:hover`) sahiptir.
+   - Hero Facts tablosunda hem `th` hem de `td` hücrelerinde imleçle üzerine gelindiğinde (hover) aynı gece mavisi (`#090d16`) WCAG AAA tooltip açılır.
+   - `th`'nin `text-transform: uppercase` kuralının tooltip metnini büyük harfe zorlamasını engellemek için `.fact-tooltip` içinde `text-transform: none !important;` ve `letter-spacing: normal !important;` zorunludur (böylece hem th hem td aynı zarif formatı korur).
+   - Cümle formülü sayfada kaba statik bir kutu olarak değil, hover tooltip'leri ve varyasyon balonları (`.meta-tooltip-wrap`) içinde sunulur: `[Tarif Adı] [Süre] içinde hazırlanır ve [Süre] pişirilir.`
+3. **Semantik Header Kapanışı**:
+   - `<h1>` ile başlayan `<header class="hero">` etiketi, kesinlikle `<section class="hero-overview-table" id="definition-variations">` bölümünden **ÖNCE** kapatılmalıdır.
+4. **Büyük Font Eyebrow**:
+   - `DEFINITION & VARIATIONS` ve `DISTINCT VARIATIONS` etiketleri `.eyebrow-lg` sınıfıyla daha okunaklı ve belirgin (`0.98rem - 1.05rem`, `font-weight: 800`) yapılmalıdır.
+5. **App Banner Standartları**:
+   - App Store butonu: `title="İngilizce konuşma App Store Uygulaması"`.
+   - Google Play butonu: `title="İngilizce konuşma Google Play Uygulaması"`.
+   - Logo görseli: `alt="İngilizce Konuşma Uygulaması"` ve `title="İngilizce Konuşma Uygulaması"`.
+   - Banner sloganı tarif adını dinamik içermelidir (Örn: `İngilizce kurabiye tariflerini ve mutfak kalıplarını her gün 10 dakika...`).
+6. **Alt Tarifler (Varyasyonlar) Mimarisi ve Sticky Subnav**:
+   - Çeşitler arasında hızlı geçiş sağlayan mini `.variant-subnav` çubuğu varyasyonlar bölümü (`#tarifler`) boyunca `position: sticky; top: 74px;` olarak yukarıda sabit kalır.
+   - Sayfa kaydırıldıkça `IntersectionObserver` ile hangi çeşitte bulunuluyorsa o buton otomatik olarak `.active` durumuna geçer ve merkeze kayar.
+   - Butonların üzerine gelindiğinde (hover) genişletilmiş iki dilli tam adı gösteren `.variant-tooltip` (`1. Classic Butter Cookies (Klasik Tereyağlı Kurabiye)`) açılır.
+   - Çeşit bölümlerinde `scroll-margin-top: 145px !important;` uygulanarak sticky menülerin başlığı kapatması engellenir.
+   - "Visual Ingredient Cards" başlığı `<h4>` değil, şık `.cards-subhead-badge` etiketidir (`Visual Ingredient List (Görsel Malzeme Listesi)`).
+   - Hantal 2x2 kart ızgarası yerine tüm malzemeler şık bir dikey liste formatında (`<ul class="ingredient-list">` ve `<li class="ingredient-list-item">`), ikon, iki dilli başlık, İngilizce-Türkçe örnek cümle ve miktar rozetiyle listelenebilir (listable) olarak sunulur. Tablo ile 1:1 eşleşir.
+   - Çeşit üstü özet balonları (`.meta-badge`) daima `English (Türkçe)` formatında olmalıdır (Örn: `35 mins (35 dakika)`, `24 pcs (24 adet)`, `4 ingredients (4 malzeme)`). **Tek Baloncuk Standardı**: İngilizce ve Türkçe ifadeler aynı tek bir hap baloncuk içinde yer alır; içerideki Türkçe metin asla ayrı bir iç baloncuk veya mükerrer kenarlık oluşturamaz.
+7. **Navigasyonda Otomatik Merkeze Alma (Auto-Center)**:
+   - `.sub-header-nav`, `.toc` ve `.variant-subnav` menülerinde aktif olan bağlantı slider içinde `scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })` ile merkeze kaydırılmalıdır.
+8. **7-Adım Pişirme Rehberi (Pixar 3D Animasyon Stili, Aksiyon Odaklı Görseller & Kurumsal Markalama)**:
+   - **Pixar 3D Animasyon Stili Standardı**: Tüm adım görselleri (`public/images/steps/`) istisnasız **Pixar 3D animasyon stili** (`3D Pixar animation style, warm cozy kitchen, friendly character / chef, cinematic soft lighting, rich culinary textures`) olarak üretilmelidir.
+   - **Bizzat Eylemi Yapan Karakter (Aksiyon Zorunluluğu)**: Görsel ASLA statik ve pasif bir malzeme kütlesi veya başka bir adımın / kapak görselinin tekrarı (duplicate) olamaz. Görselde o adımda gerçekleşen mutfak eylemi (aksiyon) bizzat bir karakter/aşçı veya eller tarafından canlı bir şekilde uygulanırken gösterilmelidir (Örn: Biberleri ve domatesleri bıçakla küp küp doğrayan şef; tavaya yumurtaları iki eliyle kıran aşçı; hamuru iki eliyle unlu tezgahta yoğuran karakter; kepçeyle pizza sosunu dairesel yayan aşçı; fırın küreğiyle pizzayı fırına süren karakter).
+   - **Mükerrer Görsel Yasağı (Zero Duplicates)**: Her adımın görseli o adıma özel ve benzersiz (unique) olmak zorundadır; hiçbir adımda aynı görsel tekrar kullanılamaz.
+   - **Görünür Kurumsal Markalama (Branding)**: Tüm adım görselleri sağ üst köşede Konuşarak Öğren beyaz logo rozeti (`public/ko-logo-yatay.png`), sol alt köşede ise iki satırlı iki dilli adım adı rozeti (`Step X: Action Name` / `(X. Adım: Eylem Adı)`) taşır. Format: 800x600 px (4:3 oranında), WebP (kalite: 92).
+   - Her adımda dengeli süre dağılımıyla `Ingredients`, `Equipment` ve `Time` etiketleri (`.step-meta-pills`) yer alır.
+9. **Quiz Bitiş Özeti & Kayıt CTA Ekranı**:
+   - Son soru yanıtlandığında etkileşimli `.quiz-summary-card` açılır: skor puanı (`5 Soruda X Doğru`), tebrik/motivasyon metni, `Ücretsiz Tanışma Dersi Al` CTA butonu ve `Testi Yeniden Çöz` seçeneği sunulur.
+10. **Bölüm İçi Çoklu Tablo ve Alt Başlıklarda Sekmeli Düzen (`.section-tabs`)**:
+   - `Ingredients (Malzemeler)`, `Nutrition (Besin Değerleri)` ve `Units (Ölçüler)` gibi birden fazla alt başlık ve tablo içeren bölümler, alt alta yığılmak yerine interaktif `.grammar-tabs.section-tabs` sekmeli arayüzü ile sunulur.
+   - Her sekme butonunda sıralı numara rozeti (`.tab-idx` örn: `01`, `02`) ve iki dilli sekme başlığı (`.tab-title` örn: `Ingredients (Malzemeler)`, `Equipment (Ekipmanlar)`) yer alır.
+   - Mobilde sekme çubuğu (`.tab-list`) yatay taşmayı önlemek ve okunabilirliği korumak için yumuşak kaydırmalı (`overflow-x: auto; flex-wrap: nowrap;`) olarak çalışır.
+   - Tab değiştirme motoru (`activateGrammarTab`) tüm sekmeli bölümlere genel (`.grammar-tabs, .section-tabs`) olarak hizmet verir; aktif panele ve butona `aria-selected` ve `.active` durumlarını atar.
+11. **Adım Adım Başlıklarında Mükerrer Numaralandırma Yasağı**:
+   - Adım akordiyonunda `.step-acc-badge` rozeti zaten numara (`1, 2, ...`) bastığı için, başlık metninde (`titleEn`, `titleTr`) tekrar numara yazılamaz.
+   - Başlıklar daima `^\d+\.\s*` regex'i ile arındırılmış olmalıdır.
+   - **Doğru**: `Add the Flour and Baking Powder (Unu ve Kabartma Tozunu Ekleyin)`
+   - **Yanlış**: `2. Add the Flour and Baking Powder (2. Adım: Unu ve Kabartma Tozunu Ekleyin)`
+12. **Körleme Harici Görsel İndirme Yasağı & İçerik Uyumu**:
+   - Wikimedia veya harici web kaynaklarından anahtar kelime eşleşmesiyle körleme, alakasız (vintage çizim, deterjan reklamı vb.) görseller indirilip sayfaya konulması KESİNLİKLE YASAKTIR.
+   - Her adım görseli İSTİSNASIZ Pixar 3D animasyon stili şablonuyla ve o adımdaki mutfak eylemiyle (hamur yoğurma, un eleme, pankek çevirme vb.) %100 uyumlu olarak üretilmelidir.
+   - Görsel üretim kotası/bekleme süresi varsa kullanıcıya şeffafça bildirilmelidir; asla bağlamsız harici görseller kullanılmaz.
+13. **Görsel Malzeme Listesinde Açıklama Cümlesi & Alt Tarif Adı Zorunluluğu**:
+   - `.ingredient-list-item` içindeki `sentenceEn` ve `sentenceTr` özellikleri asla boş veya undefined bırakılamaz.
+   - Her malzeme açıklama cümlesi mutlaka o alt tarifin adıyla başlamalıdır (`Classic Pancakes require all-purpose flour...` / `Klasik Pankek, pofuduk bir yapı için çok amaçlı un gerektirir.`).
+14. **Standart Sayfa Kapsayıcı Sınıfı (`<article class="recipe-guide">`)**:
+   - Tüm tarif sayfalarının ana kapsayıcısı standart olarak `<article class="recipe-guide">` sınıfını içermek zorundadır.
+   - Bu sınıf eksik olduğunda `.recipe-guide` bazlı CSS hover tooltip kuralları tetiklenmez.
+15. **Otomatik `/` Temizliği ve Öncelikli İngilizce Giriş Paragrafları**:
+   - SEO brieflerinden veya ham metinlerden gelen tüm `/` işaretleri mutlak suretle `veya` bağlacına dönüştürülür (`Dökmek veya akıtmak`, `4 kişilik veya 8-10 adet`).
+   - Lede ve tablo tanıtım paragraflarında Türkçe cümle asla başa gelemez. Format daima `English sentence. (Türkçe açıklama cümlesi.)` şeklinde olmalı ve Türkçe kısım `.tr-highlight` ile sarmalanmalıdır.
+16. **Alt Tarif (Varyasyon) Meta Balonları Cümle Standardı (Variant Meta Tooltip Sentences)**:
+   - Alt tarif bölümlerindeki (`.recipe-chapter`) süre (`time`), porsiyon (`servings`) ve malzeme sayısı (`count`) rozetlerine hover edildiğinde açılan `.meta-tooltip` asla kısa veya jenerik bir söz öbeği olamaz (`Total prep and skillet time.` KESİNLİKLE YASAKTIR).
+   - Mutlaka **alt tarifin adını içeren tam kurallı bir cümle** olmak zorundadır:
+     - **Süre (`time`)**:
+       - **İngilizce Formülü**: `[Alt Tarif İngilizce Adı] takes [Süre] of total preparation and cooking time.`
+         - *Örnek*: `American Pancakes take 20-25 mins of total preparation and skillet time.`
+       - **Türkçe Formülü**: `[Alt Tarif Türkçe Adı] toplam [Süre] hazırlık ve pişirme süresinde tamamlanır.`
+         - *Örnek*: `Amerikan Pankek toplam 20-25 dakika hazırlık ve tava pişirme süresinde tamamlanır.`
+     - **Porsiyon (`servings`)**:
+       - **İngilizce Formülü**: `[Alt Tarif İngilizce Adı] yields [Porsiyon Miktarı] fresh servings for breakfast (veya dessert/dinner).`
+         - *Örnek*: `American Pancakes yield 4 fresh servings (8-10 pancakes) for breakfast.`
+       - **Türkçe Formülü**: `[Alt Tarif Türkçe Adı] kahvaltı (veya tatlı/akşam yemeği) için [Porsiyon Miktarı] taze porsiyon sunar.`
+         - *Örnek*: `Amerikan Pankek kahvaltı için 4 kişilik (8-10 adet) taze porsiyon sunar.`
+     - **Malzeme Sayısı (`count`)**:
+       - **İngilizce Formülü**: `[Alt Tarif İngilizce Adı] requires [Adet] pantry ingredients for authentic [doku/tat] texture.`
+         - *Örnek*: `American Pancakes require 6 pantry ingredients for authentic fluffy texture.`
+       - **Türkçe Formülü**: `[Alt Tarif Türkçe Adı] orijinal [doku/tat] dokusu için [Adet] temel malzeme gerektirir.`
+         - *Örnek*: `Amerikan Pankek orijinal pofuduk dokusu için 6 temel malzeme gerektirir.`
+17. **Görsel Malzeme Listesi Cümle Formülü Standardı (Visualize Ingredient Formula)**:
+   - "Visualize" (`Visual Ingredient List (Görsel Malzeme Listesi)`) alanında her malzemenin açıklama cümleleri (`sentenceEn` ve `sentenceTr`) istisnasız sabit ve tutarlı formülle kurulur:
+     - **İngilizce Cümle Formülü**:
+       `[Alt Tarif İngilizce Adı] requires [İngilizce Malzeme Adı] to [işlev/eylem] (veya for [amaç/doku]).`
+       - *Örnek*: `American Pancakes require tangy buttermilk to react with baking soda for cloud-like fluffiness.`
+       - *Örnek*: `Classic Butter Cookies require softened unsalted butter to achieve a melt-in-the-mouth crumb texture.`
+     - **Türkçe Cümle Formülü**:
+       `[Alt Tarif Türkçe Adı], [amaç / işlev / doku / lezzet] için [Türkçe Malzeme Adı] gerektirir.`
+       - *Örnek*: `Amerikan Pankek, karbonatla tepkimeye girip bulut gibi kabarması için hafif asidik buttermilk veya kefir gerektirir.`
+       - *Örnek*: `Klasik Tereyağlı Kurabiye, ağızda dağılan bir kırıntı dokusuna ulaşmak için yumuşatılmış tuzsuz tereyağı gerektirir.`
+
+
+

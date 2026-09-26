@@ -18,7 +18,7 @@
     "calories": "140 kcal (1 adet)",
     "heroImage": "/blog/ingilizce-tarifler/images/kurabiye-hero.webp",
     "overviewVariationsTable": {
-      "caption": "İngilizce ve Türkçe Kurabiye Çeşitleri Karşılaştırması",
+      "caption": "İngilizce Kurabiye Çeşitleri ve Pişirme Özeti",
       "intro": "Aşağıdaki tabloda 4 temel kurabiye çeşidinin İngilizce isimlerini, ana malzemelerini ve temel pişirme adımlarını karşılaştırmalı olarak inceleyebilirsiniz. (Explore the four main cookie variations with their English names, key ingredients, and baking steps in the comparison table below.)",
       "headers": [
         "English Recipe Name",
@@ -31,25 +31,25 @@
           "Butter Cookies",
           "Tereyağlı Kurabiye",
           "Butter, powdered sugar, flour, vanilla (Tereyağı, pudra şekeri, un, vanilya)",
-          "Cream butter and sugar, add flour, shape balls, bake 15 mins (Tereyağı ve pudra şekerini karıştırın, unu ekleyin, yuvarlayıp 15 dakika pişirin)"
+          "Butter Cookies are prepared with 4 ingredients in 35 minutes and baked in 15 minutes. (Tereyağlı kurabiye 4 malzeme ile 35 dakikada hazırlanır ve 15 dakikada pişirilir.)"
         ],
         [
           "Chocolate Chip Cookies",
           "Damla Çikolatalı Kurabiye",
           "Butter, brown sugar, egg, flour, chocolate chips (Tereyağı, esmer şeker, yumurta, un, damla çikolata)",
-          "Beat butter and sugars, add chocolate chips, scoop onto tray, bake 12 mins (Tereyağı ve şekeri çırpın, damla çikolatayı ekleyin, tepsiye dizip 12 dakika pişirin)"
+          "Chocolate Chip Cookies are prepared with 5 ingredients in 30 minutes and baked in 12 minutes. (Damla çikolatalı kurabiye 5 malzeme ile 30 dakikada hazırlanır ve 12 dakikada pişirilir.)"
         ],
         [
           "Oatmeal Cookies",
           "Yulaflı Kurabiye",
           "Rolled oats, flour, cinnamon, butter, honey (Yulaf ezmesi, un, tarçın, tereyağı, bal)",
-          "Whisk wet and dry ingredients, fold in rolled oats, shape rounds, bake 14 mins (Kuru ve sıvı malzemeleri harmanlayın, yulafı ekleyin, yuvarlayıp 14 dakika pişirin)"
+          "Oatmeal Cookies are prepared with 5 ingredients in 30 minutes and baked in 14 minutes. (Yulaflı kurabiye 5 malzeme ile 30 dakikada hazırlanır ve 14 dakikada pişirilir.)"
         ],
         [
           "Gingerbread Cookies",
           "Zencefilli Kurabiye",
           "Flour, molasses, ground ginger, cinnamon, butter (Un, pekmez, toz zencefil, tarçın, tereyağı)",
-          "Knead spiced dough, chill 30 mins, cut into shapes, bake 10 mins (Baharatlı hamuru yoğurun, 30 dakika soğutun, şekiller kesip 10 dakika pişirin)"
+          "Gingerbread Cookies are prepared with 5 ingredients in 40 minutes and baked in 10 minutes. (Zencefilli kurabiye 5 malzeme ile 40 dakikada hazırlanır ve 10 dakikada pişirilir.)"
         ]
       ]
     }
@@ -689,7 +689,11 @@
           "sentenceEn": "Leave 200 g of unsalted butter on the kitchen counter for 30 minutes until soft to the touch.",
           "sentenceTr": "200 g tuzsuz tereyağını parmağınızla basıldığında yumuşayana dek 30 dakika tezgahta bekletin.",
           "actionEn": "Softening (Yumuşatma)",
-          "actionTr": "Tereyağını yumuşatma"
+          "actionTr": "Tereyağını yumuşatma",
+          "img": "/blog/ingilizce-tarifler/images/steps/kurabiye-step-1.webp",
+          "ingredient": "200 g unsalted butter (200 g tuzsuz tereyağı)",
+          "equipment": "Kitchen counter or plate (Mutfak tezgahı veya tabak)",
+          "time": "5 mins (5 dakika)"
         },
         {
           "number": 2,
@@ -698,7 +702,11 @@
           "sentenceEn": "Beat 200 g of soft butter and 100 g of powdered sugar in a bowl for 2 minutes until creamy.",
           "sentenceTr": "200 g yumuşak tereyağı ve 100 g pudra şekerini kremsi olana kadar kasede 2 dakika çırpın.",
           "actionEn": "Mixing & Creaming (Kremalaştırma)",
-          "actionTr": "Şekerle yağı çırpma"
+          "actionTr": "Şekerle yağı çırpma",
+          "img": "/blog/ingilizce-tarifler/images/steps/kurabiye-step-2.webp",
+          "ingredient": "200 g butter, 100 g powdered sugar (200 g tereyağı, 100 g pudra şekeri)",
+          "equipment": "Mixing bowl and whisk (Karıştırma kabı ve çırpıcı)",
+          "time": "3 mins (3 dakika)"
         },
         {
           "number": 3,
@@ -707,7 +715,11 @@
           "sentenceEn": "Sift 280 g of all-purpose flour and 1 teaspoon of vanilla extract directly into the creamed mixture.",
           "sentenceTr": "280 g çok amaçlı buğday ununu ve 1 çay kaşığı vanilya özütünü doğrudan kaseye eleyin.",
           "actionEn": "Sifting & Adding (Eleme ve Ekleme)",
-          "actionTr": "Un ve vanilya ilavesi"
+          "actionTr": "Un ve vanilya ilavesi",
+          "img": "/blog/ingilizce-tarifler/images/steps/kurabiye-step-3.webp",
+          "ingredient": "280 g flour, 1 tsp vanilla extract (280 g un, 1 çay kaşığı vanilya özütü)",
+          "equipment": "Flour sieve and mixing bowl (Un eleği ve karıştırma kabı)",
+          "time": "2 mins (2 dakika)"
         },
         {
           "number": 4,
@@ -716,7 +728,11 @@
           "sentenceEn": "Knead the mixture gently by hand for 2 minutes until a non-sticky and smooth dough forms.",
           "sentenceTr": "Ele yapışmayan pürüzsüz bir hamur elde edene kadar malzemeleri elle 2 dakika nazikçe yoğurun.",
           "actionEn": "Kneading (Yoğurma)",
-          "actionTr": "Hamuru toparlama"
+          "actionTr": "Hamuru toparlama",
+          "img": "/blog/ingilizce-tarifler/images/steps/kurabiye-step-4.webp",
+          "ingredient": "Creamed mixture and sifted dry ingredients (Krema harcı ve elenmiş un)",
+          "equipment": "Clean pastry board or hands (Mutfak tezgahı veya eller)",
+          "time": "4 mins (4 dakika)"
         },
         {
           "number": 5,
@@ -725,7 +741,11 @@
           "sentenceEn": "Roll walnut-sized pieces of dough into 24 round balls and press lightly with a fork.",
           "sentenceTr": "Ceviz büyüklüğündeki hamur parçalarından 24 adet yuvarlak top yuvarlayın ve çatalla hafifçe bastırın.",
           "actionEn": "Shaping (Şekil Verme)",
-          "actionTr": "Kurabiyeleri yuvarlama"
+          "actionTr": "Kurabiyeleri yuvarlama",
+          "img": "/blog/ingilizce-tarifler/images/steps/kurabiye-step-5.webp",
+          "ingredient": "Prepared cookie dough (Hazırlanan kurabiye hamuru)",
+          "equipment": "Silver fork and cutting board (Çatal ve çalışma tahtası)",
+          "time": "4 mins (4 dakika)"
         },
         {
           "number": 6,
@@ -734,7 +754,11 @@
           "sentenceEn": "Arrange the shaped cookies on a parchment-lined tray, leaving 3 cm spaces between them.",
           "sentenceTr": "Şekillendirilmiş kurabiyeleri aralarında 3 cm boşluk bırakarak yağlı kağıt serili fırın tepsisine dizin.",
           "actionEn": "Arranging (Tepsiye Dizme)",
-          "actionTr": "Tepsiye aralıklı yerleştirme"
+          "actionTr": "Tepsiye aralıklı yerleştirme",
+          "img": "/blog/ingilizce-tarifler/images/steps/kurabiye-step-6.webp",
+          "ingredient": "24 shaped cookie balls (Şekillendirilmiş 24 adet kurabiye hamuru)",
+          "equipment": "Baking sheet and parchment paper (Fırın tepsisi ve pişirme kağıdı)",
+          "time": "2 mins (2 dakika)"
         },
         {
           "number": 7,
@@ -743,7 +767,11 @@
           "sentenceEn": "Bake in a preheated oven at 170°C for 15 minutes until bottoms turn delicate golden brown.",
           "sentenceTr": "Alt kısımları tatlı bir altın sarısı renk alana kadar önceden 170°C ısıtılmış fırında 15 dakika pişirin.",
           "actionEn": "Baking (Fırında Pişirme)",
-          "actionTr": "170 derecede pişirme"
+          "actionTr": "170 derecede pişirme",
+          "img": "/blog/ingilizce-tarifler/images/steps/kurabiye-step-7.webp",
+          "ingredient": "Chilled shaped cookies on tray (Tepsiye dizili kurabiyeler)",
+          "equipment": "Preheated oven at 170°C and cooling rack (170°C fırın ve tel ızgara)",
+          "time": "15 mins (15 dakika)"
         }
       ],
       "summaryTable": {
@@ -914,12 +942,12 @@
         ],
         "rows": [
           [
-            "1 butter cookie (1 adet / ~25 g)",
+            "1 butter cookie (1 adet veya ~25 g)",
             "140 kcal",
             "Ideal single sweet serving to enjoy with coffee or afternoon tea (Kahve veya çay yanında tüketilebilecek ideal tatlı porsiyonu)."
           ],
           [
-            "2 butter cookies (2 adet / ~50 g)",
+            "2 butter cookies (2 adet veya ~50 g)",
             "280 kcal",
             "Moderate afternoon snack portion providing quick energy (Hızlı enerji sağlayan dengeli ikindi atıştırmalığı)."
           ],
@@ -1264,7 +1292,7 @@
               ],
               [
                 "1 liter (l)",
-                "4.2 cups / 33.8 fl oz",
+                "4.2 cups veya 33.8 fl oz",
                 "Büyük sıvı hacim ölçüsü",
                 "Boil 1 liter of water for hot beverages. (Sıcak içecekler için 1 litre su kaynatın.)"
               ]
@@ -1303,7 +1331,7 @@
             "Önce tereyağını yumuşatın, ardından unu ekleyin."
           ],
           [
-            "Countable / Uncountable Nouns",
+            "Countable and Uncountable Nouns",
             "Sayılabilen (cookies, eggs) ve sayılamayan (flour, sugar) ayrımıdır.",
             "Use 2 eggs and 200 g of flour.",
             "2 adet yumurta ve 200 g un kullanın."
