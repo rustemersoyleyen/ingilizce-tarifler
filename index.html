@@ -57,22 +57,108 @@
 
     </header>
 
-    <!-- SUBHEADER - Tarif Alt Menüsü -->
+    <!-- SUBHEADER - Hibrit Kategori Menüsü ve Hızlı Arama -->
     <div class="sub-header">
       <div class="sub-header-inner">
         <nav class="sub-header-nav" aria-label="Tarif Seçimi">
-          <a href="/blog/ingilizce-tarifler/" class="sub-nav-link" data-slug="">Tüm Tarifler</a>
-          <a href="/blog/ingilizce-tarifler/makarna" class="sub-nav-link" data-slug="makarna">Makarna</a>
-          <a href="/blog/ingilizce-tarifler/baklava" class="sub-nav-link" data-slug="baklava">Baklava</a>
-          <a href="/blog/ingilizce-tarifler/smoothie" class="sub-nav-link" data-slug="smoothie">Smoothie</a>
-          <a href="/blog/ingilizce-tarifler/kek" class="sub-nav-link" data-slug="kek">Kek</a>
-          <a href="/blog/ingilizce-tarifler/pankek" class="sub-nav-link" data-slug="pankek">Pankek</a>
-          <a href="/blog/ingilizce-tarifler/omlet" class="sub-nav-link" data-slug="omlet">Omlet</a>
-          <a href="/blog/ingilizce-tarifler/menemen" class="sub-nav-link" data-slug="menemen">Menemen</a>
-          <a href="/blog/ingilizce-tarifler/pizza" class="sub-nav-link" data-slug="pizza">Pizza</a>
-          <a href="/blog/ingilizce-tarifler/kurabiye" class="sub-nav-link" data-slug="kurabiye">Kurabiye</a>
-          <a href="/blog/ingilizce-tarifler/pilav" class="sub-nav-link" data-slug="pilav">Pilav</a>
+          <a href="/blog/ingilizce-tarifler/" class="sub-nav-link sub-nav-home" data-slug="" data-cat="all">
+            <span class="nav-icon">🍽️</span> Tüm Tarifler
+          </a>
+
+          <!-- Kahvaltılık Dropdown -->
+          <div class="sub-nav-dropdown" data-cat="breakfast">
+            <button type="button" class="sub-nav-cat-btn" aria-expanded="false" aria-haspopup="true">
+              <span class="nav-icon">🍳</span> Kahvaltılık <span class="nav-caret">▾</span>
+            </button>
+            <div class="sub-nav-menu" role="menu">
+              <div class="dropdown-header">Kahvaltılık İngilizce Tarifler</div>
+              <a href="/blog/ingilizce-tarifler/menemen" class="sub-nav-dropdown-item" data-slug="menemen" role="menuitem">
+                <span class="item-title">İngilizce Menemen Tarifi</span>
+                <span class="item-sub">Classic Menemen Recipe</span>
+              </a>
+              <a href="/blog/ingilizce-tarifler/omlet" class="sub-nav-dropdown-item" data-slug="omlet" role="menuitem">
+                <span class="item-title">İngilizce Omlet Tarifi</span>
+                <span class="item-sub">Plain Omelette Recipe</span>
+              </a>
+              <a href="/blog/ingilizce-tarifler/pankek" class="sub-nav-dropdown-item" data-slug="pankek" role="menuitem">
+                <span class="item-title">İngilizce Pankek Tarifi</span>
+                <span class="item-sub">Fluffy American Pancakes Recipe</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Ana Yemek & Çorba Dropdown -->
+          <div class="sub-nav-dropdown" data-cat="main_soup">
+            <button type="button" class="sub-nav-cat-btn" aria-expanded="false" aria-haspopup="true">
+              <span class="nav-icon">🍲</span> Ana Yemek &amp; Çorba <span class="nav-caret">▾</span>
+            </button>
+            <div class="sub-nav-menu" role="menu">
+              <div class="dropdown-header">Ana Yemek ve Çorba Tarifleri</div>
+              <a href="/blog/ingilizce-tarifler/makarna" class="sub-nav-dropdown-item" data-slug="makarna" role="menuitem">
+                <span class="item-title">İngilizce Makarna Tarifi</span>
+                <span class="item-sub">Plain Pasta Recipe</span>
+              </a>
+              <a href="/blog/ingilizce-tarifler/pilav" class="sub-nav-dropdown-item" data-slug="pilav" role="menuitem">
+                <span class="item-title">İngilizce Pilav Tarifi</span>
+                <span class="item-sub">Turkish Rice Pilaf Recipe</span>
+              </a>
+              <a href="/blog/ingilizce-tarifler/corba" class="sub-nav-dropdown-item" data-slug="corba" role="menuitem">
+                <span class="item-title">İngilizce Çorba Tarifi</span>
+                <span class="item-sub">Red Lentil Soup Recipe</span>
+              </a>
+              <a href="/blog/ingilizce-tarifler/pizza" class="sub-nav-dropdown-item" data-slug="pizza" role="menuitem">
+                <span class="item-title">İngilizce Pizza Tarifi</span>
+                <span class="item-sub">Homemade Pizza Recipe</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tatlı & Atıştırmalık Dropdown -->
+          <div class="sub-nav-dropdown" data-cat="dessert">
+            <button type="button" class="sub-nav-cat-btn" aria-expanded="false" aria-haspopup="true">
+              <span class="nav-icon">🍰</span> Tatlı &amp; Fırın <span class="nav-caret">▾</span>
+            </button>
+            <div class="sub-nav-menu" role="menu">
+              <div class="dropdown-header">Tatlı ve Hamur İşi Tarifleri</div>
+              <a href="/blog/ingilizce-tarifler/kek" class="sub-nav-dropdown-item" data-slug="kek" role="menuitem">
+                <span class="item-title">İngilizce Kek Tarifi</span>
+                <span class="item-sub">Plain Cake Recipe</span>
+              </a>
+              <a href="/blog/ingilizce-tarifler/kurabiye" class="sub-nav-dropdown-item" data-slug="kurabiye" role="menuitem">
+                <span class="item-title">İngilizce Kurabiye Tarifi</span>
+                <span class="item-sub">Butter Cookie Recipe</span>
+              </a>
+              <a href="/blog/ingilizce-tarifler/baklava" class="sub-nav-dropdown-item" data-slug="baklava" role="menuitem">
+                <span class="item-title">İngilizce Baklava Tarifi</span>
+                <span class="item-sub">Turkish Baklava Recipe</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- İçecek & Sağlıklı Dropdown -->
+          <div class="sub-nav-dropdown" data-cat="beverage">
+            <button type="button" class="sub-nav-cat-btn" aria-expanded="false" aria-haspopup="true">
+              <span class="nav-icon">🥤</span> İçecek <span class="nav-caret">▾</span>
+            </button>
+            <div class="sub-nav-menu" role="menu">
+              <div class="dropdown-header">İçecek Tarifleri</div>
+              <a href="/blog/ingilizce-tarifler/smoothie" class="sub-nav-dropdown-item" data-slug="smoothie" role="menuitem">
+                <span class="item-title">İngilizce Smoothie Tarifi</span>
+                <span class="item-sub">Banana Smoothie Recipe</span>
+              </a>
+            </div>
+          </div>
         </nav>
+
+        <!-- Canlı Hızlı Arama Kutusu -->
+        <div class="sub-header-search" id="sub-header-search">
+          <div class="search-input-wrap">
+            <svg class="search-box-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="recipe-quick-search" placeholder="Tarif ara... (Örn: Çorba, Pizza, Rice)" autocomplete="off" spellcheck="false" aria-label="Tarif Arama">
+            <button type="button" id="clear-search-btn" class="clear-search-btn" aria-label="Aramayı Temizle" style="display:none;">&times;</button>
+          </div>
+          <div id="recipe-search-dropdown" class="recipe-search-dropdown" style="display:none;" role="listbox"></div>
+        </div>
       </div>
     </div>
 

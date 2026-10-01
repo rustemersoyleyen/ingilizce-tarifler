@@ -1,0 +1,1196 @@
+{
+  "page": {
+    "slug": "pilav",
+    "route": "/blog/ingilizce-tarifler/pilav",
+    "h1": "İngilizce Pilav Tarifi (Pilav Yapılışı İngilizce)",
+    "title": "İngilizce Pilav Tarifi (Pilav Yapılışı İngilizce) | Konuşarak Öğren",
+    "metaDescription": "İngilizce pilav tarifi ve yapılışı: Tereyağlı, şehriyeli, bulgur ve sebzeli pilav çeşitleri, çift dilli malzeme tabloları, 6 adım yönergeleri ve mutfak terimleri.",
+    "introEnglish": "A rice pilaf recipe provides clear, step-by-step culinary instructions for rinsing, sauteing grains in butter, and simmering in broth until fluffy and separate.",
+    "introTurkish": "İngilizce pilav tarifi; baldo pirincin tereyağında kavrulup kaynar et suyuyla demlenerek tane tane pişirilmesini, temel mutfak fiillerini ve püf noktalarını Türkçe açıklamalarıyla sunan kapsamlı bir gastronomi rehberidir.",
+    "label": "Garnitür ve Ana Yemek",
+    "author": "Konuşarak Öğren Editör Ekibi",
+    "publishDate": "26 Eylül 2026",
+    "englishLevel": "A1–A2",
+    "prepTime": "10 dakika",
+    "cookTime": "15 dakika",
+    "totalTime": "25 dakika",
+    "servings": "4 kişilik",
+    "calories": "260 kcal (1 porsiyon)",
+    "heroImage": "/blog/ingilizce-tarifler/images/pilav-hero.webp",
+    "overviewVariationsTable": {
+      "caption": "İngilizce Pilav Çeşitleri ve Pişirme Özeti",
+      "intro": "Explore the four main rice pilaf variations with their English names, distinct ingredients, and cooking steps in the comparison table below. (Aşağıdaki tabloda 4 popüler pilav çeşidinin İngilizce isimlerini, ayırt edici malzemelerini ve temel pişirme adımlarını karşılaştırmalı olarak inceleyebilirsiniz.)",
+      "headers": [
+        "English Recipe Name",
+        "Türkçe Adı",
+        "Main Ingredients (Ana Malzemeler)",
+        "Main Steps (Temel Adımlar)"
+      ],
+      "rows": [
+        [
+          "Buttered Rice",
+          "Tereyağlı Pirinç Pilavı",
+          "Baldo rice, butter, hot water veya broth, salt (Baldo pirinç, tereyağı, sıcak su veya et suyu, tuz)",
+          "Rinse rice, melt butter, saute rice grains, add boiling broth and simmer. (Pirinci yıkayın, yağı eritin, kavurun, sıcak suyu ekleyip demleyin.)"
+        ],
+        [
+          "Rice with Orzo",
+          "Şehriyeli Pirinç Pilavı",
+          "Rice, orzo pasta, butter, boiling water, salt (Pirinç, arpa şehriye, tereyağı, kaynar su, tuz)",
+          "Brown orzo until golden, add rice and stir, pour hot liquid and steam. (Şehriyeyi kavurun, pirinci ekleyin, sıcak suyu döküp demlemeye bırakın.)"
+        ],
+        [
+          "Bulgur Pilaf",
+          "Bulgur Pilavı",
+          "Coarse bulgur, onion, green pepper, tomatoes, butter, broth (İri bulgur, soğan, yeşil biber, domates, tereyağı, et suyu)",
+          "Saute vegetables with paste, add bulgur, pour broth and simmer until absorbed. (Sebzeleri salçayla kavurun, bulguru ekleyin, suyu çekene kadar pişirin.)"
+        ],
+        [
+          "Vegetable Rice",
+          "Sebzeli Pilav",
+          "Rice, green peas, diced carrots, corn, butter, vegetable stock (Pirinç, bezelye, küp havuç, mısır, tereyağı, sebze suyu)",
+          "Saute carrots, stir in rice and peas, simmer with broth and fluff gently. (Havuçları soteleyin, pirinç ve bezelyeyi ekleyin, suyla pişirip havalandırın.)"
+        ]
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "id": "kavramlar",
+      "eyebrow": "CORE CONCEPTS & VOCABULARY (TEMEL KAVRAMLAR VE SÖZLÜK)",
+      "heading": "Key Rice Pilaf Terms and English Translations (İngilizce Pilav Tarifi Kavramları ve Türkçe Karşılıkları)",
+      "intro": "Mastering the foundational terms, historical origin of 'pilaf', and core cooking verbs creates immediate clarity in English culinary speech. (Temel tarif kavramlarını, 'pilaf' kelimesinin tarihsel kökenini ve mutfak fiillerini kavramak İngilizce tariflerde akıcı anlatım sağlar.)",
+      "coreConcepts": {
+        "heading": "6 Core Recipe Concepts in English (İngilizce Pilav Tarifinin 6 Temel Kavramı)",
+        "intro": "Here are the four universal recipe terms plus two pilaf-specific terms, each defined in context. (Aşağıda dört evrensel tarif terimi ve pilava özel iki kavramın tanımlarını bulabilirsiniz:)",
+        "headers": [
+          "Term (Terim)",
+          "Türkçe Karşılığı",
+          "Definition & Context (Tanım ve Pilav Bağlantısı)"
+        ],
+        "rows": [
+          [
+            "Recipe",
+            "Yemek tarifi",
+            "A recipe provides step-by-step cooking instructions and ingredient lists for making pilaf. (Tarif; pilav yapmak için gerekli adımları ve malzeme listesini sunan yönergedir.)"
+          ],
+          [
+            "Ingredient",
+            "Yemek malzemesi",
+            "An ingredient is any food item, such as Baldo rice or butter, used in the dish. (Malzeme; baldo pirinç veya tereyağı gibi yemekte kullanılan her bir besin ögesidir.)"
+          ],
+          [
+            "Step",
+            "Pişirme adımı veya aşaması",
+            "A step represents a single sequential cooking action in the recipe workflow. (Adım; tarif akışındaki her bir sıralı pişirme eylemini temsil eder.)"
+          ],
+          [
+            "Serving",
+            "Porsiyon miktarı",
+            "A serving is the individual portion of rice pilaf offered to one person at dinner. (Porsiyon; akşam yemeğinde bir kişiye sunulan tek tabaklık pilav miktarıdır.)"
+          ],
+          [
+            "Grain",
+            "Pirinç tanesi",
+            "A grain refers to each individual rice seed that must remain distinct and non-sticky. (Tane; piştikten sonra tane tane ve yapışmadan kalması gereken her bir pirinç tanesidir.)"
+          ],
+          [
+            "Simmer",
+            "Kısık ateşte demlemek",
+            "Simmering means cooking gently on low heat with the pot lid closed until liquid is absorbed. (Demlemek; sıvı çekilene kadar tencere kapağı kapalı olarak kısık ateşte ağır ağır pişirmektir.)"
+          ]
+        ]
+      },
+      "origin": {
+        "heading": "Did the Word 'Pilaf' Enter English from Turkish? (Pilaf Kelimesi İngilizceye Türkçeden mi Geçti?)",
+        "intro": "The English word 'pilaf' or 'pilau' directly entered English dictionaries from the Turkish word 'pilav', tracing back to Ottoman culinary traditions. (İngilizce sözlüklerde yer alan pilaf terimi doğrudan Türkçe pilav kelimesinden geçmiştir; aşağıdaki tabloda dünya mutfaklarındaki pirinç terimlerini karşılaştırabilirsiniz.)",
+        "headers": [
+          "Term (İngilizce Terim)",
+          "Köken & Anlamı (Origin)",
+          "Pişirme Farkı (Culinary Technique)"
+        ],
+        "rows": [
+          [
+            "Pilaf (Pilau)",
+            "Türkçe 'pilav' kelimesinden İngilizceye geçmiştir.",
+            "Grains are first sauteed in butter or oil before broth is added to produce separated grains. (Taneler önce yağda kavrulur, sonra sıcak suyla demlenir.)"
+          ],
+          [
+            "Steamed Rice",
+            "Doğu Asya mutfağı kökenli sade pirinç.",
+            "Cooked purely in plain boiling water or steam without butter, oil, or seasonings. (Yağ veya tuz eklenmeden doğrudan buharda haşlanır.)"
+          ],
+          [
+            "Risotto",
+            "İtalyan mutfağına özgü arborio pirinci yemeği.",
+            "Short grain rice cooked by adding hot stock gradually while stirring continuously for creamy starch. (Sürekli karıştırılarak kremsi nişasta açığa çıkarılır.)"
+          ],
+          [
+            "Fried Rice",
+            "Çin ve Güneydoğu Asya mutfağı.",
+            "Pre-cooked chilled rice stir-fried in a hot wok with egg, vegetables, and soy sauce. (Önceden haşlanıp soğutulmuş pirinç tavada kızgın ateşte sotelenir.)"
+          ]
+        ]
+      },
+      "verbs": {
+        "heading": "Verbs Used in English Recipe Writing: Rinse, Saute, Boil, Simmer (İngilizce Tarif Yazımında Kullanılan Fiiller)",
+        "intro": "The table below defines the four core culinary verbs representing each critical stage of making authentic Turkish rice pilaf. (Aşağıdaki tabloda geleneksel pilav yapımının 4 temel aşamasını temsil eden fiilleri ve tarif içi örnek cümlelerini inceleyebilirsiniz.)",
+        "headers": [
+          "Verb (Fiil)",
+          "Türkçe Karşılığı",
+          "Example Sentence (İngilizce - Türkçe)"
+        ],
+        "rows": [
+          [
+            "Rinse",
+            "Suyla yıkamak veya durulamak",
+            "Rinse the Baldo rice with warm water to wash away surface starch. (Yüzey nişastasını arındırmak için baldo pirinci ılık suyla yıkayın.)"
+          ],
+          [
+            "Saute",
+            "Yağda hafif kavurmak veya sotelemek",
+            "Saute the orzo in melted butter until it turns golden brown. (Şehriyeyi eritilmiş tereyağında altın sarısı olana dek kavurun.)"
+          ],
+          [
+            "Boil",
+            "Kaynatmak veya fokurdatmak",
+            "Bring the chicken broth to a rapid boil before pouring it over the rice. (Tavuk suyunu pirincin üzerine dökmeden önce hızla kaynatın.)"
+          ],
+          [
+            "Simmer",
+            "Kısık ateşte ağır ağır pişirmek veya demlemek",
+            "Simmer the rice on low heat for 15 minutes with the lid firmly closed. (Kapağı sıkıca kapalı olarak pilavı kısık ateşte 15 dakika demleyin.)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "tarifler",
+      "eyebrow": "DISTINCT VARIATIONS (FARKLI İNGİLİZCE PİLAV TARİFLERİ)",
+      "heading": "4 Popular English Rice Pilaf Recipes (En Çok Tercih Edilen 4 İngilizce Pilav Tarifi)",
+      "intro": "Explore classic buttered rice, toasted orzo rice, rustic bulgur, and colorful vegetable rice with detailed ingredient lists and instructions. (Klasik tereyağlı, şehriyeli, bulgur ve sebzeli pilav çeşitlerinin İngilizce malzeme listelerini ve yapılış adımlarını aşağıda keşfedebilirsiniz.)",
+      "variations": [
+        {
+          "id": "buttered-rice",
+          "title": "Tereyağlı Pirinç Pilavı Tarifi",
+          "briefTitle": "Buttered Rice Recipe (Tereyağlı Pirinç Pilavı Tarifi)",
+          "ingredientsHeading": "What Are Buttered Rice Ingredients in English? (Tereyağlı Pirinç Pilavı Malzemeleri)",
+          "stepsHeading": "How to Write Buttered Rice Cooking Steps in English? (Tereyağlı Pirinç Pilavı Pişirme Adımları)",
+          "english": "Buttered Rice Recipe",
+          "description": "Buttered Rice (Tereyağlı Pirinç Pilavı), baldo pirincin bol tereyağında kavrulup sıcak suyla tane tane pişirildiği klasik Türk mutfağı lezzetidir.",
+          "image": "/blog/ingilizce-tarifler/images/pilav-hero.webp",
+          "alt": "Steaming hot authentic Turkish buttered rice pilaf served in a copper dish",
+          "ingredients": [
+            [
+              "Baldo Rice",
+              "Baldo pirinç — nişastası arındırılmış iri taneli pirinç.",
+              "2 cups (360 g)"
+            ],
+            [
+              "Butter",
+              "Tereyağı — lezzet ve altın parlaklığı sağlayan yağ.",
+              "3 tbsp (45 g)"
+            ],
+            [
+              "Olive Oil",
+              "Zeytinyağı veya sıvı yağ — pirinçlerin tane tane ayrılması için.",
+              "1 tbsp (15 ml)"
+            ],
+            [
+              "Hot Water veya Broth",
+              "Sıcak su veya et suyu — pişirme sıvısı.",
+              "3 cups (720 ml)"
+            ],
+            [
+              "Salt",
+              "Sofra tuzu — lezzeti öne çıkaran mineral.",
+              "1.5 tsp (8 g)"
+            ]
+          ],
+          "ingredientCards": [
+            {
+              "icon": "🌾",
+              "en": "Baldo Rice",
+              "tr": "Baldo Pirinç",
+              "quantity": "2 cups (360 g)",
+              "sentenceEn": "Buttered Rice requires high-quality Baldo rice for distinct, fluffy and separated grains.",
+              "sentenceTr": "Tereyağlı Pirinç Pilavı, tane tane ve dolgun dokusu için kaliteli baldo pirinç gerektirir."
+            },
+            {
+              "icon": "🧈",
+              "en": "Butter",
+              "tr": "Köy Tereyağı",
+              "quantity": "3 tbsp (45 g)",
+              "sentenceEn": "Buttered Rice requires unsalted butter to provide an unmistakable rich, nutty aroma.",
+              "sentenceTr": "Tereyağlı Pirinç Pilavı, belirgin ve zengin fındıksı kokusu için tuzsuz tereyağı gerektirir."
+            },
+            {
+              "icon": "🫒",
+              "en": "Olive Oil",
+              "tr": "Zeytinyağı veya Sıvı Yağ",
+              "quantity": "1 tbsp (15 ml)",
+              "sentenceEn": "Buttered Rice requires a spoon of olive oil to coat grains and prevent butter from burning.",
+              "sentenceTr": "Tereyağlı Pirinç Pilavı, taneleri parlatmak ve tereyağının yanmasını önlemek için zeytinyağı gerektirir."
+            },
+            {
+              "icon": "♨️",
+              "en": "Hot Broth or Water",
+              "tr": "Sıcak Et Suyu veya Su",
+              "quantity": "3 cups (720 ml)",
+              "sentenceEn": "Buttered Rice requires boiling hot broth to ensure even cooking without mushiness.",
+              "sentenceTr": "Tereyağlı Pirinç Pilavı, lapa olmadan eşit pişmesi için kaynar sıcak et suyu gerektirir."
+            },
+            {
+              "icon": "🧂",
+              "en": "Salt",
+              "tr": "Sofra Tuzu",
+              "quantity": "1.5 tsp (8 g)",
+              "sentenceEn": "Buttered Rice requires fine salt to balance savory richness and highlight delicate grain flavor.",
+              "sentenceTr": "Tereyağlı Pirinç Pilavı, lezzeti dengelemek ve pirinç tadını ortaya çıkarmak için ince tuz gerektirir."
+            }
+          ],
+          "steps": "First, rinse 2 cups of Baldo rice under warm water until clear. Then, melt 3 tablespoons of butter with 1 tablespoon of olive oil in a wide pot. After that, add the drained rice and saute for 2 minutes until translucent. Pour in 3 cups of boiling broth and add 1.5 teaspoons of salt. Cover with lid and simmer on low heat for 15 minutes. Finally, place a paper towel under the lid and rest for 10 minutes before serving."
+        },
+        {
+          "id": "orzo-rice",
+          "title": "Şehriyeli Pirinç Pilavı Tarifi",
+          "briefTitle": "Rice with Orzo Recipe (Şehriyeli Pirinç Pilavı Tarifi)",
+          "ingredientsHeading": "What Are Rice with Orzo Ingredients in English? (Şehriyeli Pilav Malzemeleri)",
+          "stepsHeading": "How to Write Rice with Orzo Cooking Steps in English? (Şehriyeli Pilav Pişirme Adımları)",
+          "english": "Rice with Orzo Recipe",
+          "description": "Rice with Orzo (Şehriyeli Pirinç Pilavı), kavrulmuş altın sarısı arpa şehriyelerin pirinçle harmanlandığı, geleneksel akşam yemeklerinin vazgeçilmez garnitürüdür.",
+          "image": "/blog/ingilizce-tarifler/images/pilav-sehriyeli.webp",
+          "alt": "Fluffy Turkish rice pilaf with toasted golden brown orzo vermicelli on ceramic plate",
+          "ingredients": [
+            [
+              "Baldo Rice",
+              "Baldo pirinç — yıkanıp süzülmüş ana tahıl.",
+              "2 cups (360 g)"
+            ],
+            [
+              "Orzo",
+              "Arpa şehriye — kavrularak renk ve çıtırlık katan makarna.",
+              "3 tbsp (35 g)"
+            ],
+            [
+              "Butter",
+              "Tereyağı — geleneksel pişirme yağı.",
+              "3 tbsp (45 g)"
+            ],
+            [
+              "Hot Water",
+              "Sıcak su — 1'e 1.5 oranında kaynar su.",
+              "3 cups (720 ml)"
+            ],
+            [
+              "Salt",
+              "Kaya tuzu veya sofra tuzu.",
+              "1.5 tsp (8 g)"
+            ]
+          ],
+          "ingredientCards": [
+            {
+              "icon": "🌾",
+              "en": "Orzo (Arpa Şehriye)",
+              "tr": "Arpa Şehriye",
+              "quantity": "3 tbsp (35 g)",
+              "sentenceEn": "Rice with Orzo requires toasted orzo pasta to add deep golden color and pleasant nutty contrast.",
+              "sentenceTr": "Şehriyeli Pilav, altın rengi ve nefis fındıksı bir kontrast katmak için kavrulmuş arpa şehriye gerektirir."
+            },
+            {
+              "icon": "🍚",
+              "en": "Baldo Rice",
+              "tr": "Baldo Pirinç",
+              "quantity": "2 cups (360 g)",
+              "sentenceEn": "Rice with Orzo requires well-rinsed Baldo rice to release excess surface starch.",
+              "sentenceTr": "Şehriyeli Pilav, fazla yüzey nişastasını arındırmak için iyice yıkanmış baldo pirinç gerektirir."
+            },
+            {
+              "icon": "🧈",
+              "en": "Butter",
+              "tr": "Tereyağı",
+              "quantity": "3 tbsp (45 g)",
+              "sentenceEn": "Rice with Orzo requires rich butter to properly brown the orzo without sticking.",
+              "sentenceTr": "Şehriyeli Pilav, şehriyeyi yapışmadan mükemmel kavurmak için zengin tereyağı gerektirir."
+            },
+            {
+              "icon": "♨️",
+              "en": "Boiling Water",
+              "tr": "Kaynar Su",
+              "quantity": "3 cups (720 ml)",
+              "sentenceEn": "Rice with Orzo requires boiling water to immediately absorb into hot toasted grains.",
+              "sentenceTr": "Şehriyeli Pilav, sıcak kavrulmuş taneler tarafından hemen çekilmesi için kaynar su gerektirir."
+            },
+            {
+              "icon": "🧂",
+              "en": "Fine Salt",
+              "tr": "Sofra Tuzu",
+              "quantity": "1.5 tsp (8 g)",
+              "sentenceEn": "Rice with Orzo requires fine salt to highlight toasted aromatics and season the grains evenly.",
+              "sentenceTr": "Şehriyeli Pilav, kavrulmuş aromaları öne çıkarmak ve taneleri eşit lezzetlendirmek için ince tuz gerektirir."
+            }
+          ],
+          "steps": "First, melt butter in a pot and saute 3 tablespoons of orzo until golden brown. Then, add the rinsed Baldo rice and stir gently for 2 minutes. After that, pour in 3 cups of hot water and add salt. Close the lid, reduce heat to low, and cook for 15 minutes. Finally, let the rice steam under a cloth towel for 10 minutes and fluff with a fork."
+        },
+        {
+          "id": "bulgur-pilaf",
+          "title": "Bulgur Pilavı Tarifi",
+          "briefTitle": "Bulgur Pilaf Recipe (Bulgur Pilavı Tarifi)",
+          "ingredientsHeading": "What Are Bulgur Pilaf Ingredients in English? (Bulgur Pilavı Malzemeleri)",
+          "stepsHeading": "How to Write Bulgur Pilaf Cooking Steps in English? (Bulgur Pilavı Pişirme Adımları)",
+          "english": "Bulgur Pilaf Recipe",
+          "description": "Bulgur Pilaf (Bulgur Pilavı), iri pilavlık bulgurun soğan, sivri biber, domates ve tereyağıyla pişirildiği lif ve mineral deposu geleneksel Anadolu lezzetidir.",
+          "image": "/blog/ingilizce-tarifler/images/pilav-bulgur.webp",
+          "alt": "Rustic earthenware pot with steaming Turkish bulgur pilaf with tomatoes and peppers",
+          "ingredients": [
+            [
+              "Coarse Bulgur",
+              "Pilavlık iri bulgur — buğdaydan üretilen lifli tahıl.",
+              "2 cups (340 g)"
+            ],
+            [
+              "Ripe Tomatoes",
+              "Domates — rendelenmiş taze domates.",
+              "2 medium (200 g)"
+            ],
+            [
+              "Green Pepper",
+              "Yeşil biber veya çarliston biber.",
+              "2 pcs (50 g)"
+            ],
+            [
+              "Onion",
+              "Kuru soğan — yemeklik doğranmış.",
+              "1 medium (100 g)"
+            ],
+            [
+              "Butter and Olive Oil",
+              "Tereyağı ve zeytinyağı.",
+              "2 tbsp butter + 2 tbsp oil"
+            ],
+            [
+              "Hot Water or Stock",
+              "Sıcak su veya tavuk suyu.",
+              "4 cups (960 ml)"
+            ],
+            [
+              "Tomato Paste",
+              "Domates veya biber salçası.",
+              "1 tbsp (20 g)"
+            ]
+          ],
+          "ingredientCards": [
+            {
+              "icon": "🌾",
+              "en": "Coarse Bulgur",
+              "tr": "Pilavlık İri Bulgur",
+              "quantity": "2 cups (340 g)",
+              "sentenceEn": "Bulgur Pilaf requires coarse durum wheat bulgur to maintain a hearty, chewy texture.",
+              "sentenceTr": "Bulgur Pilavı, doyurucu ve diri bir kıvamı korumak için iri durum buğdayı bulguru gerektirir."
+            },
+            {
+              "icon": "🍅",
+              "en": "Fresh Tomatoes",
+              "tr": "Taze Domates",
+              "quantity": "2 pcs (200 g)",
+              "sentenceEn": "Bulgur Pilaf requires grated ripe tomatoes to form a fragrant, naturally sweet culinary base.",
+              "sentenceTr": "Bulgur Pilavı, mis kokulu ve doğal tatlı bir mutfak bazı oluşturmak için taze rendelenmiş domates gerektirir."
+            },
+            {
+              "icon": "🫑",
+              "en": "Green Peppers",
+              "tr": "Yeşil Köy Biberi",
+              "quantity": "2 pcs (50 g)",
+              "sentenceEn": "Bulgur Pilaf requires diced green peppers to infuse an authentic rustic Anatolian flavor.",
+              "sentenceTr": "Bulgur Pilavı, otantik bir Anadolu köy lezzeti katmak için doğranmış yeşil biber gerektirir."
+            },
+            {
+              "icon": "🧅",
+              "en": "Yellow Onion",
+              "tr": "Kuru Soğan",
+              "quantity": "1 pcs (100 g)",
+              "sentenceEn": "Bulgur Pilaf requires finely chopped onions sauteed until translucent for aromatic depth.",
+              "sentenceTr": "Bulgur Pilavı, aromatik derinlik kazandırmak için pembeleşene dek kavrulan kuru soğan gerektirir."
+            },
+            {
+              "icon": "🥫",
+              "en": "Tomato Paste",
+              "tr": "Domates Salçası",
+              "quantity": "1 tbsp (20 g)",
+              "sentenceEn": "Bulgur Pilaf requires rich tomato paste to provide deep red color and savory richness.",
+              "sentenceTr": "Bulgur Pilavı, derin kırmızı bir renk ve zengin lezzet katmak için domates salçası gerektirir."
+            },
+            {
+              "icon": "🧈",
+              "en": "Butter and Olive Oil",
+              "tr": "Tereyağı ve Zeytinyağı",
+              "quantity": "2 tbsp each",
+              "sentenceEn": "Bulgur Pilaf requires a blend of butter and olive oil for rich taste and glossy finish.",
+              "sentenceTr": "Bulgur Pilavı, zengin lezzet ve parlak görünüm için tereyağı ve zeytinyağı karışımı gerektirir."
+            },
+            {
+              "icon": "♨️",
+              "en": "Hot Broth or Water",
+              "tr": "Sıcak Et Suyu veya Su",
+              "quantity": "4 cups (960 ml)",
+              "sentenceEn": "Bulgur Pilaf requires hot broth to properly hydrate coarse bulgur grains until tender.",
+              "sentenceTr": "Bulgur Pilavı, iri bulgur tanelerini yumuşayana kadar tam kıvamında pişirmek için sıcak et suyu gerektirir."
+            }
+          ],
+          "steps": "First, saute chopped onion and green peppers in butter and olive oil until soft. Then, stir in tomato paste and grated tomatoes for 2 minutes. After that, add 2 cups of coarse bulgur and stir to combine. Pour in 4 cups of hot broth and add salt. Simmer on low heat for 15-18 minutes until liquid is fully absorbed. Finally, rest for 15 minutes before serving."
+        },
+        {
+          "id": "vegetable-rice",
+          "title": "Sebzeli Pilav Tarifi",
+          "briefTitle": "Vegetable Rice Recipe (Sebzeli Pilav Tarifi)",
+          "ingredientsHeading": "What Are Vegetable Rice Ingredients in English? (Sebzeli Pilav Malzemeleri)",
+          "stepsHeading": "How to Write Vegetable Rice Cooking Steps in English? (Sebzeli Pilav Pişirme Adımları)",
+          "english": "Vegetable Rice Recipe",
+          "description": "Vegetable Rice (Sebzeli Pilav), bezelye, küp havuç ve tatlı mısır tanelerinin pirinç pilavına renk ve tazelik kattığı besleyici ve rengarenk bir yemektir.",
+          "image": "/blog/ingilizce-tarifler/images/pilav-sebzeli.webp",
+          "alt": "Vibrant vegetable rice pilaf with green peas, diced sweet carrots and yellow corn kernels",
+          "ingredients": [
+            [
+              "Baldo Rice",
+              "Baldo pirinç — ana tahıl bileşeni.",
+              "2 cups (360 g)"
+            ],
+            [
+              "Green Peas",
+              "Bezelye — haşlanmış veya taze bezelye.",
+              "½ cup (80 g)"
+            ],
+            [
+              "Carrots",
+              "Havuç — minik küpler halinde doğranmış.",
+              "1 medium (70 g)"
+            ],
+            [
+              "Sweet Corn",
+              "Tatlı mısır — haşlanmış mısır taneleri.",
+              "½ cup (70 g)"
+            ],
+            [
+              "Butter and Oil",
+              "Tereyağı ve zeytinyağı.",
+              "2 tbsp butter + 1 tbsp oil"
+            ],
+            [
+              "Hot Water or Stock",
+              "Sıcak su veya sebze suyu.",
+              "3 cups (720 ml)"
+            ],
+            [
+              "Salt and Black Pepper",
+              "Tuz ve karabiber.",
+              "1 tsp salt + ½ tsp pepper"
+            ]
+          ],
+          "ingredientCards": [
+            {
+              "icon": "🍚",
+              "en": "Baldo Rice",
+              "tr": "Baldo Pirinç",
+              "quantity": "2 cups (360 g)",
+              "sentenceEn": "Vegetable Rice requires premium white rice to hold colorful vegetable pieces evenly.",
+              "sentenceTr": "Sebzeli Pilav, renkli sebze parçalarını eşit dağıtarak tutması için kaliteli beyaz pirinç gerektirir."
+            },
+            {
+              "icon": "🟢",
+              "en": "Green Peas",
+              "tr": "Taze Bezelye",
+              "quantity": "½ cup (80 g)",
+              "sentenceEn": "Vegetable Rice requires tender green peas for a burst of vibrant color and plant-based protein.",
+              "sentenceTr": "Sebzeli Pilav, canlı renk ve bitkisel protein katmak için taze bezelye gerektirir."
+            },
+            {
+              "icon": "🥕",
+              "en": "Diced Carrots",
+              "tr": "Küp Havuç",
+              "quantity": "1 pcs (70 g)",
+              "sentenceEn": "Vegetable Rice requires finely diced carrots to provide natural sweetness and pleasant crunch.",
+              "sentenceTr": "Sebzeli Pilav, doğal tatlılık ve hafif çıtırlık sağlamak için ince küp doğranmış havuç gerektirir."
+            },
+            {
+              "icon": "🌽",
+              "en": "Sweet Corn",
+              "tr": "Tatlı Mısır",
+              "quantity": "½ cup (70 g)",
+              "sentenceEn": "Vegetable Rice requires golden sweet corn kernels for joyful visual appeal and juicy bite.",
+              "sentenceTr": "Sebzeli Pilav, iştah açıcı görsel sunum ve sulu bir doku için sarı tatlı mısır gerektirir."
+            },
+            {
+              "icon": "🧈",
+              "en": "Butter and Oil",
+              "tr": "Tereyağı ve Zeytinyağı",
+              "quantity": "2 tbsp + 1 tbsp",
+              "sentenceEn": "Vegetable Rice requires butter and oil to saute vegetables and coat the grains.",
+              "sentenceTr": "Sebzeli Pilav, sebzeleri kavurmak ve pirinç tanelerini parlatmak için tereyağı ve sıvı yağ gerektirir."
+            },
+            {
+              "icon": "♨️",
+              "en": "Hot Vegetable Stock",
+              "tr": "Sıcak Sebze Suyu veya Su",
+              "quantity": "3 cups (720 ml)",
+              "sentenceEn": "Vegetable Rice requires hot vegetable stock for infused garden flavor across every spoonful.",
+              "sentenceTr": "Sebzeli Pilav, her kaşıkta zengin sebze lezzetini hissettirmek için sıcak sebze suyu gerektirir."
+            },
+            {
+              "icon": "🧂",
+              "en": "Salt and Pepper",
+              "tr": "Tuz ve Karabiber",
+              "quantity": "1 tsp + ½ tsp",
+              "sentenceEn": "Vegetable Rice requires fine salt and black pepper to perfectly balance garden sweetness.",
+              "sentenceTr": "Sebzeli Pilav, sebzelerin doğal tatlılığını dengelemek için ince tuz ve karabiber gerektirir."
+            }
+          ],
+          "steps": "First, saute finely diced carrots in butter and oil for 3 minutes. Then, add the rinsed Baldo rice and stir for 2 minutes. After that, add the green peas, sweet corn, hot broth, salt and pepper. Bring to a boil, cover with a lid, and simmer on low heat for 15 minutes. Finally, let it rest for 10 minutes, fluff gently with a fork and serve warm."
+        }
+      ]
+    },
+    {
+      "id": "klasik-pilav",
+      "eyebrow": "6-STEP CLASSIC PILAF GUIDE (6 ADIMDA KLASİK PİRİNÇ PİLAVI REHBERİ)",
+      "heading": "How Do You Make Buttered Rice Step by Step? (Buttered Rice İngilizce Adım Adım Nasıl Yapılır?)",
+      "intro": "Mastering perfect, non-sticky Turkish rice pilaf is accomplished in 6 precise chronological steps. (Tane tane ve lezzetli bir tereyağlı pirinç pilavı 6 kesin kronolojik adımda hazırlanır; emir kipi talimatları ve mutfak püf noktaları aşağıda sıralanmıştır.)",
+      "meta": {
+        "steps": {
+          "val": "6 steps (6 adım)",
+          "en": "Follow the 6 sequential cooking steps to prepare fluffy buttered rice.",
+          "tr": "Tane tane tereyağlı pilav için 6 adımlı pişirme yönergesini sırasıyla takip edin."
+        },
+        "time": {
+          "val": "25 mins (25 dakika)",
+          "en": "10 minutes of active prep and 15 minutes of low-heat simmer.",
+          "tr": "10 dakika aktif hazırlık ve 15 dakika kısık ateşte demleme sürer."
+        },
+        "level": {
+          "val": "Level A1–A2 (A1–A2 seviye)",
+          "en": "Practices rinse, saute, stir, simmer verbs and measurement ratios.",
+          "tr": "Yıkama, kavurma, karıştırma, demleme fiilleri ve ölçü oranlarını pekiştirir."
+        }
+      },
+      "accordion": [
+        {
+          "number": 1,
+          "titleEn": "Rinse the Rice with Warm Water",
+          "titleTr": "Pirinci Ilık Suyla Yıkayın",
+          "sentenceEn": "Rinse 2 cups of Baldo rice thoroughly in a fine-mesh sieve under warm running water until the water runs clear.",
+          "sentenceTr": "2 su bardağı baldo pirinci, süzgeçte ılık musluk suyu altında akan su berraklaşana kadar iyice yıkayın.",
+          "actionEn": "Rinse",
+          "actionTr": "Suyla yıkamak",
+          "img": "/blog/ingilizce-tarifler/images/steps/pilav-step-1.webp",
+          "ingredient": "2 cups Baldo rice (2 su bardağı pirinç)",
+          "equipment": "Fine mesh colander (İnce telli süzgeç)",
+          "time": "3 mins (3 dakika)"
+        },
+        {
+          "number": 2,
+          "titleEn": "Melt the Butter in a Pot",
+          "titleTr": "Tereyağını Tencerede Eritin",
+          "sentenceEn": "Melt 3 tablespoons of unsalted butter with 1 tablespoon of olive oil in a wide cooking pot over medium heat.",
+          "sentenceTr": "Geniş ve yayvan bir pilav tenceresinde 3 yemek kaşığı tereyağını 1 yemek kaşığı zeytinyağıyla birlikte orta ateşte eritin.",
+          "actionEn": "Melt",
+          "actionTr": "Eritmek",
+          "img": "/blog/ingilizce-tarifler/images/steps/pilav-step-2.webp",
+          "ingredient": "3 tbsp butter, 1 tbsp olive oil (Tereyağı ve zeytinyağı)",
+          "equipment": "Wide shallow pot (Pilav tenceresi)",
+          "time": "2 mins (2 dakika)"
+        },
+        {
+          "number": 3,
+          "titleEn": "Saute the Orzo Until Golden",
+          "titleTr": "Şehriyeyi Altın Rengi Alana Kadar Kavurun",
+          "sentenceEn": "Saute 3 tablespoons of orzo pasta in the melted butter, stirring continuously with a wooden spoon until golden brown.",
+          "sentenceTr": "3 yemek kaşığı arpa şehriyeyi eritilmiş tereyağında tahta kaşıkla sürekli karıştırarak altın sarısı kahverengiye dönene dek kavurun.",
+          "actionEn": "Saute",
+          "actionTr": "Kavurmak",
+          "img": "/blog/ingilizce-tarifler/images/steps/pilav-step-3.webp",
+          "ingredient": "3 tbsp orzo pasta (3 yemek kaşığı arpa şehriye)",
+          "equipment": "Wooden spoon (Tahta kaşık)",
+          "time": "3 mins (3 dakika)"
+        },
+        {
+          "number": 4,
+          "titleEn": "Add the Rice and Stir for 2 Minutes",
+          "titleTr": "Pirinci Ekleyin ve 2 Dakika Karıştırın",
+          "sentenceEn": "Add the well-drained rice into the pot and stir gently for 2 minutes until every single grain turns glossy and translucent.",
+          "sentenceTr": "Suyu iyice süzülmüş pirinçleri tencereye ekleyin ve her bir tane parlak ve şeffaf bir görünüm alana kadar 2 dakika nazikçe kavurun.",
+          "actionEn": "Stir & Saute",
+          "actionTr": "Karıştırmak ve kavurmak",
+          "img": "/blog/ingilizce-tarifler/images/steps/pilav-step-4.webp",
+          "ingredient": "Drained Baldo rice (Süzülmüş pirinç)",
+          "equipment": "Wooden spoon (Tahta kaşık)",
+          "time": "2 mins (2 dakika)"
+        },
+        {
+          "number": 5,
+          "titleEn": "Pour in the Hot Water and Add Salt",
+          "titleTr": "Sıcak Suyu Ekleyin ve Tuzu Atın",
+          "sentenceEn": "Pour in 3 cups of boiling water or chicken broth, add 1.5 teaspoons of fine salt, and give it one final gentle stir.",
+          "sentenceTr": "3 su bardağı kaynar su veya tavuk suyunu dikkatlice dökün, 1.5 tatlı kaşığı tuz ekleyin ve son kez nazikçe karıştırın.",
+          "actionEn": "Pour & Season",
+          "actionTr": "Dökmek ve tuzlamak",
+          "img": "/blog/ingilizce-tarifler/images/steps/pilav-step-5.webp",
+          "ingredient": "3 cups boiling broth, 1.5 tsp salt (Sıcak su ve tuz)",
+          "equipment": "Measuring cup (Ölçü kabı)",
+          "time": "1 min (1 dakika)"
+        },
+        {
+          "number": 6,
+          "titleEn": "Simmer the Rice on Low Heat for 15 Minutes",
+          "titleTr": "Pilavı Kısık Ateşte 15 Dakika Pişirin",
+          "sentenceEn": "Cover the pot tightly with its lid, reduce the heat to the lowest setting, and simmer for 15 minutes until all liquid is completely absorbed.",
+          "sentenceTr": "Tencerenin kapağını sıkıca kapatın, ocağı en kısık dereceye getirin ve tüm sıvı tamamen çekilene kadar 15 dakika pişirin.",
+          "actionEn": "Simmer & Rest",
+          "actionTr": "Demlemek ve dinlendirmek",
+          "img": "/blog/ingilizce-tarifler/images/steps/pilav-step-6.webp",
+          "ingredient": "Tightly covered pot (Kapağı kapalı tencere)",
+          "equipment": "Cotton kitchen towel (Temiz pamuklu mutfak bezi)",
+          "time": "15 mins (15 dakika)"
+        }
+      ],
+      "summaryTable": {
+        "heading": "Summary of the 6 Cooking Steps (6 Adımlı Pişirme Süreci Özeti)",
+        "intro": "Here is the complete bilingual summary table of all 6 steps for reference. (İşte başvuru için 6 adımın tamamının iki dilli özet tablosu:)",
+        "headers": [
+          "Step (Adım)",
+          "English Instruction (İngilizce Talimat)",
+          "Türkçe Açıklama (Turkish Explanation)"
+        ],
+        "rows": [
+          [
+            "Step 1",
+            "Rinse the Baldo rice with warm water until clear.",
+            "Pirinci ılık suda nişastası gidene kadar yıkayın."
+          ],
+          [
+            "Step 2",
+            "Melt the butter with olive oil in a wide pot.",
+            "Geniş tencerede tereyağını zeytinyağıyla eritin."
+          ],
+          [
+            "Step 3",
+            "Saute the orzo pasta until golden brown.",
+            "Arpa şehriyeyi altın sarısı olana dek kavurun."
+          ],
+          [
+            "Step 4",
+            "Add the drained rice and stir for 2 minutes.",
+            "Süzülen pirinci ekleyip taneler parlayana kadar kavurun."
+          ],
+          [
+            "Step 5",
+            "Pour in 3 cups of hot broth and add salt.",
+            "3 su bardağı sıcak suyu dökün ve tuzu ekleyin."
+          ],
+          [
+            "Step 6",
+            "Simmer covered on low heat for 15 minutes.",
+            "Kapağı kapalı kısık ateşte 15 dakika demlenmeye bırakın."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "malzemeler-ve-ekipman",
+      "eyebrow": "INGREDIENTS & EQUIPMENT (MALZEME VE EKİPMAN LİSTESİ)",
+      "heading": "What Ingredients Are Needed for Turkish Rice Pilaf? (Pirinç Pilavı İçin Hangi Malzemeler Gerekir?)",
+      "intro": "Turkish rice pilaf is made with staple ingredients and standard cookware designed for even heat distribution. (Geleneksel Türk pirinç pilavı, ısının eşit yayılmasını sağlayan standart mutfak ekipmanları ve temel kiler malzemeleriyle hazırlanır.)",
+      "ingredientsTable": {
+        "heading": "Ingredients for Classic Turkish Rice Pilaf (Geleneksel Pilav Malzemeleri)",
+        "intro": "Explore the precise ingredient measurements and Turkish translations below. (Aşağıdaki tabloda ölçüleriyle birlikte malzeme listesini inceleyebilirsiniz:)",
+        "headers": [
+          "English Ingredient",
+          "Türkçe Karşılığı",
+          "Quantity (Miktar)"
+        ],
+        "rows": [
+          [
+            "Baldo Rice",
+            "Baldo pirinç",
+            "2 cups (360 g)"
+          ],
+          [
+            "Orzo Pasta",
+            "Arpa şehriye",
+            "3 tbsp (35 g)"
+          ],
+          [
+            "Butter",
+            "Köy tereyağı",
+            "3 tbsp (45 g)"
+          ],
+          [
+            "Olive Oil",
+            "Zeytinyağı veya sıvı yağ",
+            "1 tbsp (15 ml)"
+          ],
+          [
+            "Hot Broth or Water",
+            "Sıcak et suyu veya kaynar su",
+            "3 cups (720 ml)"
+          ],
+          [
+            "Fine Salt",
+            "Sofra tuzu",
+            "1.5 tsp (8 g)"
+          ]
+        ]
+      },
+      "cookwareTable": {
+        "heading": "Which Cookware Is Used to Make Rice Pilaf? (Pilav Yapımında Hangi Pişirme Gereçleri Kullanılır?)",
+        "intro": "Each kitchen tool plays a key role across the 6 cooking steps. (Her mutfak aleti 6 pişirme adımında belirli bir işleve sahiptir:)",
+        "headers": [
+          "English Equipment",
+          "Türkçe Karşılığı",
+          "Used In Step (Kullanıldığı Adım)"
+        ],
+        "rows": [
+          [
+            "Wide shallow pot",
+            "Yayvan pilav tenceresi",
+            "Step 2, 3, 4, 5, 6 (Eritme, kavurma ve demleme)"
+          ],
+          [
+            "Fine-mesh sieve",
+            "İnce telli süzgeç",
+            "Step 1 (Pirinci yıkama ve süzme)"
+          ],
+          [
+            "Wooden spoon",
+            "Tahta kaşık veya spatula",
+            "Step 2, 3, 4 (Kavurma ve nazikçe karıştırma)"
+          ],
+          [
+            "Kettle",
+            "Su ısıtıcısı veya çaydanlık",
+            "Step 5 (Sıcak su kaynatma)"
+          ],
+          [
+            "Cotton tea towel",
+            "Temiz pamuklu mutfak bezi",
+            "Step 6 (Tencere kapağı altına buhar emici örtü)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "besin-degerleri",
+      "eyebrow": "CALORIES & NUTRITION (KALORİ VE BESİN DEĞERLERİ ANALİZİ)",
+      "heading": "How Many Calories Are in 1 Serving of Rice Pilaf? (1 Porsiyon Pirinç Pilavı Kaç Kalori?)",
+      "intro": "One standard 150-gram serving of traditional buttered rice pilaf contains approximately 260 calories. (1 standart porsiyon olan 150 gram tereyağlı pirinç pilavı yaklaşık 260 kalori içerir; kalori ve besin analizini aşağıdaki sekmelerden inceleyebilirsiniz.)",
+      "caloriesTable": {
+        "heading": "Calorie Breakdown per Serving (Porsiyon Başına Kalori Dağılımı)",
+        "intro": "Compare calories across standard weights and portions. (Farklı porsiyon miktarlarının kalori değerleri:)",
+        "headers": [
+          "Serving (Porsiyon)",
+          "Calories (kcal)",
+          "Açıklama (Nutritional Context)"
+        ],
+        "rows": [
+          [
+            "100 g portion",
+            "175 kcal",
+            "Standard 100 grams of cooked buttered rice. (100 gram pişmiş tereyağlı pilav.)"
+          ],
+          [
+            "1 serving (150 g)",
+            "260 kcal",
+            "Standard dinner side plate serving. (Standart 1 tabak akşam yemeği garnitürü.)"
+          ],
+          [
+            "Large portion (200 g)",
+            "350 kcal",
+            "Generous dinner portion with extra butter. (Bol tereyağlı büyük porsiyon.)"
+          ]
+        ]
+      },
+      "nutritionTable": {
+        "heading": "What Are the Nutrition Facts of Buttered Rice? (Tereyağlı Pilavın Besin Değerleri Nelerdir?)",
+        "intro": "Nutritional breakdown per 100 grams of cooked rice pilaf. (100 gram pişmiş pirinç pilavının makro besin analizi:)",
+        "headers": [
+          "Nutrient (Besin Ögesi)",
+          "Türkçe Karşılığı",
+          "Amount per 100 g (100 g İçin Miktar)"
+        ],
+        "rows": [
+          [
+            "Carbohydrates",
+            "Karbonhidrat",
+            "32.0 g"
+          ],
+          [
+            "Fats (Lipids)",
+            "Yağ (Tereyağı ve zeytinyağı)",
+            "4.8 g"
+          ],
+          [
+            "Protein",
+            "Protein",
+            "3.2 g"
+          ],
+          [
+            "Dietary Fiber",
+            "Diyet lifi",
+            "0.9 g"
+          ],
+          [
+            "Sodium",
+            "Sodyum",
+            "240 mg"
+          ]
+        ]
+      },
+      "steamedDiffTable": {
+        "heading": "How to Explain the Difference Between Rice Pilaf and Steamed Rice in English? (Rice Pilaf ile Steamed Rice Farkı İngilizce Nasıl Anlatılır?)",
+        "intro": "The key culinary distinction lies in the sauteing technique and butter usage. (Temel pişirme farkı pirincin yağda kavrulma aşaması ve tereyağı kullanımından kaynaklanır:)",
+        "headers": [
+          "Preparation Method",
+          "Sauteing in Butter (Yağda Kavurma)",
+          "Final Grain Texture (Tane Dokusu)"
+        ],
+        "rows": [
+          [
+            "Rice Pilaf (Türk Pilavı)",
+            "Yes — grains are coated and toasted in butter before liquid. (Evet, taneler önce yağda kavrulur.)",
+            "Grains remain distinct, separated, glossy, and never mushy. (Taneler parlak, tane tane ve asla lapa olmaz.)"
+          ],
+          [
+            "Steamed Rice (Sade Haşlama)",
+            "No — boiled directly in plain water or steam without fats. (Hayır, doğrudan su veya buharda haşlanır.)",
+            "Soft, slightly sticky, and absorbent grains without rich aroma. (Yumuşak, hafif yapışkan ve yağsız taneler.)"
+          ]
+        ]
+      },
+      "bulgurDiffTable": {
+        "heading": "How to Say Bulgur Pilaf in English? (Bulgur Pilavı İngilizce Nasıl Söylenir?)",
+        "intro": "The word 'bulgur' is an accepted English culinary noun referring to cracked durum wheat. (Bulgur kelimesi İngilizce sözlüklerde tam karşılığıyla yer alır; pirinç pilavından temel farkı buğday lifi ve salça bazlı sosudur:)",
+        "headers": [
+          "Feature (Özellik)",
+          "Rice Pilaf (Pirinç Pilavı)",
+          "Bulgur Pilaf (Bulgur Pilavı)"
+        ],
+        "rows": [
+          [
+            "Grain Type",
+            "White Baldo rice (Beyaz pirinç)",
+            "Coarse cracked wheat (Durum buğdayı bulguru)"
+          ],
+          [
+            "Fiber Content",
+            "Low fiber (0.9 g per 100 g)",
+            "High dietary fiber (4.5 g per 100 g)"
+          ],
+          [
+            "Cooking Liquid",
+            "Broth with butter (Et suyu ve tereyağı)",
+            "Tomato paste broth with onions and peppers (Salçalı sebze sosu)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "olculer",
+      "eyebrow": "MEASUREMENT UNITS & GLOSSARY (ÖLÇÜ BİRİMLERİ VE MUTFAK SÖZLÜĞÜ)",
+      "heading": "What Measurement Units Are Used in English Rice Recipes? (İngilizce Pilav Tariflerinde Kullanılan Ölçü Birimleri Nelerdir?)",
+      "intro": "English rice pilaf recipes primarily use cup, tablespoon, teaspoon, gram, and milliliter to express the golden 1:1.5 rice-to-water ratio. (İngilizce pilav tariflerinde 1'e 1.5 pirinç-su oranını kurmak için cup, tablespoon, teaspoon, gram ve mililitre birimleri kullanılır.)",
+      "unitsTable": {
+        "heading": "Tablespoon, Teaspoon, Cup: Turkish Equivalents of English Units (İngilizce Ölçü Birimlerinin Türkçe Karşılıkları)",
+        "intro": "In recipe writing, 1 cup equals 240 ml, 1 tablespoon equals 15 ml, and 1 teaspoon equals 5 ml. (Mutfak tariflerinde 1 su bardağı 240 ml, 1 yemek kaşığı 15 ml ve 1 tatlı veya çay kaşığı 5 ml hacme karşılık gelir:)",
+        "headers": [
+          "English Unit",
+          "Türkçe Karşılığı",
+          "Metric Equivalent",
+          "Recipe Example (Pilav Tarifindeki Kullanımı)"
+        ],
+        "rows": [
+          [
+            "1 Cup",
+            "Su bardağı",
+            "240 ml (veya ~180 g pirinç)",
+            "Use 2 cups of Baldo rice for 4 servings. (4 kişilik porsiyon için 2 su bardağı baldo pirinç kullanın.)"
+          ],
+          [
+            "1 Tablespoon (tbsp)",
+            "Yemek kaşığı",
+            "15 ml (veya 15 g tereyağı)",
+            "Melt 3 tablespoons of butter in the pot. (Tencerede 3 yemek kaşığı tereyağı eritin.)"
+          ],
+          [
+            "1 Teaspoon (tsp)",
+            "Çay veya tatlı kaşığı",
+            "5 ml (veya 5 g tuz)",
+            "Add 1.5 teaspoons of fine sea salt. (1.5 tatlı kaşığı ince deniz tuzu ekleyin.)"
+          ]
+        ]
+      },
+      "glossaryTable": {
+        "heading": "What Are the Key English Kitchen Terms in Rice Recipes? (Pilav Tarif Metninde Geçen Temel İngilizce Mutfak Kelimeleri Nelerdir?)",
+        "intro": "Here are 10 core culinary terms and context sentences used in English pilaf preparation. (Aşağıda İngilizce pilav anlatımında geçen 10 temel mutfak kelimesi ve örnek cümlelerini bulabilirsiniz:)",
+        "headers": [
+          "English Term",
+          "Türkçe Karşılığı",
+          "Context Example (İngilizce - Türkçe)"
+        ],
+        "rows": [
+          [
+            "Grain",
+            "Tane veya pirinç tanesi",
+            "Each grain of rice should remain separated. (Her bir pirinç tanesi tane tane ayrılmalıdır.)"
+          ],
+          [
+            "Starch",
+            "Nişasta",
+            "Rinsing removes the excess surface starch. (Yıkamak fazla yüzey nişastasını giderir.)"
+          ],
+          [
+            "Colander veya Sieve",
+            "Süzgeç",
+            "Drain the rinsed rice in a fine-mesh sieve. (Yıkanan pirinci ince telli süzgeçte süzün.)"
+          ],
+          [
+            "Broth veya Stock",
+            "Et suyu veya kemik suyu",
+            "Hot chicken broth adds irresistible savory depth. (Sıcak tavuk suyu nefis bir lezzet katar.)"
+          ],
+          [
+            "Lid",
+            "Tencere kapağı",
+            "Close the lid tightly during the simmering stage. (Kısık ateşte pişerken tencerenin kapağını sıkıca kapatın.)"
+          ],
+          [
+            "Steam",
+            "Demlenmek veya buharlaşmak",
+            "Let the pilaf steam under a towel for 10 minutes. (Pilavı bezin altında 10 dakika demlendirin.)"
+          ],
+          [
+            "Fluff",
+            "Çatalla nazikçe havalandırmak",
+            "Fluff the cooked rice gently with a fork. (Pişen pirinci çatalla nazikçe havalandırın.)"
+          ],
+          [
+            "Translucent",
+            "Şeffaf veya yarı saydam",
+            "Saute the rice until the grains turn translucent. (Pirinci taneleri şeffaflaşana kadar kavurun.)"
+          ],
+          [
+            "Ratio",
+            "Oran (Pirinç ve su oranı)",
+            "The golden ratio is 1 cup rice to 1.5 cups broth. (Altın oran 1 bardak pirince 1.5 bardak sudur.)"
+          ],
+          [
+            "Rest",
+            "Dinlendirmek",
+            "Rest the pot off the heat before plating. (Servis etmeden önce tencereyi ocaktan alıp dinlendirin.)"
+          ]
+        ]
+      },
+      "metricTable": {
+        "heading": "How Are Gram and Liter Used in English Recipes? (Gram ve Litre İngilizce Tariflerde Nasıl Kullanılır?)",
+        "intro": "In English cooking guides, grams are abbreviated as 'g', milliliters as 'ml', and liters as 'l'. (İngilizce tariflerde gram (g), mililitre (ml) ve litre (l) kısaltmaları emperyal ölçülerle şöyle eşleşir:)",
+        "headers": [
+          "Metric Unit",
+          "Imperial Equivalent",
+          "Türkçe Açıklama & Pilav Örneği"
+        ],
+        "rows": [
+          [
+            "100 g",
+            "3.5 oz",
+            "100 gram yaklaşık 3.5 ons ağırlığa karşılık gelir."
+          ],
+          [
+            "360 g rice",
+            "12.7 oz (2 cups)",
+            "2 su bardağı baldo pirinç yaklaşık 360 gramdır."
+          ],
+          [
+            "720 ml liquid",
+            "3 cups (24.3 fl oz)",
+            "3 su bardağı kaynar su veya et suyu yaklaşık 720 mililitredir."
+          ],
+          [
+            "1 liter (1 l)",
+            "4.2 cups (33.8 fl oz)",
+            "1 litre su yaklaşık 4.2 su bardağına denk gelir."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "dil-kurallari",
+      "eyebrow": "RECIPE GRAMMAR & USAGE RULES (TARİF DİL BİLGİSİ VE ANLATIM KURALLARI)",
+      "heading": "Grammar Rules for Writing English Rice Recipes (İngilizce Pilav Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları)",
+      "intro": "Writing recipe guides in English requires four foundational grammar pillars: the imperative mood, sequence adverbs, countable and uncountable nouns, and measurement expressions. (İngilizce tarif yazımı; emir kipi, sıra zarfları, sayılabilir ve sayılamayan isimler ile ölçü kalıpları olmak üzere 4 ana dil kuralına dayanır.)",
+      "imperativesTable": {
+        "heading": "How to Use the Imperative Mood in English Rice Recipes? (İngilizce Pilav Tarif Metinlerinde Emir Kipi Nasıl Kullanılır?)",
+        "intro": "In recipe writing, the imperative mood starts directly with the base verb without a grammatical subject (you). (Tariflerde emir kipi, özne kullanılmaksızın doğrudan fiilin yalın haliyle başlar; olumsuz talimatlarda 'Do not' kullanılır:)",
+        "headers": [
+          "English Imperative",
+          "Türkçe Karşılığı",
+          "Action Verb (Fiil)"
+        ],
+        "rows": [
+          [
+            "Rinse the rice in warm water.",
+            "Pirinci ılık suda yıkayın.",
+            "Rinse (Yıkamak)"
+          ],
+          [
+            "Melt the butter over medium heat.",
+            "Tereyağını orta ateşte eritin.",
+            "Melt (Eritmek)"
+          ],
+          [
+            "Saute the orzo until golden.",
+            "Şehriyeyi altın sarısı olana dek kavurun.",
+            "Saute (Kavurmak)"
+          ],
+          [
+            "Pour the hot chicken broth slowly.",
+            "Sıcak tavuk suyunu yavaşça dökün.",
+            "Pour (Dökmek)"
+          ],
+          [
+            "Simmer on low heat with the lid closed.",
+            "Kapağı kapalı olarak kısık ateşte pişirin.",
+            "Simmer (Kısıkta pişirmek)"
+          ],
+          [
+            "Do not open the lid while steaming!",
+            "Demlenme esnasında kapağı açmayın! (Olumsuz talimat)",
+            "Do not open (Açmayın)"
+          ]
+        ]
+      },
+      "sequenceTable": {
+        "heading": "Conjunctions and Sequence Adverbs: First, Then, After That, Finally (Bağlaçlar ve Sıra Zarfları)",
+        "intro": "Sequence adverbs establish chronological order, guiding the reader step by step from preparation to presentation. (Sıra zarfları adımların zaman sırasını belirler; 5 temel zarf ve pilav paragrafı:)",
+        "headers": [
+          "Sequence Adverb",
+          "Fonksiyon",
+          "Example Sentence (İngilizce - Türkçe)"
+        ],
+        "rows": [
+          [
+            "First (İlk olarak)",
+            "Başlangıç adımı",
+            "First, rinse 2 cups of rice thoroughly under warm water. (İlk olarak 2 bardak pirinci ılık suda iyice yıkayın.)"
+          ],
+          [
+            "Then (Ardından)",
+            "İkinci adım",
+            "Then, melt the butter and saute the orzo until golden brown. (Ardından tereyağını eritin ve şehriyeyi altın sarısı olana dek kavurun.)"
+          ],
+          [
+            "Next (Sonra)",
+            "Gelişme adımı",
+            "Next, add the drained rice and stir for 2 minutes. (Sonra süzülen pirinci ekleyip 2 dakika kavurun.)"
+          ],
+          [
+            "After that (Daha sonra)",
+            "Pişirme adımı",
+            "After that, pour in boiling water, add salt, and cover tightly. (Daha sonra kaynar suyu dökün, tuz ekleyin ve kapağı kapatın.)"
+          ],
+          [
+            "Finally (Son olarak)",
+            "Dinlendirme ve servis",
+            "Finally, let it rest for 10 minutes and fluff with a fork. (Son olarak 10 dakika dinlendirip çatalla havalandırın.)"
+          ]
+        ]
+      },
+      "rulesTable": {
+        "heading": "Core Language Rules: Countable vs Uncountable and Measurement Units (Temel Dil Kuralları: Sayılabilir, Sayılamayan ve Ölçü Kalıpları)",
+        "intro": "Key constraints for countable vegetables versus uncountable grains and liquids. (Sayılabilir sebzeler ile sayılamayan pirinç ve sıvıların mutfak kuralları:)",
+        "headers": [
+          "Dil Kuralı (Rule)",
+          "English Example",
+          "Türkçe Açıklama & Karşılığı"
+        ],
+        "rows": [
+          [
+            "Uncountable Grains",
+            "Rice, bulgur, salt, butter, water",
+            "Sayılamaz isimler; 'a rice' denmez, 'a cup of rice' veya 'some rice' denir."
+          ],
+          [
+            "Countable Ingredients",
+            "2 peppers, 1 onion, 2 tomatoes",
+            "Sayılabilir sebzeler; adet ve çoğul eki alırlar (2 green peppers)."
+          ],
+          [
+            "Negative Imperatives",
+            "Do not overcook the rice into mush.",
+            "'Do not' ile kurulan olumsuz talimat; lapa yapacak kadar fazla pişirmeyin."
+          ],
+          [
+            "Ratio Quantifiers",
+            "1.5 times as much water as rice",
+            "Ölçü oranları; pirinç miktarının 1.5 katı kadar kaynar su kullanın."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "alistirma",
+      "eyebrow": "8TH GRADE PRACTICE & QUIZ (8. SINIF QUIZ VE KAZANIM ALIŞTIRMALARI)",
+      "heading": "8th Grade English Rice Pilaf Practice Test (8. Sınıf İngilizce Pilav Tarifi Alıştırma Soruları)",
+      "intro": "Öğrendiğiniz mutfak fiillerini (Rinse, Saute, Boil, Simmer), pişirme yöntemlerini ve ölçü kalıplarını pekiştirmek için 4 soruluk testi çözün.",
+      "questions": [
+        {
+          "num": 1,
+          "type": "Çoktan Seçmeli",
+          "question": "Which kitchen verb means 'pirinci pişirmeden önce nişastasından arındırmak için suda yıkamak'?",
+          "questionTr": "'Pirinci pişirmeden önce nişastasından arındırmak için suda yıkamak' anlamına gelen İngilizce fiil hangisidir?",
+          "options": [
+            "A) Rinse",
+            "B) Grate",
+            "C) Knead",
+            "D) Chop"
+          ],
+          "answer": "A) Rinse"
+        },
+        {
+          "num": 2,
+          "type": "Çoktan Seçmeli",
+          "question": "What is the key cooking difference between Turkish 'Rice Pilaf' and Western 'Steamed Rice'?",
+          "questionTr": "Geleneksel Türk pirinç pilavı ile haşlama pirinç (steamed rice) arasındaki temel pişirme farkı nedir?",
+          "options": [
+            "A) In pilaf, the rice grains and orzo are first sauteed in butter before adding liquid",
+            "B) Steamed rice is always baked inside an oven",
+            "C) Pilaf never contains butter or salt",
+            "D) Steamed rice requires tomato paste"
+          ],
+          "answer": "A) In pilaf, the rice grains and orzo are first sauteed in butter before adding liquid"
+        },
+        {
+          "num": 3,
+          "type": "Boşluk Doldurma",
+          "question": "Fill in the blank: 'Cover the pot with a lid and _____ on low heat for 15 minutes.'",
+          "questionTr": "Boşluğu doldurunuz: 'Tencerenin kapağını kapatın ve kısık ateşte 15 dakika _____.'",
+          "options": [
+            "A) simmer",
+            "B) slice",
+            "C) peel",
+            "D) whip"
+          ],
+          "answer": "A) simmer"
+        },
+        {
+          "num": 4,
+          "type": "Boşluk Doldurma",
+          "question": "Fill in the blank: 'First, melt the butter and _____ the orzo until golden brown.'",
+          "questionTr": "Boşluğu doldurunuz: 'Önce tereyağını eritin ve şehriyeyi altın sarısı olana kadar _____.'",
+          "options": [
+            "A) saute",
+            "B) freeze",
+            "C) bake",
+            "D) squeeze"
+          ],
+          "answer": "A) saute"
+        }
+      ]
+    }
+  ]
+}

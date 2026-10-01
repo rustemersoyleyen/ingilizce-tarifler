@@ -1,0 +1,1274 @@
+{
+  "page": {
+    "slug": "corba",
+    "route": "/blog/ingilizce-tarifler/corba",
+    "h1": "İngilizce Çorba Tarifi (Çorba Yapılışı İngilizce)",
+    "title": "İngilizce Çorba Tarifi (Çorba Yapılışı İngilizce) | Konuşarak Öğren",
+    "metaDescription": "İngilizce çorba tarifi ve yapılışı: Kırmızı mercimek, kremalı domates, tavuklu şehriye ve yayla çorbası çeşitleri, çift dilli malzeme tabloları, 6 adım yönergeleri ve mutfak terimleri.",
+    "introEnglish": "A soup recipe provides clear, step-by-step culinary instructions for simmering grains, legumes, or vegetables in seasoned broth until comforting and flavorful.",
+    "introTurkish": "İngilizce çorba tarifi; kırmızı mercimek, sebze veya tavuğun tereyağında kavrulup sıcak et suyuyla kaynatılarak pürüzsüz kıvama getirilmesini, temel mutfak fiillerini ve püf noktalarını Türkçe açıklamalarıyla sunan kapsamlı bir gastronomi rehberidir.",
+    "label": "Başlangıç ve Sıcak Çorba",
+    "author": "Konuşarak Öğren Editör Ekibi",
+    "publishDate": "01 Ekim 2026",
+    "englishLevel": "A1–A2",
+    "prepTime": "10 dakika",
+    "cookTime": "25 dakika",
+    "totalTime": "35 dakika",
+    "servings": "4-6 kişilik",
+    "calories": "180 kcal (1 kase)",
+    "heroImage": "/blog/ingilizce-tarifler/images/corba-hero.webp",
+    "overviewVariationsTable": {
+      "caption": "İngilizce Çorba Çeşitleri ve Pişirme Özeti",
+      "intro": "Explore the four popular soup variations with their English names, distinct ingredients, and cooking steps in the comparison table below. (Aşağıdaki tabloda 4 popüler çorba çeşidinin İngilizce isimlerini, ayırt edici malzemelerini ve temel pişirme adımlarını karşılaştırmalı olarak inceleyebilirsiniz.)",
+      "headers": [
+        "English Recipe Name",
+        "Türkçe Adı",
+        "Main Ingredients (Ana Malzemeler)",
+        "Main Steps (Temel Adımlar)"
+      ],
+      "rows": [
+        [
+          "Red Lentil Soup",
+          "Kırmızı Mercimek Çorbası",
+          "Red lentils, onion, carrot, butter, hot water veya broth (Kırmızı mercimek, soğan, havuç, tereyağı, sıcak su veya et suyu)",
+          "Saute vegetables, add lentils and broth, simmer for 25 minutes, then blend until silky smooth. (Sebzeleri soteleyin, mercimek ve suyu ekleyin, 25 dakika kaynatıp blenderdan geçirin.)"
+        ],
+        [
+          "Creamy Tomato Soup",
+          "Kremalı Domates Çorbası",
+          "Ripe tomatoes, flour, butter, milk veya cream, broth (Olgun domates, un, tereyağı, süt veya krema, et suyu)",
+          "Roast tomatoes, roux with butter and flour, simmer with broth, stir in warm milk, and top with cheese. (Domatesleri kavurun, unla meyanesini yapın, kaynatıp süt ekleyin ve kaşarla sunun.)"
+        ],
+        [
+          "Chicken Noodle Soup",
+          "Tavuklu Şehriye Çorbası",
+          "Shredded chicken, vermicelli, chicken broth, carrots, parsley (Didilmiş tavuk eti, tel şehriye, tavuk suyu, havuç, maydanoz)",
+          "Boil chicken to make broth, cook vermicelli in broth, add shredded chicken, and finish with lemon. (Tavuğu haşlayıp suyunu alın, şehriyeyi pişirin, etleri ekleyip limonla servis edin.)"
+        ],
+        [
+          "Yayla Soup (Yogurt Soup)",
+          "Yayla Çorbası",
+          "Yogurt, rice, egg yolk, flour, dried mint butter (Yoğurt, pirinç, yumurta sarısı, un, naneli tereyağı)",
+          "Cook rice in water, temper yogurt with egg and flour, combine gently, and drizzle with hot mint butter. (Pirinçleri haşlayın, yoğurtlu terbiyeyi ılıtarak ekleyin, naneli tereyağı gezdirin.)"
+        ]
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "id": "kavramlar",
+      "eyebrow": "CORE CONCEPTS & VOCABULARY (TEMEL KAVRAMLAR VE SÖZLÜK)",
+      "heading": "Key Soup Terms and English Translations (İngilizce Çorba Tarifi Kavramları ve Türkçe Karşılıkları)",
+      "intro": "Mastering foundational culinary terms, distinguishing soup from stew and broth, and using cooking verbs creates immediate confidence in English recipe writing. (Temel çorba kavramlarını, soup, stew ve broth arasındaki farkları ve pişirme fiillerini öğrenmek İngilizce tarif anlatımında akıcılık sağlar.)",
+      "coreConcepts": {
+        "heading": "6 Core Recipe Concepts in English (İngilizce Çorba Tarifinin 6 Temel Kavramı)",
+        "intro": "Here are the four universal recipe terms plus two soup-specific culinary terms, each defined in context. (Aşağıda dört evrensel tarif terimi ve çorbaya özel iki kavramın tanımlarını bulabilirsiniz:)",
+        "headers": [
+          "Term (Terim)",
+          "Türkçe Karşılığı",
+          "Definition & Context (Tanım ve Çorba Bağlantısı)"
+        ],
+        "rows": [
+          [
+            "Recipe",
+            "Yemek tarifi",
+            "A recipe provides step-by-step culinary instructions and ingredient lists for making comforting soups. (Tarif; lezzetli çorbalar hazırlamak için gerekli adımları ve malzeme listesini sunan pişirme rehberidir.)"
+          ],
+          [
+            "Ingredient",
+            "Yemek malzemesi",
+            "An ingredient is any food item, such as red lentils or butter, used in the soup pot. (Malzeme; kırmızı mercimek veya tereyağı gibi tencereye giren her bir besin ögesidir.)"
+          ],
+          [
+            "Step",
+            "Pişirme adımı veya aşaması",
+            "A step represents a single sequential action in the soup preparation workflow. (Adım; çorba hazırlama sürecindeki her bir sıralı pişirme eylemini temsil eder.)"
+          ],
+          [
+            "Serving",
+            "Porsiyon miktarı veya kase",
+            "A serving is the individual bowl of warm soup offered to one person as an appetizer or meal. (Porsiyon; başlangıç veya ana yemek olarak bir kişiye sunulan tek kase çorbadır.)"
+          ],
+          [
+            "Broth",
+            "Et suyu veya sebze suyu",
+            "Broth is the savory seasoned liquid made by simmering meat, bones, or aromatic vegetables in water. (Broth; kemik, et veya sebzelerin suda kaynatılmasıyla elde edilen lezzetli çorba suyudur.)"
+          ],
+          [
+            "Puree",
+            "Püre veya pürüzsüz kıvam",
+            "Puree means blending cooked soup ingredients into a thick, uniform, and velvety consistency. (Püre; pişen çorba malzemelerinin pürüzsüz ve kadifemsi bir kıvama gelene dek blenderdan geçirilmesidir.)"
+          ]
+        ]
+      },
+      "origin": {
+        "heading": "Soup, Stew, Broth: How to Distinguish Soup Terms in English? (Soup, Stew, Broth: Çorba Terimleri İngilizcede Nasıl Ayrılır?)",
+        "intro": "The word 'soup' is the general culinary term for liquid dishes, distinct from hearty stews and clear broths by thickness and texture. (İngilizcede çorbanın genel adı soup kelimesidir; aşağıdaki tabloda soup, stew, broth ve cream soup terimlerini kıvam ve doku üzerinden karşılaştırabilirsiniz:)",
+        "headers": [
+          "Term (İngilizce Terim)",
+          "Kıvam & Doku (Consistency)",
+          "Türkçe Karşılığı",
+          "Culinary Example (Mutfak Örneği)"
+        ],
+        "rows": [
+          [
+            "Soup",
+            "Liquid to velvety smooth",
+            "Çorba (Genel ad)",
+            "Lentil soup or tomato soup served warm in a bowl. (Kasede sıcak servis edilen mercimek veya domates çorbası.)"
+          ],
+          [
+            "Stew",
+            "Thick, chunky, and hearty",
+            "Güveç veya sulu et yemeği",
+            "Beef and potato stew slow-cooked with minimal liquid. (Az suyla ağır ateşte pişen etli patates yemeği.)"
+          ],
+          [
+            "Broth",
+            "Clear and light liquid",
+            "Berrak et veya kemik suyu",
+            "Chicken bone broth strained and seasoned with sea salt. (Süzülmüş ve tuzla tatlandırılmış berrak tavuk kemik suyu.)"
+          ],
+          [
+            "Cream Soup",
+            "Velvety, rich with cream or milk",
+            "Kremalı çorba",
+            "Cream of mushroom soup thickened with roux and heavy cream. (Meyane ve taze kremayla kıvam alan mantar çorbası.)"
+          ]
+        ]
+      },
+      "verbs": {
+        "heading": "Verbs Used in English Recipe Writing: Chop, Boil, Blend, Simmer (İngilizce Tarif Yazımında Kullanılan Fiiller)",
+        "intro": "The table below defines the four core culinary verbs representing each critical stage of preparing authentic Turkish soup recipes. (Aşağıdaki tabloda geleneksel çorba yapımının 4 temel aşamasını temsil eden fiilleri ve tarif içi örnek cümlelerini inceleyebilirsiniz:)",
+        "headers": [
+          "Verb (Fiil)",
+          "Türkçe Karşılığı",
+          "Example Sentence (İngilizce - Türkçe)"
+        ],
+        "rows": [
+          [
+            "Chop",
+            "Bıçakla doğramak",
+            "Chop the onion and carrot into medium dice for even sauteing. (Eşit kavrulması için soğanı ve havucu orta boy küpler halinde doğrayın.)"
+          ],
+          [
+            "Boil",
+            "Harlı ateşte kaynatmak",
+            "Bring the chicken broth to a rolling boil before adding vermicelli. (Şehriyeleri eklemeden önce tavuk suyunu harlı ateşte kaynatın.)"
+          ],
+          [
+            "Blend",
+            "Blenderdan pürüzsüz geçirmek",
+            "Blend the cooked red lentils until completely smooth and velvety. (Pişen kırmızı mercimekleri tamamen pürüzsüz ve kadifemsi olana dek blenderdan geçirin.)"
+          ],
+          [
+            "Simmer",
+            "Kısık ateşte tıkırdatmak veya kaynatmak",
+            "Simmer the soup on low heat for 25 minutes until lentils soften. (Mercimekler yumuşayana kadar çorbayı kısık ateşte 25 dakika kaynatın.)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "tarifler",
+      "eyebrow": "DISTINCT VARIATIONS (FARKLI İNGİLİZCE ÇORBA TARİFLERİ)",
+      "heading": "4 Popular English Soup Recipes (En Çok Tercih Edilen 4 İngilizce Çorba Tarifi)",
+      "intro": "Explore classic red lentil soup, creamy roasted tomato soup, nourishing chicken noodle soup, and traditional Turkish yogurt soup with comprehensive ingredient lists and cooking directions. (Klasik kırmızı mercimek, kremalı fırın domates, besleyici tavuklu şehriye ve yayla çorbası çeşitlerinin İngilizce malzeme listelerini ve yapılış adımlarını aşağıda inceleyebilirsiniz.)",
+      "variations": [
+        {
+          "id": "lentil-soup",
+          "title": "Kırmızı Mercimek Çorbası Tarifi",
+          "briefTitle": "Red Lentil Soup Recipe (Kırmızı Mercimek Çorbası Tarifi)",
+          "ingredientsHeading": "What Are Red Lentil Soup Ingredients in English? (Mercimek Çorbası Malzemeleri)",
+          "stepsHeading": "How to Write Red Lentil Soup Cooking Steps in English? (Mercimek Çorbası Pişirme Adımları)",
+          "english": "Red Lentil Soup Recipe",
+          "description": "Red Lentil Soup (Kırmızı Mercimek Çorbası), kırmızı mercimeğin havuç, soğan ve tereyağında kavrulup et suyuyla pişirildiği ve pürüzsüz çekildiği geleneksel bir Türk lezzetidir.",
+          "image": "/blog/ingilizce-tarifler/images/corba-mercimek.webp",
+          "alt": "Steaming bowl of smooth Turkish red lentil soup with foaming paprika butter and lemon",
+          "ingredients": [
+            [
+              "Red Lentils",
+              "Kırmızı mercimek — yıkanıp süzülmüş ana bakliyat.",
+              "1.5 cups (300 g)"
+            ],
+            [
+              "Yellow Onion",
+              "Kuru soğan — yemeklik doğranmış.",
+              "1 medium (120 g)"
+            ],
+            [
+              "Carrot",
+              "Havuç — tatlılık ve renk katan sebze.",
+              "1 medium (80 g)"
+            ],
+            [
+              "Butter",
+              "Köy tereyağı — kavurma ve lezzet bazı.",
+              "2 tbsp (30 g)"
+            ],
+            [
+              "Hot Water veya Broth",
+              "Sıcak su veya tavuk suyu — pişirme sıvısı.",
+              "6 cups (1.4 l)"
+            ],
+            [
+              "Salt and Cumin",
+              "Tuz ve kimyon — sindirimi kolaylaştıran baharat.",
+              "1 tsp salt + ½ tsp cumin"
+            ],
+            [
+              "Olive Oil",
+              "Zeytinyağı — sebzeleri parlatmak için.",
+              "1 tbsp (15 ml)"
+            ]
+          ],
+          "ingredientCards": [
+            {
+              "icon": "🥣",
+              "en": "Red Lentils",
+              "tr": "Kırmızı Mercimek",
+              "quantity": "1.5 cups (300 g)",
+              "sentenceEn": "Red Lentil Soup requires dried red lentils to create a naturally thick, golden broth without adding heavy flour.",
+              "sentenceTr": "Kırmızı Mercimek Çorbası, un eklemeye gerek kalmadan doğal kıvamlı ve altın sarısı bir çorba elde etmek için kırmızı mercimek gerektirir."
+            },
+            {
+              "icon": "🧅",
+              "en": "Yellow Onion",
+              "tr": "Kuru Soğan",
+              "quantity": "1 pcs (120 g)",
+              "sentenceEn": "Red Lentil Soup requires finely chopped yellow onion to build an aromatic savory base in melted butter.",
+              "sentenceTr": "Kırmızı Mercimek Çorbası, eritilmiş tereyağında aromatik lezzet temeli oluşturmak için ince doğranmış kuru soğan gerektirir."
+            },
+            {
+              "icon": "🥕",
+              "en": "Sweet Carrot",
+              "tr": "Taze Havuç",
+              "quantity": "1 pcs (80 g)",
+              "sentenceEn": "Red Lentil Soup requires diced carrots to balance savory richness with natural sweetness and vibrant color.",
+              "sentenceTr": "Kırmızı Mercimek Çorbası, zengin lezzeti doğal tatlılık ve canlı renkle dengelemek için küp doğranmış havuç gerektirir."
+            },
+            {
+              "icon": "🧈",
+              "en": "Butter",
+              "tr": "Köy Tereyağı",
+              "quantity": "2 tbsp (30 g)",
+              "sentenceEn": "Red Lentil Soup requires rich butter to soften vegetables gently and infuse a comforting homemade aroma.",
+              "sentenceTr": "Kırmızı Mercimek Çorbası, sebzeleri nazikçe yumuşatmak ve ev yapımı nefis bir koku katmak için tereyağı gerektirir."
+            },
+            {
+              "icon": "♨️",
+              "en": "Hot Water or Broth",
+              "tr": "Sıcak Su veya Et Suyu",
+              "quantity": "6 cups (1.4 l)",
+              "sentenceEn": "Red Lentil Soup requires boiling broth to gently cook lentils until tender and effortlessly pureed.",
+              "sentenceTr": "Kırmızı Mercimek Çorbası, mercimekleri kolayca püre haline gelecek kadar yumuşatmak için kaynar et suyu gerektirir."
+            },
+            {
+              "icon": "🧂",
+              "en": "Salt and Cumin",
+              "tr": "Tuz ve Kimyon",
+              "quantity": "1 tsp + ½ tsp",
+              "sentenceEn": "Red Lentil Soup requires ground cumin and salt to enhance delicate legume sweetness and aid digestion.",
+              "sentenceTr": "Kırmızı Mercimek Çorbası, bakliyat lezzetini zenginleştirmek ve sindirimi rahatlatmak için öğütülmüş kimyon ve tuz gerektirir."
+            },
+            {
+              "icon": "🫒",
+              "en": "Olive Oil",
+              "tr": "Zeytinyağı",
+              "quantity": "1 tbsp (15 ml)",
+              "sentenceEn": "Red Lentil Soup requires pure olive oil to keep the butter from browning too quickly during the initial saute.",
+              "sentenceTr": "Kırmızı Mercimek Çorbası, ilk kavurma aşamasında tereyağının yanmasını önlemek için saf zeytinyağı gerektirir."
+            }
+          ],
+          "steps": "First, melt butter with olive oil in a deep soup pot and saute chopped onion and carrot for 4 minutes. Then, add 1.5 cups of well-rinsed red lentils and stir for 1 minute. After that, pour in 6 cups of hot water or chicken broth, bring to a boil, cover, and simmer on low heat for 25 minutes. Puree the soup with an immersion blender until silky smooth, add salt and cumin, and finally serve hot with fresh lemon wedges."
+        },
+        {
+          "id": "tomato-soup",
+          "title": "Kremalı Domates Çorbası Tarifi",
+          "briefTitle": "Creamy Tomato Soup Recipe (Kremalı Domates Çorbası Tarifi)",
+          "ingredientsHeading": "What Are Tomato Soup Ingredients in English? (Domates Çorbası Malzemeleri)",
+          "stepsHeading": "How to Write Tomato Soup Cooking Steps in English? (Domates Çorbası Pişirme Adımları)",
+          "english": "Creamy Tomato Soup Recipe",
+          "description": "Creamy Tomato Soup (Kremalı Domates Çorbası), olgun domateslerin tereyağı ve un meyanesiyle harmanlandığı, süt ve eritilmiş kaşarla taçlandırılan kadife dokulu bir kış klasiğidir.",
+          "image": "/blog/ingilizce-tarifler/images/corba-domates.webp",
+          "alt": "Velvety roasted tomato soup topped with melted grated cheese and basil leaves",
+          "ingredients": [
+            [
+              "Ripe Tomatoes",
+              "Olgun domates — rendelenmiş veya fırınlanmış.",
+              "4 large (600 g)"
+            ],
+            [
+              "All-Purpose Flour",
+              "Un — meyaneyi oluşturan bağlayıcı.",
+              "2 tbsp (30 g)"
+            ],
+            [
+              "Butter",
+              "Tereyağı — un kavurma yağı.",
+              "2 tbsp (30 g)"
+            ],
+            [
+              "Tomato Paste",
+              "Domates salçası — renk ve tat derinliği.",
+              "1 tbsp (20 g)"
+            ],
+            [
+              "Hot Broth or Water",
+              "Sıcak tavuk suyu veya su.",
+              "4 cups (960 ml)"
+            ],
+            [
+              "Warm Milk",
+              "Ilık süt — asiditeyi yumuşatan sıvı.",
+              "½ cup (120 ml)"
+            ],
+            [
+              "Grated Cheese",
+              "Rendelenmiş kaşar peyniri — sunum için.",
+              "½ cup (50 g)"
+            ]
+          ],
+          "ingredientCards": [
+            {
+              "icon": "🍅",
+              "en": "Ripe Tomatoes",
+              "tr": "Olgun Domates",
+              "quantity": "4 large (600 g)",
+              "sentenceEn": "Creamy Tomato Soup requires sweet ripe tomatoes to create an authentic tart and vibrant base flavor.",
+              "sentenceTr": "Kremalı Domates Çorbası, nefis mayhoş ve canlı bir lezzet temeli oluşturmak için tatlı olgun domates gerektirir."
+            },
+            {
+              "icon": "🌾",
+              "en": "All-Purpose Flour",
+              "tr": "Buğday Unu",
+              "quantity": "2 tbsp (30 g)",
+              "sentenceEn": "Creamy Tomato Soup requires white flour to form a golden roux that gives body and silkiness.",
+              "sentenceTr": "Kremalı Domates Çorbası, kıvam ve ipeksi bir doku sağlayan altın renkli meyane için un gerektirir."
+            },
+            {
+              "icon": "🧈",
+              "en": "Butter",
+              "tr": "Tereyağı",
+              "quantity": "2 tbsp (30 g)",
+              "sentenceEn": "Creamy Tomato Soup requires unsalted butter to toast the flour gently without burning.",
+              "sentenceTr": "Kremalı Domates Çorbası, unu yakmadan nazikçe kavurmak için tuzsuz tereyağı gerektirir."
+            },
+            {
+              "icon": "🥫",
+              "en": "Tomato Paste",
+              "tr": "Domates Salçası",
+              "quantity": "1 tbsp (20 g)",
+              "sentenceEn": "Creamy Tomato Soup requires concentrated tomato paste to intensify the rich red color and savoriness.",
+              "sentenceTr": "Kremalı Domates Çorbası, kırmızı rengi ve lezzet derinliğini yoğunlaştırmak için domates salçası gerektirir."
+            },
+            {
+              "icon": "♨️",
+              "en": "Hot Broth",
+              "tr": "Sıcak Et Suyu veya Su",
+              "quantity": "4 cups (960 ml)",
+              "sentenceEn": "Creamy Tomato Soup requires boiling broth to dissolve the roux smoothly without forming lumps.",
+              "sentenceTr": "Kremalı Domates Çorbası, meyaneyi topaklanmadan pürüzsüzce açmak için kaynar et suyu gerektirir."
+            },
+            {
+              "icon": "🥛",
+              "en": "Warm Milk",
+              "tr": "Ilık Süt",
+              "quantity": "½ cup (120 ml)",
+              "sentenceEn": "Creamy Tomato Soup requires warm milk added at the end to mellow natural tomato acidity.",
+              "sentenceTr": "Kremalı Domates Çorbası, domatesin doğal ekşiliğini yumuşatmak için son aşamada ılık süt gerektirir."
+            },
+            {
+              "icon": "🧀",
+              "en": "Grated Cheese",
+              "tr": "Rendelenmiş Kaşar",
+              "quantity": "½ cup (50 g)",
+              "sentenceEn": "Creamy Tomato Soup requires grated kaşar cheese melted over each steaming bowl for a stretchy savory topping.",
+              "sentenceTr": "Kremalı Domates Çorbası, dumanı tüten kaselerin üzerinde eriyen lezzetli bir sunum için kaşar rendesi gerektirir."
+            }
+          ],
+          "steps": "First, melt 2 tablespoons of butter in a pot, add 2 tablespoons of flour, and saute over medium heat for 2 minutes until fragrant. Then, stir in 1 tablespoon of tomato paste and grated tomatoes, cooking for 3 minutes. After that, gradually pour in 4 cups of boiling hot broth while whisking continuously to prevent lumps. Simmer on low heat for 15 minutes, stir in warm milk, and finally serve topped with plenty of grated cheese."
+        },
+        {
+          "id": "chicken-soup",
+          "title": "Tavuklu Şehriye Çorbası Tarifi",
+          "briefTitle": "Chicken Noodle Soup Recipe (Tavuklu Şehriye Çorbası Tarifi)",
+          "ingredientsHeading": "What Are Chicken Soup Ingredients in English? (Tavuk Çorbası Malzemeleri)",
+          "stepsHeading": "How to Write Chicken Soup Cooking Steps in English? (Tavuk Çorbası Pişirme Adımları)",
+          "english": "Chicken Noodle Soup Recipe",
+          "description": "Chicken Noodle Soup (Tavuklu Şehriye Çorbası), taze haşlanmış tavuk suyu, didilmiş tavuk eti ve tel şehriyenin limon suyu ve maydanozla buluştuğu şifa kaynağı bir yemektir.",
+          "image": "/blog/ingilizce-tarifler/images/corba-tavuk.webp",
+          "alt": "Nutritious Turkish chicken soup with vermicelli noodles, pulled chicken breast and fresh parsley",
+          "ingredients": [
+            [
+              "Chicken Breast",
+              "Tavuk göğsü — haşlanıp lif lif didilmiş.",
+              "1 piece (300 g)"
+            ],
+            [
+              "Vermicelli Noodles",
+              "Tel veya arpa şehriye — çorbalık makarna.",
+              "½ cup (70 g)"
+            ],
+            [
+              "Rich Chicken Broth",
+              "Tavuk suyu — taze haşlama suyu.",
+              "5 cups (1.2 l)"
+            ],
+            [
+              "Butter and Oil",
+              "Tereyağı ve zeytinyağı.",
+              "1 tbsp butter + 1 tbsp oil"
+            ],
+            [
+              "Lemon Juice",
+              "Taze limon suyu — ferahlık katan asit.",
+              "2 tbsp (30 ml)"
+            ],
+            [
+              "Fresh Parsley",
+              "İnce kıyılmış taze maydanoz.",
+              "3 tbsp (15 g)"
+            ],
+            [
+              "Salt and Black Pepper",
+              "Sofra tuzu ve taze çekilmiş karabiber.",
+              "1 tsp salt + ½ tsp pepper"
+            ]
+          ],
+          "ingredientCards": [
+            {
+              "icon": "🍗",
+              "en": "Chicken Breast",
+              "tr": "Tavuk Göğsü",
+              "quantity": "1 piece (300 g)",
+              "sentenceEn": "Chicken Noodle Soup requires tender boiled chicken breast shredded into fine bite-sized pieces.",
+              "sentenceTr": "Tavuklu Şehriye Çorbası, lokmalık ince lifler halinde didilmiş yumuşak haşlanmış tavuk göğsü gerektirir."
+            },
+            {
+              "icon": "🍜",
+              "en": "Vermicelli",
+              "tr": "Tel veya Arpa Şehriye",
+              "quantity": "½ cup (70 g)",
+              "sentenceEn": "Chicken Noodle Soup requires delicate vermicelli pasta to absorb savory chicken stock without becoming heavy.",
+              "sentenceTr": "Tavuklu Şehriye Çorbası, çorbayı ağırlaştırmadan tavuk suyunu içine çeken ince tel şehriye gerektirir."
+            },
+            {
+              "icon": "♨️",
+              "en": "Chicken Broth",
+              "tr": "Taze Tavuk Suyu",
+              "quantity": "5 cups (1.2 l)",
+              "sentenceEn": "Chicken Noodle Soup requires home-cooked chicken stock rich in natural collagen and savory flavor.",
+              "sentenceTr": "Tavuklu Şehriye Çorbası, doğal kolajen ve zengin lezzet barındıran ev yapımı tavuk suyu gerektirir."
+            },
+            {
+              "icon": "🧈",
+              "en": "Butter and Oil",
+              "tr": "Tereyağı ve Sıvı Yağ",
+              "quantity": "1 tbsp each",
+              "sentenceEn": "Chicken Noodle Soup requires melted butter and oil to lightly toast the noodles before simmering.",
+              "sentenceTr": "Tavuklu Şehriye Çorbası, şehriyeleri kaynatmadan önce hafifçe kavurmak için tereyağı ve sıvı yağ gerektirir."
+            },
+            {
+              "icon": "🍋",
+              "en": "Lemon Juice",
+              "tr": "Taze Limon Suyu",
+              "quantity": "2 tbsp (30 ml)",
+              "sentenceEn": "Chicken Noodle Soup requires freshly squeezed lemon juice to give the broth an appetizing citrus brightness.",
+              "sentenceTr": "Tavuklu Şehriye Çorbası, çorba suyuna iştah açıcı ferah bir narenciye dokunuşu katmak için taze limon suyu gerektirir."
+            },
+            {
+              "icon": "🌿",
+              "en": "Fresh Parsley",
+              "tr": "Taze Maydanoz",
+              "quantity": "3 tbsp (15 g)",
+              "sentenceEn": "Chicken Noodle Soup requires chopped flat-leaf parsley sprinkled on top for a vibrant herbal finish.",
+              "sentenceTr": "Tavuklu Şehriye Çorbası, canlı ve taze bir yeşillik dokunuşu için ince kıyılmış maydanoz gerektirir."
+            },
+            {
+              "icon": "🧂",
+              "en": "Salt and Pepper",
+              "tr": "Tuz ve Karabiber",
+              "quantity": "1 tsp + ½ tsp",
+              "sentenceEn": "Chicken Noodle Soup requires sea salt and cracked black pepper to bring out warming spices in every spoonful.",
+              "sentenceTr": "Tavuklu Şehriye Çorbası, her kaşıkta iç ısıtan baharat aromasını öne çıkarmak için deniz tuzu ve karabiber gerektirir."
+            }
+          ],
+          "steps": "First, boil the chicken breast in 6 cups of water until fully tender, reserve 5 cups of clear broth, and shred the meat. Then, melt butter in a pot, add ½ cup of vermicelli, and saute lightly for 1 minute. After that, pour in the hot chicken broth, bring to a boil, and cook noodles for 8 minutes. Add the shredded chicken, salt, pepper, and lemon juice, simmering for another 3 minutes. Finally, garnish with finely chopped fresh parsley and serve hot."
+        },
+        {
+          "id": "yayla-soup",
+          "title": "Yayla Çorbası Tarifi",
+          "briefTitle": "Turkish Yogurt Soup Recipe (Yayla Çorbası Tarifi)",
+          "ingredientsHeading": "What Are Yogurt Soup Ingredients in English? (Yayla Çorbası Malzemeleri)",
+          "stepsHeading": "How to Write Yogurt Soup Cooking Steps in English? (Yayla Çorbası Pişirme Adımları)",
+          "english": "Turkish Yogurt Soup Recipe",
+          "description": "Turkish Yogurt Soup (Yayla Çorbası), pirincin yoğurt, yumurta sarısı ve unla hazırlanan terbiyeyle ipeksi bir kıvam aldığı, nane aromalı tereyağı sosuyla sunulan ferahlatıcı bir çorbadır.",
+          "image": "/blog/ingilizce-tarifler/images/corba-yayla.webp",
+          "alt": "Traditional Turkish Yayla yogurt soup in white bowl drizzled with sizzling mint butter sauce",
+          "ingredients": [
+            [
+              "Plain Yogurt",
+              "Süzme veya katı yoğurt — çorbanın ekşi ve kremsi bazı.",
+              "1.5 cups (350 g)"
+            ],
+            [
+              "Baldo Rice",
+              "Baldo pirinç — yıkanmış çorbalık tahıl.",
+              "⅓ cup (60 g)"
+            ],
+            [
+              "Egg Yolk",
+              "Yumurta sarısı — terbiyeyi bağlayan bileşen.",
+              "1 piece"
+            ],
+            [
+              "All-Purpose Flour",
+              "Un — kesilmeyi önleyen nişasta.",
+              "1 tbsp (15 g)"
+            ],
+            [
+              "Hot Water or Stock",
+              "Sıcak su veya et suyu.",
+              "5 cups (1.2 l)"
+            ],
+            [
+              "Butter",
+              "Tereyağı — nane sosu için.",
+              "2 tbsp (30 g)"
+            ],
+            [
+              "Dried Mint",
+              "Kuru nane — geleneksel son dokunuş aroması.",
+              "1 tbsp (5 g)"
+            ]
+          ],
+          "ingredientCards": [
+            {
+              "icon": "🥣",
+              "en": "Plain Yogurt",
+              "tr": "Katı Yoğurt",
+              "quantity": "1.5 cups (350 g)",
+              "sentenceEn": "Turkish Yogurt Soup requires rich plain yogurt to create its signature refreshing, tangy flavor profile.",
+              "sentenceTr": "Yayla Çorbası, kendine özgü ferahlatıcı ve mayhoş lezzet profilini yakalamak için zengin katı yoğurt gerektirir."
+            },
+            {
+              "icon": "🍚",
+              "en": "Baldo Rice",
+              "tr": "Baldo Pirinç",
+              "quantity": "⅓ cup (60 g)",
+              "sentenceEn": "Turkish Yogurt Soup requires starchy white rice boiled until tender to give body to the light broth.",
+              "sentenceTr": "Yayla Çorbası, hafif çorba suyuna dolgunluk kazandırmak için yumuşayana dek haşlanan pirinç gerektirir."
+            },
+            {
+              "icon": "🥚",
+              "en": "Egg Yolk",
+              "tr": "Yumurta Sarısı",
+              "quantity": "1 piece",
+              "sentenceEn": "Turkish Yogurt Soup requires a fresh egg yolk whisked with yogurt to emulsify and prevent curdling.",
+              "sentenceTr": "Yayla Çorbası, çorbanın kesilmesini önlemek ve kıvam bağlamak için yoğurtla çırpılan taze yumurta sarısı gerektirir."
+            },
+            {
+              "icon": "🌾",
+              "en": "All-Purpose Flour",
+              "tr": "Buğday Unu",
+              "quantity": "1 tbsp (15 g)",
+              "sentenceEn": "Turkish Yogurt Soup requires a single spoon of flour in the liaison to stabilize the heated yogurt.",
+              "sentenceTr": "Yayla Çorbası, ısıtılan yoğurt terbiyesini stabilize etmek için tek kaşık un gerektirir."
+            },
+            {
+              "icon": "♨️",
+              "en": "Hot Water or Broth",
+              "tr": "Sıcak Su veya Et Suyu",
+              "quantity": "5 cups (1.2 l)",
+              "sentenceEn": "Turkish Yogurt Soup requires hot water to simmer the rice grains until soft before adding liaison.",
+              "sentenceTr": "Yayla Çorbası, terbiyeyi eklemeden önce pirinç tanelerini yumuşayana dek haşlamak için sıcak su gerektirir."
+            },
+            {
+              "icon": "🧈",
+              "en": "Butter",
+              "tr": "Tereyağı",
+              "quantity": "2 tbsp (30 g)",
+              "sentenceEn": "Turkish Yogurt Soup requires melted foaming butter to infuse dried mint flakes before sizzling on top.",
+              "sentenceTr": "Yayla Çorbası, çorbanın üzerine dökülmeden önce kuru naneyi cızırdatmak için köpük köpük tereyağı gerektirir."
+            },
+            {
+              "icon": "🌿",
+              "en": "Dried Mint",
+              "tr": "Kuru Nane",
+              "quantity": "1 tbsp (5 g)",
+              "sentenceEn": "Turkish Yogurt Soup requires aromatic dried mint blooming in hot butter for its unmistakable Turkish garnish.",
+              "sentenceTr": "Yayla Çorbası, unutulmaz Türk mutfağı sunumu için kızgın tereyağında kokusu açığa çıkan kuru nane gerektirir."
+            }
+          ],
+          "steps": "First, boil ⅓ cup of rinsed Baldo rice in 5 cups of water until soft and swollen, about 12 minutes. Then, whisk together yogurt, egg yolk, and flour in a bowl, slowly temper with two ladles of warm rice water, and pour the mixture back into the pot while stirring constantly. After that, bring the soup to a gentle boil on low heat and cook for 5 minutes, adding salt only at the very end. Melt butter in a small pan, sizzle dried mint for 30 seconds, and finally drizzle the hot fragrant mint sauce over each serving bowl."
+        }
+      ]
+    },
+    {
+      "id": "klasik-corba",
+      "eyebrow": "6-STEP LENTIL SOUP GUIDE (6 ADIMDA KLASİK MERCİMEK ÇORBASI REHBERİ)",
+      "heading": "How Do You Make Lentil Soup Step by Step? (Lentil Soup İngilizce Adım Adım Nasıl Yapılır?)",
+      "intro": "Mastering comforting Turkish red lentil soup is achieved in 6 precise chronological steps. (Kadife kıvamlı ve lezzetli bir kırmızı mercimek çorbası 6 kesin kronolojik adımda hazırlanır; emir kipi talimatları ve mutfak püf noktaları aşağıda sıralanmıştır.)",
+      "meta": {
+        "steps": {
+          "val": "6 steps (6 adım)",
+          "en": "Follow the 6 sequential cooking steps to prepare silky red lentil soup.",
+          "tr": "İpeksi kırmızı mercimek çorbası için 6 adımlı pişirme yönergesini sırasıyla takip edin."
+        },
+        "time": {
+          "val": "35 mins (35 dakika)",
+          "en": "10 minutes of active prep and 25 minutes of gentle simmering.",
+          "tr": "10 dakika aktif hazırlık ve 25 dakika kısık ateşte kaynatma sürer."
+        },
+        "level": {
+          "val": "Level A1–A2 (A1–A2 seviye)",
+          "en": "Practices chop, saute, simmer, blend verbs and measurement units.",
+          "tr": "Doğrama, kavurma, kaynatma, püre yapma fiilleri ve ölçü terimlerini pekiştirir."
+        }
+      },
+      "accordion": [
+        {
+          "number": 1,
+          "titleEn": "Chop the Onion and Carrot",
+          "titleTr": "Soğanı ve Havucu Doğrayın",
+          "sentenceEn": "Chop 1 medium yellow onion and 1 peeled carrot into medium dice on a wooden cutting board with a sharp knife.",
+          "sentenceTr": "1 adet orta boy kuru soğanı ve soyulmuş havucu, kesme tahtası üzerinde keskin bir bıçakla orta boy küpler halinde doğrayın.",
+          "actionEn": "Chop",
+          "actionTr": "Doğramak",
+          "img": "/blog/ingilizce-tarifler/images/steps/corba-step-1.webp",
+          "ingredient": "1 yellow onion, 1 carrot (Soğan ve havuç)",
+          "equipment": "Cutting board and chef knife (Kesme tahtası ve şef bıçağı)",
+          "time": "4 mins (4 dakika)"
+        },
+        {
+          "number": 2,
+          "titleEn": "Saute the Vegetables in Butter",
+          "titleTr": "Sebzeleri Tereyağında Kavurun",
+          "sentenceEn": "Melt 2 tablespoons of butter with 1 tablespoon of olive oil in a soup pot, add chopped vegetables, and saute for 4 minutes until translucent.",
+          "sentenceTr": "Derin bir çorba tenceresinde 2 yemek kaşığı tereyağını 1 yemek kaşığı zeytinyağıyla eritin, doğranmış sebzeleri ekleyip pembeleşene kadar 4 dakika kavurun.",
+          "actionEn": "Saute",
+          "actionTr": "Kavurmak",
+          "img": "/blog/ingilizce-tarifler/images/steps/corba-step-2.webp",
+          "ingredient": "2 tbsp butter, 1 tbsp olive oil (Tereyağı ve zeytinyağı)",
+          "equipment": "Deep soup pot and wooden spoon (Derin tencere ve tahta kaşık)",
+          "time": "4 mins (4 dakika)"
+        },
+        {
+          "number": 3,
+          "titleEn": "Add the Red Lentils and Hot Water",
+          "titleTr": "Kırmızı Mercimeği ve Sıcak Suyu Ekleyin",
+          "sentenceEn": "Add 1.5 cups of thoroughly rinsed red lentils into the pot, pour in 6 cups of boiling water or chicken broth, and give it a gentle stir.",
+          "sentenceTr": "İyice yıkanıp süzülmüş 1.5 su bardağı kırmızı mercimeği tencereye ekleyin, 6 su bardağı kaynar su veya tavuk suyunu döküp nazikçe karıştırın.",
+          "actionEn": "Add & Pour",
+          "actionTr": "Eklemek ve dökmek",
+          "img": "/blog/ingilizce-tarifler/images/steps/corba-step-3.webp",
+          "ingredient": "1.5 cups red lentils, 6 cups hot broth (Mercimek ve sıcak su)",
+          "equipment": "Fine mesh sieve and kettle (İnce süzgeç ve su ısıtıcısı)",
+          "time": "2 mins (2 dakika)"
+        },
+        {
+          "number": 4,
+          "titleEn": "Simmer the Soup for 25 Minutes",
+          "titleTr": "Çorbayı 25 Dakika Kaynatın",
+          "sentenceEn": "Bring the soup to a rapid boil, reduce the heat to low, cover with a lid, and simmer gently for 25 minutes until lentils and carrots are completely tender.",
+          "sentenceTr": "Çorbayı kaynama noktasına getirin, ocağı kısık dereceye alın, tencerenin kapağını kapatın ve mercimeklerle havuçlar tamamen yumuşayana dek 25 dakika kaynatın.",
+          "actionEn": "Simmer",
+          "actionTr": "Kısıkta kaynatmak",
+          "img": "/blog/ingilizce-tarifler/images/steps/corba-step-4.webp",
+          "ingredient": "Simmering soup pot (Kapağı kapalı kaynayan tencere)",
+          "equipment": "Pot lid (Tencere kapağı)",
+          "time": "25 mins (25 dakika)"
+        },
+        {
+          "number": 5,
+          "titleEn": "Blend the Soup Until Smooth",
+          "titleTr": "Çorbayı Pürüzsüz Olana Kadar Blenderdan Geçirin",
+          "sentenceEn": "Submerge an immersion hand blender directly into the hot pot and blend the soup for 2 minutes until it transforms into a silky, lump-free puree.",
+          "sentenceTr": "El blenderını doğrudan sıcak tencerenin içine daldırın ve çorba ipeksi, pürüzsüz ve kadifemsi bir kıvam alana dek 2 dakika boyunca çekin.",
+          "actionEn": "Blend",
+          "actionTr": "Blenderdan geçirmek",
+          "img": "/blog/ingilizce-tarifler/images/steps/corba-step-5.webp",
+          "ingredient": "Cooked tender vegetables and lentils (Pişmiş mercimek ve sebzeler)",
+          "equipment": "Immersion hand blender (El blenderı veya çorba mikseri)",
+          "time": "2 mins (2 dakika)"
+        },
+        {
+          "number": 6,
+          "titleEn": "Season the Soup and Serve with Lemon",
+          "titleTr": "Çorbayı Baharatlayın ve Limonla Servis Edin",
+          "sentenceEn": "Stir in 1 teaspoon of fine sea salt and ½ teaspoon of ground cumin, ladle hot soup into deep bowls, and serve immediately with fresh lemon wedges.",
+          "sentenceTr": "1 tatlı kaşığı ince deniz tuzu ve yarım tatlı kaşığı kimyonu ekleyip karıştırın, sıcak çorbayı derin kaselere kepçeyle doldurun ve taze limon dilimleriyle servis edin.",
+          "actionEn": "Season & Serve",
+          "actionTr": "Baharatlamak ve servis etmek",
+          "img": "/blog/ingilizce-tarifler/images/steps/corba-step-6.webp",
+          "ingredient": "1 tsp salt, ½ tsp cumin, fresh lemon wedges (Tuz, kimyon ve limon)",
+          "equipment": "Soup ladle and ceramic bowls (Çorba kepçesi ve kaseler)",
+          "time": "2 mins (2 dakika)"
+        }
+      ],
+      "summaryTable": {
+        "heading": "Summary of the 6 Cooking Steps (6 Adımlı Pişirme Süreci Özeti)",
+        "intro": "Here is the complete bilingual summary table of all 6 steps for reference. (İşte başvuru için 6 adımın tamamının iki dilli özet tablosu:)",
+        "headers": [
+          "Step (Adım)",
+          "English Instruction (İngilizce Talimat)",
+          "Türkçe Açıklama (Turkish Explanation)"
+        ],
+        "rows": [
+          [
+            "Step 1",
+            "Chop 1 onion and 1 carrot into medium dice.",
+            "1 soğan ve 1 havucu orta boy küpler halinde doğrayın."
+          ],
+          [
+            "Step 2",
+            "Saute the vegetables in butter and olive oil for 4 minutes.",
+            "Sebzeleri tereyağı ve zeytinyağında 4 dakika kavurun."
+          ],
+          [
+            "Step 3",
+            "Add 1.5 cups of rinsed red lentils and 6 cups of hot water.",
+            "1.5 bardak yıkanmış mercimeği ve 6 bardak sıcak suyu ekleyin."
+          ],
+          [
+            "Step 4",
+            "Cover with lid and simmer on low heat for 25 minutes.",
+            "Kapağı kapatıp kısık ateşte 25 dakika kaynamaya bırakın."
+          ],
+          [
+            "Step 5",
+            "Blend the soup with an immersion blender until smooth.",
+            "Çorbayı el blenderı ile pürüzsüz olana dek çekin."
+          ],
+          [
+            "Step 6",
+            "Season with salt and cumin, then serve with lemon wedges.",
+            "Tuz ve kimyonla tatlandırıp limon dilimleriyle servis edin."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "malzemeler-ve-ekipman",
+      "eyebrow": "INGREDIENTS & EQUIPMENT (MALZEME VE EKİPMAN LİSTESİ)",
+      "heading": "What Do You Need to Make Lentil Soup in English? (Mercimek Çorbası İçin Neler Gerekir?)",
+      "intro": "Turkish red lentil soup requires humble pantry legumes and basic cookware for pureeing and simmering. (Geleneksel kırmızı mercimek çorbası, temel kiler bakliyatları ile kaynatma ve püreleme için gerekli standart mutfak gereçleriyle hazırlanır.)",
+      "ingredientsTable": {
+        "heading": "Ingredients for Classic Turkish Lentil Soup (Geleneksel Mercimek Çorbası Malzemeleri)",
+        "intro": "Explore the exact measurements and Turkish equivalents in the table below. (Aşağıdaki tabloda net ölçüleri ve Türkçe karşılıklarıyla malzeme listesini bulabilirsiniz:)",
+        "headers": [
+          "English Ingredient",
+          "Türkçe Karşılığı",
+          "Quantity (Miktar)"
+        ],
+        "rows": [
+          [
+            "Red Lentils",
+            "Kırmızı mercimek",
+            "1.5 cups (300 g)"
+          ],
+          [
+            "Yellow Onion",
+            "Kuru soğan",
+            "1 medium (120 g)"
+          ],
+          [
+            "Carrot",
+            "Havuç",
+            "1 medium (80 g)"
+          ],
+          [
+            "Butter",
+            "Köy tereyağı",
+            "2 tbsp (30 g)"
+          ],
+          [
+            "Olive Oil",
+            "Zeytinyağı veya sıvı yağ",
+            "1 tbsp (15 ml)"
+          ],
+          [
+            "Hot Broth or Water",
+            "Sıcak et suyu veya kaynar su",
+            "6 cups (1.4 l)"
+          ],
+          [
+            "Sea Salt",
+            "Deniz tuzu",
+            "1 tsp (6 g)"
+          ],
+          [
+            "Ground Cumin",
+            "Öğütülmüş kimyon",
+            "½ tsp (2 g)"
+          ]
+        ]
+      },
+      "cookwareTable": {
+        "heading": "Which Kitchen Tools Are Used for Making Soup? (Çorba Yapımında Hangi Mutfak Aletleri Kullanılır?)",
+        "intro": "Each piece of cookware performs a vital function across the 6 cooking steps. (Her bir mutfak aleti 6 pişirme adımında belirli bir işleve sahiptir:)",
+        "headers": [
+          "English Equipment",
+          "Türkçe Karşılığı",
+          "Used In Step (Kullanıldığı Adım)"
+        ],
+        "rows": [
+          [
+            "Deep soup pot",
+            "Derin çorba tenceresi",
+            "Step 2, 3, 4, 5 (Kavurma, kaynatma ve püreleme)"
+          ],
+          [
+            "Immersion hand blender",
+            "El blenderı veya çorba mikseri",
+            "Step 5 (Çorbayı pürüzsüz çekme)"
+          ],
+          [
+            "Wooden spoon",
+            "Tahta kaşık veya spatula",
+            "Step 2, 3, 6 (Kavurma ve baharat karıştırma)"
+          ],
+          [
+            "Chef knife and cutting board",
+            "Şef bıçağı ve kesme tahtası",
+            "Step 1 (Sebzeleri doğrama)"
+          ],
+          [
+            "Fine-mesh colander",
+            "İnce telli tel süzgeç",
+            "Step 3 (Mercimeği yıkama ve süzme)"
+          ],
+          [
+            "Soup ladle",
+            "Çorba kepçesi",
+            "Step 6 (Kaselere porsiyonlama ve servis)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "besin-degerleri",
+      "eyebrow": "CALORIES & NUTRITION (KALORİ VE BESİN DEĞERLERİ ANALİZİ)",
+      "heading": "How Many Calories Does a Bowl of Lentil Soup Have? (Bir Kase Mercimek Çorbası Kaç Kalori?)",
+      "intro": "One standard 250-ml bowl of traditional Turkish red lentil soup contains approximately 180 calories. (1 standart kase olan 250 ml kırmızı mercimek çorbası yaklaşık 180 kalori içerir; kalori, besin değerleri ve mercimek karşılaştırmasını aşağıdaki sekmelerden inceleyebilirsiniz.)",
+      "caloriesTable": {
+        "heading": "Calorie Breakdown per Serving (Porsiyon Başına Kalori Dağılımı)",
+        "intro": "Compare caloric density across standard gram weights and serving bowls. (Farklı porsiyon ve kase ölçülerine göre kalori dağılımı:)",
+        "headers": [
+          "Serving (Porsiyon)",
+          "Calories (kcal)",
+          "Açıklama (Nutritional Context)"
+        ],
+        "rows": [
+          [
+            "100 g portion",
+            "72 kcal",
+            "Standard 100 grams of pureed lentil soup. (100 gram süzme mercimek çorbası.)"
+          ],
+          [
+            "1 bowl (250 ml)",
+            "180 kcal",
+            "Standard restaurant starter soup bowl. (Standart 1 kase başlangıç çorbası.)"
+          ],
+          [
+            "Large bowl (350 ml)",
+            "250 kcal",
+            "Generous dinner portion with butter sauce. (Tereyağlı büyük akşam yemeği kasesi.)"
+          ]
+        ]
+      },
+      "nutritionTable": {
+        "heading": "What Are the Nutrition Facts of Lentil Soup? (Mercimek Çorbasının Besin Değerleri Nelerdir?)",
+        "intro": "Nutritional breakdown per 100 grams of cooked lentil soup. (100 gram pişmiş mercimek çorbasının makro besin analizi:)",
+        "headers": [
+          "Nutrient (Besin Ögesi)",
+          "Türkçe Karşılığı",
+          "Amount per 100 g (100 g İçin Miktar)"
+        ],
+        "rows": [
+          [
+            "Plant Protein",
+            "Bitkisel protein",
+            "4.8 g"
+          ],
+          [
+            "Complex Carbohydrates",
+            "Kompleks karbonhidrat",
+            "11.2 g"
+          ],
+          [
+            "Dietary Fiber",
+            "Diyet lifi",
+            "3.2 g"
+          ],
+          [
+            "Healthy Fats",
+            "Yağ (Tereyağı ve zeytinyağı)",
+            "1.8 g"
+          ],
+          [
+            "Iron",
+            "Demir minerali",
+            "1.5 mg"
+          ],
+          [
+            "Sodium",
+            "Sodyum",
+            "190 mg"
+          ]
+        ]
+      },
+      "lentilDiffTable": {
+        "heading": "How to Say Lentil Soup in English? (Mercimek Çorbası İngilizce Nasıl Söylenir?)",
+        "intro": "The English term 'lentil soup' directly translates 'mercimek çorbası'; red lentils and green lentils differ distinctly in cooking time and texture. (İngilizcede mercimek çorbası lentil soup olarak adlandırılır; kırmızı ve yeşil mercimek arasındaki temel mutfak farkları şunlardır:)",
+        "headers": [
+          "Lentil Variety (Tür)",
+          "Cooking Behavior (Pişme Davranışı)",
+          "Final Texture (Kıvam ve Doku)",
+          "Typical Dish (Kullanım Alanı)"
+        ],
+        "rows": [
+          [
+            "Red Lentils (Kırmızı)",
+            "Breaks down quickly in 20-25 mins",
+            "Silky, creamy, and easily pureed without skin. (Kabuksuz olduğu için hızla püreleşir.)",
+            "Classic Turkish smooth lentil soup. (Süzme mercimek çorbası.)"
+          ],
+          [
+            "Green Lentils (Yeşil)",
+            "Holds shape firmly for 35-45 mins",
+            "Hearty, chewy grains with intact outer skins. (Kabuklu yapısıyla taneli ve diri kalır.)",
+            "Erişte noodle and green lentil stew soup. (Yeşil mercimekli erişte çorbası.)"
+          ]
+        ]
+      },
+      "blendPureeTable": {
+        "heading": "How Are Blend and Puree Verbs Used in Soup Recipes? (Blend ve Puree Fiilleri Çorba Tariflerinde Nasıl Kullanılır?)",
+        "intro": "Both verbs express transforming chunky ingredients into smooth liquids, but differ slightly in kitchen application. (Her iki fiil de taneli malzemeleri pürüzsüzleştirmeyi anlatır; aralarındaki kullanım farkları şöyledir:)",
+        "headers": [
+          "Verb (Fiil)",
+          "Culinary Meaning (Anlamı)",
+          "Türkçe Karşılığı",
+          "Recipe Imperative Example (Tarif Örneği)"
+        ],
+        "rows": [
+          [
+            "Blend",
+            "To combine or process using a mechanical appliance",
+            "Blender veya mikserle çekmek",
+            "Blend the hot soup on medium speed until creamy. (Çorbayı kremsi olana kadar orta devirde blenderla çekin.)"
+          ],
+          [
+            "Puree",
+            "To mash or crush into a uniform thick consistency",
+            "Püre haline getirmek",
+            "Puree the cooked vegetables through a fine sieve. (Pişen sebzeleri ince tel süzgeçten ezerek püre yapın.)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "olculer",
+      "eyebrow": "MEASUREMENT UNITS & GLOSSARY (ÖLÇÜ BİRİMLERİ VE MUTFAK SÖZLÜĞÜ)",
+      "heading": "What Measurement Units Are Used in English Soup Recipes? (İngilizce Çorba Tariflerinde Kullanılan Ölçü Birimleri Nelerdir?)",
+      "intro": "English soup recipes primarily use cup, tablespoon, teaspoon, gram, and milliliter to balance broth-to-vegetable ratios. (İngilizce çorba tariflerinde su ve sebze dengesini sağlamak için cup, tablespoon, teaspoon, gram ve mililitre birimleri kullanılır.)",
+      "unitsTable": {
+        "heading": "Tablespoon, Teaspoon, Cup: Turkish Equivalents of English Units (İngilizce Ölçü Birimlerinin Türkçe Karşılıkları)",
+        "intro": "In recipe writing, 1 cup equals 240 ml, 1 tablespoon equals 15 ml, and 1 teaspoon equals 5 ml. (Mutfak tariflerinde 1 su bardağı 240 ml, 1 yemek kaşığı 15 ml ve 1 tatlı veya çay kaşığı 5 ml hacme karşılık gelir:)",
+        "headers": [
+          "English Unit",
+          "Türkçe Karşılığı",
+          "Metric Equivalent",
+          "Recipe Example (Çorba Tarifindeki Kullanımı)"
+        ],
+        "rows": [
+          [
+            "1 Cup",
+            "Su bardağı",
+            "240 ml (veya ~200 g mercimek)",
+            "Use 1.5 cups of red lentils for 6 generous bowls. (6 doyurucu kase için 1.5 su bardağı kırmızı mercimek kullanın.)"
+          ],
+          [
+            "1 Tablespoon (tbsp)",
+            "Yemek kaşığı",
+            "15 ml (veya 15 g tereyağı)",
+            "Melt 2 tablespoons of butter in the soup pot. (Çorba tenceresinde 2 yemek kaşığı tereyağı eritin.)"
+          ],
+          [
+            "1 Teaspoon (tsp)",
+            "Çay veya tatlı kaşığı",
+            "5 ml (veya 5 g tuz veya kimyon)",
+            "Add 1 teaspoon of sea salt for balanced seasoning. (Dengeli bir lezzet için 1 tatlı kaşığı deniz tuzu ekleyin.)"
+          ]
+        ]
+      },
+      "glossaryTable": {
+        "heading": "What Are the Key English Kitchen Terms in Soup Recipes? (Çorba Tarif Metninde Geçen Temel İngilizce Mutfak Kelimeleri Nelerdir?)",
+        "intro": "Here are 10 core culinary terms and context sentences used in English soup preparation. (Aşağıda İngilizce çorba anlatımında geçen 10 temel mutfak kelimesi ve örnek cümlelerini bulabilirsiniz:)",
+        "headers": [
+          "English Term",
+          "Türkçe Karşılığı",
+          "Context Example (İngilizce - Türkçe)"
+        ],
+        "rows": [
+          [
+            "Broth veya Stock",
+            "Et suyu veya kemik suyu",
+            "Simmer vegetables in hot chicken broth for richer flavor. (Daha zengin lezzet için sebzeleri sıcak tavuk suyunda kaynatın.)"
+          ],
+          [
+            "Ladle",
+            "Çorba kepçesi",
+            "Use a deep ladle to serve soup into warm bowls. (Çorbayı sıcak kaselere koymak için derin bir kepçe kullanın.)"
+          ],
+          [
+            "Simmer",
+            "Kısık ateşte tıkırdatmak",
+            "Simmer gently so the legumes do not catch on the bottom. (Bakliyatların dibe yapışmaması için kısık ateşte kaynatın.)"
+          ],
+          [
+            "Whisk",
+            "Çırpma teliyle çırpmak",
+            "Whisk the warm milk into the roux to prevent lumps. (Topaklanmayı önlemek için ılık sütü meyaneye çırparak ekleyin.)"
+          ],
+          [
+            "Puree",
+            "Püre haline getirmek",
+            "Puree the soup until completely smooth and velvety. (Çorbayı tamamen pürüzsüz ve kadifemsi olana dek püre yapın.)"
+          ],
+          [
+            "Garnish",
+            "Garnitürle süslemek",
+            "Garnish each bowl with dried mint and red pepper flakes. (Her kaseyi kuru nane ve pul biberle süsleyin.)"
+          ],
+          [
+            "Liaison (Terbiye)",
+            "Çorba terbiyesi",
+            "Temper the yogurt liaison with hot soup before pouring. (Yoğurt terbiyesini dökmeden önce sıcak çorbayla ılıtın.)"
+          ],
+          [
+            "Roux",
+            "Meyane (Un ve yağ karışımı)",
+            "Cook the flour and butter roux until pale and nutty. (Un ve tereyağı meyanesini kokusu çıkana kadar kavurun.)"
+          ],
+          [
+            "Acidity",
+            "Asitlik veya ekşilik",
+            "Fresh lemon juice balances the rich buttery mouthfeel. (Taze limon suyu zengin tereyağlı tadı mükemmel dengeler.)"
+          ],
+          [
+            "Dice",
+            "Küp küp doğramak",
+            "Dice the carrots into small cubes for fast cooking. (Hızlı pişmesi için havuçları minik küpler halinde doğrayın.)"
+          ]
+        ]
+      },
+      "metricTable": {
+        "heading": "How Are Gram and Liter Used in English Recipes? (Gram ve Litre İngilizce Tariflerde Nasıl Kullanılır?)",
+        "intro": "In English cooking guides, grams are abbreviated as 'g', milliliters as 'ml', and liters as 'l'. (İngilizce tariflerde gram (g), mililitre (ml) ve litre (l) kısaltmaları emperyal ölçülerle şöyle eşleşir:)",
+        "headers": [
+          "Metric Unit",
+          "Imperial Equivalent",
+          "Türkçe Açıklama & Çorba Örneği"
+        ],
+        "rows": [
+          [
+            "300 g lentils",
+            "10.6 oz (1.5 cups)",
+            "300 gram kırmızı mercimek yaklaşık 1.5 su bardağına denk gelir."
+          ],
+          [
+            "1.4 liters (1.4 l)",
+            "6 cups (47.3 fl oz)",
+            "1.4 litre sıcak su veya et suyu yaklaşık 6 su bardağıdır."
+          ],
+          [
+            "30 g butter",
+            "2 tablespoons (1 oz)",
+            "2 yemek kaşığı tereyağı yaklaşık 30 gram ağırlığındadır."
+          ],
+          [
+            "1 liter (1 l)",
+            "4.2 cups (33.8 fl oz)",
+            "1 litre sıvı yaklaşık 4.2 su bardağı hacme karşılık gelir."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "dil-kurallari",
+      "eyebrow": "RECIPE GRAMMAR & USAGE RULES (TARİF DİL BİLGİSİ VE ANLATIM KURALLARI)",
+      "heading": "Grammar Rules for Writing English Soup Recipes (İngilizce Çorba Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları)",
+      "intro": "Writing recipe guides in English requires four foundational grammar pillars: the imperative mood, sequence adverbs, countable and uncountable nouns, and measurement expressions. (İngilizce tarif yazımı; emir kipi, sıra zarfları, sayılabilir ve sayılamayan isimler ile ölçü kalıpları olmak üzere 4 ana dil kuralına dayanır.)",
+      "imperativesTable": {
+        "heading": "How to Use the Imperative Mood in English Soup Recipes? (İngilizce Çorba Tarif Metinlerinde Emir Kipi Nasıl Kullanılır?)",
+        "intro": "In recipe writing, the imperative mood starts directly with the base verb without a grammatical subject (you). (Tariflerde emir kipi, özne kullanılmaksızın doğrudan fiilin yalın haliyle başlar; olumsuz talimatlarda 'Do not' kullanılır:)",
+        "headers": [
+          "English Imperative",
+          "Türkçe Karşılığı",
+          "Action Verb (Fiil)"
+        ],
+        "rows": [
+          [
+            "Chop the onion and carrot finely.",
+            "Soğanı ve havucu ince ince doğrayın.",
+            "Chop (Doğramak)"
+          ],
+          [
+            "Melt the butter in a deep pot.",
+            "Tereyağını derin tencerede eritin.",
+            "Melt (Eritmek)"
+          ],
+          [
+            "Pour in the boiling hot broth slowly.",
+            "Kaynar sıcak et suyunu yavaşça dökün.",
+            "Pour (Dökmek)"
+          ],
+          [
+            "Simmer on low heat for 25 minutes.",
+            "Kısık ateşte 25 dakika kaynatın.",
+            "Simmer (Kısıkta kaynatmak)"
+          ],
+          [
+            "Blend until smooth and velvety.",
+            "Pürüzsüz ve kadifemsi olana kadar çekin.",
+            "Blend (Blenderla çekmek)"
+          ],
+          [
+            "Do not boil the soup on high heat!",
+            "Çorbayı harlı ateşte kaynatmayın! (Olumsuz talimat)",
+            "Do not boil (Kaynatmayın)"
+          ]
+        ]
+      },
+      "sequenceTable": {
+        "heading": "Conjunctions and Sequence Adverbs: First, Then, After That, Finally (Bağlaçlar ve Sıra Zarfları)",
+        "intro": "Sequence adverbs establish chronological order, guiding the reader step by step from preparation to presentation. (Sıra zarfları adımların zaman sırasını belirler; 5 temel zarf ve çorba paragrafı:)",
+        "headers": [
+          "Sequence Adverb",
+          "Fonksiyon",
+          "Example Sentence (İngilizce - Türkçe)"
+        ],
+        "rows": [
+          [
+            "First (İlk olarak)",
+            "Başlangıç adımı",
+            "First, saute diced onion and carrot in melted butter until soft. (İlk olarak küp doğranmış soğan ve havucu erimiş tereyağında yumuşayana dek kavurun.)"
+          ],
+          [
+            "Then (Ardından)",
+            "İkinci adım",
+            "Then, add the rinsed red lentils and stir for one minute. (Ardından yıkanmış kırmızı mercimeği ekleyip bir dakika karıştırın.)"
+          ],
+          [
+            "Next (Sonra)",
+            "Gelişme adımı",
+            "Next, pour in hot broth and bring the soup to a rapid boil. (Sonra sıcak et suyunu döküp çorbayı kaynama noktasına getirin.)"
+          ],
+          [
+            "After that (Daha sonra)",
+            "Pişirme adımı",
+            "After that, cover the pot and simmer gently for 25 minutes. (Daha sonra tencerenin kapağını kapatıp 25 dakika kısık ateşte kaynatın.)"
+          ],
+          [
+            "Finally (Son olarak)",
+            "Pürüzsüzleştirme ve servis",
+            "Finally, blend until smooth, season with salt and cumin, and serve with lemon. (Son olarak pürüzsüz olana dek çekin, tuz ve kimyon atıp limonla sunun.)"
+          ]
+        ]
+      },
+      "rulesTable": {
+        "heading": "Core Language Rules: Countable vs Uncountable and Measurement Units (Temel Dil Kuralları: Sayılabilir, Sayılamayan ve Ölçü Kalıpları)",
+        "intro": "Key constraints for countable vegetables versus uncountable liquids and grains. (Sayılabilir sebzeler ile sayılamayan sıvılar ve bakliyatların mutfak kuralları:)",
+        "headers": [
+          "Dil Kuralı (Rule)",
+          "English Example",
+          "Türkçe Açıklama & Karşılığı"
+        ],
+        "rows": [
+          [
+            "Uncountable Liquids and Grains",
+            "Broth, water, lentils, milk, butter, salt",
+            "Sayılamaz isimler; 'a broth' denmez, 'a cup of broth' veya 'some butter' denir."
+          ],
+          [
+            "Countable Vegetables",
+            "1 carrot, 2 onions, 4 tomatoes",
+            "Sayılabilir sebzeler; adet ve çoğul eki alırlar (2 medium onions)."
+          ],
+          [
+            "Negative Imperatives",
+            "Do not overcook the soup into a paste.",
+            "'Do not' ile kurulan olumsuz talimat; çorbayı macun kıvamına gelecek kadar kaynatmayın."
+          ],
+          [
+            "Ratio Quantifiers",
+            "Four times as much broth as lentils",
+            "Ölçü oranları; mercimek miktarının 4 katı kadar kaynar su veya et suyu kullanın."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "alistirma",
+      "eyebrow": "8TH GRADE PRACTICE & QUIZ (8. SINIF QUIZ VE KAZANIM ALIŞTIRMALARI)",
+      "heading": "8th Grade English Soup Recipe Practice Test (8. Sınıf İngilizce Çorba Tarifi Alıştırma Soruları)",
+      "intro": "Öğrendiğiniz mutfak fiillerini (Chop, Boil, Blend, Simmer), çorba türlerini ve ölçü kalıplarını pekiştirmek için 4 soruluk testi çözün.",
+      "questions": [
+        {
+          "num": 1,
+          "type": "Çoktan Seçmeli",
+          "question": "Which kitchen verb means 'pişen mercimek çorbasını pürüzsüz ve kadifemsi kıvama getirmek için blenderdan geçirmek'?",
+          "questionTr": "'Pişen mercimek çorbasını pürüzsüz ve kadifemsi kıvama getirmek için blenderdan geçirmek' anlamına gelen İngilizce fiil hangisidir?",
+          "options": [
+            "A) Blend",
+            "B) Grate",
+            "C) Knead",
+            "D) Peel"
+          ],
+          "answer": "A) Blend"
+        },
+        {
+          "num": 2,
+          "type": "Çoktan Seçmeli",
+          "question": "What is the primary difference between a clear 'Broth' and a velvety 'Soup'?",
+          "questionTr": "Berrak 'Broth' (et suyu) ile kadife kıvamlı 'Soup' (çorba) arasındaki temel fark nedir?",
+          "options": [
+            "A) Broth is a thin strained liquid, while soup includes blended legumes or thick roux",
+            "B) Broth is always served cold in a dessert glass",
+            "C) Soup never contains salt or spices",
+            "D) Broth requires active dry yeast"
+          ],
+          "answer": "A) Broth is a thin strained liquid, while soup includes blended legumes or thick roux"
+        },
+        {
+          "num": 3,
+          "type": "Boşluk Doldurma",
+          "question": "Fill in the blank: 'First, _____ 1 yellow onion and 1 carrot into medium dice before sauteing.'",
+          "questionTr": "Boşluğu doldurunuz: 'Önce, sotelemeye başlamadan önce 1 kuru soğan ve 1 havucu orta boy küpler halinde _____.'",
+          "options": [
+            "A) chop",
+            "B) freeze",
+            "C) whip",
+            "D) bake"
+          ],
+          "answer": "A) chop"
+        },
+        {
+          "num": 4,
+          "type": "Boşluk Doldurma",
+          "question": "Fill in the blank: 'Cover the pot with a tight lid and _____ on low heat for 25 minutes.'",
+          "questionTr": "Boşluğu doldurunuz: 'Tencerenin kapağını sıkıca kapatın ve kısık ateşte 25 dakika _____.'",
+          "options": [
+            "A) simmer",
+            "B) slice",
+            "C) grate",
+            "D) squeeze"
+          ],
+          "answer": "A) simmer"
+        }
+      ]
+    }
+  ]
+}
