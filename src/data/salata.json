@@ -1,0 +1,1184 @@
+{
+  "page": {
+    "slug": "salata",
+    "route": "/blog/ingilizce-tarifler/salata",
+    "h1": "İngilizce Salata Tarifi (Salata Yapılışı İngilizce)",
+    "title": "İngilizce Salata Tarifi (Salata Yapılışı İngilizce) | Konuşarak Öğren",
+    "metaDescription": "İngilizce salata tarifi ve yapılışı: Çoban, Sezar, ton balıklı ve meyve salatası çeşitleri, çift dilli malzeme tabloları, 5 adım akordiyonu ve mutfak terimleri.",
+    "introEnglish": "A fresh salad recipe provides clear culinary instructions for washing, chopping, tossing, and dressing raw vegetables, proteins, or fruits into a nutritious dish.",
+    "introTurkish": "İngilizce salata tarifi; taze bahçe sebzelerinin, yeşilliklerin ve sosların doğru tekniklerle yıkanıp doğranmasını, harmanlanmasını ve lezzetlendirilmesini anlatan, temel mutfak kavramlarını ve dil kurallarını iki dilli olarak sunan kapsamlı bir gastronomi rehberidir.",
+    "label": "Sağlıklı ve Taze Başlangıç",
+    "author": "Konuşarak Öğren Editör Ekibi",
+    "publishDate": "02 Ekim 2026",
+    "englishLevel": "A1–A2",
+    "prepTime": "15 dakika",
+    "cookTime": "0 dakika",
+    "totalTime": "15 dakika",
+    "servings": "4 kişilik",
+    "calories": "95 kcal (1 kase)",
+    "heroImage": "/blog/ingilizce-tarifler/images/salata-hero.webp",
+    "overviewVariationsTable": {
+      "caption": "İngilizce Salata Çeşitleri ve Hazırlık Özeti",
+      "intro": "Explore the four popular salad variations with their English names, distinct ingredients, and preparation steps in the comparison table below. (Aşağıdaki tabloda 4 popüler salata çeşidinin İngilizce isimlerini, ayırt edici malzemelerini ve temel hazırlık adımlarını karşılaştırmalı olarak inceleyebilirsiniz.)",
+      "headers": [
+        "English Recipe Name",
+        "Türkçe Adı",
+        "Main Ingredients (Ana Malzemeler)",
+        "Main Steps (Temel Adımlar)"
+      ],
+      "rows": [
+        [
+          "Shepherd's Salad",
+          "Çoban Salatası",
+          "Tomatoes, cucumbers, green peppers, red onions, parsley, olive oil, lemon juice (Domates, salatalık, yeşil biber, kırmızı soğan, maydanoz, zeytinyağı, limon suyu)",
+          "Wash and dice vegetables into uniform cubes, slice onions thinly, toss in a bowl, and dress with olive oil and lemon juice. (Sebzeleri yıkayıp eşit küpler halinde doğrayın, soğanları ince dilimleyin, kasede harmanlayıp zeytinyağı ve limonla soslayın.)"
+        ],
+        [
+          "Caesar Salad",
+          "Sezar Salatası",
+          "Romaine lettuce, croutons, parmesan cheese, Caesar dressing, grilled chicken (Marul, kruton ekmek, parmesan peyniri, Sezar sosu, ızgara tavuk)",
+          "Tear crisp romaine lettuce, toss with creamy Caesar dressing and croutons, top with grilled chicken slices and shaved parmesan. (Çıtır marulları koparın, Sezar sosu ve krutonla karıştırın, üzerine ızgara tavuk dilimleri ve ince parmesan serpin.)"
+        ],
+        [
+          "Tuna Salad",
+          "Ton Balıklı Salata",
+          "Canned tuna, sweet corn, mixed greens, cherry tomatoes, black olives, lemon vinaigrette (Konserve ton balığı, tatlı mısır, karışık yeşillik, çeri domates, siyah zeytin, limonlu sos)",
+          "Drain tuna flakes, combine with sweet corn and crisp greens in a salad bowl, and dress with a zesty lemon-olive oil vinaigrette. (Ton balığını süzün, kasede mısır ve yeşilliklerle birleştirin, limonlu zeytinyağı sosuyla lezzetlendirin.)"
+        ],
+        [
+          "Fruit Salad",
+          "Meyve Salatası",
+          "Strawberries, kiwi, blueberries, oranges, grapes, honey-lime dressing (Çilek, kivi, yaban mersini, portakal, üzüm, ballı limon sosu)",
+          "Wash and chop seasonal fruits into colorful bite-sized pieces, toss gently in a glass bowl, and drizzle with warm honey and lime juice. (Mevsim meyvelerini yıkayıp lokmalık doğrayın, cam kasede nazikçe karıştırıp bal ve misket limonu suyu gezdirin.)"
+        ]
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "id": "kavramlar",
+      "eyebrow": "CORE CONCEPTS & VOCABULARY (TEMEL KAVRAMLAR VE SÖZLÜK)",
+      "heading": "İngilizce Salata Tarifi Kavramları ve Türkçe Karşılıkları",
+      "intro": "Mastering foundational salad vocabulary, understanding the culinary meaning of salad and dressing, and using preparation verbs creates confidence in English kitchen talk. (Temel salata kavramlarını, salad ve dressing terimlerinin anlamlarını ve hazırlık fiillerini öğrenmek İngilizce mutfak anlatımında akıcılık sağlar.)",
+      "coreConcepts": {
+        "heading": "6 Core Recipe Concepts in English (İngilizce Salata Tarifinin 6 Temel Kavramı)",
+        "intro": "Here are the four universal recipe terms plus two salad-specific culinary terms, each defined in context. (Aşağıda dört evrensel tarif terimi ve salataya özel iki kavramın tanımlarını bulabilirsiniz:)",
+        "headers": [
+          "Term (Terim)",
+          "Türkçe Karşılığı",
+          "Definition & Context (Tanım ve Salata Bağlantısı)"
+        ],
+        "rows": [
+          [
+            "Recipe",
+            "Yemek veya salata tarifi",
+            "A recipe provides step-by-step culinary instructions and ingredient lists for preparing fresh salads. (Tarif; taze ve lezzetli salatalar hazırlamak için gerekli adımları ve malzeme listesini sunan rehberdir.)"
+          ],
+          [
+            "Ingredient",
+            "Salata malzemesi",
+            "An ingredient is any fresh food item, such as tomatoes, cucumbers, or olive oil, combined in the salad bowl. (Malzeme; domates, salatalık veya zeytinyağı gibi salata kasesine giren her bir taze besin ögesidir.)"
+          ],
+          [
+            "Step",
+            "Hazırlık adımı veya aşaması",
+            "A step represents a single sequential action in the salad preparation workflow. (Adım; salata hazırlama sürecindeki her bir sıralı hazırlık eylemini temsil eder.)"
+          ],
+          [
+            "Serving",
+            "Porsiyon miktarı veya kase",
+            "A serving is the individual bowl or plate of fresh salad offered to one person as a starter or meal. (Porsiyon; başlangıç veya ana öğün olarak bir kişiye sunulan tek tabak veya kase salatadır.)"
+          ],
+          [
+            "Tossing",
+            "Harmanlama veya nazikçe karıştırma",
+            "Tossing means lifting and tumbling salad ingredients gently with servers so ingredients blend without bruising. (Harmanlama; salata malzemelerinin ezilmeden eşit şekilde karışması için kaşıklarla nazikçe havalandırılarak karıştırılmasıdır.)"
+          ],
+          [
+            "Dressing",
+            "Salata sosu veya soslama",
+            "Dressing is the seasoned mixture of oil, acid, and herbs poured over greens to enhance flavor and texture. (Dressing; salatanın lezzetini ve dokusunu zenginleştirmek için üzerine dökülen yağ, asit ve baharat karışımı sostur.)"
+          ]
+        ]
+      },
+      "origin": {
+        "heading": "Salad Kelimesi ve Dressing Terimi İngilizcede Ne İfade Eder?",
+        "intro": "In English culinary terminology, the word 'salad' refers to cold dishes of raw greens or mixed ingredients, while 'dressing' denotes the sauce used to season them. (İngilizce mutfak terminolojisinde salatanın karşılığı salad, sos karşılığı ise dressing kelimesidir; aşağıdaki tabloda 3 popüler dressing çeşidini ve malzemelerini inceleyebilirsiniz:)",
+        "headers": [
+          "Dressing (Sos Çeşidi)",
+          "Main Ingredients (Malzemeler)",
+          "Türkçe Açıklama"
+        ],
+        "rows": [
+          [
+            "Vinaigrette",
+            "Olive oil, wine vinegar veya lemon juice, Dijon mustard, salt, black pepper (Zeytinyağı, sirke veya limon suyu, Dijon hardalı, tuz, karabiber)",
+            "Zeytinyağı ve asit bazlı hafif klasik sos; özellikle yeşil salatalar ve çoban salatası için idealdir."
+          ],
+          [
+            "Ranch Dressing",
+            "Buttermilk, sour cream, mayonnaise, garlic, onion powder, herbs (Yayıkaltı sütü, ekşi krema, mayonez, sarımsak, soğan tozu, taze otlar)",
+            "Kremamsı ve hafif sarımsaklı Amerikan tarzı sos; marul, havuç ve çıtır tavuklu salatalara çok yakışır."
+          ],
+          [
+            "Olive Oil & Lemon Dressing",
+            "Extra virgin olive oil, freshly squeezed lemon juice, sea salt (Sızma zeytinyağı, taze sıkılmış limon suyu, deniz tuzu)",
+            "Geleneksel Türk salatalarının vazgeçilmezi olan, sebzelerin doğal tazeliğini öne çıkaran saf Akdeniz sosu."
+          ]
+        ]
+      },
+      "verbs": {
+        "heading": "İngilizce Tarif Yazımında Kullanılan Fiiller: Wash, Chop, Toss, Dress",
+        "intro": "The table below defines the four core culinary verbs representing each critical stage of salad preparation with imperative recipe examples. (Aşağıdaki tabloda salata yapımının 4 temel aşamasını temsil eden fiilleri ve emir kipiyle yazılmış örnek cümlelerini inceleyebilirsiniz:)",
+        "headers": [
+          "Verb (Fiil)",
+          "Türkçe Karşılığı",
+          "Example Sentence (İngilizce - Türkçe)"
+        ],
+        "rows": [
+          [
+            "Wash",
+            "Yıkamak",
+            "Wash the tomatoes and cucumbers under cold running water. (Domatesleri ve salatalıkları soğuk akan suyun altında yıkayın.)"
+          ],
+          [
+            "Chop",
+            "Doğramak (Küp küp veya lokmalık)",
+            "Chop the vegetables into even, bite-sized cubes. (Sebzeleri eşit, lokmalık küpler halinde doğrayın.)"
+          ],
+          [
+            "Toss",
+            "Harmanlamak veya nazikçe karıştırmak",
+            "Toss all the fresh ingredients gently in a large salad bowl. (Tüm taze malzemeleri geniş bir salata kasesinde nazikçe harmanlayın.)"
+          ],
+          [
+            "Dress",
+            "Soslamak veya sos gezdirmek",
+            "Dress the salad with olive oil and lemon juice right before serving. (Salatayı servis etmeden hemen önce zeytinyağı ve limon suyuyla soslayın.)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "tarifler",
+      "eyebrow": "DISTINCT VARIATIONS (FARKLI İNGİLİZCE SALATA TARİFLERİ)",
+      "heading": "4 Popular English Salad Recipes (En Çok Tercih Edilen 4 İngilizce Salata Tarifi)",
+      "intro": "Explore traditional Turkish Shepherd's salad, classic Caesar salad, protein-rich tuna salad, and refreshing fruit salad with detailed ingredient lists and instructions. (Geleneksel Çoban salatasından çıtır Sezar salatasına, ton balıklı salatadan taze meyve salatasına kadar 4 popüler çeşidin detaylı malzeme ve yapılış adımlarını aşağıda bulabilirsiniz:)",
+      "variations": [
+        {
+          "id": "coban-salatasi",
+          "title": "Çoban Salatası Tarifi",
+          "briefTitle": "İngilizce Çoban Salatası Tarifi (Shepherd's Salad Recipe)",
+          "ingredientsHeading": "Çoban Salatası Tarifinin İngilizce Malzemeleri Nelerdir?",
+          "stepsHeading": "Çoban Salatası Pişirme Adımları İngilizce Nasıl Yazılır?",
+          "english": "Shepherd's Salad Recipe",
+          "description": "Shepherd's Salad (Çoban Salatası), olgun domates, çıtır salatalık, sivri biber ve kırmızı soğanın incecik doğranıp sızma zeytinyağı ve limon suyuyla harmanlandığı en popüler geleneksel Türk salatasıdır.",
+          "image": "/blog/ingilizce-tarifler/images/salata-coban.webp",
+          "alt": "Artisanal terracotta bowl filled with fresh Turkish Shepherd's salad made of diced tomatoes, cucumbers, peppers, red onions and parsley",
+          "ingredients": [
+            [
+              "Ripe tomatoes",
+              "Olgun domates — tatlı ve sulu ana sebze.",
+              "4 medium (500 g)"
+            ],
+            [
+              "Cucumbers",
+              "Salatalık — çıtır ve ferahlatıcı doku.",
+              "3 medium (350 g)"
+            ],
+            [
+              "Green bell peppers",
+              "Yeşil sivri biber — hafif aromatik gevreklik.",
+              "2 pieces (80 g)"
+            ],
+            [
+              "Red onion",
+              "Kırmızı soğan — ince yarım ay dilimlenmiş.",
+              "1 medium (120 g)"
+            ],
+            [
+              "Fresh parsley",
+              "Taze maydanoz — ince kıyılmış yapraklar.",
+              "½ bunch (30 g)"
+            ],
+            [
+              "Extra virgin olive oil",
+              "Sızma zeytinyağı — geleneksel sos bazı.",
+              "3 tbsp (45 ml)"
+            ]
+          ],
+          "ingredientCards": [
+            {
+              "icon": "🍅",
+              "en": "Ripe Tomatoes",
+              "tr": "Olgun Domates",
+              "quantity": "4 medium (500 g)",
+              "sentenceEn": "Shepherd's Salad requires ripe tomatoes to provide sweet, juicy freshness and vibrant red color.",
+              "sentenceTr": "Çoban Salatası, tatlı, sulu bir tazelik ve canlı kırmızı renk sunmak için olgun domates gerektirir."
+            },
+            {
+              "icon": "🥒",
+              "en": "Crisp Cucumbers",
+              "tr": "Çıtır Salatalık",
+              "quantity": "3 medium (350 g)",
+              "sentenceEn": "Shepherd's Salad requires crisp cucumbers for a cooling, crunchy bite in every mouthful.",
+              "sentenceTr": "Çoban Salatası, her lokmada çıtır ve ferahlatıcı bir his için çıtır salatalık gerektirir."
+            },
+            {
+              "icon": "🫑",
+              "en": "Green Peppers",
+              "tr": "Yeşil Sivri Biber",
+              "quantity": "2 pieces (80 g)",
+              "sentenceEn": "Shepherd's Salad requires green peppers to add a mild zest and pleasant garden crunch.",
+              "sentenceTr": "Çoban Salatası, hafif bir aroma ve hoş bir gevreklik katmak için yeşil sivri biber gerektirir."
+            },
+            {
+              "icon": "🧅",
+              "en": "Red Onion",
+              "tr": "Kırmızı Soğan",
+              "quantity": "1 medium (120 g)",
+              "sentenceEn": "Shepherd's Salad requires red onion sliced thinly to provide savory sharpness and purple contrast.",
+              "sentenceTr": "Çoban Salatası, lezzetli bir keskinlik ve mor renk kontrastı sağlamak için ince dilimlenmiş kırmızı soğan gerektirir."
+            },
+            {
+              "icon": "🌿",
+              "en": "Fresh Parsley",
+              "tr": "Taze Maydanoz",
+              "quantity": "½ bunch (30 g)",
+              "sentenceEn": "Shepherd's Salad requires fresh parsley finely chopped to bring herbal aroma and earthiness.",
+              "sentenceTr": "Çoban Salatası, otsu bir koku ve doğallık kazandırmak için ince kıyılmış taze maydanoz gerektirir."
+            },
+            {
+              "icon": "🫒",
+              "en": "Extra Virgin Olive Oil",
+              "tr": "Sızma Zeytinyağı",
+              "quantity": "3 tbsp (45 ml)",
+              "sentenceEn": "Shepherd's Salad requires extra virgin olive oil to bind all juices and create a luscious dressing.",
+              "sentenceTr": "Çoban Salatası, tüm sebze sularını birleştirmek ve ipeksi bir sos oluşturmak için sızma zeytinyağı gerektirir."
+            }
+          ],
+          "steps": "1. First, wash 4 tomatoes, 3 cucumbers, and 2 green peppers thoroughly under cold water. 2. Then, chop the tomatoes and peeled cucumbers into even 1 cm cubes on a cutting board. 3. After that, slice 1 red onion and 2 peppers thinly, and chop ½ bunch of parsley finely. 4. Next, combine all vegetables in a large salad bowl and toss them gently with wooden servers. 5. Finally, dress with 3 tablespoons of olive oil, 2 tablespoons of lemon juice, and 1 teaspoon of salt, then serve immediately."
+        },
+        {
+          "id": "sezar-salatasi",
+          "title": "Sezar Salatası Tarifi",
+          "briefTitle": "İngilizce Sezar Salatası Tarifi (Caesar Salad Recipe)",
+          "ingredientsHeading": "Sezar Salatası Tarifinin İngilizce Malzemeleri Nelerdir?",
+          "stepsHeading": "Sezar Salatası Pişirme Adımları İngilizce Nasıl Yazılır?",
+          "english": "Caesar Salad Recipe",
+          "description": "Caesar Salad (Sezar Salatası), çıtır marul yaprakları, fırınlanmış sarımsaklı kruton ekmekler, ince parmesan talaşları ve kremamsı sarımsaklı sosla hazırlanan bir dünya klasiğidir.",
+          "image": "/blog/ingilizce-tarifler/images/salata-sezar.webp",
+          "alt": "A classic Caesar salad in a modern bowl with romaine lettuce, crispy croutons, parmesan curls and grilled chicken breast",
+          "ingredients": [
+            [
+              "Romaine lettuce",
+              "Marul veya göbek marul — taze ve çıtır yapraklar.",
+              "1 large head (300 g)"
+            ],
+            [
+              "Garlic croutons",
+              "Sarımsaklı kruton ekmek — fırınlanmış çıtır küpler.",
+              "1 cup (60 g)"
+            ],
+            [
+              "Parmesan cheese",
+              "Parmesan peyniri — talaş dilimlenmiş.",
+              "50 g (½ cup)"
+            ],
+            [
+              "Caesar dressing",
+              "Sezar salata sosu — kremamsı sarımsaklı sos.",
+              "4 tbsp (60 ml)"
+            ],
+            [
+              "Grilled chicken breast",
+              "Izgara tavuk göğsü — protein zengini dilimler.",
+              "200 g (1 breast)"
+            ]
+          ],
+          "ingredientCards": [
+            {
+              "icon": "🥬",
+              "en": "Romaine Lettuce",
+              "tr": "Göbek Marul",
+              "quantity": "1 head (300 g)",
+              "sentenceEn": "Caesar Salad requires romaine lettuce to provide a crisp and sturdy base for heavy creamy dressing.",
+              "sentenceTr": "Sezar Salatası, yoğun kremamsı sosu taşımak ve çıtır bir taban oluşturmak için marul gerektirir."
+            },
+            {
+              "icon": "🥖",
+              "en": "Garlic Croutons",
+              "tr": "Kruton Ekmek",
+              "quantity": "1 cup (60 g)",
+              "sentenceEn": "Caesar Salad requires garlic croutons to add delightful golden crunch and toasty savory flavor.",
+              "sentenceTr": "Sezar Salatası, lezzetli bir altın rengi gevreklik ve fırın kokusu katmak için sarımsaklı kruton gerektirir."
+            },
+            {
+              "icon": "🧀",
+              "en": "Parmesan Cheese",
+              "tr": "Parmesan Peyniri",
+              "quantity": "50 g",
+              "sentenceEn": "Caesar Salad requires parmesan cheese shaved into thin ribbons for salty, nutty depth.",
+              "sentenceTr": "Sezar Salatası, tuzlu ve cevizimsi bir derinlik kazandırmak için ince dilimlenmiş parmesan gerektirir."
+            },
+            {
+              "icon": "🥣",
+              "en": "Caesar Dressing",
+              "tr": "Sezar Salata Sosu",
+              "quantity": "4 tbsp (60 ml)",
+              "sentenceEn": "Caesar Salad requires Caesar dressing to coat every leaf with creamy garlic and savory richness.",
+              "sentenceTr": "Sezar Salatası, her yaprağı kremamsı sarımsak ve zengin sosla kaplamak için Sezar sosu gerektirir."
+            },
+            {
+              "icon": "🍗",
+              "en": "Grilled Chicken",
+              "tr": "Izgara Tavuk Göğsü",
+              "quantity": "200 g",
+              "sentenceEn": "Caesar Salad requires grilled chicken breast sliced across the grain to turn it into a protein-rich entree.",
+              "sentenceTr": "Sezar Salatası, salatayı protein deposu doyurucu bir ana öğüne dönüştürmek için ızgara tavuk gerektirir."
+            }
+          ],
+          "steps": "1. First, grill 200 g of seasoned chicken breast in a skillet for 6 minutes per side until golden. 2. Then, wash and dry 1 head of romaine lettuce, and tear the leaves into bite-sized pieces. 3. After that, place the lettuce in a large bowl, pour 4 tablespoons of Caesar dressing, and toss evenly. 4. Next, scatter 1 cup of crunchy garlic croutons and 50 g of shaved parmesan cheese over the salad. 5. Finally, slice the warm grilled chicken breast, place it on top of the salad, and serve right away."
+        },
+        {
+          "id": "ton-balikli-salata",
+          "title": "Ton Balıklı Salata Tarifi",
+          "briefTitle": "İngilizce Ton Balıklı Salata Tarifi (Tuna Salad Recipe)",
+          "ingredientsHeading": "Ton Balıklı Salata Tarifinin İngilizce Malzemeleri Nelerdir?",
+          "stepsHeading": "Ton Balıklı Salata Pişirme Adımları İngilizce Nasıl Yazılır?",
+          "english": "Tuna Salad Recipe",
+          "description": "Tuna Salad (Ton Balıklı Salata), süzülmüş lezzetli ton balığı parçalarını tatlı mısır, çeri domates ve çıtır yeşilliklerle buluşturan yüksek proteinli taze bir öğündür.",
+          "image": "/blog/ingilizce-tarifler/images/salata-ton-balikli.webp",
+          "alt": "A vibrant ceramic bowl of fresh tuna salad with flaked tuna, sweet corn, cherry tomatoes, crisp lettuce and lemon wedges",
+          "ingredients": [
+            [
+              "Canned tuna",
+              "Konserve ton balığı — süzülmüş et parçaları.",
+              "160 g (1 can)"
+            ],
+            [
+              "Sweet corn",
+              "Tatlı mısır — haşlanmış sarı mısır taneleri.",
+              "½ cup (80 g)"
+            ],
+            [
+              "Cherry tomatoes",
+              "Çeri domates — ikiye bölünmüş taze domatesler.",
+              "8 pieces (100 g)"
+            ],
+            [
+              "Mixed greens",
+              "Karışık salata yeşilliği — Akdeniz yeşillikleri.",
+              "100 g"
+            ],
+            [
+              "Lemon vinaigrette",
+              "Limonlu sos — zeytinyağı ve taze limon suyu.",
+              "2 tbsp (30 ml)"
+            ]
+          ],
+          "ingredientCards": [
+            {
+              "icon": "🐟",
+              "en": "Canned Tuna",
+              "tr": "Konserve Ton Balığı",
+              "quantity": "160 g (1 can)",
+              "sentenceEn": "Tuna Salad requires canned tuna drained well to provide tender, protein-packed fish flakes.",
+              "sentenceTr": "Ton Balıklı Salata, yumuşak ve protein dolu balık parçaları sunmak için iyice süzülmüş konserve ton balığı gerektirir."
+            },
+            {
+              "icon": "🌽",
+              "en": "Sweet Corn",
+              "tr": "Tatlı Mısır",
+              "quantity": "½ cup (80 g)",
+              "sentenceEn": "Tuna Salad requires sweet corn kernels to add a pop of natural sweetness and golden color.",
+              "sentenceTr": "Ton Balıklı Salata, doğal bir tatlılık ve canlı sarı bir renk katmak için tatlı mısır taneleri gerektirir."
+            },
+            {
+              "icon": "🍅",
+              "en": "Cherry Tomatoes",
+              "tr": "Çeri Domates",
+              "quantity": "8 pieces (100 g)",
+              "sentenceEn": "Tuna Salad requires cherry tomatoes halved to release juicy burst and vibrant acidity.",
+              "sentenceTr": "Ton Balıklı Salata, sulu bir lezzet ve canlı bir asidite katmak için ikiye bölünmüş çeri domates gerektirir."
+            },
+            {
+              "icon": "🥗",
+              "en": "Mixed Greens",
+              "tr": "Karışık Yeşillik",
+              "quantity": "100 g",
+              "sentenceEn": "Tuna Salad requires mixed salad greens to create a fresh, nutrient-rich bed for the tuna.",
+              "sentenceTr": "Ton Balıklı Salata, ton balığı için taze ve besin değeri yüksek bir taban oluşturmak amacıyla karışık yeşillik gerektirir."
+            },
+            {
+              "icon": "🍋",
+              "en": "Lemon Vinaigrette",
+              "tr": "Limonlu Salata Sosu",
+              "quantity": "2 tbsp (30 ml)",
+              "sentenceEn": "Tuna Salad requires lemon vinaigrette to cut through the richness of fish with clean citrus tang.",
+              "sentenceTr": "Ton Balıklı Salata, balığın yoğunluğunu taze narenciye ferahlığıyla dengelemek için limonlu zeytinyağı sosu gerektirir."
+            }
+          ],
+          "steps": "1. First, drain 160 g of canned tuna thoroughly through a small sieve to remove excess oil or brine. 2. Then, wash 100 g of mixed salad greens and pat them completely dry with a paper towel. 3. After that, halve 8 cherry tomatoes and place them along with the greens into a wide salad bowl. 4. Next, scatter ½ cup of sweet corn and flake the drained tuna gently over the top with a fork. 5. Finally, drizzle 2 tablespoons of lemon vinaigrette and toss lightly without breaking the fish flakes."
+        },
+        {
+          "id": "meyve-salatasi",
+          "title": "Meyve Salatası Tarifi",
+          "briefTitle": "İngilizce Meyve Salatası Tarifi (Fruit Salad Recipe)",
+          "ingredientsHeading": "Meyve Salatası Tarifinin İngilizce Malzemeleri Nelerdir?",
+          "stepsHeading": "Meyve Salatası Pişirme Adımları İngilizce Nasıl Yazılır?",
+          "english": "Fruit Salad Recipe",
+          "description": "Fruit Salad (Meyve Salatası), taze çilek, kivi, yaban mersini ve portakal gibi renkli meyvelerin ballı limon sosuyla harmanlandığı doğal ve tatlı bir vitamin kaynağıdır.",
+          "image": "/blog/ingilizce-tarifler/images/salata-meyve.webp",
+          "alt": "A colorful glass bowl of fresh fruit salad packed with diced strawberries, kiwi, blueberries, oranges and fresh mint",
+          "ingredients": [
+            [
+              "Fresh strawberries",
+              "Taze çilek — sapları ayıklanıp dörde bölünmüş.",
+              "150 g (1 bowl)"
+            ],
+            [
+              "Ripe kiwi",
+              "Olgun kivi — soyulup lokmalık dilimlenmiş.",
+              "2 pieces (120 g)"
+            ],
+            [
+              "Fresh blueberries",
+              "Taze yaban mersini — yıkanıp kurulanmış bütün taneler.",
+              "100 g (½ cup)"
+            ],
+            [
+              "Sweet orange",
+              "Portakal — zarları ve çekirdekleri temizlenmiş dilimler.",
+              "1 large (180 g)"
+            ],
+            [
+              "Honey-lime dressing",
+              "Ballı misket limonu sosu — parlatıcı ve koruyucu sos.",
+              "2 tbsp (30 ml)"
+            ]
+          ],
+          "ingredientCards": [
+            {
+              "icon": "🍓",
+              "en": "Fresh Strawberries",
+              "tr": "Taze Çilek",
+              "quantity": "150 g",
+              "sentenceEn": "Fruit Salad requires fresh strawberries hulled and halved to provide ruby-red color and sweet berries aroma.",
+              "sentenceTr": "Meyve Salatası, yakut kırmızısı bir renk ve tatlı meyve aroması katmak için sapları temizlenip ikiye bölünmüş taze çilek gerektirir."
+            },
+            {
+              "icon": "🥝",
+              "en": "Ripe Kiwi",
+              "tr": "Olgun Kivi",
+              "quantity": "2 pieces",
+              "sentenceEn": "Fruit Salad requires ripe kiwi peeled and sliced to balance sweetness with emerald-green tang.",
+              "sentenceTr": "Meyve Salatası, tatlılığı zümrüt yeşili ekşimsi bir lezzetle dengelemek için soyulup dilimlenmiş olgun kivi gerektirir."
+            },
+            {
+              "icon": "🫐",
+              "en": "Fresh Blueberries",
+              "tr": "Taze Yaban Mersini",
+              "quantity": "100 g",
+              "sentenceEn": "Fruit Salad requires fresh blueberries whole to add antioxidant-rich pops of deep blue.",
+              "sentenceTr": "Meyve Salatası, antioksidan deposu koyu mavi lokmalar katmak için bütün halde taze yaban mersini gerektirir."
+            },
+            {
+              "icon": "🍊",
+              "en": "Sweet Orange",
+              "tr": "Tatlı Portakal",
+              "quantity": "1 large",
+              "sentenceEn": "Fruit Salad requires sweet orange segments deseeded to infuse vibrant citrus juice throughout the bowl.",
+              "sentenceTr": "Meyve Salatası, kaseye canlı narenciye suyu yaymak için çekirdeksiz tatlı portakal dilimleri gerektirir."
+            },
+            {
+              "icon": "🍯",
+              "en": "Honey-Lime Dressing",
+              "tr": "Ballı Misket Limonu Sosu",
+              "quantity": "2 tbsp (30 ml)",
+              "sentenceEn": "Fruit Salad requires honey-lime dressing to glaze the fruit pieces and prevent browning.",
+              "sentenceTr": "Meyve Salatası, meyve parçalarını parlatmak ve kararmalarını önlemek için ballı misket limonu sosu gerektirir."
+            }
+          ],
+          "steps": "1. First, rinse 150 g of strawberries and 100 g of blueberries gently under cold water, then pat dry. 2. Then, peel 2 kiwis and 1 orange, and cut them into bite-sized segments on a clean board. 3. After that, hull and quarter the strawberries, and place all prepared fruits into a clear glass bowl. 4. Next, whisk 1 tablespoon of warm honey with 1 tablespoon of fresh lime juice in a small cup. 5. Finally, drizzle the honey-lime dressing over the fruit, toss very gently with a spoon, and chill for 10 minutes."
+        }
+      ]
+    },
+    {
+      "id": "klasik-salata",
+      "eyebrow": "5-STEP SHEPHERD'S SALAD GUIDE (5 ADIMDA ÇOBAN SALATASI REHBERİ)",
+      "heading": "Shepherd's Salad İngilizce Adım Adım Nasıl Yapılır? (How Do You Make Shepherd's Salad Step by Step?)",
+      "intro": "Preparing authentic Turkish Shepherd's salad requires 5 clear sequential steps using imperative instructions and precise knife cuts. (Geleneksel Çoban salatasını hazırlamak, emir kipiyle ifade edilen ve doğru bıçak kesimlerini içeren 5 net sıralı adımla gerçekleşir:)",
+      "meta": {
+        "steps": {
+          "val": "5 steps (5 adım)",
+          "en": "Follow the 5 sequential steps to prepare fresh Turkish Shepherd's salad.",
+          "tr": "Taze Çoban salatası için 5 adımlı hazırlık yönergesini sırasıyla takip edin."
+        },
+        "time": {
+          "val": "15 mins (15 dakika)",
+          "en": "15 minutes of active washing, chopping, and dressing without cooking.",
+          "tr": "Pişirme gerektirmeyen 15 dakikalık aktif yıkama, doğrama ve soslama süresi."
+        },
+        "level": {
+          "val": "Level A1–A2 (A1–A2 seviye)",
+          "en": "Practices wash, chop, slice, toss, dress verbs and fresh produce vocabulary.",
+          "tr": "Yıkama, doğrama, dilimleme, harmanlama, soslama fiilleri ve taze sebze kelimelerini pekiştirir."
+        }
+      },
+      "accordion": [
+        {
+          "number": 1,
+          "titleEn": "Wash the Vegetables Thoroughly",
+          "titleTr": "Sebzeleri İyice Yıkayın",
+          "sentenceEn": "Wash 4 ripe tomatoes, 3 crisp cucumbers, and 2 green peppers thoroughly under cold running water for 2 minutes.",
+          "sentenceTr": "4 olgun domatesi, 3 çıtır salatalığı ve 2 yeşil biberi soğuk akan suyun altında 2 dakika boyunca iyice yıkayın.",
+          "actionEn": "Wash & Clean",
+          "actionTr": "Yıkama ve Temizleme",
+          "img": "/blog/ingilizce-tarifler/images/steps/salata-step-1.webp",
+          "ingredient": "4 Tomatoes, 3 Cucumbers, 2 Peppers",
+          "equipment": "Colander, Sink Faucet",
+          "time": "2 minutes"
+        },
+        {
+          "number": 2,
+          "titleEn": "Chop the Tomatoes and Cucumbers",
+          "titleTr": "Domatesleri ve Salatalıkları Doğrayın",
+          "sentenceEn": "Chop the washed tomatoes and peeled cucumbers into even 1 cm bite-sized cubes on a cutting board.",
+          "sentenceTr": "Yıkanmış domatesleri ve soyulmuş salatalıkları kesme tahtası üzerinde 1 santimetrelik eşit lokmalık küpler halinde doğrayın.",
+          "actionEn": "Dice & Chop",
+          "actionTr": "Küp Küp Doğrama",
+          "img": "/blog/ingilizce-tarifler/images/steps/salata-step-2.webp",
+          "ingredient": "Clean Tomatoes, Peeled Cucumbers",
+          "equipment": "Chef's Knife, Wooden Cutting Board",
+          "time": "4 minutes"
+        },
+        {
+          "number": 3,
+          "titleEn": "Slice the Onion and Peppers Thinly",
+          "titleTr": "Soğanı ve Biberleri İnce Dilimleyin",
+          "sentenceEn": "Slice 1 medium red onion and 2 deseeded green peppers into thin 2 mm crescent strips.",
+          "sentenceTr": "1 orta boy kırmızı soğanı ve çekirdekleri çıkarılmış 2 yeşil biberi 2 milimetrelik ince yarım ay şeritler halinde dilimleyin.",
+          "actionEn": "Slice & Julienne",
+          "actionTr": "İnce Şerit Dilimleme",
+          "img": "/blog/ingilizce-tarifler/images/steps/salata-step-3.webp",
+          "ingredient": "1 Red Onion, 2 Green Peppers",
+          "equipment": "Chef's Knife, Cutting Board",
+          "time": "3 minutes"
+        },
+        {
+          "number": 4,
+          "titleEn": "Toss All the Vegetables in a Bowl",
+          "titleTr": "Tüm Sebzeleri Bir Kasede Karıştırın",
+          "sentenceEn": "Toss all the diced vegetables and finely chopped parsley gently in a large ceramic bowl for 30 seconds.",
+          "sentenceTr": "Doğranmış tüm sebzeleri ve ince kıyılmış maydanozu geniş bir seramik kasede 30 saniye boyunca nazikçe harmanlayın.",
+          "actionEn": "Toss & Combine",
+          "actionTr": "Nazikçe Harmanlama",
+          "img": "/blog/ingilizce-tarifler/images/steps/salata-step-4.webp",
+          "ingredient": "Diced Vegetables, Chopped Parsley",
+          "equipment": "Large Salad Bowl, Wooden Servers",
+          "time": "1 minute"
+        },
+        {
+          "number": 5,
+          "titleEn": "Dress the Salad with Olive Oil and Lemon",
+          "titleTr": "Salatayı Zeytinyağı ve Limonla Soslandırın",
+          "sentenceEn": "Dress the salad by drizzling 45 ml of extra virgin olive oil, 30 ml of lemon juice, and 5 g of sea salt, then serve immediately.",
+          "sentenceTr": "Salatayı 45 ml sızma zeytinyağı, 30 ml taze limon suyu ve 5 g deniz tuzu gezdirerek soslayın, ardından hemen servis edin.",
+          "actionEn": "Season & Dress",
+          "actionTr": "Soslama ve Servis",
+          "img": "/blog/ingilizce-tarifler/images/steps/salata-step-5.webp",
+          "ingredient": "45 ml Olive Oil, 30 ml Lemon, 5 g Salt",
+          "equipment": "Glass Cruet, Citrus Squeezer",
+          "time": "2 minutes"
+        }
+      ],
+      "summaryTable": {
+        "heading": "Shepherd's Salad Step Summary (Çoban Salatası Adım Özeti Tablosu)",
+        "intro": "The table below summarizes all 5 preparation steps with their English instructions and Turkish explanations. (Aşağıdaki tabloda tüm 5 hazırlık adımını İngilizce talimatları ve Türkçe açıklamalarıyla toplu olarak inceleyebilirsiniz:)",
+        "headers": [
+          "Step",
+          "English Instruction",
+          "Türkçe Açıklama"
+        ],
+        "rows": [
+          [
+            "Step 1",
+            "Wash the vegetables thoroughly under cold running water for 2 minutes.",
+            "Sebzeleri soğuk akan suyun altında 2 dakika boyunca iyice yıkayın."
+          ],
+          [
+            "Step 2",
+            "Chop the tomatoes and cucumbers into even 1 cm cubes on a cutting board.",
+            "Domatesleri ve salatalıkları kesme tahtasında 1 santimetrelik eşit küpler halinde doğrayın."
+          ],
+          [
+            "Step 3",
+            "Slice the red onion and peppers thinly into 2 mm strips on a board.",
+            "Kırmızı soğanı ve biberleri kesme tahtasında 2 milimetrelik ince şeritler halinde dilimleyin."
+          ],
+          [
+            "Step 4",
+            "Toss all the vegetables in a large bowl gently with wooden servers.",
+            "Tüm sebzeleri geniş bir kasede tahta kaşıklarla nazikçe harmanlayın."
+          ],
+          [
+            "Step 5",
+            "Dress the salad with olive oil and lemon juice, then serve immediately.",
+            "Salatayı zeytinyağı ve limon suyuyla soslandırıp hemen taze servis edin."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "malzemeler-ve-ekipman",
+      "eyebrow": "INGREDIENTS & UTENSILS (MALZEME VE EKİPMAN LİSTESİ)",
+      "heading": "Which Fresh Ingredients Go into a Shepherd's Salad? (Çoban Salatasına Hangi Taze Malzemeler Girer?)",
+      "intro": "Authentic Shepherd's salad relies on sun-ripened garden vegetables, fresh herbs, and pure Mediterranean dressing. (Geleneksel Çoban salatası; güneşte olgunlaşmış bahçe sebzelerine, taze otlara ve saf Akdeniz sosuna dayanır. Aşağıda malzeme listesini ve hazırlık gereçlerini inceleyebilirsiniz:)",
+      "ingredientsTable": {
+        "heading": "Shepherd's Salad Fresh Ingredients Table (Çoban Salatası Malzeme Tablosu)",
+        "intro": "The table below specifies each fresh ingredient required for traditional Turkish Shepherd's salad with precise quantities. (Aşağıdaki tabloda geleneksel Çoban salatası için gereken taze malzemeleri ve tam ölçülerini bulabilirsiniz:)",
+        "headers": [
+          "English Ingredient",
+          "Türkçe Karşılığı",
+          "Quantity"
+        ],
+        "rows": [
+          [
+            "Ripe tomatoes",
+            "Olgun domates",
+            "4 medium (500 g)"
+          ],
+          [
+            "Cucumbers",
+            "Salatalık",
+            "3 medium (350 g)"
+          ],
+          [
+            "Green bell peppers veya Sivri peppers",
+            "Yeşil sivri biber veya çarliston biber",
+            "2 pieces (80 g)"
+          ],
+          [
+            "Red onion",
+            "Kırmızı soğan",
+            "1 medium (120 g)"
+          ],
+          [
+            "Fresh flat-leaf parsley",
+            "Taze yaprak maydanoz",
+            "½ bunch (30 g)"
+          ],
+          [
+            "Extra virgin olive oil",
+            "Sızma zeytinyağı",
+            "3 tablespoons (45 ml)"
+          ],
+          [
+            "Fresh lemon juice",
+            "Taze sıkılmış limon suyu",
+            "2 tablespoons (30 ml)"
+          ],
+          [
+            "Sea salt",
+            "Deniz tuzu",
+            "1 teaspoon (5 g)"
+          ]
+        ]
+      },
+      "cookwareTable": {
+        "heading": "What Utensils Do You Need to Prepare a Salad? (Salata Hazırlamak İçin Hangi Gereçler Gerekir?)",
+        "intro": "The table below lists all the kitchen tools and utensils required to prepare a salad and connects each item to its corresponding step. (Aşağıdaki tabloda salata hazırlığında kullanılan mutfak gereçlerini ve hangi numaralı adımda ihtiyaç duyulduğunu inceleyebilirsiniz:)",
+        "headers": [
+          "English Equipment",
+          "Türkçe Karşılığı",
+          "Used In Step"
+        ],
+        "rows": [
+          [
+            "Chef's knife",
+            "Şef bıçağı veya kesme bıçağı",
+            "Step 2, Step 3 (2. ve 3. Adım)"
+          ],
+          [
+            "Wooden cutting board",
+            "Ahşap kesme tahtası",
+            "Step 2, Step 3 (2. ve 3. Adım)"
+          ],
+          [
+            "Vegetable colander",
+            "Sebze süzgeci veya yıkama kabı",
+            "Step 1 (1. Adım)"
+          ],
+          [
+            "Large ceramic salad bowl",
+            "Geniş seramik salata kasesi",
+            "Step 4, Step 5 (4. ve 5. Adım)"
+          ],
+          [
+            "Wooden salad servers",
+            "Ahşap salata kaşıkları",
+            "Step 4 (4. Adım)"
+          ],
+          [
+            "Citrus squeezer",
+            "Narenciye veya limon sıkacağı",
+            "Step 5 (5. Adım)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "besin-degerleri",
+      "eyebrow": "CALORIES & NUTRITION (KALORİ VE BESİN DEĞERLERİ ANALİZİ)",
+      "heading": "How Many Calories Are in a Bowl of Salad? (Bir Kase Salata Kaç Kalori?)",
+      "intro": "One standard 200-g bowl of fresh Shepherd's salad dressed with extra virgin olive oil contains approximately 95 kcal. (Sızma zeytinyağıyla soslanmış standart 200 gramlık bir kase Çoban salatası yaklaşık 95 kcal kalori içerir:)",
+      "caloriesTable": {
+        "heading": "Salad Calorie Values per Serving (Porsiyon Başına Salata Kalori Değerleri)",
+        "intro": "The table below displays the calorie values for 100 grams and one full bowl serving of Shepherd's salad. (Aşağıdaki tabloda Çoban salatasının 100 gram ve 1 tam porsiyon kase için kalori değerlerini görebilirsiniz:)",
+        "headers": [
+          "Serving",
+          "Calories (kcal)",
+          "Açıklama"
+        ],
+        "rows": [
+          [
+            "100 g",
+            "48 kcal",
+            "Hafif ve lif açısından zengin zeytinyağlı taze sebze karışımı."
+          ],
+          [
+            "1 Serving (1 Porsiyon - 200 g)",
+            "95 kcal",
+            "Akşam veya öğle yemeklerinde başlangıç olarak sunulan standart 1 kase salata."
+          ]
+        ]
+      },
+      "nutritionTable": {
+        "heading": "What Are the Nutrition Facts of Shepherd's Salad? (Çoban Salatasının Besin Değerleri Nelerdir?)",
+        "intro": "The table below details the macronutrient profile of Turkish Shepherd's salad per 100 grams. (Aşağıdaki tabloda Çoban salatasının 100 gramındaki temel besin ögelerini ve gramajlarını inceleyebilirsiniz:)",
+        "headers": [
+          "Nutrient",
+          "Besin Ögesi",
+          "Amount per 100 g"
+        ],
+        "rows": [
+          [
+            "Protein",
+            "Protein",
+            "1.1 g"
+          ],
+          [
+            "Carbohydrate",
+            "Karbonhidrat",
+            "4.2 g"
+          ],
+          [
+            "Fat",
+            "Yağ (Sağlıklı sızma zeytinyağı)",
+            "3.2 g"
+          ],
+          [
+            "Fiber",
+            "Diyet lifi",
+            "1.5 g"
+          ]
+        ]
+      },
+      "presentationTable": {
+        "heading": "Çoban Salatası İngilizce Nasıl Tanıtılır? (Shepherd Salad)",
+        "intro": "Shepherd's salad (known in Turkish as Çoban Salatası) is described in English as a vibrant Mediterranean salad of finely diced ripe tomatoes, cucumbers, and onions. (Çoban salatası İngilizcede domates, salatalık, biber ve soğanla yapılan zeytinyağlı taze bir Akdeniz salatası olarak tanıtılır; aşağıdaki tabloda temel tanıtım ögelerini bulabilirsiniz:)",
+        "headers": [
+          "Feature (Özellik)",
+          "English Term",
+          "Türkçe Karşılığı"
+        ],
+        "rows": [
+          [
+            "Salad Style",
+            "Finely diced chopped salad",
+            "İnce küp küp doğranmış salata"
+          ],
+          [
+            "Key Texture",
+            "Crisp, crunchy, and juicy",
+            "Çıtır, gevrek ve sulu"
+          ],
+          [
+            "Dressing Style",
+            "Simple extra virgin olive oil and lemon",
+            "Sade sızma zeytinyağı ve limon sosu"
+          ],
+          [
+            "Culinary Role",
+            "Refreshing starter veya side dish for kebabs",
+            "Kebap ve et yemekleri yanına ferahlatıcı garnitür veya başlangıç"
+          ]
+        ]
+      },
+      "tossDressTable": {
+        "heading": "Toss ve Dress Fiilleri Salata Tariflerinde Ne Anlama Gelir?",
+        "intro": "In salad recipes, 'toss' and 'dress' represent the two essential finishing techniques that give the dish its flavor and balance. (Salata tariflerinde toss ve dress fiilleri salataya lezzet ve denge kazandıran iki vazgeçilmez tamamlama tekniğini temsil eder:)",
+        "headers": [
+          "Verb (Fiil)",
+          "Culinary Action (Mutfak Eylemi)",
+          "Türkçe Anlamı",
+          "Recipe Example (Tarif Cümlesi)"
+        ],
+        "rows": [
+          [
+            "Toss",
+            "Lifting and tumbling ingredients gently with salad servers",
+            "Harmanlamak veya malzemeleri ezmeden nazikçe karıştırmak",
+            "Toss the diced cucumbers and tomatoes gently in the bowl. (Doğranmış salatalık ve domatesleri kasede nazikçe harmanlayın.)"
+          ],
+          [
+            "Dress",
+            "Pouring and distributing the liquid seasoning over the salad",
+            "Soslamak veya salata sosunu malzemelerin üzerine gezdirmek",
+            "Dress the salad with olive oil and lemon juice right before serving. (Salatayı servis etmeden hemen önce zeytinyağı ve limon suyuyla soslayın.)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "olculer",
+      "eyebrow": "MEASUREMENT UNITS & GLOSSARY (ÖLÇÜ BİRİMLERİ VE MUTFAK SÖZLÜĞÜ)",
+      "heading": "İngilizce Salata Tariflerinde Kullanılan Ölçü Birimleri Nelerdir?",
+      "intro": "English salad recipes primarily use cup, tablespoon, teaspoon, gram, and milliliter to quantify fresh produce, seasonings, and dressings. (İngilizce salata tariflerinde taze sebzeleri, baharatları ve sosları ölçmek için cup, tablespoon, teaspoon, gram ve milliliter birimleri kullanılır:)",
+      "unitsTable": {
+        "heading": "English-Turkish-Metric Units Table (Salata Ölçü Birimleri Tablosu)",
+        "intro": "The table below compares the 5 standard measurement units used in English salad recipes with metric equivalents and recipe sentences. (Aşağıdaki tabloda İngilizce salata tariflerinde kullanılan 5 standart ölçü birimini metrik karşılıkları ve örnek cümleleriyle inceleyebilirsiniz:)",
+        "headers": [
+          "English Unit",
+          "Türkçe Karşılığı",
+          "Metric Equivalent",
+          "Example Sentence (Tarif Örneği)"
+        ],
+        "rows": [
+          [
+            "Cup",
+            "Su bardağı",
+            "240 ml",
+            "Add 1 cup of crunchy garlic croutons to the Caesar salad. (Sezar salatasına 1 su bardağı çıtır sarımsaklı kruton ekleyin.)"
+          ],
+          [
+            "Tablespoon (tbsp)",
+            "Yemek kaşığı",
+            "15 ml",
+            "Drizzle 3 tablespoons of extra virgin olive oil over the bowl. (Kasedeki sebzelerin üzerine 3 yemek kaşığı sızma zeytinyağı gezdirin.)"
+          ],
+          [
+            "Teaspoon (tsp)",
+            "Çay kaşığı veya tatlı kaşığı",
+            "5 ml",
+            "Add 1 teaspoon of sea salt to enhance the garden flavors. (Bahçe lezzetlerini öne çıkarmak için 1 çay kaşığı deniz tuzu ekleyin.)"
+          ],
+          [
+            "Gram (g)",
+            "Gram",
+            "Metric weight unit",
+            "Use 500 grams of ripe vine tomatoes for optimal sweetness. (İdeal tatlılık için 500 gram olgun salkım domates kullanın.)"
+          ],
+          [
+            "Milliliter (ml)",
+            "Mililitre",
+            "Metric volume unit",
+            "Whisk 30 milliliters of fresh lemon juice with the oil. (30 mililitre taze limon suyunu zeytinyağı ile çırpın.)"
+          ]
+        ]
+      },
+      "glossaryTable": {
+        "heading": "Salata Tarif Metninde Geçen Temel İngilizce Mutfak Kelimeleri Nelerdir?",
+        "intro": "The table below presents 10 essential kitchen vocabulary terms and culinary actions frequently encountered in English salad guides. (Aşağıdaki tabloda İngilizce salata rehberlerinde en sık karşılaşılan 10 temel mutfak kelimesini ve kullanım bağlamlarını bulabilirsiniz:)",
+        "headers": [
+          "English Term",
+          "Türkçe Karşılığı",
+          "Example Sentence (İngilizce - Türkçe)"
+        ],
+        "rows": [
+          [
+            "Diced",
+            "Küp küp doğranmış",
+            "Add the diced cucumbers into the salad bowl. (Küp küp doğranmış salatalıkları salata kasesine ekleyin.)"
+          ],
+          [
+            "Sliced",
+            "Dilimlenmiş",
+            "Place thinly sliced red onions over the salad. (İnce dilimlenmiş kırmızı soğanları salatanın üzerine yerleştirin.)"
+          ],
+          [
+            "Peeled",
+            "Soyulmuş",
+            "Use peeled cucumbers for a tender texture. (Daha yumuşak bir doku için soyulmuş salatalık kullanın.)"
+          ],
+          [
+            "Crisp",
+            "Çıtır veya taze gevrek",
+            "Crisp romaine lettuce gives great crunch to Caesar salad. (Çıtır marul yaprakları Sezar salatasına harika bir gevreklik katar.)"
+          ],
+          [
+            "Fresh",
+            "Taze",
+            "Always select fresh herbs for the dressing. (Sos için her zaman taze otları tercih edin.)"
+          ],
+          [
+            "Vinaigrette",
+            "Sirke ve zeytinyağlı salata sosu",
+            "Whisk a simple lemon vinaigrette in a small glass jar. (Küçük bir cam kavanozda basit bir limonlu sirke sosu çırpın.)"
+          ],
+          [
+            "Garnish",
+            "Süslemek veya garnitür",
+            "Garnish the salad with fresh parsley leaves and black olives. (Salatayı taze maydanoz yaprakları ve siyah zeytinle süsleyin.)"
+          ],
+          [
+            "Salad bowl",
+            "Salata kasesi",
+            "Choose a wide salad bowl so ingredients toss easily. (Malzemelerin rahatça harmanlanması için geniş bir salata kasesi seçin.)"
+          ],
+          [
+            "Cruet",
+            "Zeytinyağı veya sirke şişesi",
+            "Keep olive oil in a dark glass cruet. (Zeytinyağını koyu renkli bir cam yağdanlıkta saklayın.)"
+          ],
+          [
+            "Colander",
+            "Sebze süzgeci",
+            "Drain the washed greens in a colander before chopping. (Yıkanan yeşillikleri doğramadan önce süzgeçte süzün.)"
+          ]
+        ]
+      },
+      "tbspTspCupTable": {
+        "heading": "Tablespoon, Teaspoon, Cup: İngilizce Ölçü Birimlerinin Türkçe Karşılıkları",
+        "intro": "In English recipe books, tablespoon (tbsp), teaspoon (tsp), and cup are the three most common volumetric kitchen measurements. (İngilizce yemek tariflerinde tablespoon (yemek kaşığı), teaspoon (çay kaşığı) ve cup (su bardağı) en yaygın 3 hacimsel ölçüdür; aşağıdaki tabloda metrik karşılıklarını inceleyebilirsiniz:)",
+        "headers": [
+          "English Unit",
+          "Türkçe Karşılığı",
+          "Metric Equivalent",
+          "Recipe Example (İngilizce - Türkçe)"
+        ],
+        "rows": [
+          [
+            "Tablespoon (tbsp)",
+            "Yemek kaşığı",
+            "1 tablespoon = 15 ml",
+            "Add 3 tablespoons of olive oil to the salad. (Salataya 3 yemek kaşığı zeytinyağı ekleyin.)"
+          ],
+          [
+            "Teaspoon (tsp)",
+            "Çay kaşığı veya tatlı kaşığı",
+            "1 teaspoon = 5 ml",
+            "Add 1 teaspoon of sea salt for seasoning. (Tatlandırmak için 1 çay kaşığı deniz tuzu ekleyin.)"
+          ],
+          [
+            "Cup",
+            "Su bardağı",
+            "1 cup = 240 ml",
+            "Mix ½ cup of sweet corn into the bowl. (Kaseye yarım su bardağı tatlı mısır karıştırın.)"
+          ]
+        ]
+      },
+      "gramLiterTable": {
+        "heading": "Gram ve Litre İngilizce Tariflerde Nasıl Kullanılır?",
+        "intro": "In English culinary texts, gram is abbreviated as 'g' and liter as 'l' or 'L', commonly converted to ounces and fluid cups for international readers. (İngilizce tariflerde gram 'g', litre ise 'l' olarak kısaltılır; aşağıdaki tabloda metrik ve emperyal dönüşümlerini bulabilirsiniz:)",
+        "headers": [
+          "Metric Unit",
+          "Imperial Equivalent",
+          "Türkçe Açıklama",
+          "Recipe Example (İngilizce - Türkçe)"
+        ],
+        "rows": [
+          [
+            "100 g",
+            "3.5 oz (ounces)",
+            "Katı sebze ve peynir ölçüsü",
+            "Weigh 100 g of mixed salad greens for two portions. (İki porsiyon için 100 g karışık salata yeşilliği tartın.)"
+          ],
+          [
+            "1 l (1000 ml)",
+            "4.2 cups (or 33.8 fl oz)",
+            "Yıkama suyu veya sıvı sos ölçüsü",
+            "Use 1 l of cold water to wash the crisp salad vegetables. (Çıtır salata sebzelerini yıkamak için 1 l soğuk su kullanın.)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "dil-kurallari",
+      "eyebrow": "RECIPE GRAMMAR & USAGE RULES (TARİF DİL BİLGİSİ VE ANLATIM KURALLARI)",
+      "heading": "İngilizce Salata Tarifi Yazarken Dikkat Edilmesi Gereken Dil Kuralları",
+      "intro": "Writing recipe guides in English requires four foundational language rules: imperative mood, sequence adverbs, countable and uncountable nouns, and measurement expressions. (İngilizce tarif yazımı; emir kipi, sıra zarfları, sayılabilir ve sayılamayan isimler ile ölçü ifadeleri olmak üzere 4 temel dil kuralına dayanır:)",
+      "rulesTable": {
+        "heading": "4 Core Language Rules in Salad Recipes (4 Temel Dil Kuralı)",
+        "intro": "The table below highlights the four essential grammar structures used to write precise, readable recipe guides. (Aşağıdaki tabloda net ve akıcı tarif rehberleri yazmak için kullanılan 4 temel dil bilgisi yapısını inceleyebilirsiniz:)",
+        "headers": [
+          "Rule (Kural)",
+          "English Example",
+          "Türkçe Karşılığı"
+        ],
+        "rows": [
+          [
+            "Imperative Mood (Emir Kipi)",
+            "Chop the cucumbers into bite-sized cubes.",
+            "Salatalıkları lokmalık küpler halinde doğrayın."
+          ],
+          [
+            "Sequence Adverbs (Sıra Zarfları)",
+            "First wash the greens, then toss the vegetables, and finally add dressing.",
+            "Önce yeşillikleri yıkayın, sonra sebzeleri harmanlayın ve son olarak sosu ekleyin."
+          ],
+          [
+            "Countable & Uncountable Nouns (Sayılabilen ve Sayılamayan İsimler)",
+            "Two tomatoes (countable), some olive oil (uncountable).",
+            "İki domates (sayılabilir), biraz zeytinyağı (sayılamayan)."
+          ],
+          [
+            "Measurement Expressions (Ölçü İfadeleri)",
+            "A pinch of salt, two tablespoons of lemon juice.",
+            "Bir tutam tuz, iki yemek kaşığı limon suyu."
+          ]
+        ]
+      },
+      "imperativesTable": {
+        "heading": "İngilizce Salata Tarif Metinlerinde Emir Kipi (Imperative) Nasıl Kullanılır?",
+        "intro": "An imperative sentence starts directly with the base verb without a subject pronoun to give clear culinary commands. (Emir kipi, özne kullanılmadan doğrudan fiilin yalın haliyle başlayan ve net pişirme komutları veren cümle yapısıdır; olumsuz hali ise 'Do not' ile kurulur:)",
+        "headers": [
+          "English Imperative",
+          "Türkçe Karşılığı",
+          "Verb"
+        ],
+        "rows": [
+          [
+            "Wash the fresh vegetables under cold water.",
+            "Taze sebzeleri soğuk su altında yıkayın.",
+            "Wash (Yıkamak)"
+          ],
+          [
+            "Chop the tomatoes and cucumbers into even cubes.",
+            "Domatesleri ve salatalıkları eşit küpler halinde doğrayın.",
+            "Chop (Doğramak)"
+          ],
+          [
+            "Slice the red onion as thinly as possible.",
+            "Kırmızı soğanı mümkün olduğunca ince dilimleyin.",
+            "Slice (Dilimlemek)"
+          ],
+          [
+            "Toss the salad ingredients gently with wooden spoons.",
+            "Salata malzemelerini tahta kaşıklarla nazikçe harmanlayın.",
+            "Toss (Harmanlamak)"
+          ],
+          [
+            "Dress the salad with olive oil and lemon juice.",
+            "Salatayı zeytinyağı ve limon suyuyla soslandırın.",
+            "Dress (Soslamak)"
+          ],
+          [
+            "Do not over-dress the salad to keep the vegetables crisp.",
+            "Sebzelerin çıtırlığını korumak için salatayı aşırı soslamayın.",
+            "Do not over-dress (Aşırı soslamamak - Olumsuz emir)"
+          ]
+        ]
+      },
+      "sequenceTable": {
+        "heading": "Bağlaçlar ve Sıra Zarfları: First, Then, After That, Finally",
+        "intro": "Sequence adverbs like first, then, after that, next, and finally establish a logical step-by-step chronology in recipe writing. (First, then, after that, next ve finally gibi sıra zarfları tarif adımlarının kronolojik sırayla akmasını sağlar; aşağıdaki tabloda anlamlarını ve birleşik tarif paragrafını bulabilirsiniz:)",
+        "headers": [
+          "Sequence Adverb",
+          "Türkçe Karşılığı",
+          "Example Sentence (İngilizce - Türkçe)"
+        ],
+        "rows": [
+          [
+            "First",
+            "İlk olarak veya önce",
+            "First, wash and dry all the salad greens thoroughly. (Önce tüm salata yeşilliklerini iyice yıkayıp kurulayın.)"
+          ],
+          [
+            "Then",
+            "Ardından veya daha sonra",
+            "Then, chop the ripe tomatoes and cucumbers into cubes. (Ardından olgun domatesleri ve salatalıkları küp küp doğrayın.)"
+          ],
+          [
+            "After that",
+            "Ondan sonra veya sonrasında",
+            "After that, slice the red onion thinly and chop the parsley. (Ondan sonra kırmızı soğanı ince dilimleyin ve maydanozu kıyın.)"
+          ],
+          [
+            "Next",
+            "Sonraki adımda veya sonra",
+            "Next, toss all the vegetables in a wide ceramic bowl. (Sonraki adımda tüm sebzeleri geniş bir seramik kasede harmanlayın.)"
+          ],
+          [
+            "Finally",
+            "Son olarak veya en sonunda",
+            "Finally, dress with olive oil and lemon juice, and serve fresh. (Son olarak zeytinyağı ve limonla soslayıp taze servis edin.)"
+          ]
+        ],
+        "connectedParagraphEn": "First, wash 4 ripe tomatoes and 3 cucumbers under cold water. Then, chop the vegetables into bite-sized cubes. After that, slice 1 red onion thinly and add it to the bowl. Next, toss all the fresh ingredients gently with wooden servers. Finally, dress with extra virgin olive oil and fresh lemon juice before serving.",
+        "connectedParagraphTr": "İlk olarak, 4 olgun domatesi ve 3 salatalığı soğuk su altında yıkayın. Ardından, sebzeleri lokmalık küpler halinde doğrayın. Ondan sonra, 1 kırmızı soğanı ince dilimleyip kaseye ekleyin. Sonraki adımda, tüm taze malzemeleri tahta servis kaşıklarıyla nazikçe harmanlayın. Son olarak, servis yapmadan önce sızma zeytinyağı ve taze limon suyuyla soslandırın."
+      }
+    },
+    {
+      "id": "alistirma",
+      "eyebrow": "8TH GRADE PRACTICE & QUIZ (8. SINIF QUIZ VE KAZANIM ALIŞTIRMALARI)",
+      "heading": "8. Sınıf İngilizce Salata Tarifi",
+      "intro": "8. sınıf İngilizce 'Cooking' ünitesi kazanımlarına göre hazırlanan alıştırma (Wash, Chop, Toss, Dress fiillerini pekiştirir):",
+      "questions": [
+        {
+          "num": 1,
+          "type": "Çoktan Seçmeli",
+          "question": "Which kitchen verb means to cut vegetables into small, square pieces?",
+          "questionTr": "Sebzeleri küçük, kare küpler halinde kesmek anlamına gelen İngilizce mutfak fiili hangisidir?",
+          "options": [
+            "A) Chop",
+            "B) Wash",
+            "C) Toss",
+            "D) Dress"
+          ],
+          "answer": "A) Chop"
+        },
+        {
+          "num": 2,
+          "type": "Çoktan Seçmeli",
+          "question": "Before chopping fresh tomatoes and cucumbers, you should always _____ them under cold running water.",
+          "questionTr": "Taze domates ve salatalıkları doğramadan önce soğuk akan suyun altında daima ne yapmalısınız?",
+          "options": [
+            "A) wash",
+            "B) bake",
+            "C) simmer",
+            "D) freeze"
+          ],
+          "answer": "A) wash"
+        },
+        {
+          "num": 3,
+          "type": "Boşluk Doldurma",
+          "question": "Use two wooden salad servers to _____ all the fresh vegetables in the bowl gently without crushing them.",
+          "questionTr": "Kasedeki tüm taze sebzeleri ezmeden nazikçe harmanlamak için hangi fiil kullanılır?",
+          "options": [
+            "A) toss",
+            "B) boil",
+            "C) fry",
+            "D) grate"
+          ],
+          "answer": "A) toss"
+        },
+        {
+          "num": 4,
+          "type": "Boşluk Doldurma",
+          "question": "Finally, _____ the Shepherd's salad with extra virgin olive oil and fresh lemon juice right before serving.",
+          "questionTr": "Son olarak, Çoban salatasını servis etmeden hemen önce sızma zeytinyağı ve taze limon suyuyla soslamak için hangi fiil kullanılır?",
+          "options": [
+            "A) dress",
+            "B) bake",
+            "C) peel",
+            "D) blend"
+          ],
+          "answer": "A) dress"
+        }
+      ]
+    }
+  ]
+}
